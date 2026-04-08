@@ -2,581 +2,3636 @@
   "nodes": [
     {
       "id": 0,
-      "label": "Google",
-      "industry": "Big Tech",
-      "size": 10,
+      "label": "Education & Research",
+      "size": 130,
+      "topCos": [
+        {
+          "company": "University of California, Berkeley",
+          "count": 12
+        },
+        {
+          "company": "The University of Texas at Austin",
+          "count": 4
+        },
+        {
+          "company": "University of Oklahoma",
+          "count": 4
+        },
+        {
+          "company": "University of Southern California",
+          "count": 2
+        },
+        {
+          "company": "New York University Abu Dhabi",
+          "count": 2
+        }
+      ],
       "members": [
         {
-          "name": "Sarah Johnson",
-          "title": "Software Engineer",
-          "company": "Google"
+          "name": "Loretta Hudelot",
+          "title": "Adjunct Professor, Professor of Practice",
+          "company": "The University of Texas at Dallas"
         },
         {
-          "name": "Michael Chen",
-          "title": "Senior Product Manager",
-          "company": "Google"
+          "name": "Kimon Drakopoulos",
+          "title": "Founding Director and Advisor",
+          "company": "University of Southern California"
         },
         {
-          "name": "Emily Davis",
-          "title": "Data Scientist",
-          "company": "Google"
+          "name": "Jagatpal .",
+          "title": "Field Investigator",
+          "company": "V. V. Giri National Labour Institute"
         },
         {
-          "name": "James Wilson",
-          "title": "UX Designer",
-          "company": "Google"
+          "name": "Kadria Simons",
+          "title": "Researcher",
+          "company": "Ontario Institute for Studies in Education of the University of Toronto"
         },
         {
-          "name": "Olivia Martinez",
-          "title": "Engineering Manager",
-          "company": "Google"
+          "name": "Oluwasola Omoju",
+          "title": "Economist/Research Fellow",
+          "company": "National Institute for Legislative and Democratic Studies (National Assembly)"
         },
         {
-          "name": "Noah Anderson",
-          "title": "DevOps Engineer",
-          "company": "Google"
+          "name": "Peter van der Windt",
+          "title": "Associate Dean of Postdoctoral Programs and Research",
+          "company": "New York University Abu Dhabi"
         },
         {
-          "name": "Ava Thomas",
-          "title": "ML Engineer",
-          "company": "Google"
+          "name": "Semuhi Sinano\u011flu, PhD",
+          "title": "Researcher",
+          "company": "German Institute of Development and Sustainability (IDOS)"
         },
         {
-          "name": "Liam Jackson",
-          "title": "Software Engineer II",
-          "company": "Google"
+          "name": "Omar Garc\u00eda-Ponce",
+          "title": "Associate Professor of Political Science and Intenational Affairs",
+          "company": "The George Washington University"
         },
         {
-          "name": "Emma White",
+          "name": "Cyrus Samii",
+          "title": "Professor",
+          "company": "New York University"
+        },
+        {
+          "name": "Felix Nyikwagh",
+          "title": "Graduate Teacher of Record(GTR)",
+          "company": "Clemson University"
+        },
+        {
+          "name": "Rayan Abbasi",
+          "title": "Education Coordinator",
+          "company": "ADR Institute of Alberta"
+        },
+        {
+          "name": "Nader Afzalan, Ph.D.",
+          "title": "Program Director, Sustainable Environmental Design",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Paul King",
+          "title": "Circulation Supervisor",
+          "company": "Institute of Governmental Studies Library, University of California, Berkeley"
+        },
+        {
+          "name": "Casey Ste. Claire",
+          "title": "Graduate Researcher",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Dr. Tova Makhani-Belkin",
+          "title": "Postdoctoral Researcher",
+          "company": "Univeristy of Galway"
+        },
+        {
+          "name": "David Wolf",
+          "title": "Research Administrator",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Prof. Inderjeet Singh Sodhi",
+          "title": "Professor (Public Administration), Department of Political Science",
+          "company": "Jamia Millia Islamia"
+        },
+        {
+          "name": "Mariajos\u00e9 (Majo) Fern\u00e1ndez-Plenge",
+          "title": "Editorial Research Member",
+          "company": "Parsons School of Design - The New School"
+        },
+        {
+          "name": "Ahsan Farooqui",
+          "title": "Doctoral Tutor",
+          "company": "University of Sussex"
+        },
+        {
+          "name": "Nava Khorram Ahmad",
+          "title": "Executive Director",
+          "company": "Climate Education Centre"
+        },
+        {
+          "name": "Markus Taussig",
+          "title": "Associate Professor",
+          "company": "Rutgers Business School"
+        },
+        {
+          "name": "Edmund Malesky",
+          "title": "Co-Director of Smart Green Transformation Center",
+          "company": "VinUniversity"
+        },
+        {
+          "name": "Bidrea Alnasser",
+          "title": "Vice Chair at Berkeley Postdoctoral Entrepreneurship Program",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Anushree Deb",
+          "title": "Associate Director, Career Services (MDP)",
+          "company": "University of California, Berkeley, Goldman School of Public Policy"
+        },
+        {
+          "name": "Alexandria Wright, PhD",
+          "title": "Project Manager",
+          "company": "Savannah-Chatham County Public School System"
+        },
+        {
+          "name": "Matt Giani",
+          "title": "Research Associate Professor",
+          "company": "The University of Texas at Austin"
+        },
+        {
+          "name": "Raha Sabet Sarvestany",
+          "title": "Postdoctoral Researcher",
+          "company": "\u00c5bo Akademi University"
+        },
+        {
+          "name": "Amin Shams",
+          "title": "Assistant Professor of Finance",
+          "company": "The Ohio State University Fisher College of Business"
+        },
+        {
+          "name": "Max M\u00e9ndez Beck",
+          "title": "Research Program Manager",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Dr. Samantha Dewalt",
+          "title": "Managing Director, Western Regional Office",
+          "company": "Lehigh University"
+        },
+        {
+          "name": "Kambiz Poostchi",
+          "title": "Lehrgangsleitung + Trainer",
+          "company": "WIFI, MCI, P\u00e4dagogische Hochschulen, Donau Universit\u00e4t Krems, Bildungshaus Lichtenburg S\u00fcdtirol"
+        },
+        {
+          "name": "Carlos Schmidt-Padilla",
+          "title": "Assistant Professor",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Ciana Caddell",
+          "title": "Senior Business Systems Analyst, Strategic Planning & Management",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Renard Sexton",
+          "title": "Associate Professor",
+          "company": "Emory University"
+        },
+        {
+          "name": "Thad Dunning",
+          "title": "Robson Professor of Political Science",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Adel-Naim Reyhani",
+          "title": "Principal Investigator",
+          "company": "Ludwig Boltzmann Institut f\u00fcr Grund- und Menschenrechte (LBI-GMR)"
+        },
+        {
+          "name": "Melina Platas",
+          "title": "Associate Professor of Political Science",
+          "company": "New York University Abu Dhabi"
+        },
+        {
+          "name": "Steven Rosenzweig",
+          "title": "Assistant Professor of Political Science",
+          "company": "Boston University"
+        },
+        {
+          "name": "Craig McIntosh",
+          "title": "Professor of Economics",
+          "company": "UCSD"
+        },
+        {
+          "name": "Guy Grossman",
+          "title": "Professor",
+          "company": "University of Pennsylvania"
+        },
+        {
+          "name": "Robert T Phillips",
+          "title": "Senior Advisor and Coordinator of interns and education programs for children in border shelters",
+          "company": "FESAC - (Fundacion del Empresariado Sonorense, AC) international public education and community dev."
+        },
+        {
+          "name": "Oriel Nolan-Smith",
+          "title": "Director of Gift and Endowment Policy",
+          "company": "University of California Office of the President"
+        },
+        {
+          "name": "Susan Hyde",
+          "title": "Professor",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Theresa (Resa) O\u2019Malley(Kipp- O'Toole)",
+          "title": "Admissions Director, Bissonnet Campus",
+          "company": "The Post Oak School"
+        },
+        {
+          "name": "Leila Ehsani",
+          "title": "Program Development Lead",
+          "company": "Network Secretariat for Community School Organizations in Africa"
+        },
+        {
+          "name": "Justine Davis",
+          "title": "Assistant Professor",
+          "company": "University of Michigan"
+        },
+        {
+          "name": "Ravi Rokaya",
+          "title": "Resident Doctor",
+          "company": "College of Physicians & Surgeons Pakistan"
+        },
+        {
+          "name": "Shaidu Kiven",
+          "title": "Operations Manager at Bosch Baha'i School",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Rolf Straubhaar",
+          "title": "Associate Professor",
+          "company": "Texas State University"
+        },
+        {
+          "name": "Kaveh Aminzadeh",
+          "title": "Educational Assistant",
+          "company": "Krak\u00f3w Cosmopolitan School"
+        },
+        {
+          "name": "Ashiyan Ian Rahmani, Ph.D.",
+          "title": "Lecturer",
+          "company": "San Jose State University"
+        },
+        {
+          "name": "Charlotte Cowden, Ph.D.",
+          "title": "Senior Director, Principal Gifts & Strategic Initiatives, UDAR",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Donghyun Danny Choi",
+          "title": "Stephen Robert Assistant Professor of Political Science",
+          "company": "Brown University"
+        },
+        {
+          "name": "Patryk Perkowski",
+          "title": "Assistant Professor",
+          "company": "Sy Syms School of Business"
+        },
+        {
+          "name": "Helena Wilkins Versalovic",
+          "title": "Director",
+          "company": "International Engineering Education"
+        },
+        {
+          "name": "Christyn Lundquist",
+          "title": "Senior Project Manager",
+          "company": "University of Utah Health"
+        },
+        {
+          "name": "Sisay Borga",
+          "title": "Hospitality Coordnator",
+          "company": "Green Acre Baha'i School"
+        },
+        {
+          "name": "Ramin Pezeshkzad",
+          "title": "Teacher",
+          "company": "Sanya University"
+        },
+        {
+          "name": "Erika Ad\u017eemovi\u0107, MBA, SPHR,SHRM-SCP",
+          "title": "Associate Vice President Human Resources",
+          "company": "Whitman College"
+        },
+        {
+          "name": "K. Shaw, MBA, RVT, LVT, CVBL",
+          "title": "Adjunct Faculty, Veterinary Technology",
+          "company": "Lone Star College"
+        },
+        {
+          "name": "Philip Reiner",
+          "title": "Chief Executive Officer",
+          "company": "Institute for Security and Technology (IST)"
+        },
+        {
+          "name": "Anja Nicke",
+          "title": "Education Specialist",
+          "company": "Community"
+        },
+        {
+          "name": "Meghan Bomgaars",
+          "title": "Director, Planning and Research Facilities",
+          "company": "University of Oklahoma"
+        },
+        {
+          "name": "Matthew Stenberg",
+          "title": "Institutional Research Analyst 4",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Jose Luis Davila Gonzalez",
+          "title": "Assistant Director",
+          "company": "Georgetown University Law Center"
+        },
+        {
+          "name": "Denni Cawley",
+          "title": "PhD Candidate (Organisational Readiness for AI, Management Education)",
+          "company": "Trinity Business School"
+        },
+        {
+          "name": "Michael O'Neal",
+          "title": "Executive Director",
+          "company": "CUSI/Parent University"
+        },
+        {
+          "name": "Ian Lysaght",
+          "title": "English Second Language Teacher",
+          "company": "Emerald Cultural Institute"
+        },
+        {
+          "name": "Evan Ochsenfaber (Faber)",
+          "title": "Senior Advisor to the Chief of Staff, All of Us Research Program",
+          "company": "The National Institutes of Health"
+        },
+        {
+          "name": "Chelsea Wesner",
+          "title": "Assistant Research Professor",
+          "company": "Colorado School of Public Health"
+        },
+        {
+          "name": "Cory Northern",
+          "title": "Director",
+          "company": "Center for English as a Second Language at the University of Oklahoma"
+        },
+        {
+          "name": "Guadalupe Tu\u00f1\u00f3n",
+          "title": "Academy Scholar",
+          "company": "Harvard University"
+        },
+        {
+          "name": "Zarrin Caldwell",
+          "title": "Substitute Teacher/Instructor",
+          "company": "Rio Salado College Southern"
+        },
+        {
+          "name": "Claire McEnery",
+          "title": "Texas State Leader",
+          "company": "Parents as Teachers National Center"
+        },
+        {
+          "name": "Chris Carter",
+          "title": "PhD Student",
+          "company": "UC Berkeley"
+        },
+        {
+          "name": "Raja Sutherland",
+          "title": "English Teacher",
+          "company": "Hua Qiao School"
+        },
+        {
+          "name": "Kate Evans",
+          "title": "Director, Office of Corporate Partnerships at University of South Florida",
+          "company": "University of South Florida"
+        },
+        {
+          "name": "Anustubh Agnihotri",
+          "title": "Visiting Researcher",
+          "company": "University of Chicago"
+        },
+        {
+          "name": "Lana Morris",
+          "title": "Career Services Coordinator",
+          "company": "The University of Texas System"
+        },
+        {
+          "name": "Michael Karlberg",
+          "title": "Professor",
+          "company": "Western Washington University"
+        },
+        {
+          "name": "Ariel Kennedy S.",
+          "title": "California Bar Exam Tutor / Law School Tutor",
+          "company": "Bar Exam Toolbox"
+        },
+        {
+          "name": "Barbara L Norton",
+          "title": "Assistant Professor of Research - RETIRED",
+          "company": "Department of Family and Preventive Medicine, University of Oklahoma Health Sciences Ctr."
+        },
+        {
+          "name": "Hoda Mahmoudi, Ph.D.",
+          "title": "Research Professor",
+          "company": "University of Maryland"
+        },
+        {
+          "name": "Sahar D. Sattarzadeh",
+          "title": "Assistant Professor & Research Associate",
+          "company": "Nelson Mandela University"
+        },
+        {
+          "name": "Karen Elmore",
+          "title": "Director of Arts and Sciences International Programs",
+          "company": "The University of Oklahoma"
+        },
+        {
+          "name": "George Richter-Addo",
+          "title": "Professor",
+          "company": "University of Oklahoma"
+        },
+        {
+          "name": "Noumane Rahouti, Ph.D",
+          "title": "Faculty",
+          "company": "Sultan Qaboos University"
+        },
+        {
+          "name": "Rebecca Miller-Dumet",
+          "title": "Teacher",
+          "company": "Atlanta Area School for the Deaf"
+        },
+        {
+          "name": "Beth Wilson",
+          "title": "Instructor",
+          "company": "University of Oklahoma"
+        },
+        {
+          "name": "Tyson Media",
+          "title": "Instructor, Media Writing",
+          "company": "Univ. Alabama Huntsville"
+        },
+        {
+          "name": "Sofie M.M.A. Geschier",
+          "title": "Secondary school teacher: Dutch as a second language",
+          "company": "IMS Borgerhout (Sint-Lucas)"
+        },
+        {
+          "name": "Megan Sweas",
+          "title": "Editor and Director of Communications, Center for Religion and Civic Culture",
+          "company": "University of Southern California"
+        },
+        {
+          "name": "Mahdi Haddad",
+          "title": "Research Assistant Professor",
+          "company": "Bureau of Economic Geology"
+        },
+        {
+          "name": "Rida Elgaddafi",
+          "title": "Assistant Professor",
+          "company": "Australian College of Kuwait"
+        },
+        {
+          "name": "Shabnam Moinipour, PhD, AFHEA, MA, BSc.",
+          "title": "Senior Project Research Fellow",
+          "company": "University of Oxford"
+        },
+        {
+          "name": "Keyvan Geula",
+          "title": "Founder and Executive Director",
+          "company": "Center for Global Integrated Education; Inc."
+        },
+        {
+          "name": "Monya Lemery",
+          "title": "Director of Study Abroad and International Student Services",
+          "company": "Southwestern University"
+        },
+        {
+          "name": "Rahmin Bender-Salazar",
+          "title": "Researcher",
+          "company": "University of Galway"
+        },
+        {
+          "name": "Melanie Fedri",
+          "title": "Assistant Professor, Experiential Learning Coordinator",
+          "company": "George Mason University - Honors College"
+        },
+        {
+          "name": "Crissy Young",
+          "title": "Office Manager and Assistant to the Director",
+          "company": "University of Oklahoma"
+        },
+        {
+          "name": "Rose Jennings",
+          "title": "Postdoctoral Fellow, JUST GROW Project",
+          "company": "University of Rhode Island"
+        },
+        {
+          "name": "Zareen Khan",
+          "title": "Postdoctoral Researcher (Health Economics)",
+          "company": "St. Olavs hospital, Trondheim University Hospital"
+        },
+        {
+          "name": "Hazel Anderson",
+          "title": "Assistant Professor",
+          "company": "University of St. Augustine for Health Sciences"
+        },
+        {
+          "name": "Sanjukta Basu",
+          "title": "Morals HOD",
+          "company": "New Era High School"
+        },
+        {
+          "name": "Harouna Abdoul Aziz",
+          "title": "Intern",
+          "company": "American International School of Niamey"
+        },
+        {
+          "name": "Katie Osvold",
+          "title": "Regional Coordinator",
+          "company": "Atlantic Regional Training Institute"
+        },
+        {
+          "name": "Yasmin Hedayaty",
+          "title": "Public Health Student",
+          "company": "Griffith University"
+        },
+        {
+          "name": "Donna Alexander",
+          "title": "Senior Instructor English as a Second Language",
+          "company": "Sultan Qaboos University"
+        },
+        {
+          "name": "Christine Krug",
+          "title": "ESL Instructor",
+          "company": "Durham Technical Community College"
+        },
+        {
+          "name": "Miha Vindis",
+          "title": "Director & Professor of Practice",
+          "company": "Texas State University"
+        },
+        {
+          "name": "Jennifer Bussell",
+          "title": "Associate Professor",
+          "company": "University of California, Berkeley"
+        },
+        {
+          "name": "Candace Vance",
           "title": "Program Manager",
-          "company": "Google"
+          "company": "Striving for Community Progress and Education (SCOPE)"
         },
         {
-          "name": "Isabella Harris",
-          "title": "Research Scientist",
-          "company": "Google"
+          "name": "Lauren Dansby",
+          "title": "Digital Art & Photography Teacher",
+          "company": "Norman Public Schools"
+        },
+        {
+          "name": "Will Inboden",
+          "title": "Executive Vice President and Provost",
+          "company": "The University of Texas at Austin"
+        },
+        {
+          "name": "LBJ School Austin Alumni Association",
+          "title": "LBJ School of Public Affairs Austin Alumni Association",
+          "company": "LBJ School of Public Affairs"
+        },
+        {
+          "name": "Aram Richards",
+          "title": "Clinical Educator",
+          "company": "James Cook University"
+        },
+        {
+          "name": "Balbir Ghori",
+          "title": "Network & Telephony Systems Specialist",
+          "company": "Trent University"
+        },
+        {
+          "name": "Samira Ciotti",
+          "title": "Administrative Assistant",
+          "company": "St Michael's Catholic College SE16"
+        },
+        {
+          "name": "Lynn Brabender",
+          "title": "Senior Director of Student Success and Service Provision",
+          "company": "American Association of State Colleges and Universities (AASCU)"
+        },
+        {
+          "name": "Catherine (Kate) Weaver",
+          "title": "Co-Director, Innovations for Peace and Development",
+          "company": "The University of Texas at Austin"
+        },
+        {
+          "name": "Chelsea Brass, PhD, MPAff",
+          "title": "Assistant in Research Faculty",
+          "company": "Florida Institute for Child Welfare"
+        },
+        {
+          "name": "Roxana Hadden",
+          "title": "Spanish Teacher & Curriculum Development",
+          "company": "RALEIGH OAK CHARTER SCHOOL"
+        },
+        {
+          "name": "Kathryn Hendren",
+          "title": "Senior Director of Institutional Research and Analytics",
+          "company": "The University of Texas at Austin"
+        },
+        {
+          "name": "Steve Alvarez",
+          "title": "College & Career Readiness Coordinator",
+          "company": "Presidio Independent School District"
+        },
+        {
+          "name": "Hoda Etemad, B.A., B. Ed, MPEd, EdD",
+          "title": "Teacher",
+          "company": "Thames Valley District School Board"
+        },
+        {
+          "name": "Brittany Burns",
+          "title": "Assistant Teaching Professor",
+          "company": "Bowling Green State University"
+        },
+        {
+          "name": "Jeff Nagle",
+          "title": "Senior System Administrator",
+          "company": "University College Cork"
+        },
+        {
+          "name": "Nicholas Ward",
+          "title": "Research Support Advisor",
+          "company": "University of Cambridge"
+        },
+        {
+          "name": "Mona Foroughi",
+          "title": "Career and Internship Advisor, College of Business",
+          "company": "The University of Alabama in Huntsville"
+        },
+        {
+          "name": "Cauam Cardoso, PhD",
+          "title": "Co-Founder & Executive Director, Institute for Applied AI Innovation (AAII)",
+          "company": "The University of Texas at El Paso"
         }
       ]
     },
     {
       "id": 1,
-      "label": "Microsoft",
-      "industry": "Big Tech",
-      "size": 10,
+      "label": "Technology",
+      "size": 114,
+      "topCos": [
+        {
+          "company": "myTrudy",
+          "count": 6
+        },
+        {
+          "company": "Google",
+          "count": 5
+        },
+        {
+          "company": "Bitscopic",
+          "count": 3
+        },
+        {
+          "company": "Microsoft",
+          "count": 2
+        },
+        {
+          "company": "Momentous AI Consulting",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Sophia Clark",
-          "title": "Software Engineer",
-          "company": "Microsoft"
+          "name": "Pete Fulford",
+          "title": "Founder & Chief AI Strategist & Trainer",
+          "company": "Momentous AI Consulting"
         },
         {
-          "name": "Mason Lewis",
-          "title": "Cloud Architect",
-          "company": "Microsoft"
+          "name": "Alex Mercer",
+          "title": "Head of Partnerships",
+          "company": "Spacebar Collective"
         },
         {
-          "name": "Mia Robinson",
+          "name": "Richard A. Fleury",
+          "title": "Founder",
+          "company": "RAFTECH.ORG"
+        },
+        {
+          "name": "Lisa Jennings Young",
+          "title": "Group Manager",
+          "company": "Adobe"
+        },
+        {
+          "name": "Matt Graham \ud83d\udc68\u200d\ud83d\udcbb",
+          "title": "CEO",
+          "company": "RapidDev"
+        },
+        {
+          "name": "Eoin Clancy",
+          "title": "VP of Growth",
+          "company": "AirOps"
+        },
+        {
+          "name": "Jurgen Leo Foley",
+          "title": "Testing Consultant/Product testing partner (Sports tech)",
+          "company": "On, UZH, Oxa Life, CORE, Idiag, Stryd, Breezelabs"
+        },
+        {
+          "name": "Adina Timar",
+          "title": "Head of AEO",
+          "company": "Weflow"
+        },
+        {
+          "name": "Mariano Petignat",
+          "title": "Senior Product Analyst",
+          "company": "myTrudy"
+        },
+        {
+          "name": "Raul Lopez Peredo",
+          "title": "Senior Software Engineer",
+          "company": "Trudy"
+        },
+        {
+          "name": "Hassan Ali",
+          "title": "Lead Full Stack Engineer & Founding Member",
+          "company": "PlumoAI"
+        },
+        {
+          "name": "Sam Setsoafia",
+          "title": "Founder & CEO",
+          "company": "Eggseed AI"
+        },
+        {
+          "name": "Filipe Abreu",
+          "title": "Senior Software Engineer",
+          "company": "myTrudy"
+        },
+        {
+          "name": "Alec Berry",
+          "title": "Account Executive, Agentic AI",
+          "company": "Workato"
+        },
+        {
+          "name": "Alejandro Rojas",
+          "title": "Senior Software Engineer / Technical Lead",
+          "company": "Code Fabric"
+        },
+        {
+          "name": "Kyle Beljanski",
+          "title": "Senior Technical Product Manager",
+          "company": "HiveWatch"
+        },
+        {
+          "name": "Jules Costa",
+          "title": "Managing Director",
+          "company": "Ignite AI Community"
+        },
+        {
+          "name": "Avi Steinlauf",
+          "title": "CEO & Co-Founder",
+          "company": "myTrudy"
+        },
+        {
+          "name": "David Boulanger",
+          "title": "Head of Product",
+          "company": "myTrudy"
+        },
+        {
+          "name": "Carlton Schuyler",
+          "title": "Senior Software Engineer",
+          "company": "Ritchie Bros."
+        },
+        {
+          "name": "James Winter, PhD",
           "title": "Product Manager",
+          "company": "Peregrine"
+        },
+        {
+          "name": "Paul X McCarthy",
+          "title": "CEO, Co-Founder and Chief AI Officer (CAIO)",
+          "company": "League of Scholars"
+        },
+        {
+          "name": "Elmar Mamedov",
+          "title": "Head of Engineering",
+          "company": "myTrudy"
+        },
+        {
+          "name": "Clara Kim",
+          "title": "General Manager",
+          "company": "myTrudy"
+        },
+        {
+          "name": "Peter Harling",
+          "title": "Founder & Director",
+          "company": "Synaps Network"
+        },
+        {
+          "name": "Amrut Bagdi",
+          "title": "Sr. Yield & Integration Engineer",
+          "company": "Qorvo, Inc."
+        },
+        {
+          "name": "Casey Gollan",
+          "title": "Senior Engineering Manager, Product Excellence Office",
+          "company": "IBM"
+        },
+        {
+          "name": "Emmanuel Saccoccini",
+          "title": "Director of Engineering",
+          "company": "Vocana"
+        },
+        {
+          "name": "J. Morag MacKay",
+          "title": "Chief Research and Network Officer",
+          "company": "Safe Kids Worldwide"
+        },
+        {
+          "name": "Robert G. Nyaga, PhD",
+          "title": "Technical Director, Qualitative Research",
+          "company": "Busara"
+        },
+        {
+          "name": "Daniela Cantor Cuevas",
+          "title": "Associate Client Partner",
+          "company": "Qure.ai"
+        },
+        {
+          "name": "Robin Che",
+          "title": "Ai Implementation Consultant",
+          "company": "XTRACT AI"
+        },
+        {
+          "name": "Prem Jayaram",
+          "title": "Senior technician Hvac and Refrigeration",
+          "company": "Optumair"
+        },
+        {
+          "name": "Allison Grant",
+          "title": "Head of Growth",
+          "company": "Babs AI"
+        },
+        {
+          "name": "Yan Grinshtein",
+          "title": "CEO & Co-Founder",
+          "company": "Cepien AI"
+        },
+        {
+          "name": "Diane BUNOD",
+          "title": "Lead Product Manager",
+          "company": "Tomorro"
+        },
+        {
+          "name": "Zaynab Gonz\u00e1lez",
+          "title": "Business Continuity Specialist",
+          "company": "World Wide Technology"
+        },
+        {
+          "name": "Borhan Zadeh",
+          "title": "Development Team Lead",
+          "company": "Centorrino Technologies"
+        },
+        {
+          "name": "Victor Sergio Zevallos Aguilar",
+          "title": "Business Data Translator / Medios Propios",
+          "company": "Entel Per\u00fa"
+        },
+        {
+          "name": "Arman Rezaee, PhD",
+          "title": "Senior Research Scientist, Office of the CTO",
+          "company": "Cisco"
+        },
+        {
+          "name": "Kyle Holloway",
+          "title": "Advisor",
+          "company": "Atlas AI"
+        },
+        {
+          "name": "Peter Charles Lyon",
+          "title": "Senior Cyber Partner Integration Planner",
+          "company": "JCS Solutions LLC"
+        },
+        {
+          "name": "Baseem Missaghi",
+          "title": "Founder & Technical Lead \u2014 Platform & DevOps",
+          "company": "CycleByte"
+        },
+        {
+          "name": "Vafa Bayat",
+          "title": "Product Head, R&D at Bitscopic",
+          "company": "Bitscopic"
+        },
+        {
+          "name": "Evan Pease",
+          "title": "Leader, Data Science",
+          "company": "Cisco Meraki"
+        },
+        {
+          "name": "Jake Behrens",
+          "title": "Content Engineer",
+          "company": "Apple"
+        },
+        {
+          "name": "Alaa Almohammedsaleh",
+          "title": "Mechanical Engineer",
+          "company": "M. R. Al Khathlan Co. for Contracting"
+        },
+        {
+          "name": "Soazig Kaam",
+          "title": "Technical Program Manager, Advanced Energy Labs",
+          "company": "Google"
+        },
+        {
+          "name": "Saman Farid",
+          "title": "Founder & CEO",
+          "company": "Formic Technologies"
+        },
+        {
+          "name": "James Agwa",
+          "title": "CEO",
+          "company": "Vermitech Consultants Limited"
+        },
+        {
+          "name": "Benjamin Picone",
+          "title": "Senior Interconnection Engineer",
+          "company": "TotalEnergies"
+        },
+        {
+          "name": "Jess Carey, PMP",
+          "title": "Cyber Security Program Lead",
+          "company": "Boston Scientific"
+        },
+        {
+          "name": "Syed Yahya",
+          "title": "Technical Advisor Governance",
+          "company": "Deutsche Gesellschaft f\u00fcr Internationale Zusammenarbeit (GIZ) GmbH"
+        },
+        {
+          "name": "Ishmael Amankwah Miller",
+          "title": "Heating Ventilation Air Conditioning Servicing, Commissioning Technician",
+          "company": "I AM HVAC"
+        },
+        {
+          "name": "Loni Gray",
+          "title": "Founder",
+          "company": "Neighborhood PlaceMakers Network"
+        },
+        {
+          "name": "Jazz Lyles",
+          "title": "Senior Software Engineer, Frontend",
+          "company": "Zillow"
+        },
+        {
+          "name": "Nafis Zebarjadi",
+          "title": "Product Manager",
+          "company": "Google"
+        },
+        {
+          "name": "Eric Walker",
+          "title": "Software Engineer",
+          "company": "Undisclosed"
+        },
+        {
+          "name": "Bhojraj Parmar",
+          "title": "Co-CEO and Co-Founder",
+          "company": "Qubit Cyber"
+        },
+        {
+          "name": "Lessan Vaezi",
+          "title": "Staff Software Engineer",
+          "company": "Cash App"
+        },
+        {
+          "name": "Jubin Nakhai",
+          "title": "Field Engineer",
+          "company": "CanMine Contracting Ltd."
+        },
+        {
+          "name": "Hoor Jangda, LMSW (TX), LGSW (DC), PMP",
+          "title": "Therapist",
+          "company": "Mind and Body Solutions"
+        },
+        {
+          "name": "Junaid Ghaffar, MBA",
+          "title": "Supervisor of Program Manager - Information Technology Specialists",
+          "company": "Internal Revenue Service"
+        },
+        {
+          "name": "John Verbick",
+          "title": "Senior Program Manager | AI & Emerging Technology",
+          "company": "Love's Travel Stops"
+        },
+        {
+          "name": "Ben Walker",
+          "title": "Software Engineer",
+          "company": "Zamp"
+        },
+        {
+          "name": "Julian Bach",
+          "title": "Founder & Principal Consultant",
+          "company": "Bios Studios"
+        },
+        {
+          "name": "Benjamin Leiker",
+          "title": "Program Leader, Generative AI Evaluation",
+          "company": "Uber"
+        },
+        {
+          "name": "Iman Ferdowsi",
+          "title": "Director of Product Management",
+          "company": "Alarm.com"
+        },
+        {
+          "name": "Steven Phelps",
+          "title": "Director of Data Science",
+          "company": "Bitscopic Inc"
+        },
+        {
+          "name": "Eden Golshani",
+          "title": "Chief Technology Officer",
+          "company": "Stretch"
+        },
+        {
+          "name": "Sina Fanaeian",
+          "title": "Senior Technical Business Analyst",
+          "company": "Future Secure AI"
+        },
+        {
+          "name": "Eric Kianfar",
+          "title": "Electrical Engineer",
+          "company": "JLK:Engineering"
+        },
+        {
+          "name": "Shastri Purushotma",
+          "title": "Sr Product Manager",
+          "company": "Bitscopic"
+        },
+        {
+          "name": "Saba Moghbelpour",
+          "title": "Information Technology & Procurement Manager",
+          "company": "Abedian & Co"
+        },
+        {
+          "name": "Brady Ellison",
+          "title": "Software Engineer",
+          "company": "Indeed.com"
+        },
+        {
+          "name": "Robert Afnani",
+          "title": "Founder/Owner/CEO",
+          "company": "4D Cyber [Risk] Solutions, LLC."
+        },
+        {
+          "name": "Mike Firouzi, MS CE, PE, GC",
+          "title": "President",
+          "company": "FIROUZI CONSULTING ENGINEERS, INC."
+        },
+        {
+          "name": "Ralph Mills-Tettey",
+          "title": "Senior Operations Engineer",
+          "company": "Yinson Production"
+        },
+        {
+          "name": "Philip Blyth",
+          "title": "Senior Software Engineer",
+          "company": "nemoDreaming.com"
+        },
+        {
+          "name": "Jeevanandhan Duraisamy",
+          "title": "Founder CEO",
+          "company": "Climate Smart Technologies (Startup Recognised by DIPP Govt of India under Startup India)"
+        },
+        {
+          "name": "Scott Schaffter",
+          "title": "Staff Software Engineer",
+          "company": "Google"
+        },
+        {
+          "name": "Haley Hoffman Chung",
+          "title": "Founder & Principal",
+          "company": "Light Work Studios"
+        },
+        {
+          "name": "Josh Levine",
+          "title": "Co-Founder and CEO",
+          "company": "Thorian AI"
+        },
+        {
+          "name": "Nabil Hanke",
+          "title": "Test Engineering Supervisor",
+          "company": "Tesla"
+        },
+        {
+          "name": "George Costant",
+          "title": "Senior Advisor, AI & Organizational Transformation",
+          "company": "Point of Unity"
+        },
+        {
+          "name": "William Ti\u02bbiti\u02bbi Asiata",
+          "title": "Graduate Software Developer",
+          "company": "SmartTrade Ltd"
+        },
+        {
+          "name": "Benjamin Hendershot",
+          "title": "Director of Information Technology",
+          "company": "Kimmeridge"
+        },
+        {
+          "name": "Linda Bishop",
+          "title": "Computer tech for seniors",
+          "company": "Clients' home"
+        },
+        {
+          "name": "Bryce Allison",
+          "title": "Chief Technology Officer",
+          "company": "American Bible Society"
+        },
+        {
+          "name": "Edward Dikgale-Debeers",
+          "title": "Engineering Leadership & Technical Product Ownership \u2013 Startup Environment",
+          "company": "https://www.eventsustainability.com/"
+        },
+        {
+          "name": "Harry Lindner",
+          "title": "Senior Developer",
+          "company": "Anthem"
+        },
+        {
+          "name": "Musi Ngubai",
+          "title": "Director",
+          "company": "Software Engineering Consultancy LTD"
+        },
+        {
+          "name": "Lauren Salazar (she / her)",
+          "title": "Data Governance Manager",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Justin Byrth",
+          "title": "Business & Technical Consultant (Independent)",
+          "company": "\u2014"
+        },
+        {
+          "name": "Omeed Rameshni",
+          "title": "General Manager, Business and Product Management, Xbox Game Content & Studios",
           "company": "Microsoft"
         },
         {
-          "name": "Lucas Walker",
-          "title": "Data Engineer",
-          "company": "Microsoft"
+          "name": "Daniel Mathews",
+          "title": "Head of Sales - East",
+          "company": "Oracle"
         },
         {
-          "name": "Charlotte Hall",
+          "name": "Kellee Wicker",
+          "title": "Vice President, Center for Technology, Innovation, and Space",
+          "company": "Meridian International Center"
+        },
+        {
+          "name": "Reed Malin",
+          "title": "Deployment Strategist",
+          "company": "Palantir Technologies"
+        },
+        {
+          "name": "Rafaan Anvari",
           "title": "Security Engineer",
+          "company": "Meta"
+        },
+        {
+          "name": "Kara Long",
+          "title": "Assistant Director, Library Metadata Technologies",
+          "company": "Virginia Tech"
+        },
+        {
+          "name": "Vahid Pourahmary",
+          "title": "VP of Engineering",
+          "company": "Lendable"
+        },
+        {
+          "name": "Payam Etminani",
+          "title": "CEO and Co-founder @ Bitscopic Inc",
+          "company": "Bitscopic"
+        },
+        {
+          "name": "Hyacinthe Symboli, MSCIA, CISSP, CCSK",
+          "title": "Manager, Consulting Services",
+          "company": "Google"
+        },
+        {
+          "name": "Adib Roy",
+          "title": "Technical Team Manager",
+          "company": "Fast Enterprises"
+        },
+        {
+          "name": "Anis Parsa",
+          "title": "Interpreter, Technical Consultant & Training",
+          "company": "Edify"
+        },
+        {
+          "name": "Elliott Vreeland",
+          "title": "Principal Engineer - OT Systems and Security",
+          "company": "AGL"
+        },
+        {
+          "name": "Anthony Amini",
+          "title": "Senior Enterprise Cloud & AI Specialist - Software & Digital Platforms",
           "company": "Microsoft"
         },
         {
-          "name": "Ethan Young",
-          "title": "Principal Engineer",
-          "company": "Microsoft"
+          "name": "Isaac Oben",
+          "title": "Cloud Cybersecurity Manager",
+          "company": "CDW"
         },
         {
-          "name": "Amelia Allen",
-          "title": "Technical Writer",
-          "company": "Microsoft"
+          "name": "Justin Baker",
+          "title": "Water Resources Engineer",
+          "company": "Hazen and Sawyer"
         },
         {
-          "name": "Oliver King",
-          "title": "Azure Specialist",
-          "company": "Microsoft"
+          "name": "Shamim \u201cShawn\u201d Bina",
+          "title": "Armed Security Guard",
+          "company": "Prosegur"
         },
         {
-          "name": "Elijah Wright",
-          "title": "Frontend Developer",
-          "company": "Microsoft"
+          "name": "Harry Foli",
+          "title": "Technical Director",
+          "company": "Cable and Waves Tekniks Ltd"
         },
         {
-          "name": "Harper Scott",
-          "title": "Business Analyst",
-          "company": "Microsoft"
+          "name": "Brian Small",
+          "title": "Senior Full Stack Engineer",
+          "company": "General Dynamics Information Technology"
+        },
+        {
+          "name": "Vafa Akhtar-Khavari",
+          "title": "Senior Global Learning Specialist",
+          "company": "Google"
+        },
+        {
+          "name": "Patrick Hertzke",
+          "title": "Chief Growth and Transformation Officer",
+          "company": "Sensata Technologies"
         }
       ]
     },
     {
       "id": 2,
-      "label": "Amazon",
-      "industry": "Big Tech",
-      "size": 10,
+      "label": "Marketing & Communications",
+      "size": 87,
+      "topCos": [
+        {
+          "company": "Tractorbeam",
+          "count": 2
+        },
+        {
+          "company": "The Media Socialites",
+          "count": 1
+        },
+        {
+          "company": "A-to-B Strategies",
+          "count": 1
+        },
+        {
+          "company": "Storyleads",
+          "count": 1
+        },
+        {
+          "company": "Adobe",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Aiden Torres",
-          "title": "Solutions Architect",
-          "company": "Amazon"
+          "name": "Persephone Maglaya",
+          "title": "Chief Executive Officer",
+          "company": "The Media Socialites"
         },
         {
-          "name": "Evelyn Nguyen",
-          "title": "Software Development Manager",
-          "company": "Amazon"
+          "name": "Adam Belmont",
+          "title": "Fractional PR Leader & Advisor",
+          "company": "A-to-B Strategies"
         },
         {
-          "name": "Caden Hill",
-          "title": "Operations Manager",
-          "company": "Amazon"
+          "name": "Ryan Jones-Symonds",
+          "title": "Content Strategist",
+          "company": "Storyleads"
         },
         {
-          "name": "Aria Flores",
-          "title": "Product Manager",
-          "company": "Amazon"
+          "name": "Meenakshi Taheem",
+          "title": "Senior Content Marketing Program Manager",
+          "company": "Adobe"
         },
         {
-          "name": "Grayson Green",
-          "title": "Backend Engineer",
-          "company": "Amazon"
+          "name": "Miodrag Magyar",
+          "title": "Content Writer and Marketing Generalist",
+          "company": "Rasayel"
         },
         {
-          "name": "Luna Adams",
-          "title": "Data Analyst",
-          "company": "Amazon"
+          "name": "Jeffrey Lupo",
+          "title": "SEO Content Marketing Specialist",
+          "company": "Incisive Content Marketing"
         },
         {
-          "name": "Jayden Nelson",
-          "title": "Cloud Engineer",
-          "company": "Amazon"
+          "name": "Ashley Feagins",
+          "title": "Account Manager",
+          "company": "Proven Media"
         },
         {
-          "name": "Zoey Baker",
-          "title": "ML Engineer",
-          "company": "Amazon"
+          "name": "Joshua Bailey",
+          "title": "Marketing (Storyteller)",
+          "company": "Tavus"
         },
         {
-          "name": "Penelope Carter",
-          "title": "UX Researcher",
-          "company": "Amazon"
+          "name": "Vishakha Rupawat",
+          "title": "Content Marketing Manager",
+          "company": "Hyly.AI"
         },
         {
-          "name": "Riley Mitchell",
-          "title": "Site Reliability Engineer",
-          "company": "Amazon"
+          "name": "Jo Iyalho",
+          "title": "Senior UX Content Strategist",
+          "company": "Charles Schwab"
+        },
+        {
+          "name": "Grace McClure",
+          "title": "Director of Marketing & Growth (Fractional)",
+          "company": "Divisional"
+        },
+        {
+          "name": "John Mears",
+          "title": "Head of Marketing",
+          "company": "PhantomBuster"
+        },
+        {
+          "name": "Skye Wallace",
+          "title": "Digital Marketing Client Services Manager",
+          "company": "Tractorbeam"
+        },
+        {
+          "name": "Christopher Miller",
+          "title": "Partner, Head of Marketing",
+          "company": "Tractorbeam"
+        },
+        {
+          "name": "Nic Vargus",
+          "title": "Editorial & Storytelling",
+          "company": "Fractional"
+        },
+        {
+          "name": "David Broderick",
+          "title": "Community Manager",
+          "company": "Top of the Funnel"
+        },
+        {
+          "name": "Oyinkansola Edem",
+          "title": "Fractional Content Marketer",
+          "company": "Daleel"
+        },
+        {
+          "name": "Silvi Specter \u26a1",
+          "title": "Digital Marketing Consultant",
+          "company": "Specter Consulting"
+        },
+        {
+          "name": "Rob Davidson",
+          "title": "Senior Marketing Manager, Digital and Website",
+          "company": "Linnworks"
+        },
+        {
+          "name": "Ashwini Dave",
+          "title": "Senior Product Marketer",
+          "company": "Middleware"
+        },
+        {
+          "name": "Nicholas Mlakar",
+          "title": "Content Lead",
+          "company": "Compound Content Studio"
+        },
+        {
+          "name": "Benjamin Grinberg",
+          "title": "Senior Search Marketing Manager",
+          "company": "corecubed"
+        },
+        {
+          "name": "Mark Burdon",
+          "title": "B2B Content Marketing Manager | Writer and Editor",
+          "company": "Cloudworker Digital"
+        },
+        {
+          "name": "Alexia Palau",
+          "title": "Chief Marketing Officer",
+          "company": "AP Global Marketing & Automation Consulting"
+        },
+        {
+          "name": "Mona Yamartino",
+          "title": "Associate Manager, Strategic Partnerships",
+          "company": "Yum! Brands"
+        },
+        {
+          "name": "Hannah Friedland",
+          "title": "Marketing Communications Specialist, Brand Writer and Editor",
+          "company": "Snowflake"
+        },
+        {
+          "name": "Adedayo Agarau",
+          "title": "Founder & AI Content Strategist",
+          "company": "Content Systems Lab"
+        },
+        {
+          "name": "Hilary Wells",
+          "title": "Founder | Fractional Marketing Leader | Advisor",
+          "company": "Eight Arm Strategy"
+        },
+        {
+          "name": "Danielle Reiff",
+          "title": "U.S. Diplomat (Democracy / Human Rights / Peacebuilding)",
+          "company": "U.S. Agency for International Development"
+        },
+        {
+          "name": "Krista Biesecker",
+          "title": "Director of Virtual Communications & Administrative Operations",
+          "company": "Strategic Management & Logistics"
+        },
+        {
+          "name": "Geisse Ritter C.",
+          "title": "Global Logistics Business Analyst",
+          "company": "NXP Semiconductors"
+        },
+        {
+          "name": "Stephen Gates",
+          "title": "Founder / Chief Creative Officer",
+          "company": "CRZY strategy and design studio"
+        },
+        {
+          "name": "Daniel Gomez Seidel",
+          "title": "Founder / Principal",
+          "company": "Studio Gomez Seidel"
+        },
+        {
+          "name": "Saskia Van der Knoll",
+          "title": "Founder & Creative Director",
+          "company": "VDK Creative Studio"
+        },
+        {
+          "name": "Cristobal Chao",
+          "title": "Founder",
+          "company": "Torii Studio"
+        },
+        {
+          "name": "Sandra Hwang, MSPH",
+          "title": "Design Research Lead | Content Strategist",
+          "company": "Independent"
+        },
+        {
+          "name": "Linda S.",
+          "title": "Founder & Principal Consultant",
+          "company": "Living Map Studio"
+        },
+        {
+          "name": "Mandy Pardehpoosh",
+          "title": "Product Marketing",
+          "company": "Shopify"
+        },
+        {
+          "name": "Leah Kosatsky",
+          "title": "CEO, Business Coach & Online Strategy",
+          "company": "Leah Kosatsky Consulting | BluOwl Media"
+        },
+        {
+          "name": "Giuliana Jes\u00fas",
+          "title": "Gerente de Marketing",
+          "company": "Renzo Costa"
+        },
+        {
+          "name": "Corey White",
+          "title": "Communications Consultant",
+          "company": "Independent consultant"
+        },
+        {
+          "name": "Leesa Gallaher",
+          "title": "Senior Content Strategist",
+          "company": "Airbnb"
+        },
+        {
+          "name": "Brynn Fuller",
+          "title": "Copywriter. Account Manager. Trendsetter.",
+          "company": "aboundsocial.com"
+        },
+        {
+          "name": "Ursula Diez Canseco Brambilla",
+          "title": "Corporate Marketing and Innovation",
+          "company": "Urbanova"
+        },
+        {
+          "name": "Ryan B Coover",
+          "title": "Artist | Changemaker | Strategic Consultant | Creative Intuitive | Architect",
+          "company": "Studio Ryan Coover"
+        },
+        {
+          "name": "Lewa Pertl",
+          "title": "Managing Director | Communications Strategy Consultancy",
+          "company": "Souleire"
+        },
+        {
+          "name": "william ashaley",
+          "title": "Records Manager/ Employee Relation officer",
+          "company": "Graphic Communications Group Limited"
+        },
+        {
+          "name": "Faranak Aghdasi Medrano",
+          "title": "Senior Program Manager, Product Marketing",
+          "company": "IBM"
+        },
+        {
+          "name": "Oak Ritchie",
+          "title": "Media Executive",
+          "company": "Alaska's News Source: KTUU/KYES"
+        },
+        {
+          "name": "Vahid Ajepuh Oloro",
+          "title": "President",
+          "company": "Kareu Media"
+        },
+        {
+          "name": "Farzin Shakibanejad",
+          "title": "Chief Information Officer",
+          "company": "NATIONAL SPIRITUAL ASSEMBLY OF THE BAHAIS OF THE UNITED STATES"
+        },
+        {
+          "name": "Melissa Zaman Galbeno",
+          "title": "Sr. Field Marketing Manager",
+          "company": "Orca Security"
+        },
+        {
+          "name": "Adam Ballard",
+          "title": "Vice President, Demand Generation",
+          "company": "Restaurant365"
+        },
+        {
+          "name": "Colin Wilson",
+          "title": "Chief Marketing Officer",
+          "company": "The Tebow Group"
+        },
+        {
+          "name": "Chris Tara-Browne",
+          "title": "Digital Marketing Director",
+          "company": "Manly Honda"
+        },
+        {
+          "name": "Na'im J. Ru",
+          "title": "Principal (Enterprise Architecture Leader)",
+          "company": "Cox Communications"
+        },
+        {
+          "name": "Shadi Toloui-Wallace",
+          "title": "Founder",
+          "company": "Tiny Souls Media"
+        },
+        {
+          "name": "Anita Lau, CMP",
+          "title": "Communications",
+          "company": "BART"
+        },
+        {
+          "name": "Shirin Mostaghim Jones",
+          "title": "Social Media, Marketing and Communications Developer",
+          "company": "Roots ConnectED"
+        },
+        {
+          "name": "Monica Forghani",
+          "title": "EA / NPI Planning - Office Print Marketing",
+          "company": "HP"
+        },
+        {
+          "name": "Sahba Naraghi",
+          "title": "Digital Marketing Consultant",
+          "company": "Google AdWords"
+        },
+        {
+          "name": "Ann Melville",
+          "title": "Consultant",
+          "company": "NATIONAL SPIRITUAL ASSEMBLY OF THE BAHAIS OF THE US"
+        },
+        {
+          "name": "Abbie Reedy",
+          "title": "Warehouse Lead and Social Media Manager",
+          "company": "Maunakea Visitor Information Station"
+        },
+        {
+          "name": "JJ McLaughlin",
+          "title": "Lead Copywriter",
+          "company": "PayPal"
+        },
+        {
+          "name": "Ladan Doorandish",
+          "title": "Media Executive Director",
+          "company": "National Assembly of USA"
+        },
+        {
+          "name": "Debra Taylor",
+          "title": "Communications Manager",
+          "company": "Office of Public Affairs - National Spiritual Assembly"
+        },
+        {
+          "name": "Jennifer Morgan",
+          "title": "Global Agency Partnerships",
+          "company": "Snap Inc."
+        },
+        {
+          "name": "Shiva Teunisse",
+          "title": "Senior Account Manager & Marketing Lead",
+          "company": "Studio Lore"
+        },
+        {
+          "name": "Georgeann Eyler",
+          "title": "Internal Communications",
+          "company": "SkyTeam"
+        },
+        {
+          "name": "Jessie Shanks",
+          "title": "Web Developer, Web Development Immersive",
+          "company": "General Assembly"
+        },
+        {
+          "name": "Daniel Philp",
+          "title": "Chief Marketing Officer",
+          "company": "Banana Phone LLC"
+        },
+        {
+          "name": "Sironaj Hindawi, MA",
+          "title": "Marketing & Business Development Manager",
+          "company": "Exalt AI"
+        },
+        {
+          "name": "Claudia Rossel",
+          "title": "Detail to CSD Office of the Chief of Staff (OCOS)",
+          "company": "Cybersecurity and Infrastructure Security Agency"
+        },
+        {
+          "name": "Ari Phillips",
+          "title": "Deputy Communications Director",
+          "company": "Environmental Integrity Project"
+        },
+        {
+          "name": "Hanna Murphy-Pack",
+          "title": "Senior Product Marketing Manager, New Product Lines",
+          "company": "Storable"
+        },
+        {
+          "name": "Niniane Tozzi",
+          "title": "Environment and Society Market Lead",
+          "company": "Mott MacDonald"
+        },
+        {
+          "name": "Mauricio Bola\u00f1os Arturo",
+          "title": "Media Manager - Chile, Peru, Colombia and Argentina",
+          "company": "Hasbro"
+        },
+        {
+          "name": "Na'im Samimi-Moore",
+          "title": "Creative Director",
+          "company": "lvl.agency"
+        },
+        {
+          "name": "Brian Kurzius",
+          "title": "Technical Project Manager at A+E Global Media",
+          "company": "A+E Global Media"
+        },
+        {
+          "name": "Yasmine Hanafi",
+          "title": "Communications Manager",
+          "company": "Group of Gold Line"
+        },
+        {
+          "name": "Patrick Davis",
+          "title": "Communications Officer",
+          "company": "Public Citizen"
+        },
+        {
+          "name": "Marjan Akavan",
+          "title": "Marketing and Communications Project",
+          "company": "WHTcare SA - Human Tecar"
+        },
+        {
+          "name": "Junaid Yisa",
+          "title": "Senior Advisor, Strategy & Market Analytics",
+          "company": "Chevron"
+        },
+        {
+          "name": "Austin Woody",
+          "title": "SVP & GM, Specialized Markets",
+          "company": "Upland Software"
+        },
+        {
+          "name": "Victor Sobhani",
+          "title": "Regional Site Manager",
+          "company": "SBA Communications"
+        },
+        {
+          "name": "Matt Fry",
+          "title": "Senior Director, Digital Experience & Conversion",
+          "company": "Unleashed Brands"
+        },
+        {
+          "name": "Patrick Abdoulaye Manke",
+          "title": "Head of Division, Partnerships",
+          "company": "African Union Development Agency-NEPAD"
         }
       ]
     },
     {
       "id": 3,
-      "label": "Meta",
-      "industry": "Big Tech",
-      "size": 10,
+      "label": "Design & UX",
+      "size": 72,
+      "topCos": [
+        {
+          "company": "Koi Studios",
+          "count": 3
+        },
+        {
+          "company": "Squarespace",
+          "count": 2
+        },
+        {
+          "company": "Google",
+          "count": 2
+        },
+        {
+          "company": "Sky Creative",
+          "count": 1
+        },
+        {
+          "company": "eBay",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Nathan Perez",
-          "title": "Software Engineer",
-          "company": "Meta"
+          "name": "Neha Singh",
+          "title": "Senior Product Designer",
+          "company": "Koi Studios"
         },
         {
-          "name": "Hannah Roberts",
-          "title": "Product Manager",
-          "company": "Meta"
+          "name": "Francesco Di Battista",
+          "title": "Social graphic designer and video editor junior",
+          "company": "Sky Creative"
         },
         {
-          "name": "Caleb Turner",
-          "title": "Research Scientist",
-          "company": "Meta"
+          "name": "Alex Altman",
+          "title": "Sr. Content Design Manager, Seller Experience",
+          "company": "eBay"
         },
         {
-          "name": "Lily Phillips",
-          "title": "Data Scientist",
-          "company": "Meta"
+          "name": "Joel Solomon",
+          "title": "Content Design Director",
+          "company": "Humana"
         },
         {
-          "name": "Isaiah Campbell",
-          "title": "AR/VR Engineer",
-          "company": "Meta"
+          "name": "Tope A Larayetan",
+          "title": "Content Designer",
+          "company": "Cisco"
         },
         {
-          "name": "Stella Parker",
-          "title": "Content Strategist",
-          "company": "Meta"
+          "name": "Ross Wright",
+          "title": "Staff Content Designer",
+          "company": "Squarespace"
         },
         {
-          "name": "Dylan Evans",
-          "title": "Infrastructure Engineer",
-          "company": "Meta"
+          "name": "Molly Stassfort",
+          "title": "Content Designer",
+          "company": "FanDuel"
         },
         {
-          "name": "Victoria Edwards",
-          "title": "Policy Manager",
-          "company": "Meta"
+          "name": "Diane Murphy",
+          "title": "Content Designer",
+          "company": "Netflix"
         },
         {
-          "name": "Nora Collins",
-          "title": "UX Designer",
-          "company": "Meta"
+          "name": "Ameerah Jones",
+          "title": "UX Content Designer, Ads Privacy & Regulations",
+          "company": "Google"
         },
         {
-          "name": "Eli Stewart",
-          "title": "Engineering Manager",
-          "company": "Meta"
+          "name": "Charlotte Nesbitt",
+          "title": "Staff content designer",
+          "company": "Spotify"
+        },
+        {
+          "name": "Jody Allard",
+          "title": "Head of Content Model Design",
+          "company": "Thumbtack"
+        },
+        {
+          "name": "Oleksandra Mokii",
+          "title": "Design Director",
+          "company": "Intellectsoft"
+        },
+        {
+          "name": "Eve Ogden, PhD",
+          "title": "User Experience Research Senior Manager",
+          "company": "Evernorth"
+        },
+        {
+          "name": "Diane Tsai",
+          "title": "Product Designer",
+          "company": "Koi Studios"
+        },
+        {
+          "name": "Savannah Kunovsky",
+          "title": "Managing Director, AI & Emerging Technology",
+          "company": "IDEO"
+        },
+        {
+          "name": "Sunni (Sun) Brown",
+          "title": "Founder",
+          "company": "Center for Deep Self Design"
+        },
+        {
+          "name": "Daniil Sergeev",
+          "title": "Founder and Creative Director",
+          "company": "FNYI"
+        },
+        {
+          "name": "Michael Valinsky",
+          "title": "UX Writing Lead",
+          "company": "Air France-KLM"
+        },
+        {
+          "name": "Andrea Nguyen",
+          "title": "Co-Founder & Design Director",
+          "company": "Koi Studios"
+        },
+        {
+          "name": "Estee Eliasoph",
+          "title": "Lead Design Program Manager",
+          "company": "Airbnb"
+        },
+        {
+          "name": "Harris Hatzimpaloglou",
+          "title": "Head of Design & Product",
+          "company": "NextNow Ai"
+        },
+        {
+          "name": "Elisabeth (Lisa) Prescott",
+          "title": "SVP Design",
+          "company": "Eventbrite"
+        },
+        {
+          "name": "Joshua Taylor",
+          "title": "Head of Design",
+          "company": "Hedra"
+        },
+        {
+          "name": "Elias Oscar Rico Contreras",
+          "title": "Product Owner & UX Consultant",
+          "company": "LHIIS"
+        },
+        {
+          "name": "Forest Love",
+          "title": "Senior Manager, Production Design",
+          "company": "SEPHORA"
+        },
+        {
+          "name": "Nick Stone",
+          "title": "principal",
+          "company": "Nick Stone Design"
+        },
+        {
+          "name": "Sebastian Vila Obarrio",
+          "title": "Product Designer",
+          "company": "Jodify"
+        },
+        {
+          "name": "Tala Bahadori",
+          "title": "Visual Designer",
+          "company": "RGE LIGHTING DESIGN"
+        },
+        {
+          "name": "Nicholas Pajerski",
+          "title": "Design",
+          "company": "FRAGMENT"
+        },
+        {
+          "name": "Max Tsvetkov",
+          "title": "Global Head of Experience & Product Design",
+          "company": "FinOn"
+        },
+        {
+          "name": "Krzysztof Wronski",
+          "title": "Design Lead, Large Corporates",
+          "company": "Nordea"
+        },
+        {
+          "name": "Julia Lepikhova",
+          "title": "Junior Relationship Manager",
+          "company": "CRFT Video | Animated explainer videos"
+        },
+        {
+          "name": "Wafa Reyhani",
+          "title": "Senior Project Designer",
+          "company": "ReyPublic"
+        },
+        {
+          "name": "Brenda Jauregui Zanabria",
+          "title": "Project Design Lead | Management",
+          "company": "NEORIS"
+        },
+        {
+          "name": "Jean-Michel Benoit Noriega",
+          "title": "Senior Business Strategy & Design",
+          "company": "Yape"
+        },
+        {
+          "name": "Elizabeth Albarracin Vel\u00e1squez",
+          "title": "Service Designer",
+          "company": "Ministerio de Educaci\u00f3n del Per\u00fa - Minedu"
+        },
+        {
+          "name": "Camila Ferraro",
+          "title": "Senior Design Strategist",
+          "company": "Globant"
+        },
+        {
+          "name": "Minnie Bredouw",
+          "title": "Principal, Creative Director",
+          "company": "Pinterest"
+        },
+        {
+          "name": "Madison Kahn",
+          "title": "Associate Creative Director",
+          "company": "Kettle"
+        },
+        {
+          "name": "Jessica Pastor Tom\u00e1s",
+          "title": "Head of CMF Design | Micro-Mobility",
+          "company": "ALSO."
+        },
+        {
+          "name": "Laurah Mwirichia",
+          "title": "Senior Product Designer",
+          "company": "Squarespace"
+        },
+        {
+          "name": "Denise Burchell",
+          "title": "Global Systems & Service Design - Employee Engagement",
+          "company": "Docusign"
+        },
+        {
+          "name": "Naeem Ghafari",
+          "title": "Associate Creative Director",
+          "company": "WEST BBDO"
+        },
+        {
+          "name": "Sandra Schmeil",
+          "title": "Creative Director",
+          "company": "SanStudio"
+        },
+        {
+          "name": "Daniel Sammut",
+          "title": "Founder & Creative Director",
+          "company": "For Good Design Lab"
+        },
+        {
+          "name": "Diviya Jain",
+          "title": "Visual Designer",
+          "company": "IBM"
+        },
+        {
+          "name": "Joshua Homnick",
+          "title": "Creative Consultant | Director | Producer | Shooter | Editor | Photographer | Video game developer",
+          "company": "JoshuaHomnick.com"
+        },
+        {
+          "name": "Raleigh Harrell",
+          "title": "Lead Design Operations",
+          "company": "Target"
+        },
+        {
+          "name": "Misaq Kazimi",
+          "title": "Creative Director",
+          "company": "Balance Now"
+        },
+        {
+          "name": "Amit Oza",
+          "title": "Aerospace Design Engineer / Project Engineer",
+          "company": "Aerospace Vehicle Design Services, LLC"
+        },
+        {
+          "name": "Nasrin Sesar Sesar  PMP MS Arch MUP",
+          "title": "PM, Architectural Design / Urban Planning Consultant",
+          "company": "Utopia"
+        },
+        {
+          "name": "Eduard Sanchis",
+          "title": "Senior Product Designer",
+          "company": "dunnhumby"
+        },
+        {
+          "name": "Shahriar Asdollah-Zadeh",
+          "title": "Human Centred Design Lead - Design governance. Systems & Experience Designer. Playbook creator.",
+          "company": "Westpac New Zealand"
+        },
+        {
+          "name": "Arianne Kieve",
+          "title": "Proposal Manager & Graphic Designer",
+          "company": "Harder+Company Community Research"
+        },
+        {
+          "name": "Andr\u00e9 Segovia",
+          "title": "Sr Vice President, Strategy \u2013 Head of Product Design & A.I.",
+          "company": "Buyerlink"
+        },
+        {
+          "name": "Reed Jones",
+          "title": "Staff Service Designer",
+          "company": "Zoox"
+        },
+        {
+          "name": "Samuel Kelleher",
+          "title": "Associate",
+          "company": "Design Resource Group, PA"
+        },
+        {
+          "name": "Mauricio Dumet",
+          "title": "Lead UI/UX Designer",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Sahba Fanaian",
+          "title": "Senior UI/UX HMI Designer",
+          "company": "Epic Games"
+        },
+        {
+          "name": "Todd Milligan",
+          "title": "Owner/Graphic Designer",
+          "company": "Dust Bowl Artistry"
+        },
+        {
+          "name": "Kathryn Khamsi",
+          "title": "Founder | Creative Director",
+          "company": "Pikku | Muslin Made Modern"
+        },
+        {
+          "name": "Mace Rosen",
+          "title": "Design AD",
+          "company": "Swire Properties"
+        },
+        {
+          "name": "Amelia Pittman",
+          "title": "Data Insights and Design Manager",
+          "company": "Open Data Watch"
+        },
+        {
+          "name": "Layli Samimi",
+          "title": "Senior Materials Designer",
+          "company": "Nike"
+        },
+        {
+          "name": "Jay Braden",
+          "title": "Designer, Owner, Operator",
+          "company": "JB Art and Design"
+        },
+        {
+          "name": "Laily Mesbah Fogel",
+          "title": "Creative Director",
+          "company": "Even House"
+        },
+        {
+          "name": "Anise Pertl",
+          "title": "NELP Visualization Delivery Lead",
+          "company": "GHD"
+        },
+        {
+          "name": "Reza Mostmand",
+          "title": "Sr. UI Designer",
+          "company": "OLG"
+        },
+        {
+          "name": "Anjali Pala",
+          "title": "Senior Designer and Production Manager",
+          "company": "Prestel Publishing"
+        },
+        {
+          "name": "Lucas Saeed",
+          "title": "UX Manager",
+          "company": "Space Inch"
+        },
+        {
+          "name": "Faham Foroodi",
+          "title": "Creative Director",
+          "company": "Nuri Films"
+        },
+        {
+          "name": "John Amir-Abbassi",
+          "title": "Senior Staff UX Research Manager - Local & Vertical Launchpad",
+          "company": "Google"
         }
       ]
     },
     {
       "id": 4,
-      "label": "Apple",
-      "industry": "Big Tech",
-      "size": 10,
+      "label": "Finance & Fintech",
+      "size": 63,
+      "topCos": [
+        {
+          "company": "Stripe",
+          "count": 3
+        },
+        {
+          "company": "Credit Karma",
+          "count": 2
+        },
+        {
+          "company": "Deloitte",
+          "count": 2
+        },
+        {
+          "company": "Nassau Street Partners",
+          "count": 1
+        },
+        {
+          "company": "Finesse Acquisition",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Jack Sanchez",
-          "title": "iOS Engineer",
-          "company": "Apple"
+          "name": "Lindsay McGaan",
+          "title": "Head of Content Design",
+          "company": "Stripe"
         },
         {
-          "name": "Hazel Morris",
-          "title": "Hardware Engineer",
-          "company": "Apple"
+          "name": "Dan Richard Rubio",
+          "title": "Capital Raising Associate",
+          "company": "Nassau Street Partners"
         },
         {
-          "name": "Owen Rogers",
-          "title": "Senior Software Engineer",
-          "company": "Apple"
+          "name": "Ansh Jogi",
+          "title": "Co-Founder",
+          "company": "Finesse Acquisition"
         },
         {
-          "name": "Aurora Reed",
-          "title": "Product Designer",
-          "company": "Apple"
+          "name": "Emily Luo",
+          "title": "Content Designer",
+          "company": "Stripe"
         },
         {
-          "name": "Wyatt Cook",
-          "title": "Machine Learning Engineer",
-          "company": "Apple"
+          "name": "Angela Kilduff",
+          "title": "Staff Content Designer",
+          "company": "Stripe"
         },
         {
-          "name": "Violet Morgan",
-          "title": "App Developer",
-          "company": "Apple"
+          "name": "Chris Meszaros",
+          "title": "Vice President",
+          "company": "Lazard"
         },
         {
-          "name": "Lincoln Bell",
-          "title": "Security Researcher",
-          "company": "Apple"
+          "name": "Ann McGill Executive Recruiter",
+          "title": "Director Recruitment Services, Insurance Investments Banking",
+          "company": "Executive Recruiter"
         },
         {
-          "name": "Clara Murphy",
-          "title": "Technical Program Manager",
-          "company": "Apple"
+          "name": "Randy Basler",
+          "title": "Sales Agent",
+          "company": "Invest St. Louis"
         },
         {
-          "name": "Ezra Bailey",
-          "title": "Systems Engineer",
-          "company": "Apple"
+          "name": "Lauren Wilbanks",
+          "title": "Head of Content Design",
+          "company": "Credit Karma"
         },
         {
-          "name": "Scarlett Rivera",
-          "title": "UX Researcher",
-          "company": "Apple"
+          "name": "Saskia Liebenberg",
+          "title": "Senior research ops lead",
+          "company": "Monzo Bank"
+        },
+        {
+          "name": "Gbadebo Odularu, Ph.D, FREcon.",
+          "title": "Chair of the Board of Directors",
+          "company": "AFRICAN FINANCE AND ECONOMICS ASSOCIATION"
+        },
+        {
+          "name": "Olivia Geymond",
+          "title": "Adviser, Strategy and Impact",
+          "company": "The Commonwealth"
+        },
+        {
+          "name": "Tom Bewick",
+          "title": "Project Developer",
+          "company": "Adventure Scientists"
+        },
+        {
+          "name": "Andrew Johnson",
+          "title": "Design Director",
+          "company": "Robinhood"
+        },
+        {
+          "name": "Bita Correa",
+          "title": "Executive Director",
+          "company": "Fundaci\u00f3n para la Aplicaci\u00f3n y Ense\u00f1anza de las Ciencias (FUNDAEC)"
+        },
+        {
+          "name": "Nader Tamadon, CFP\u00ae, CEPA\u00ae, SE-AWMA\u2122, CPWA\u00ae",
+          "title": "Resident Director - Wealth Management Advisor, Managing Director",
+          "company": "Merrill Lynch Wealth Management"
+        },
+        {
+          "name": "Adam Smith",
+          "title": "Chief Marketing Officer",
+          "company": "Fund Launch"
+        },
+        {
+          "name": "Camille Ricketts",
+          "title": "Partner & Head of Marketing",
+          "company": "XYZ Venture Capital"
+        },
+        {
+          "name": "Gemma Ames",
+          "title": "Financial System Supervisor I",
+          "company": "Superintendencia de Banca, Seguros y AFP del Per\u00fa"
+        },
+        {
+          "name": "Michael Gardner",
+          "title": "CEO",
+          "company": "Gardner Capital Solar"
+        },
+        {
+          "name": "Temina Madon",
+          "title": "Co-Founder, Member",
+          "company": "The Agency Fund"
+        },
+        {
+          "name": "Shar Mahon",
+          "title": "Talent Acquisition Consultant, Specialist & Management",
+          "company": "Auckland Council"
+        },
+        {
+          "name": "Robin Flaharty",
+          "title": "Associate Director",
+          "company": "Commonwealth"
+        },
+        {
+          "name": "Nabil Kazerouni",
+          "title": "Senior Staff Product Designer",
+          "company": "Credit Karma"
+        },
+        {
+          "name": "Simon McNorton",
+          "title": "Deputy Director Research (interim)",
+          "company": "Foreign, Commonwealth and Development Office"
+        },
+        {
+          "name": "Paige O'Connor",
+          "title": "Executive Assistant",
+          "company": "Smith Point Capital, LLC"
+        },
+        {
+          "name": "Paulo Ribeiro de Lemos, MBA",
+          "title": "Investment Advisor Representative",
+          "company": "Pelora Advisors"
+        },
+        {
+          "name": "MORITZ POMMER",
+          "title": "Senior UX Consultant",
+          "company": "Union Investment"
+        },
+        {
+          "name": "Lou Dalrymple",
+          "title": "Founding Partner",
+          "company": "Whoa Ventures"
+        },
+        {
+          "name": "Daniel Kline",
+          "title": "Loan Interest Cancellation Specialist",
+          "company": "United Financial Freedom"
+        },
+        {
+          "name": "Jalal Hatami",
+          "title": "Lead, Product Portfolio Management",
+          "company": "Ontada"
+        },
+        {
+          "name": "Lynn Richards,  CLU\u00ae, ChFC\u00ae, MSFS, AEP\u00ae",
+          "title": "Financial Advisor with Cambridge Investment Research at",
+          "company": "Fusion Advisors, Inc"
+        },
+        {
+          "name": "Taren Gunter",
+          "title": "Founder",
+          "company": "Ebb & Flow Accounting, LLC"
+        },
+        {
+          "name": "Melissa Sassi, MPAff",
+          "title": "Managing Partner",
+          "company": "Terra Ventures"
+        },
+        {
+          "name": "Jill Morris-Cordes",
+          "title": "Chief Financial Officer",
+          "company": "Goodwill Industries of Northwest Texas"
+        },
+        {
+          "name": "Safaa Bibawy",
+          "title": "To be found",
+          "company": "Financial Services"
+        },
+        {
+          "name": "Jonathan Meeks, M.S.",
+          "title": "Vice President, Business Development",
+          "company": "Wellby Financial"
+        },
+        {
+          "name": "Yuan Ting Tracy Hou",
+          "title": "Principal Financial Analyst",
+          "company": "Berkeley Lab"
+        },
+        {
+          "name": "Miranda Hansen",
+          "title": "Senior Analyst, Impact Evaluations",
+          "company": "Root Capital"
+        },
+        {
+          "name": "Kevin Mehrabi",
+          "title": "CEO",
+          "company": "Wealthchain, Inc."
+        },
+        {
+          "name": "Mayra Marquez",
+          "title": "Human Capital Senior Manager",
+          "company": "Deloitte"
+        },
+        {
+          "name": "Mauricio Loyola",
+          "title": "Director de Investigaci\u00f3n, Escuela de Dise\u00f1o y Arquitectura",
+          "company": "Universidad Adolfo Ib\u00e1\u00f1ez"
+        },
+        {
+          "name": "Leila Seradj",
+          "title": "Director, Grants",
+          "company": "Malala Fund"
+        },
+        {
+          "name": "Domoina Rambeloarison",
+          "title": "Venture Success Partner",
+          "company": "Rippleworks"
+        },
+        {
+          "name": "Michael Teske",
+          "title": "Owner",
+          "company": "Commendable Wealth"
+        },
+        {
+          "name": "Nica Pourfallah",
+          "title": "Agile Coach",
+          "company": "First West Credit Union"
+        },
+        {
+          "name": "Nima Rafiei, CAMS",
+          "title": "New Accounts - Senior Analyst - Financial Advisors & Fund Managers",
+          "company": "Interactive Brokers"
+        },
+        {
+          "name": "Gonzaga Kelly Kyagaba",
+          "title": "Senior Associate Consultant - Human Capital Development & Advisory",
+          "company": "CERFODES UGANDA"
+        },
+        {
+          "name": "Manijeh Afnan-Murray",
+          "title": "Portfolio Director, Early Access Programs",
+          "company": "Bionical Emas"
+        },
+        {
+          "name": "Soraya Khamsi",
+          "title": "Senior Program Officer",
+          "company": "The Global Fund"
+        },
+        {
+          "name": "Abraham Reyes, CISSP, CCSP",
+          "title": "Lead Cyber Security Engineer",
+          "company": "Hollard Insurance Australia"
+        },
+        {
+          "name": "Samar Rushdy, CA",
+          "title": "Head of Financial Accounting - NZ",
+          "company": "Les Mills International"
+        },
+        {
+          "name": "Stephanie Ball",
+          "title": "Director of Financial Planning and Analysis",
+          "company": "Sound Transit"
+        },
+        {
+          "name": "Victor Forghani",
+          "title": "Fundador",
+          "company": "Kilim.pt"
+        },
+        {
+          "name": "Andr\u00e9 Ross",
+          "title": "Managing Director, Head, Global Corporate Banking, Sub-Saharan Africa",
+          "company": "J.P. Morgan"
+        },
+        {
+          "name": "Conor Kenny",
+          "title": "Principal",
+          "company": "Capital A Housing"
+        },
+        {
+          "name": "Josh Haney",
+          "title": "Vice President of Finance",
+          "company": "MoakCasey, LLC"
+        },
+        {
+          "name": "Liam O'Toole",
+          "title": "Chief Executive Officer",
+          "company": "Nations Investment Group"
+        },
+        {
+          "name": "Nima Ashraf",
+          "title": "Founder & Managing Director",
+          "company": "Physical Fund"
+        },
+        {
+          "name": "Leila Jiwnani",
+          "title": "VP Hotel Transactions & Operations Strategy",
+          "company": "Revantage, A Blackstone Portfolio Company"
+        },
+        {
+          "name": "Sheila Anvary",
+          "title": "Talent Acquisition",
+          "company": "Deloitte"
+        },
+        {
+          "name": "Eric Horton",
+          "title": "OMS Compliance and Audit Advisor",
+          "company": "bp"
+        },
+        {
+          "name": "Bryan DeLuca",
+          "title": "Partner",
+          "company": "FlightPlan Ventures"
         }
       ]
     },
     {
       "id": 5,
-      "label": "McKinsey",
-      "industry": "Consulting",
-      "size": 10,
+      "label": "Non-profit & Social Impact",
+      "size": 60,
+      "topCos": [
+        {
+          "company": "Baha'i World Centre",
+          "count": 6
+        },
+        {
+          "company": "Baha'i National Center",
+          "count": 6
+        },
+        {
+          "company": "The World Bank",
+          "count": 4
+        },
+        {
+          "company": "Innovations for Poverty Action",
+          "count": 3
+        },
+        {
+          "company": "USAID",
+          "count": 2
+        }
+      ],
       "members": [
         {
-          "name": "Sebastian Cooper",
-          "title": "Management Consultant",
-          "company": "McKinsey"
+          "name": "Eva Sundgrenz, PMP, CAL, CSM",
+          "title": "Program Manager",
+          "company": "National Peace Corps Association"
         },
         {
-          "name": "Madison Richardson",
-          "title": "Senior Consultant",
-          "company": "McKinsey"
+          "name": "Brandon Capers",
+          "title": "Demand Generation Specialist II",
+          "company": "Sun Chemical"
         },
         {
-          "name": "Mateo Cox",
-          "title": "Strategy Analyst",
-          "company": "McKinsey"
+          "name": "Tanu Kumar",
+          "title": "Governance Specialist",
+          "company": "The World Bank"
         },
         {
-          "name": "Penelope Howard",
-          "title": "Associate Principal",
-          "company": "McKinsey"
+          "name": "Courtney B. Gardner, MSW",
+          "title": "Program Coordinator",
+          "company": "The BRIDGE Lab Foundation"
         },
         {
-          "name": "Adrian Ward",
-          "title": "Business Analyst",
-          "company": "McKinsey"
+          "name": "Matthew Udziela",
+          "title": "Project Manager",
+          "company": "Non-Profit Organization"
         },
         {
-          "name": "Chloe Torres",
-          "title": "Engagement Manager",
-          "company": "McKinsey"
+          "name": "Anjum Malik",
+          "title": "Founder and Executive Director",
+          "company": "Global Impact Initiative"
         },
         {
-          "name": "Cameron Peterson",
-          "title": "Partner",
-          "company": "McKinsey"
+          "name": "Sahar Rahimi",
+          "title": "Editorial Assistant",
+          "company": "Baha'i World Centre"
         },
         {
-          "name": "Savannah Gray",
-          "title": "Operations Consultant",
-          "company": "McKinsey"
+          "name": "Dr Serggio Garc\u00eda-Guill\u00e9n",
+          "title": "Board Member",
+          "company": "The Desire To Inspire Foundation"
         },
         {
-          "name": "Brayden Ramirez",
-          "title": "Digital Consultant",
-          "company": "McKinsey"
+          "name": "Bhargavi Thakur",
+          "title": "Qualitative Consultant",
+          "company": "Central Square Foundation"
         },
         {
-          "name": "Aubrey James",
-          "title": "Tech Strategy Consultant",
-          "company": "McKinsey"
+          "name": "Sara Ironside",
+          "title": "Senior Organizational Development Consultant | Learning Consultant | Executive Coach",
+          "company": "Franklin Templeton Investments"
+        },
+        {
+          "name": "Lihui Zhang, PhD",
+          "title": "Senior Research Associate",
+          "company": "The Legal Aid Society"
+        },
+        {
+          "name": "Julie Werbel",
+          "title": "Chief, Leadership and Learning Division",
+          "company": "Bureau for Conflict Prevention and Stabilization, USAID"
+        },
+        {
+          "name": "Prof. Edward S. Ayensu",
+          "title": "President",
+          "company": "Energy Globe Foundation"
+        },
+        {
+          "name": "Claudius Adebayo",
+          "title": "National Fund Development Associate",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Tahereh Brigolin Administration,  Management",
+          "title": "Hotel Management and Marketing",
+          "company": "Centro Studi Baha'i - Hotel La Panoramica S.r.l."
+        },
+        {
+          "name": "Samira Samimi-Moore",
+          "title": "Guard Manager",
+          "company": "Baha'i World Centre"
+        },
+        {
+          "name": "Charles Anglin",
+          "title": "Director",
+          "company": "Bah\u00e1\u2019\u00ed Temple, Kampala, Uganda"
+        },
+        {
+          "name": "Carl Murrell",
+          "title": "Principal Representative to the United Nations",
+          "company": "National Spiritual Assembly of the Baha'is of the United States"
+        },
+        {
+          "name": "Santiago Sanchez Guiu",
+          "title": "Director - Global Operations & Systems",
+          "company": "Innovations for Poverty Action"
+        },
+        {
+          "name": "Gabriela M. L. R\u00edos",
+          "title": "Strategic Management Analyst III | Strategic Initiatives and Innovation",
+          "company": "Texas Department of Transportation"
+        },
+        {
+          "name": "Bernadette Stafford-Yaeger, CADC-III",
+          "title": "Assistant Director of Admissions",
+          "company": "New Bridge Foundation, Inc."
+        },
+        {
+          "name": "Michael Teske",
+          "title": "Supervisory Executive Officer, USAID/Nigeria",
+          "company": "USAID"
+        },
+        {
+          "name": "Marcus Holmlund",
+          "title": "Research Manager / Senior Economist",
+          "company": "The World Bank"
+        },
+        {
+          "name": "Rebecca A. Hopkins",
+          "title": "Foreign Service Officer",
+          "company": "USAID"
+        },
+        {
+          "name": "Joseph Lample",
+          "title": "Programs Lead",
+          "company": "Kimanya Ngeyo Foundation for Science and Education"
+        },
+        {
+          "name": "Ivan London",
+          "title": "Director - Center for American Prosperity & Energy",
+          "company": "Mountain States Legal Foundation"
+        },
+        {
+          "name": "Maarten Schoot",
+          "title": "Department of Statistics, coordinator",
+          "company": "Baha'i World Centre"
+        },
+        {
+          "name": "Kristen Lee",
+          "title": "Director of Business Initiatives",
+          "company": "ReFED"
+        },
+        {
+          "name": "Brian Beasley",
+          "title": "PMO Manager @ Baha'i National Center | CSPO\u00ae",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Jeffrey Safajou",
+          "title": "Logistics Officer",
+          "company": "Baha'i World Centre"
+        },
+        {
+          "name": "Thomas Hueck",
+          "title": "Volunteer",
+          "company": "Unity Foundation"
+        },
+        {
+          "name": "Ian Hamilton",
+          "title": "Representative for Sustainable Development",
+          "company": "Baha'is of the U.S."
+        },
+        {
+          "name": "Dan Tesfay",
+          "title": "Director of Research, Learning, and Evaluation Initiatives",
+          "company": "Ewing Marion Kauffman Foundation"
+        },
+        {
+          "name": "Jenny Achilles",
+          "title": "Sr. Program Officer",
+          "company": "Trellis Foundation"
+        },
+        {
+          "name": "Ulysses Aquino",
+          "title": "Sous Chef",
+          "company": "Baha'i World Centre"
+        },
+        {
+          "name": "Amin Vargha",
+          "title": "Planned Giving Coordinator",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Dini Kamayana",
+          "title": "Communications Officer",
+          "company": "United Nations Global Pulse Asia Pacific"
+        },
+        {
+          "name": "Rachel Wolfe",
+          "title": "Media Officer",
+          "company": "U.S. Baha'i Office of Public Affairs"
+        },
+        {
+          "name": "Jared Berenter",
+          "title": "Technical Team Lead (Monitoring, Evaluation and Learning Support Contract, USAID/El Salvador)",
+          "company": "Environmental Incentives Inc."
+        },
+        {
+          "name": "Sarah DeCuir",
+          "title": "Human Resources Officer",
+          "company": "United Nations"
+        },
+        {
+          "name": "Ali Bakar",
+          "title": "Principal Secretary",
+          "company": "Ministry of Infrastructure and Transportation"
+        },
+        {
+          "name": "Shadi Salehian",
+          "title": "Managing Director",
+          "company": "NGO"
+        },
+        {
+          "name": "Katie Whitehouse",
+          "title": "Performance Initiative Manager",
+          "company": "Council of the District of Columbia"
+        },
+        {
+          "name": "Pace Phillips",
+          "title": "Senior Director of Business and Program Development",
+          "company": "Innovations for Poverty Action"
+        },
+        {
+          "name": "Maame Brodwemaba Nketsiah",
+          "title": "Senior Policy Manager",
+          "company": "Innovations for Poverty Action"
+        },
+        {
+          "name": "Amy Knop-Narbutis",
+          "title": "Senior Research and Evaluation Officer",
+          "company": "The Hector and Gloria Lopez Foundation"
+        },
+        {
+          "name": "Anthony Vance",
+          "title": "Director, Public Affairs",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Pat McCann-Smith",
+          "title": "Operations Facilitator / National Properties Administrator",
+          "company": "Canadian Baha'i National Centre"
+        },
+        {
+          "name": "Josef Varga",
+          "title": "Operations Director",
+          "company": "Fellowship Bible Church"
+        },
+        {
+          "name": "Kit Bigelow",
+          "title": "Retired, Director of External Affairs",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Izzah Akram Malik",
+          "title": "Senior Public Sector Specialist",
+          "company": "The World Bank"
+        },
+        {
+          "name": "Nicole Moore-Kriel",
+          "title": "Director of Foundation Relations",
+          "company": "Good Reason Houston"
+        },
+        {
+          "name": "Kori Hattemer",
+          "title": "Program Officer",
+          "company": "St. David's Foundation"
+        },
+        {
+          "name": "Lucia Tyson",
+          "title": "Administrative Director/Social Media Officer",
+          "company": "U.S. Baha'i Office of Public Affairs"
+        },
+        {
+          "name": "Bahie Mary Rassekh",
+          "title": "Public Health",
+          "company": "The World Bank"
+        },
+        {
+          "name": "Douglas Moore",
+          "title": "Aide",
+          "company": "Baha'i World Centre"
+        },
+        {
+          "name": "Kristen Cambell",
+          "title": "Chief Partnerships Officer",
+          "company": "Christchurch Call Foundation"
+        },
+        {
+          "name": "PJ Andrews",
+          "title": "Director, Office of Public Affairs",
+          "company": "Baha'i National Center"
+        },
+        {
+          "name": "Sarah McDuff",
+          "title": "Consultant, Malawi Ministry of Finance, Economic Planning and Development",
+          "company": "UNDP"
+        },
+        {
+          "name": "Milad Pournik",
+          "title": "Associate Social Affairs Officer",
+          "company": "United Nations Economic and Social Commission for  Western Asia (ESCWA)"
         }
       ]
     },
     {
       "id": 6,
-      "label": "Goldman Sachs",
-      "industry": "Finance",
-      "size": 10,
+      "label": "Consulting & Strategy",
+      "size": 39,
+      "topCos": [
+        {
+          "company": "BHN Solutions",
+          "count": 1
+        },
+        {
+          "company": "Seed Consulting Group",
+          "count": 1
+        },
+        {
+          "company": "174 BPM",
+          "count": 1
+        },
+        {
+          "company": "Boston Consulting Group (BCG)",
+          "count": 1
+        },
+        {
+          "company": "Lightcast",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Miles Watson",
-          "title": "Investment Banker",
-          "company": "Goldman Sachs"
+          "name": "Salmaan Ahmed",
+          "title": "Principal Consultant",
+          "company": "BHN Solutions"
         },
         {
-          "name": "Brooklyn Brooks",
-          "title": "Equity Analyst",
-          "company": "Goldman Sachs"
+          "name": "Anna Nikolova",
+          "title": "Project Manager",
+          "company": "Seed Consulting Group"
         },
         {
-          "name": "Ryder Kelly",
-          "title": "Quantitative Analyst",
-          "company": "Goldman Sachs"
+          "name": "Daniel Pietrucha",
+          "title": "Founder / Consultant",
+          "company": "174 BPM"
         },
         {
-          "name": "Piper Sanders",
-          "title": "Risk Manager",
-          "company": "Goldman Sachs"
+          "name": "Gabriel Steinlauf",
+          "title": "Incoming Summer Associate",
+          "company": "Boston Consulting Group (BCG)"
         },
         {
-          "name": "Hunter Price",
-          "title": "Portfolio Manager",
-          "company": "Goldman Sachs"
+          "name": "Matt Miller",
+          "title": "Senior Account Executive - Talent Strategy",
+          "company": "Lightcast"
         },
         {
-          "name": "Paisley Bennett",
-          "title": "Financial Advisor",
-          "company": "Goldman Sachs"
+          "name": "Lisa Virtue",
+          "title": "Executive Coach & Consultant",
+          "company": "Lisa Virtue Coaching"
         },
         {
-          "name": "Dominic Wood",
-          "title": "VP Investment Banking",
-          "company": "Goldman Sachs"
+          "name": "Mike Manzella",
+          "title": "Founder",
+          "company": "ProServe Solutions"
         },
         {
-          "name": "Sadie Barnes",
-          "title": "Trading Analyst",
-          "company": "Goldman Sachs"
+          "name": "Holly Lentine",
+          "title": "Senior Talent Consultant",
+          "company": "OneBeacon"
         },
         {
-          "name": "Jaxon Ross",
-          "title": "Associate",
-          "company": "Goldman Sachs"
+          "name": "Gus Kangas",
+          "title": "Advisory Board Member",
+          "company": "Optica Labs Inc"
         },
         {
-          "name": "Genesis Henderson",
-          "title": "Compliance Officer",
-          "company": "Goldman Sachs"
+          "name": "Crystal Kubitsky",
+          "title": "Sr Research Operations Consultant",
+          "company": "Rally UXR"
+        },
+        {
+          "name": "Jenn Low",
+          "title": "Equitable Development and Cultural Placemaking Consultant",
+          "company": "Jenn W. Low LLC"
+        },
+        {
+          "name": "Luke Brodie, MBA",
+          "title": "Learning Lead - Connected Innovation Centres",
+          "company": "Accenture"
+        },
+        {
+          "name": "Lauren Ferreira Cardoso, PhD",
+          "title": "Senior Consultant",
+          "company": "Bright Research Group"
+        },
+        {
+          "name": "Stephanie Fawkes Fraser",
+          "title": "Lead Business Execution Consultant - Issue Management",
+          "company": "Wells Fargo"
+        },
+        {
+          "name": "Ivanka Jauregui",
+          "title": "Executive and High Performance Coach",
+          "company": "Element5 Consulting & Training"
+        },
+        {
+          "name": "Mudassir Azeemi",
+          "title": "Head of Product and Business Growth",
+          "company": "Fynch Consulting"
+        },
+        {
+          "name": "Heranush Hopkins (IBCLC)",
+          "title": "Lactation Consultant, IBCLC | Business Owner",
+          "company": "Heranush Lactation Consultant"
+        },
+        {
+          "name": "Samantha Mansilla",
+          "title": "Consultor en Gesti\u00f3n Estrat\u00e9gica y Comercial",
+          "company": "Profesional independiente"
+        },
+        {
+          "name": "Tina McNulty",
+          "title": "VP, Strategy, Partnerships & Alliances",
+          "company": "Schneider Electric"
+        },
+        {
+          "name": "Ingrid Marielos Marthy",
+          "title": "Owner",
+          "company": "Ingrid Marielos Marthy Consulting"
+        },
+        {
+          "name": "Brian Jackson",
+          "title": "Chief Operations Officer",
+          "company": "Jackson Consulting Inc"
+        },
+        {
+          "name": "Louis A. Cid",
+          "title": "Managing Consultant",
+          "company": "Guidehouse"
+        },
+        {
+          "name": "Chaning Jang",
+          "title": "Chief Strategy Officer (CSO)",
+          "company": "Irrational Labs"
+        },
+        {
+          "name": "Geoffrey Tyson",
+          "title": "Head Of Operations and Learning",
+          "company": "Paradem Consulting"
+        },
+        {
+          "name": "Colleen Reidelbach",
+          "title": "Senior Vice President of Client Strategy",
+          "company": "Qubika"
+        },
+        {
+          "name": "Stephen Beam",
+          "title": "Senior B2B Consultant",
+          "company": "Garage Living"
+        },
+        {
+          "name": "Lauren Anvari, MPH",
+          "title": "Creator/Consultant/Blogger",
+          "company": "laurenonliving.com"
+        },
+        {
+          "name": "Johanna Austin Azadi",
+          "title": "Executive Trainer and Speaker",
+          "company": "Johanna Austin Consulting"
+        },
+        {
+          "name": "Monica Maghami",
+          "title": "CEO and Founder",
+          "company": "SUSTAIN-NOBILITY ADVISORY"
+        },
+        {
+          "name": "Lauren Ames",
+          "title": "Policy Analyst",
+          "company": "Texas Sunset Advisory Commission"
+        },
+        {
+          "name": "j.Peter Smith",
+          "title": "Sr. OCM - Consultant Services",
+          "company": "Learn2Be"
+        },
+        {
+          "name": "Douglas Henck",
+          "title": "Member, Senior Management Advisory Board",
+          "company": "Assured Enterprises, Inc."
+        },
+        {
+          "name": "Rachel Wald",
+          "title": "Director of Strategy and Operations, USC Dornsife Public Exchange",
+          "company": "Public Exchange"
+        },
+        {
+          "name": "Nagmeh Hatami",
+          "title": "Stress Management Coach",
+          "company": "Alkemi Consulting  www.alkemi.au"
+        },
+        {
+          "name": "Neisan Massarrat",
+          "title": "Head of Consulting",
+          "company": "SecondMuse"
+        },
+        {
+          "name": "Amelia Ghofrany",
+          "title": "Managing Director",
+          "company": "CompassPoint Advisory"
+        },
+        {
+          "name": "Wes Ven Johnson",
+          "title": "Managing Director",
+          "company": "Ven Global Strategies"
+        },
+        {
+          "name": "Nabil Keith Durand, MBA, MKM",
+          "title": "Senior Knowledge Management Consultant",
+          "company": "Ultrareal"
+        },
+        {
+          "name": "Dr Kat Eghdamian",
+          "title": "Consultant, Advisor & Educator | Religion, Spirituality, & Justice | Human Rights & Social Change",
+          "company": "Independent Consultant"
         }
       ]
     },
     {
       "id": 7,
-      "label": "Salesforce",
-      "industry": "Enterprise SaaS",
-      "size": 10,
+      "label": "Healthcare & Life Sciences",
+      "size": 38,
+      "topCos": [
+        {
+          "company": "Calliope Communications",
+          "count": 1
+        },
+        {
+          "company": "Orlando Health",
+          "count": 1
+        },
+        {
+          "company": "Grow Therapy",
+          "count": 1
+        },
+        {
+          "company": "East Texas Behavioral Healthcare Network",
+          "count": 1
+        },
+        {
+          "company": "Headspace",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Bentley Coleman",
-          "title": "Solution Engineer",
-          "company": "Salesforce"
+          "name": "Mary Knowles Tindall",
+          "title": "Founder & Principal | Calliope Communications | Healthcare Content Marketing Agency",
+          "company": "Calliope Communications"
         },
         {
-          "name": "Serenity Jenkins",
-          "title": "Admin Consultant",
-          "company": "Salesforce"
+          "name": "Rulonda Fuller",
+          "title": "Scheduling Coordinator",
+          "company": "Orlando Health"
         },
         {
-          "name": "Zachary Perry",
-          "title": "Developer",
-          "company": "Salesforce"
+          "name": "Kristin Wood-Page",
+          "title": "Staff Content Designer",
+          "company": "Grow Therapy"
         },
         {
-          "name": "Adaline Powell",
-          "title": "Product Manager",
-          "company": "Salesforce"
+          "name": "Felicia French, MEd, LPC",
+          "title": "Regional Utilization Management Authorization Specialist",
+          "company": "East Texas Behavioral Healthcare Network"
         },
         {
-          "name": "Josiah Long",
-          "title": "Marketing Analyst",
-          "company": "Salesforce"
+          "name": "Harleny Vasquez,LMSW,SIFI\u2600\ufe0f",
+          "title": "Senior Clinical Recruiter",
+          "company": "Headspace"
         },
         {
-          "name": "Naomi Patterson",
-          "title": "Customer Success Manager",
-          "company": "Salesforce"
+          "name": "Rachel Cooley",
+          "title": "Sr Integrated Marketing Specialist - Pelvic Health",
+          "company": "Medtronic"
         },
         {
-          "name": "Elias Hughes",
-          "title": "Senior Engineer",
-          "company": "Salesforce"
+          "name": "Paul Zahrai",
+          "title": "Sr. Backup/recovery and mid-tier storage administrator",
+          "company": "SSM Health"
         },
         {
-          "name": "Lilah Flores",
-          "title": "Business Development",
-          "company": "Salesforce"
+          "name": "Armin Khoshkar MD, MS, MSC",
+          "title": "Monitor Tech",
+          "company": "Inova Health System"
         },
         {
-          "name": "Ashton Washington",
-          "title": "Technical Architect",
-          "company": "Salesforce"
+          "name": "Natasha Strydom",
+          "title": "Sr Principal Scientist, Clinical Pharmacology",
+          "company": "Amgen"
         },
         {
-          "name": "Alexa Butler",
-          "title": "Implementation Consultant",
-          "company": "Salesforce"
+          "name": "Quddus Joel Miller",
+          "title": "Executive Chef",
+          "company": "FoodBelly Wellness"
+        },
+        {
+          "name": "Jane Alston, MD MBA FACS",
+          "title": "General Surgeon",
+          "company": "Intermountain Healthcare"
+        },
+        {
+          "name": "Raymond Young",
+          "title": "Clinical Pharmacist",
+          "company": "Omnicare, a CVS Health company"
+        },
+        {
+          "name": "Angela Ewing-Boyd, MSW, LICSW",
+          "title": "Center Mental Health Consultant",
+          "company": "Potomac Job Corps Ctr"
+        },
+        {
+          "name": "Dr. Nooshin K. Darvish",
+          "title": "Chief Medical Officer/Founder",
+          "company": "Holistique IV Lounge"
+        },
+        {
+          "name": "Dr Chris Day",
+          "title": "Clinical psychologist",
+          "company": "Clinical Psychology"
+        },
+        {
+          "name": "Brant Alexander",
+          "title": "Chief Executive Officer",
+          "company": "Compassionate Care Pharmacy"
+        },
+        {
+          "name": "Jalal Vargha, DO, FACC",
+          "title": "Cardiologist",
+          "company": "Sutter East Bay Medical Group"
+        },
+        {
+          "name": "Elisabeth O'Toole Tierney",
+          "title": "Director, Digital Pharmacy Product & Engagement Strategy",
+          "company": "CVS Health"
+        },
+        {
+          "name": "Layla Kominiak",
+          "title": "Medical Director",
+          "company": "Virginia Lasik"
+        },
+        {
+          "name": "Abbas Khatamian",
+          "title": "Managing Director",
+          "company": "BeautyWellness.ca"
+        },
+        {
+          "name": "Ella Schwartz",
+          "title": "Chief Impact and Partnerships Officer",
+          "company": "Tiburcio Vasquez Health Center"
+        },
+        {
+          "name": "Kory Parsi",
+          "title": "Staff Physician",
+          "company": "The Permanente Medical Group, Inc."
+        },
+        {
+          "name": "Deanna McCollum",
+          "title": "Retired Social Worker",
+          "company": "Memorial Hermann Healthcare System"
+        },
+        {
+          "name": "Robert Dean",
+          "title": "CEO, Medical Director",
+          "company": "AROmotion"
+        },
+        {
+          "name": "Bernadette Rouhani",
+          "title": "Senior Account Manager",
+          "company": "Apria Healthcare"
+        },
+        {
+          "name": "Ignat Glushko",
+          "title": "Senior Healthcare Data & Business Intelligence Leader",
+          "company": "VISN 2: New York/New Jersey VA Health Care Network"
+        },
+        {
+          "name": "Lethika Richter-Addo",
+          "title": "LPN",
+          "company": "INTEGRIS Health"
+        },
+        {
+          "name": "Rajesh Sharma",
+          "title": "Managing Director - Digital Health Growth Leader",
+          "company": "Deloitte"
+        },
+        {
+          "name": "Andre Avaregan",
+          "title": "Senior Desktop Support Technician",
+          "company": "CommonSpirit Health"
+        },
+        {
+          "name": "Neda Molai",
+          "title": "Lead Trainer",
+          "company": "Define Integrative Wellness"
+        },
+        {
+          "name": "Devin Fitzpatrick, MA, PMP",
+          "title": "Director of Enterprise Project Management Office",
+          "company": "Carenet Health"
+        },
+        {
+          "name": "Amanda Boatright",
+          "title": "Vice President of Demand Generation",
+          "company": "Personify Health"
+        },
+        {
+          "name": "Barmak Kusha, MPH, CIC",
+          "title": "Manager, Infection Prevention & Control",
+          "company": "AdventHealth"
+        },
+        {
+          "name": "Karen Chung",
+          "title": "Seattle TGA HIV Planning Council Coordinator / PPM III",
+          "company": "Public Health \u2013 Seattle & King County"
+        },
+        {
+          "name": "Michelle Harwell",
+          "title": "Owner The Alamo Psychotherapy and Training",
+          "company": "The Alamo Psychotherapy and Training"
+        },
+        {
+          "name": "Lawrence (Larry) Clark",
+          "title": "Owner",
+          "company": "Allied Counseling and Wellness, PLLC"
+        },
+        {
+          "name": "William Mohabbati",
+          "title": "Principal Product Manager (HealthTech)",
+          "company": "BITSCOPIC"
+        },
+        {
+          "name": "Ben Walker",
+          "title": "Chief Executive Officer",
+          "company": "NS3 Health"
         }
       ]
     },
     {
       "id": 8,
-      "label": "Netflix",
-      "industry": "Media & Streaming",
-      "size": 10,
+      "label": "Freelance / Independent",
+      "size": 35,
+      "topCos": [
+        {
+          "company": "Self-employed",
+          "count": 12
+        },
+        {
+          "company": "Freelance",
+          "count": 10
+        },
+        {
+          "company": "Self Employed",
+          "count": 2
+        },
+        {
+          "company": "Upwork",
+          "count": 2
+        },
+        {
+          "company": "Kat Boogaard & Company LLC",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Micah Simmons",
-          "title": "Software Engineer",
-          "company": "Netflix"
+          "name": "Gabriel Guerra",
+          "title": "Freelance Copywriter",
+          "company": "\u2014"
         },
         {
-          "name": "Lydia Foster",
-          "title": "Product Manager",
-          "company": "Netflix"
+          "name": "Lauren Keepers",
+          "title": "SEO Consultant",
+          "company": "Freelance"
         },
         {
-          "name": "Tristan Gonzales",
-          "title": "Data Scientist",
-          "company": "Netflix"
+          "name": "Dena Nguyen",
+          "title": "Brand Designer, Art Director, Content Creator",
+          "company": "Self Employed"
         },
         {
-          "name": "Aurora Bryant",
-          "title": "Content Strategist",
-          "company": "Netflix"
+          "name": "Muhammad Umer",
+          "title": "Content Creator",
+          "company": "Upwork"
         },
         {
-          "name": "Ezekiel Alexander",
-          "title": "Backend Engineer",
-          "company": "Netflix"
+          "name": "Kat Boogaard",
+          "title": "Freelance Writer",
+          "company": "Kat Boogaard & Company LLC"
         },
         {
-          "name": "Juliet Russell",
-          "title": "UX Designer",
-          "company": "Netflix"
+          "name": "Hannah Labadorf \u2705",
+          "title": "Strategic Communications Consultant",
+          "company": "Self-employed"
         },
         {
-          "name": "Sawyer Griffin",
-          "title": "ML Engineer",
-          "company": "Netflix"
+          "name": "Tamara Ford",
+          "title": "Content Designer/Strategist",
+          "company": "Freelance"
         },
         {
-          "name": "Violet Diaz",
-          "title": "Analytics Engineer",
-          "company": "Netflix"
+          "name": "Vanessa M. \ud83c\udf80",
+          "title": "Freelance Content Writer",
+          "company": "Upwork"
         },
         {
-          "name": "Charles Hayes",
-          "title": "Engineering Manager",
-          "company": "Netflix"
+          "name": "Tamara Hafner, PhD",
+          "title": "Independent Consultant",
+          "company": "Self-employed"
         },
         {
-          "name": "Norah Myers",
-          "title": "Streaming Engineer",
-          "company": "Netflix"
+          "name": "Ashpreet Singh",
+          "title": "Growth Consultant",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Ransom Onyema",
+          "title": "Freelance Medical Writer",
+          "company": "Medentee"
+        },
+        {
+          "name": "Justin Arnold",
+          "title": "Freelance",
+          "company": "Lightning Media Partners"
+        },
+        {
+          "name": "Aylin Mahic",
+          "title": "Video Editor",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Krish Gopal",
+          "title": "Messaging & Conversion Strategist",
+          "company": "Freelance"
+        },
+        {
+          "name": "Anjela Nowbahar",
+          "title": "Division Manager",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Seth Thompson",
+          "title": "Copywriter",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Jeremy Lambshead",
+          "title": "Independent Contractor",
+          "company": "Lambshead Learning and Language Services"
+        },
+        {
+          "name": "Anita Isalska",
+          "title": "Independent Content Marketing Consultant",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Richard Blanco-Peck, Ph.D.",
+          "title": "Social and Gubermental Researcher/Quantitative & Qualitative Analysis",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Randolph Dobbs",
+          "title": "Journalist",
+          "company": "Freelance"
+        },
+        {
+          "name": "Saba Mansouri",
+          "title": "REVEAL THEN THYSELF",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Pedram Saleh",
+          "title": "Data Management Technician",
+          "company": "Freelance"
+        },
+        {
+          "name": "Teresa Pino",
+          "title": "Profesora Biodanza",
+          "company": "Independiente / Freelance"
+        },
+        {
+          "name": "Nirvana Kasopersad",
+          "title": "Editor and writer",
+          "company": "- Freelancer"
+        },
+        {
+          "name": "Leonard Cohen",
+          "title": "Animator, Director",
+          "company": "Freelance"
+        },
+        {
+          "name": "Justine Rastello-Gralepois",
+          "title": "Journaliste ind\u00e9pendante",
+          "company": "Freelance"
+        },
+        {
+          "name": "Amy Seidel Marks",
+          "title": "Independent Consultant",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Lucas Chung",
+          "title": "Design Lead: UX & Emerging Technologies",
+          "company": "Freelance"
+        },
+        {
+          "name": "Tom Mann",
+          "title": "Freelance Graphic Designer",
+          "company": "Tom Mann"
+        },
+        {
+          "name": "Nava Melody Ghalili-Wuorenma",
+          "title": "Writer/Producer/SAG Actress/Journalist/Youth Activist/Public Speaking Consultant",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Robert Middaugh",
+          "title": "Communications Consultant",
+          "company": "Self Employed"
+        },
+        {
+          "name": "Iman Yazdani",
+          "title": "Independent Consultant",
+          "company": "Self-employed"
+        },
+        {
+          "name": "Ginous Alford",
+          "title": "Independent Consultant",
+          "company": "Freelance"
+        },
+        {
+          "name": "Lauren Oertel",
+          "title": "Writer, Editor, AWA-Certified Facilitator",
+          "company": "Freelance"
+        },
+        {
+          "name": "Becky Carman",
+          "title": "Writer & Editor",
+          "company": "Freelance Writing and Editing"
         }
       ]
     },
     {
       "id": 9,
-      "label": "Stripe",
-      "industry": "Fintech",
-      "size": 10,
+      "label": "Government & Public Sector",
+      "size": 31,
+      "topCos": [
+        {
+          "company": "City of Orlando",
+          "count": 2
+        },
+        {
+          "company": "U.S. Department of State",
+          "count": 2
+        },
+        {
+          "company": "City of Austin",
+          "count": 2
+        },
+        {
+          "company": "City and County of San Francisco",
+          "count": 1
+        },
+        {
+          "company": "Prefeitura de S\u00e3o Paulo",
+          "count": 1
+        }
+      ],
       "members": [
         {
-          "name": "Theo Ford",
-          "title": "Payments Engineer",
-          "company": "Stripe"
+          "name": "Maeve Skelly",
+          "title": "Legislative Aide, San Francisco Board of Supervisors, office of President Rafael Mandelman",
+          "company": "City and County of San Francisco"
         },
         {
-          "name": "Gracie Hamilton",
-          "title": "Backend Developer",
-          "company": "Stripe"
+          "name": "Maryam Erfan",
+          "title": "Executive Assistant",
+          "company": "City of Orlando"
         },
         {
-          "name": "Axel Graham",
-          "title": "Fraud Analyst",
-          "company": "Stripe"
+          "name": "Vin\u00edcius Rodrigues",
+          "title": "Public Policy and Government Management Analyst (APPGG)",
+          "company": "Prefeitura de S\u00e3o Paulo"
         },
         {
-          "name": "Delilah Sullivan",
-          "title": "Product Manager",
-          "company": "Stripe"
+          "name": "Adam C\u00f4t\u00e9",
+          "title": "Advanced Medical Support Assistant",
+          "company": "U.S. Department of Veterans Affairs"
         },
         {
-          "name": "Levi Wallace",
-          "title": "API Engineer",
-          "company": "Stripe"
+          "name": "Rayyan Aldossary",
+          "title": "911 GIS specialist I",
+          "company": "Association of Central Oklahoma Governments"
         },
         {
-          "name": "Ivy Woods",
-          "title": "Risk Engineer",
-          "company": "Stripe"
+          "name": "David Isaak",
+          "title": "Neighborhood Outreach Manager",
+          "company": "City of Bellevue, Washington"
         },
         {
-          "name": "Knox Cole",
-          "title": "Financial Engineer",
-          "company": "Stripe"
+          "name": "Virginia Hamilton",
+          "title": "Human Centered Design Teacher and all things Innovation",
+          "company": "State of California Office of Data and Innovation"
         },
         {
-          "name": "Everly West",
-          "title": "Infrastructure Engineer",
-          "company": "Stripe"
+          "name": "Stephen C. Hailey",
+          "title": "Former Special Education Hearing Officer",
+          "company": "State of Delaware"
         },
         {
-          "name": "Silas Jordan",
-          "title": "Security Engineer",
-          "company": "Stripe"
+          "name": "Adam Bushey",
+          "title": "Judge Advocate, U.S. Army",
+          "company": "U.S. Africa Command (AFRICOM)"
         },
         {
-          "name": "Briar Owens",
-          "title": "Developer Relations",
-          "company": "Stripe"
+          "name": "Jackie Homann, PMP",
+          "title": "Foreign Affairs Officer - Office of Foreign Assistance Oversight",
+          "company": "U.S. Department of State"
+        },
+        {
+          "name": "Samin Eskandariyan",
+          "title": "Financial Manager",
+          "company": "Utah Department of Health and Human Services"
+        },
+        {
+          "name": "Allen Lu",
+          "title": "Behavioral Health Clinician Fellow",
+          "company": "San Francisco Department of Public Health"
+        },
+        {
+          "name": "Llewellyn Woolford, Jr.",
+          "title": "Assistant Chief Counsel",
+          "company": "U.S. Department of Health and Human Services"
+        },
+        {
+          "name": "Bruce Shahidi",
+          "title": "Sales Associate",
+          "company": "Global Real Estate Office"
+        },
+        {
+          "name": "Abby Long",
+          "title": "Program Analyst, Bureau of Budget and Planning",
+          "company": "U.S. Department of State"
+        },
+        {
+          "name": "Jessica Bogard",
+          "title": "Assistant Deputy Director, Fiscal",
+          "company": "California Department of Health Care Services"
+        },
+        {
+          "name": "Kellyann McClain",
+          "title": "Branch Chief, Health and Family Support Branch",
+          "company": "U.S. Department of Health and Human Services (HHS)"
+        },
+        {
+          "name": "Fred Gonzales",
+          "title": "City Photographer",
+          "company": "City of San Antonio"
+        },
+        {
+          "name": "Amir Vekil",
+          "title": "Business Analyst",
+          "company": "Government of Canada"
+        },
+        {
+          "name": "Naseem Kourosh",
+          "title": "Trial Attorney",
+          "company": "U.S. Department of Justice"
+        },
+        {
+          "name": "Anna Trela",
+          "title": "Operations Manager",
+          "company": "U.S. Department of the Treasury"
+        },
+        {
+          "name": "Navid Erfan",
+          "title": "Facilities Management Division Manager",
+          "company": "City of Orlando"
+        },
+        {
+          "name": "Jonathan Deyo",
+          "title": "Performance Management Lead",
+          "company": "NASA - National Aeronautics and Space Administration"
+        },
+        {
+          "name": "Rebecca Christians",
+          "title": "Research Specialist V, Analytics & Evaluation",
+          "company": "Texas Department of Family and Protective Services"
+        },
+        {
+          "name": "Gigi Mao",
+          "title": "Financial Services Manager",
+          "company": "City of Austin"
+        },
+        {
+          "name": "Matthew Guevara",
+          "title": "Foreign Affairs Specialist",
+          "company": "United States Department of Defense"
+        },
+        {
+          "name": "Joanna Portillo-Hsu",
+          "title": "Community & Resources Development Director",
+          "company": "Chicken Ranch Rancheria of Me-Wuk Indians of California Tribal Government"
+        },
+        {
+          "name": "Ben Leffler",
+          "title": "Chief of Staff",
+          "company": "City of Austin"
+        },
+        {
+          "name": "Saba Firoozi",
+          "title": "Environment Health Specialist III",
+          "company": "Los Angeles County Department of Public Health"
+        },
+        {
+          "name": "Roya Dennison",
+          "title": "Future Vertical Lift Account Manager",
+          "company": "U.S. Army Redstone Test Center (RTC)"
+        },
+        {
+          "name": "Mona Mossayeb",
+          "title": "Senior Planner",
+          "company": "County of Riverside"
         }
       ]
     }
@@ -585,52 +3640,227 @@
     {
       "source": 0,
       "target": 1,
-      "strength": 0.8
+      "strength": 0.8769230769230769
     },
     {
       "source": 0,
       "target": 2,
-      "strength": 0.8
+      "strength": 0.6692307692307692
     },
     {
       "source": 0,
       "target": 3,
-      "strength": 0.8
+      "strength": 0.5538461538461539
     },
     {
       "source": 0,
       "target": 4,
-      "strength": 0.8
+      "strength": 0.4846153846153846
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "strength": 0.46153846153846156
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "strength": 0.3
+    },
+    {
+      "source": 0,
+      "target": 7,
+      "strength": 0.2923076923076923
+    },
+    {
+      "source": 0,
+      "target": 8,
+      "strength": 0.2692307692307692
+    },
+    {
+      "source": 0,
+      "target": 9,
+      "strength": 0.23846153846153847
     },
     {
       "source": 1,
       "target": 2,
-      "strength": 0.8
+      "strength": 0.7631578947368421
     },
     {
       "source": 1,
       "target": 3,
-      "strength": 0.8
+      "strength": 0.631578947368421
     },
     {
       "source": 1,
       "target": 4,
-      "strength": 0.8
+      "strength": 0.5526315789473685
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "strength": 0.5263157894736842
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "strength": 0.34210526315789475
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "strength": 0.3333333333333333
+    },
+    {
+      "source": 1,
+      "target": 8,
+      "strength": 0.30701754385964913
+    },
+    {
+      "source": 1,
+      "target": 9,
+      "strength": 0.2719298245614035
     },
     {
       "source": 2,
       "target": 3,
-      "strength": 0.8
+      "strength": 0.8275862068965517
     },
     {
       "source": 2,
       "target": 4,
-      "strength": 0.8
+      "strength": 0.7241379310344828
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "strength": 0.6896551724137931
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "strength": 0.4482758620689655
+    },
+    {
+      "source": 2,
+      "target": 7,
+      "strength": 0.4367816091954023
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "strength": 0.40229885057471265
+    },
+    {
+      "source": 2,
+      "target": 9,
+      "strength": 0.3563218390804598
     },
     {
       "source": 3,
       "target": 4,
-      "strength": 0.8
+      "strength": 0.875
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "strength": 0.8333333333333334
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "strength": 0.5416666666666666
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "strength": 0.5277777777777778
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "strength": 0.4861111111111111
+    },
+    {
+      "source": 3,
+      "target": 9,
+      "strength": 0.4305555555555556
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "strength": 0.9523809523809523
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "strength": 0.6190476190476191
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "strength": 0.6031746031746031
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "strength": 0.5555555555555556
+    },
+    {
+      "source": 4,
+      "target": 9,
+      "strength": 0.49206349206349204
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "strength": 0.65
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "strength": 0.6333333333333333
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "strength": 0.5833333333333334
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "strength": 0.5166666666666667
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "strength": 0.9743589743589743
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "strength": 0.8974358974358975
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "strength": 0.7948717948717948
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "strength": 0.9210526315789473
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "strength": 0.8157894736842105
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "strength": 0.8857142857142857
     }
   ]
 }
