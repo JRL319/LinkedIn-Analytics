@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LinkedIn Profile Intelligence Report</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+     background:#0d1117;color:#c9d1d9;line-height:1.55}
+
+.page{max-width:1100px;margin:0 auto;padding:32px 20px}
+
+h1{font-size:22px;font-weight:700;color:#f0f6fc;margin-bottom:4px}
+.subtitle{font-size:13px;color:#484f58;margin-bottom:36px}
+h2{font-size:15px;font-weight:600;color:#f0f6fc;text-transform:uppercase;
+    letter-spacing:.8px;margin:32px 0 14px;padding-left:10px;
+    border-left:3px solid #58a6ff}
+
+/* summary strip */
+.summary{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:36px}
+.stat{background:#161b22;border:1px solid #21262d;border-radius:10px;
+       padding:16px 20px;flex:1;min-width:150px}
+.stat .val{font-size:28px;font-weight:700;color:#58a6ff}
+.stat .lbl{font-size:11px;color:#484f58;margin-top:2px;text-transform:uppercase;letter-spacing:.5px}
+
+/* inference cards */
+.inf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.inf-card{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:16px}
+.inf-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px;color:#fff;letter-spacing:.4px}
+.inf-cat{font-size:10px;color:#484f58;text-transform:uppercase;letter-spacing:.5px}
+.inf-label{font-size:13px;font-weight:600;color:#f0f6fc;margin-bottom:4px}
+.inf-value{font-size:12px;color:#8b949e;margin-bottom:4px}
+.inf-value strong{color:#58a6ff}
+.inf-desc{font-size:11px;color:#484f58;margin-bottom:8px;font-style:italic}
+.inf-explanation{font-size:12px;color:#c9d1d9;border-top:1px solid #21262d;padding-top:8px;margin-top:4px}
+
+/* ad targeting profile */
+.ad-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-bottom:16px}
+.ad-item{background:#161b22;border:1px solid #21262d;border-radius:8px;padding:12px 14px}
+.ad-item .key{font-size:10px;color:#484f58;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.ad-item .val{font-size:13px;color:#c9d1d9}
+.ad-interests{background:#161b22;border:1px solid #21262d;border-radius:8px;padding:12px 14px;margin-bottom:14px;font-size:12px;color:#8b949e}
+.ad-interests strong{color:#c9d1d9;display:block;margin-bottom:6px;font-size:10px;text-transform:uppercase;letter-spacing:.5px}
+.tag{display:inline-block;background:#21262d;border-radius:4px;padding:2px 7px;margin:2px 2px;font-size:11px;color:#8b949e}
+
+/* what you actually follow bars */
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar-row{display:grid;grid-template-columns:180px 1fr;gap:10px;align-items:center}
+.bar-label{font-size:12px;color:#c9d1d9;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:22px;background:#161b22;border-radius:4px;overflow:hidden;border:1px solid #21262d}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding:0 8px;transition:width .4s}
+.bar-count{font-size:11px;font-weight:600;color:rgba(255,255,255,.8);white-space:nowrap}
+.bar-orgs{font-size:10px;color:#484f58;grid-column:2;margin-top:-4px;padding-left:2px}
+
+/* missed cards */
+.miss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.miss-card{background:#161b22;border:1px solid #30363d;border-left:3px solid #E67E22;border-radius:10px;padding:16px}
+.miss-title{font-size:13px;font-weight:600;color:#f0f6fc;margin-bottom:6px}
+.miss-detail{font-size:12px;color:#8b949e;margin-bottom:8px}
+.miss-evidence{font-size:11px;color:#E67E22;font-style:italic}
+
+/* timeline */
+#timeline-chart{width:100%;height:220px;background:#161b22;border:1px solid #21262d;border-radius:10px}
+
+/* score ring */
+.score-row{display:flex;align-items:center;gap:24px;margin-bottom:24px}
+.score-ring{position:relative;width:80px;height:80px;flex-shrink:0}
+.score-ring svg{transform:rotate(-90deg)}
+.score-ring .num{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+                  font-size:18px;font-weight:700;color:#f0f6fc}
+.score-legend{display:flex;gap:16px;font-size:12px}
+.score-legend span{display:flex;align-items:center;gap:5px}
+.dot-sm{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>LinkedIn Profile Intelligence Report</h1>
+<p class="subtitle">What LinkedIn thinks it knows about you — vs. what you actually follow and engage with</p>
+
+<!-- Summary stats -->
+<div class="summary">
+  <div class="stat"><div class="val">119</div><div class="lbl">Companies Followed</div></div>
+  <div class="stat"><div class="val">6</div><div class="lbl">LinkedIn Inferences</div></div>
+  <div class="stat"><div class="val" style="color:#2ECC71">4</div><div class="lbl">Accurate</div></div>
+  <div class="stat"><div class="val" style="color:#F5A623">1</div><div class="lbl">Partial</div></div>
+  <div class="stat"><div class="val" style="color:#E74C3C">1</div><div class="lbl">Inaccurate</div></div>
+  <div class="stat"><div class="val">75%</div><div class="lbl">Inference Accuracy</div></div>
+</div>
+
+<!-- LinkedIn's inferences -->
+<h2>What LinkedIn Infers About You</h2>
+<div class="inf-grid">
+        <div class="inf-card">
+          <div class="inf-header">
+            <span class="badge" style="background:#E74C3C">✗ INACCURATE</span>
+            <span class="inf-cat">Career inferences</span>
+          </div>
+          <div class="inf-label">Human resources professional</div>
+          <div class="inf-value">LinkedIn says: <strong>No</strong></div>
+          <div class="inf-desc">Based on factors such as your industry and profile headline.</div>
+          <div class="inf-explanation">LinkedIn correctly set this to 'No'. Despite heavy HR-adjacent follows (SHRM, Fractional Product Leadership, TeamPeople), the role is communications/content strategy, not HR.</div>
+        </div>
+        <div class="inf-card">
+          <div class="inf-header">
+            <span class="badge" style="background:#2ECC71">✓ ACCURATE</span>
+            <span class="inf-cat">Inferred interests</span>
+          </div>
+          <div class="inf-label">Interested in media about technology</div>
+          <div class="inf-value">LinkedIn says: <strong>true</strong></div>
+          <div class="inf-desc">Interested in technology media outlets, such as Venturebeat, Ted Conferneces, Wired, TechCrunch, Gizmodo, Engadget, Mashable, PCMag, Fast Company, Popular Science, The Verge, and Tech Dirt. Based on factors such as companies followed.</div>
+          <div class="inf-explanation">Confirmed: follows TechCrunch, Fast Company, HBR, The Economist.</div>
+        </div>
+        <div class="inf-card">
+          <div class="inf-header">
+            <span class="badge" style="background:#F5A623">~ PARTIAL</span>
+            <span class="inf-cat">Inferred interests</span>
+          </div>
+          <div class="inf-label">Affinity for Electric Vehicles</div>
+          <div class="inf-value">LinkedIn says: <strong>true</strong></div>
+          <div class="inf-desc">Members who follow Pages in the Electric Vehicle space, hashtags related to electric vehicles, or have engaged with content on electric vehicles in the last 6 months. This inference is used by advertisers (most popular with Automotive companies) on LinkedIn to target audiences more likely to be interested in Electric Vehicles.</div>
+          <div class="inf-explanation">No EV-related company follows detected. The signal likely fired from bp (energy company follow) or broad 'automotive enthusiast' audience overlap — not from genuine EV interest.</div>
+        </div>
+        <div class="inf-card">
+          <div class="inf-header">
+            <span class="badge" style="background:#2ECC71">✓ ACCURATE</span>
+            <span class="inf-cat">Inferred personal characteristics</span>
+          </div>
+          <div class="inf-label">Inferred gender</div>
+          <div class="inf-value">LinkedIn says: <strong>FEMALE</strong></div>
+          <div class="inf-desc">Based on your first name and other factors.</div>
+          <div class="inf-explanation">Matches self-identified gender in ad targeting data.</div>
+        </div>
+        <div class="inf-card">
+          <div class="inf-header">
+            <span class="badge" style="background:#2ECC71">✓ ACCURATE</span>
+            <span class="inf-cat">Job search inferences</span>
+          </div>
+          <div class="inf-label">Interested in a new job</div>
+          <div class="inf-value">LinkedIn says: <strong>true</strong></div>
+          <div class="inf-desc">Based on whether you searched for a job or clicked on a posting in the past 30 days.</div>
+          <div class="inf-explanation">11 job-search platforms followed (Teal, Zety, Jobscan, resume.io, Her Career Studio, Never Search Alone…). Strong signal — and multiple cluster in a single day (Sep/Oct 2024).</div>
+        </div>
+        <div class="inf-card">
+          <div class="inf-header">
+            <span class="badge" style="background:#2ECC71">✓ ACCURATE</span>
+            <span class="inf-cat">LinkedIn activity inferences</span>
+          </div>
+          <div class="inf-label">Active contributor who influences public opinion</div>
+          <div class="inf-value">LinkedIn says: <strong>true</strong></div>
+          <div class="inf-desc">Active contributor on LinkedIn, such as in feed and in groups, who regularly influences public opinion and public policy. Based on factors such as your experience, industry, and activity in groups.</div>
+          <div class="inf-explanation">Consistent with groups joined (Women & Dev Issues, SID, Citizens for Global Solutions) and broad connections across sectors.</div>
+        </div></div>
+
+<!-- Ad targeting profile -->
+<h2>Your Ad Targeting Profile</h2>
+<div class="ad-grid">
+  <div class="ad-item"><div class="key">Age Range</div><div class="val">35 to 54</div></div>
+  <div class="ad-item"><div class="key">Location</div><div class="val">DMA® 623 - Dallas-Ft. Worth, TX</div></div>
+  <div class="ad-item"><div class="key">Seniority</div><div class="val">Owner</div></div>
+  <div class="ad-item"><div class="key">Graduation Year</div><div class="val">2016</div></div>
+  <div class="ad-item"><div class="key">Years of Experience</div><div class="val">12+ years</div></div>
+  <div class="ad-item"><div class="key">Audience Segments</div><div class="val">Small Business Leaders ·  Revenue Leaders ·  Enterprise Builders ·  Millennials</div></div>
+</div>
+<div class="ad-interests">
+  <strong>Buyer Groups (LinkedIn thinks you buy)</strong>
+  Cybersecurity Software ·  Marketing Software
+</div>
+<div class="ad-interests">
+  <strong>Job Titles LinkedIn Associates You With</strong>
+  Corporate Communications Specialist;  Content Specialist;  Head;  Corporate Communications Officer;  Managing Director…
+</div>
+<div class="ad-interests">
+  <strong>Top Interests LinkedIn Infers (first 12 of 200+)</strong>
+  <span class="tag">Intranet Software</span><span class="tag"> Collaboration Software</span><span class="tag"> Digital Experience Platforms (DXP)</span><span class="tag"> Project Administration Software</span><span class="tag"> Data Replication Software</span><span class="tag"> Content Marketing</span><span class="tag"> Online Media</span><span class="tag"> Government</span><span class="tag"> Enterprise Content Management (ECM) Software</span><span class="tag"> Call Center Software</span><span class="tag"> Pay-Per-Click</span><span class="tag"> Marketing Metrics</span>
+</div>
+
+<!-- What you actually follow -->
+<h2>What You Actually Follow (Reality Check)</h2>
+<div class="bars">
+        <div class="bar-row">
+          <div class="bar-label">Tech & SaaS</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:100%;background:#7ED321">
+              <span class="bar-count">15</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Freshworks, Stripe, Orbit, Quantum Metric +11 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">AI & Machine Learning</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:87%;background:#4A90D9">
+              <span class="bar-count">13</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Boardy, LangChain, Perplexity, GenAI Works +9 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Other</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:80%;background:#95A5A6">
+              <span class="bar-count">12</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Self-Employed, The Cake, myTrudy, Chief +8 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Career & Job Search</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:80%;background:#E94B7B">
+              <span class="bar-count">12</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Interviewing, Teal, Zety, resume.io +8 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Freelance & Writing</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:73%;background:#F5A623">
+              <span class="bar-count">11</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Jobs For Editors, Content Writing Jobs, Copywriting, Writing +7 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Marketing & PR</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:53%;background:#1ABC9C">
+              <span class="bar-count">8</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Semly Pro - The SEO Company, Public Relations, Qualified Digital, Synergy Interactive +4 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Recruiting & HR</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:53%;background:#1A7B5E">
+              <span class="bar-count">8</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Onward Search, SHRM, PTR Global, Fractional Product Leadership +4 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">International Dev & Impact</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:40%;background:#E67E22">
+              <span class="bar-count">6</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Baha'i International Community, Evidence in Governance and Politics, Situka Alliance Initiative Uganda, Giving Women +2 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Media & News</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:40%;background:#2ECC71">
+              <span class="bar-count">6</span>
+            </div>
+          </div>
+          <div class="bar-orgs">The Economist, Fast Forward, LinkedIn News, Harvard Business Review +2 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Venture Capital & Startups</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:40%;background:#9B59B6">
+              <span class="bar-count">6</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Andreessen Horowitz, Y Combinator, Simple Ventures, Series Z +2 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Design & UX</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:33%;background:#E74C3C">
+              <span class="bar-count">5</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Creativo Design, Big Wonder, IDEO, Design Research +1 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Cybersecurity</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:33%;background:#8E44AD">
+              <span class="bar-count">5</span>
+            </div>
+          </div>
+          <div class="bar-orgs">ORION Security, Kasada, Tradespace, Compa +1 more</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Education & Policy</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:27%;background:#3498DB">
+              <span class="bar-count">4</span>
+            </div>
+          </div>
+          <div class="bar-orgs">The University of Texas at Austin, University of California, Berkeley, University of Oklahoma, The LBJ School of Public Affairs</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Healthcare</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:27%;background:#00BCD4">
+              <span class="bar-count">4</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Fusion Wellness, Synthpop - Healthcare AI, Skylight, GoodRx</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Finance & Benefits</div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width:27%;background:#F39C12">
+              <span class="bar-count">4</span>
+            </div>
+          </div>
+          <div class="bar-orgs">Incard, Carrot, Principal Financial Group, Charles Schwab</div>
+        </div></div>
+
+<!-- Timeline -->
+<h2>Your Follow Timeline — Career Story in Companies</h2>
+<canvas id="timeline-chart"></canvas>
+
+<!-- What LinkedIn misses -->
+<h2>What LinkedIn Gets Wrong or Misses Entirely</h2>
+<div class="miss-grid">
+        <div class="miss-card">
+          <div class="miss-title">Deep AI Focus</div>
+          <div class="miss-detail">13 AI company follows (Anthropic, OpenAI, LangChain, Perplexity, Stability AI, Recall.ai, Lema AI, Upscale AI, Candid Intelligence, GenAI Works, AI at Meta, Boardy, RapidDev). LinkedIn only lists generic 'Artificial Intelligence' buried in a 300-item interest dump.</div>
+          <div class="miss-evidence">Evidence: 13 AI follows; all added Jan 2025 onward — a deliberate pivot signal.</div>
+        </div>
+        <div class="miss-card">
+          <div class="miss-title">Freelance Writer Identity</div>
+          <div class="miss-detail">11 freelance-writing focused follows (The Freelance Writing Network, All Things Freelance Writing, Copywriting, Make Writing Your Job, Content Writing Jobs, Harlow, Tractorbeam, CommsConsultants.com, Top of the Funnel…). LinkedIn sees 'Self-Employed' but not the writer-specific dimension.</div>
+          <div class="miss-evidence">Evidence: 8 of these followed on the same day (Feb 5, 2026) — a clear intent burst.</div>
+        </div>
+        <div class="miss-card">
+          <div class="miss-title">Baha'i Faith & International Service</div>
+          <div class="miss-detail">Baha'i International Community (2012), Evidence in Governance and Politics (2018), Situka Alliance Initiative Uganda (2020), Giving Women (2020), IDEO.org (2023), DAFgiving360 (2026). LinkedIn hides this in the 'Company Names' field — it never surfaces as an ad category.</div>
+          <div class="miss-evidence">Evidence: Oldest follows (2012–2020) — core identity, not passing interest.</div>
+        </div>
+        <div class="miss-card">
+          <div class="miss-title">Active Career Transition</div>
+          <div class="miss-detail">The follow timeline reveals a multi-stage pivot: education/policy → social impact → content strategy → AI/tech. Four separate job-search tool follows in Oct 2024 signal a deliberate pivot moment. LinkedIn flags 'job seeking' but misses the trajectory.</div>
+          <div class="miss-evidence">Evidence: Teal + Zety + resume.io + Jobscan all followed within 2 weeks of each other.</div>
+        </div>
+        <div class="miss-card">
+          <div class="miss-title">VC / Startup Ecosystem Observer</div>
+          <div class="miss-detail">Y Combinator, Andreessen Horowitz, Series Z, Rain, Simple Ventures, Creator Growth Group. LinkedIn doesn't surface startup-ecosystem interest as a distinct category.</div>
+          <div class="miss-evidence">Evidence: All followed Jan 2025 — same burst as AI follows, suggesting a combined 'AI + startup' research phase.</div>
+        </div></div>
+
+</div><!-- /page -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+const TL = {"years": [2011, 2012, 2016, 2018, 2020, 2021, 2022, 2023, 2024, 2025, 2026], "series": {"AI & Machine Learning": [0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 6], "Career & Job Search": [0, 0, 0, 0, 0, 0, 0, 1, 5, 4, 2], "Freelance & Writing": [0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 7], "Tech & SaaS": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 14], "Venture Capital & Startups": [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3], "Marketing & PR": [0, 0, 0, 0, 0, 0, 0, 4, 2, 1, 1], "International Dev & Impact": [0, 1, 0, 1, 2, 0, 0, 1, 0, 0, 1], "Media & News": [0, 0, 0, 0, 0, 0, 0, 2, 0, 4, 0], "Design & UX": [0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0], "Education & Policy": [1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0], "Finance & Benefits": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4], "Cybersecurity": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5], "Recruiting & HR": [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 6], "Healthcare": [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3], "Other": [0, 0, 1, 0, 0, 0, 1, 1, 1, 2, 6]}, "cats": ["AI & Machine Learning", "Career & Job Search", "Freelance & Writing", "Tech & SaaS", "Venture Capital & Startups", "Marketing & PR", "International Dev & Impact", "Media & News", "Design & UX", "Education & Policy", "Finance & Benefits", "Cybersecurity", "Recruiting & HR", "Healthcare", "Other"]};
+const CAT_COLORS = {"AI & Machine Learning": "#4A90D9", "Career & Job Search": "#E94B7B", "Freelance & Writing": "#F5A623", "Tech & SaaS": "#7ED321", "Venture Capital & Startups": "#9B59B6", "Marketing & PR": "#1ABC9C", "International Dev & Impact": "#E67E22", "Media & News": "#2ECC71", "Design & UX": "#E74C3C", "Education & Policy": "#3498DB", "Finance & Benefits": "#F39C12", "Cybersecurity": "#8E44AD", "Recruiting & HR": "#1A7B5E", "Healthcare": "#00BCD4", "Other": "#95A5A6"};
+
+const ctx = document.getElementById("timeline-chart").getContext("2d");
+
+// Filter to categories with at least 1 follow in the period
+const activeCats = TL.cats.filter(c => TL.series[c].some(v => v > 0));
+
+new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: TL.years,
+    datasets: activeCats.map(cat => ({
+      label: cat,
+      data: TL.series[cat],
+      backgroundColor: (CAT_COLORS[cat] || "#95A5A6") + "cc",
+      borderColor: CAT_COLORS[cat] || "#95A5A6",
+      borderWidth: 1,
+    }))
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { labels: { color: "#8b949e", boxWidth: 10, font: { size: 10 } } },
+      tooltip: { mode: "index", intersect: false },
+    },
+    scales: {
+      x: { stacked: true, ticks: { color: "#8b949e" }, grid: { color: "#21262d" } },
+      y: { stacked: true, ticks: { color: "#8b949e", precision: 0 }, grid: { color: "#21262d" } },
+    },
+  }
+});
+</script>
+</body>
+</html>
