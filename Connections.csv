@@ -1,131 +1,1057 @@
-First Name,Last Name,Email Address,Company,Position,Connected On
-Sarah,Johnson,,Google,Software Engineer,2023-01-15
-Michael,Chen,,Google,Senior Product Manager,2023-02-20
-Emily,Davis,,Google,Data Scientist,2023-03-10
-James,Wilson,,Google,UX Designer,2022-11-05
-Olivia,Martinez,,Google,Engineering Manager,2023-05-18
-Noah,Anderson,,Google,DevOps Engineer,2022-09-22
-Ava,Thomas,,Google,ML Engineer,2023-07-01
-Liam,Jackson,,Google,Software Engineer II,2023-08-14
-Emma,White,,Google,Program Manager,2022-12-30
-Isabella,Harris,,Google,Research Scientist,2023-04-09
-Sophia,Clark,,Microsoft,Software Engineer,2023-01-22
-Mason,Lewis,,Microsoft,Cloud Architect,2022-10-15
-Mia,Robinson,,Microsoft,Product Manager,2023-03-28
-Lucas,Walker,,Microsoft,Data Engineer,2023-06-11
-Charlotte,Hall,,Microsoft,Security Engineer,2022-08-19
-Ethan,Young,,Microsoft,Principal Engineer,2023-09-02
-Amelia,Allen,,Microsoft,Technical Writer,2023-02-14
-Oliver,King,,Microsoft,Azure Specialist,2022-11-28
-Elijah,Wright,,Microsoft,Frontend Developer,2023-04-17
-Harper,Scott,,Microsoft,Business Analyst,2023-07-23
-Aiden,Torres,,Amazon,Solutions Architect,2023-01-08
-Evelyn,Nguyen,,Amazon,Software Development Manager,2022-12-12
-Caden,Hill,,Amazon,Operations Manager,2023-05-30
-Aria,Flores,,Amazon,Product Manager,2023-02-25
-Grayson,Green,,Amazon,Backend Engineer,2022-10-08
-Luna,Adams,,Amazon,Data Analyst,2023-06-19
-Jayden,Nelson,,Amazon,Cloud Engineer,2023-03-14
-Zoey,Baker,,Amazon,ML Engineer,2022-09-01
-Penelope,Carter,,Amazon,UX Researcher,2023-08-07
-Riley,Mitchell,,Amazon,Site Reliability Engineer,2023-04-22
-Nathan,Perez,,Meta,Software Engineer,2023-01-30
-Hannah,Roberts,,Meta,Product Manager,2022-11-16
-Caleb,Turner,,Meta,Research Scientist,2023-05-05
-Lily,Phillips,,Meta,Data Scientist,2023-02-09
-Isaiah,Campbell,,Meta,AR/VR Engineer,2022-08-23
-Stella,Parker,,Meta,Content Strategist,2023-07-15
-Dylan,Evans,,Meta,Infrastructure Engineer,2023-03-21
-Victoria,Edwards,,Meta,Policy Manager,2022-12-04
-Nora,Collins,,Meta,UX Designer,2023-06-28
-Eli,Stewart,,Meta,Engineering Manager,2023-09-10
-Jack,Sanchez,,Apple,iOS Engineer,2023-01-12
-Hazel,Morris,,Apple,Hardware Engineer,2022-10-27
-Owen,Rogers,,Apple,Senior Software Engineer,2023-04-03
-Aurora,Reed,,Apple,Product Designer,2023-02-18
-Wyatt,Cook,,Apple,Machine Learning Engineer,2022-09-14
-Violet,Morgan,,Apple,App Developer,2023-07-09
-Lincoln,Bell,,Apple,Security Researcher,2023-05-24
-Clara,Murphy,,Apple,Technical Program Manager,2022-11-20
-Ezra,Bailey,,Apple,Systems Engineer,2023-08-01
-Scarlett,Rivera,,Apple,UX Researcher,2023-03-07
-Sebastian,Cooper,,McKinsey,Management Consultant,2023-02-01
-Madison,Richardson,,McKinsey,Senior Consultant,2022-10-19
-Mateo,Cox,,McKinsey,Strategy Analyst,2023-05-12
-Penelope,Howard,,McKinsey,Associate Principal,2023-01-25
-Adrian,Ward,,McKinsey,Business Analyst,2022-08-30
-Chloe,Torres,,McKinsey,Engagement Manager,2023-06-14
-Cameron,Peterson,,McKinsey,Partner,2023-03-28
-Savannah,Gray,,McKinsey,Operations Consultant,2022-12-09
-Brayden,Ramirez,,McKinsey,Digital Consultant,2023-08-22
-Aubrey,James,,McKinsey,Tech Strategy Consultant,2023-04-15
-Miles,Watson,,Goldman Sachs,Investment Banker,2023-01-18
-Brooklyn,Brooks,,Goldman Sachs,Equity Analyst,2022-11-03
-Ryder,Kelly,,Goldman Sachs,Quantitative Analyst,2023-04-26
-Piper,Sanders,,Goldman Sachs,Risk Manager,2023-02-13
-Hunter,Price,,Goldman Sachs,Portfolio Manager,2022-09-08
-Paisley,Bennett,,Goldman Sachs,Financial Advisor,2023-07-20
-Dominic,Wood,,Goldman Sachs,VP Investment Banking,2023-05-15
-Sadie,Barnes,,Goldman Sachs,Trading Analyst,2022-12-27
-Jaxon,Ross,,Goldman Sachs,Associate,2023-03-08
-Genesis,Henderson,,Goldman Sachs,Compliance Officer,2023-08-30
-Bentley,Coleman,,Salesforce,Solution Engineer,2023-01-05
-Serenity,Jenkins,,Salesforce,Admin Consultant,2022-10-21
-Zachary,Perry,,Salesforce,Developer,2023-04-13
-Adaline,Powell,,Salesforce,Product Manager,2023-02-28
-Josiah,Long,,Salesforce,Marketing Analyst,2022-09-16
-Naomi,Patterson,,Salesforce,Customer Success Manager,2023-07-05
-Elias,Hughes,,Salesforce,Senior Engineer,2023-05-20
-Lilah,Flores,,Salesforce,Business Development,2022-11-11
-Ashton,Washington,,Salesforce,Technical Architect,2023-06-02
-Alexa,Butler,,Salesforce,Implementation Consultant,2023-03-17
-Micah,Simmons,,Netflix,Software Engineer,2023-01-28
-Lydia,Foster,,Netflix,Product Manager,2022-10-13
-Tristan,Gonzales,,Netflix,Data Scientist,2023-04-21
-Aurora,Bryant,,Netflix,Content Strategist,2023-02-06
-Ezekiel,Alexander,,Netflix,Backend Engineer,2022-08-25
-Juliet,Russell,,Netflix,UX Designer,2023-07-13
-Sawyer,Griffin,,Netflix,ML Engineer,2023-05-28
-Violet,Diaz,,Netflix,Analytics Engineer,2022-12-17
-Charles,Hayes,,Netflix,Engineering Manager,2023-06-10
-Norah,Myers,,Netflix,Streaming Engineer,2023-03-25
-Theo,Ford,,Stripe,Payments Engineer,2023-01-21
-Gracie,Hamilton,,Stripe,Backend Developer,2022-11-07
-Axel,Graham,,Stripe,Fraud Analyst,2023-04-08
-Delilah,Sullivan,,Stripe,Product Manager,2023-02-22
-Levi,Wallace,,Stripe,API Engineer,2022-09-03
-Ivy,Woods,,Stripe,Risk Engineer,2023-07-17
-Knox,Cole,,Stripe,Financial Engineer,2023-05-31
-Everly,West,,Stripe,Infrastructure Engineer,2022-12-22
-Silas,Jordan,,Stripe,Security Engineer,2023-06-07
-Briar,Owens,,Stripe,Developer Relations,2023-03-12
-Atlas,Reynolds,,Airbnb,Software Engineer,2023-01-14
-Ember,Fisher,,Airbnb,Product Manager,2022-10-29
-Bodhi,Ellis,,Airbnb,Data Scientist,2023-04-16
-Fern,Harrison,,Airbnb,UX Designer,2023-02-03
-Caspian,Gibson,,Airbnb,Growth Engineer,2022-09-19
-Meadow,Mcdonald,,Airbnb,Operations Manager,2023-07-24
-Rigel,Cruz,,Airbnb,Community Manager,2023-05-09
-Soleil,Marshall,,Airbnb,Trust & Safety Engineer,2022-12-14
-Cypress,Ortega,,Airbnb,Frontend Developer,2023-06-26
-Indigo,Gomez,,Airbnb,Analytics Engineer,2023-03-30
-Dakota,Murray,,Deloitte,Senior Consultant,2023-01-09
-Clover,Freeman,,Deloitte,Technology Consultant,2022-10-24
-Shepherd,Wells,,Deloitte,Audit Manager,2023-04-04
-Rebel,Webb,,Deloitte,Tax Analyst,2023-02-19
-Ocean,Simpson,,Deloitte,Risk Advisory,2022-08-28
-Story,Stevens,,Deloitte,Management Consultant,2023-07-30
-River,Tucker,,Deloitte,Cloud Consultant,2023-05-14
-Harlow,Porter,,Deloitte,Data Analytics Consultant,2022-12-19
-Wilder,Hunter,,Deloitte,Cybersecurity Analyst,2023-06-21
-Journey,Hicks,,Deloitte,Digital Transformation Lead,2023-03-04
-Slate,Crawford,,Uber,Software Engineer,2023-01-26
-Fallon,Henry,,Uber,Product Manager,2022-11-12
-Sterling,Boyd,,Uber,Data Scientist,2023-04-29
-Vesper,Mason,,Uber,Backend Engineer,2023-02-10
-Flint,Morales,,Uber,ML Engineer,2022-09-25
-Lyric,Kennedy,,Uber,Operations Analyst,2023-07-07
-Reign,Warren,,Uber,Growth Hacker,2023-05-22
-Bay,Dixon,,Uber,UX Researcher,2022-12-08
-Cove,Ramos,,Uber,Frontend Engineer,2023-06-15
-Arrow,Reyes,,Uber,Marketplace Engineer,2023-03-19
+Notes:
+"When exporting your connection data, you may notice that some of the email addresses are missing. You will only see email addresses for connections who have allowed their connections to see or download their email address using this setting https://www.linkedin.com/psettings/privacy/email. You can learn more here https://www.linkedin.com/help/linkedin/answer/261"
+
+First Name,Last Name,URL,Email Address,Company,Position,Connected On
+Anna,Daiko ,https://www.linkedin.com/in/anna-daiko,,Zmist & Copy,Writer,06 Apr 2026
+Doris,Ramseur Davis,https://www.linkedin.com/in/doris-ramseur-davis,,Sam's Club,"Senior Director/Merchant, Member Services",06 Apr 2026
+Scott,Frothingham,https://www.linkedin.com/in/scottfrothingham,,FastForward Results,Writer,03 Apr 2026
+Loretta,Hudelot,https://www.linkedin.com/in/lorettahudelot,,The University of Texas at Dallas,"Adjunct Professor, Professor of Practice",03 Apr 2026
+Persephone,Maglaya,https://www.linkedin.com/in/persephonemaglaya,,The Media Socialites,Chief Executive Officer,03 Apr 2026
+Gabriel,Guerra,https://www.linkedin.com/in/gabriel-guerra-26664a50,,,Freelance Copywriter,02 Apr 2026
+Salmaan,Ahmed,https://www.linkedin.com/in/salmaanahmed,,BHN Solutions,Principal Consultant,02 Apr 2026
+Neha,Singh,https://www.linkedin.com/in/neha-si,,Koi Studios,Senior Product Designer,02 Apr 2026
+Lindsay,MacMillan,https://www.linkedin.com/in/lkmacmillan,,HarperCollins Publishers,Author,02 Apr 2026
+Dennis,Hoffman,https://www.linkedin.com/in/sdennishoffman,,Engage USA,Founder & CEO,31 Mar 2026
+Lindsay,McGaan,https://www.linkedin.com/in/lindsaymcgaan,,Stripe,Head of Content Design,26 Mar 2026
+Dan Richard,Rubio,https://www.linkedin.com/in/dan-richard-rubio-a2358437a,,Nassau Street Partners,Capital Raising Associate,26 Mar 2026
+David,Himes,https://www.linkedin.com/in/gutcheckguy,,Gut Check Guy™,Writer • Creator,25 Mar 2026
+Michael,LaRocca,https://www.linkedin.com/in/michael-larocca-clerical,,Michael Edits,Owner / Editor / Proofreader,24 Mar 2026
+"Jennifer Chavez, MBA,",GRN Moon Valley,https://www.linkedin.com/in/jennifer-j-chavez-mba,,Global Recruiters Network (GRN),President & Managing Director - Global Recruiters of Moon Valley,23 Mar 2026
+Lauren,Keepers,https://www.linkedin.com/in/laurenkeepers,,Freelance,SEO Consultant,22 Mar 2026
+Anna,Nikolova,https://www.linkedin.com/in/annanikolova,,Seed Consulting Group,Project Manager,22 Mar 2026
+Pete,Fulford,https://www.linkedin.com/in/petefulford,,Momentous AI Consulting,Founder & Chief AI Strategist & Trainer,20 Mar 2026
+Francesco,Di Battista,https://www.linkedin.com/in/francesco-di-battista-5557002a8,,Sky Creative,Social graphic designer and video editor junior,20 Mar 2026
+Eva,"Sundgrenz, PMP, CAL, CSM",https://www.linkedin.com/in/esundgrenz,,National Peace Corps Association,Program Manager,20 Mar 2026
+Adam,Belmont,https://www.linkedin.com/in/adambelmont,,A-to-B Strategies,Fractional PR Leader & Advisor,20 Mar 2026
+Robyn,Shepherd,https://www.linkedin.com/in/robyn-shepherd,,SchoemanLaw Inc,Director,20 Mar 2026
+Ryan,Jones-Symonds,https://www.linkedin.com/in/ryan-jones-symonds-062593191,,Storyleads,Content Strategist,19 Mar 2026
+Kimon,Drakopoulos,https://www.linkedin.com/in/kimon-drakopoulos-a5663341,,University of Southern California,Founding Director and Advisor,18 Mar 2026
+Meenakshi,Taheem,https://www.linkedin.com/in/meenakshi-taheem-110b9136,,Adobe,Senior Content Marketing Program Manager,18 Mar 2026
+Shashank,Mishra,https://www.linkedin.com/in/shashank-mishra-8a34051b5,,Sprinto,Cybersecurity writer,17 Mar 2026
+Deborah,Darcis,https://www.linkedin.com/in/deborah-darcis-70b97238,,Thrive Recruiting,Founder,17 Mar 2026
+Jennifer,Elliott,https://www.linkedin.com/in/jennifer-e-5bb81a24,,Transformative Resumes,Owner,17 Mar 2026
+Miodrag,Magyar,https://www.linkedin.com/in/miodrag-magyar,,Rasayel,Content Writer and Marketing Generalist ,17 Mar 2026
+Mary,Knowles Tindall,https://www.linkedin.com/in/maryknowlestindall,,Calliope Communications,Founder & Principal | Calliope Communications | Healthcare Content Marketing Agency,17 Mar 2026
+Jeffrey,Lupo,https://www.linkedin.com/in/jeffrey-lupo,,Incisive Content Marketing,SEO Content Marketing Specialist,17 Mar 2026
+Alex,Mercer,https://www.linkedin.com/in/alex-mercer-2219a93b4,,Spacebar Collective,Head of Partnerships,17 Mar 2026
+Richard A.,Fleury,https://www.linkedin.com/in/richard-a-fleury,,RAFTECH.ORG,Founder,17 Mar 2026
+Rulonda,Fuller,https://www.linkedin.com/in/rulondafuller,,Orlando Health,Scheduling Coordinator,16 Mar 2026
+Ashley,Feagins,https://www.linkedin.com/in/ashley-feagins394,,Proven Media,Account Manager,16 Mar 2026
+Timur,Yerimbetov,https://www.linkedin.com/in/timur-yerimbetov,,MITWORK,"Writer, Content Editor",16 Mar 2026
+Joshua,Bailey,https://www.linkedin.com/in/tavusio,,Tavus,Marketing (Storyteller) ,16 Mar 2026
+Vishakha,Rupawat,https://www.linkedin.com/in/vishakha-rupawat,,Hyly.AI,Content Marketing Manager,15 Mar 2026
+Edward,Phelps,https://www.linkedin.com/in/edphelps,,The Web Guy,The Web Guy,15 Mar 2026
+Jo,Iyalho,https://www.linkedin.com/in/joiyalho,,Charles Schwab,Senior UX Content Strategist,13 Mar 2026
+Grace,McClure,https://www.linkedin.com/in/grace-mcclure-75469158,,Divisional,Director of Marketing & Growth (Fractional),13 Mar 2026
+Aleksandra,Ivanovska,https://www.linkedin.com/in/aleksandra-ivanovska,,Spacebar Collective,B2B SaaS Content Writer,13 Mar 2026
+Brandon,Capers,https://www.linkedin.com/in/brandon-capers,,Sun Chemical,Demand Generation Specialist II,12 Mar 2026
+Geoffrey,Armstrong,https://www.linkedin.com/in/geoffrey-a-20a9b93a1,,The Promptists by @Ohneis,Head of Business Development,12 Mar 2026
+Dena,Nguyen,https://www.linkedin.com/in/dena-nguyen-245989169,,Self Employed,"Brand Designer, Art Director, Content Creator",11 Mar 2026
+Yog,Sharma,https://www.linkedin.com/in/ryanyogsharma,,InstantServe LLC,Vice President  ,09 Mar 2026
+John,Mears,https://www.linkedin.com/in/john-mears,,PhantomBuster,Head of Marketing,09 Mar 2026
+Muhammad,Umer,https://www.linkedin.com/in/muhammad-umer-ca,,Upwork,Content Creator,08 Mar 2026
+Skye,Wallace,https://www.linkedin.com/in/skyewallace,,Tractorbeam,Digital Marketing Client Services Manager,07 Mar 2026
+Paige,C. Lohoefer,https://www.linkedin.com/in/paige-c-lohoefer-67115287,,The Birthday Party Project,Founder,06 Mar 2026
+Christopher,Miller,https://www.linkedin.com/in/christopheralanmiller,,Tractorbeam,"Partner, Head of Marketing",06 Mar 2026
+Lisa,Jennings Young,https://www.linkedin.com/in/lisajenningsyoung,,Adobe,Group Manager,05 Mar 2026
+Alex,Altman,https://www.linkedin.com/in/alexander-altman,,eBay,"Sr. Content Design Manager, Seller Experience",03 Mar 2026
+Ayush,Poddar,https://www.linkedin.com/in/ayush-poddar-62b7b35b,,Startup GTM,Founder | Newsletter and GTM Advisory,03 Mar 2026
+Kristin,Wood-Page,https://www.linkedin.com/in/kristinwoodpage,,Grow Therapy,Staff Content Designer,02 Mar 2026
+Joel,Solomon,https://www.linkedin.com/in/joelmsolomon,,Humana,Content Design Director,02 Mar 2026
+Nic,Vargus,https://www.linkedin.com/in/nicvargus,,Fractional,Editorial & Storytelling,02 Mar 2026
+Kat,Boogaard,https://www.linkedin.com/in/katboogaard,,Kat Boogaard & Company LLC,Freelance Writer,02 Mar 2026
+Hannah,Labadorf ✅,https://www.linkedin.com/in/ensmingerinternationalmba,,Self-employed,Strategic Communications Consultant,02 Mar 2026
+Matt,Graham 👨‍💻,https://www.linkedin.com/in/matt-graham-nocode,,RapidDev,CEO,02 Mar 2026
+Eoin,Clancy,https://www.linkedin.com/in/eoinclancy,,AirOps,VP of Growth,01 Mar 2026
+Tope A,Larayetan,https://www.linkedin.com/in/topelarayetan,,Cisco,Content Designer,28 Feb 2026
+Matthew,Christine,https://www.linkedin.com/in/matthew-christine-4b2672245,,,,27 Feb 2026
+Ross,Wright,https://www.linkedin.com/in/rossmwright,,Squarespace,Staff Content Designer,27 Feb 2026
+Molly,Stassfort,https://www.linkedin.com/in/mollystassfort,,FanDuel,Content Designer,27 Feb 2026
+Diane,Murphy,https://www.linkedin.com/in/murphydiane,,Netflix,Content Designer,27 Feb 2026
+Tamara,Ford,https://www.linkedin.com/in/tamaraford,,Freelance,Content Designer/Strategist,27 Feb 2026
+Ansh,Jogi,https://www.linkedin.com/in/anshjogi,,Finesse Acquisition,Co-Founder,26 Feb 2026
+Jurgen Leo,Foley,https://www.linkedin.com/in/jurgen-leo-foley-4869a51b,,"On, UZH, Oxa Life, CORE, Idiag, Stryd, Breezelabs",Testing Consultant/Product testing partner (Sports tech),26 Feb 2026
+Emily,Luo,https://www.linkedin.com/in/emilydoveluo,,Stripe,Content Designer,25 Feb 2026
+Angela,Kilduff,https://www.linkedin.com/in/angelakilduff,,Stripe,Staff Content Designer,25 Feb 2026
+Josh,Cons,https://www.linkedin.com/in/josh-cons-453993204,,Notice Me(dia),Founder & Chief Writing Officer,25 Feb 2026
+David,Broderick,https://www.linkedin.com/in/dtebroderick,,Top of the Funnel,Community Manager,25 Feb 2026
+,,,,,,25 Feb 2026
+Ameerah,Jones,https://www.linkedin.com/in/ameerahjones,,Google,"UX Content Designer, Ads Privacy & Regulations",25 Feb 2026
+Oyinkansola,Edem,https://www.linkedin.com/in/oyinkansola-a-ogunyinka,,Daleel,Fractional Content Marketer,25 Feb 2026
+Charlotte,Nesbitt,https://www.linkedin.com/in/charlottenesbitt,,Spotify,Staff content designer,24 Feb 2026
+Jody,Allard,https://www.linkedin.com/in/jodyallard,,Thumbtack,Head of Content Model Design,24 Feb 2026
+Adina,Timar,https://www.linkedin.com/in/adina-timar,,Weflow,Head of AEO,24 Feb 2026
+Connor,Beaulieu,https://www.linkedin.com/in/connor-beaulieu1814,,LegalZoom,Senior SEO Manager,24 Feb 2026
+Chuks,Wesley,https://www.linkedin.com/in/chuks-wesley-seocontentwriter,,Superpath,Pro Member,24 Feb 2026
+Amy,Cuevas Schroeder,https://www.linkedin.com/in/amycuevasschroeder,,The Midst,Founder & Head of Content and Community,24 Feb 2026
+Dominick,Miserandino,https://www.linkedin.com/in/miserandino,dysleximedia@gmail.com,RTMNexus,Chief Executive Officer/ Founder,23 Feb 2026
+Vanessa,M. 🎀,https://www.linkedin.com/in/vanessa-manulat,,Upwork,Freelance Content Writer,22 Feb 2026
+Silvi,Specter ⚡,https://www.linkedin.com/in/silvi-specter-tech-startup-marketing-consultant,,Specter Consulting,Digital Marketing Consultant,21 Feb 2026
+Melea,Seward,https://www.linkedin.com/in/meleaseward,,The Hired Guns,Managing Partner / Director of Recruiting ,20 Feb 2026
+Elias,Cobb,https://www.linkedin.com/in/eliascobb,,"Quantix, Inc.",Director of Recruiting,20 Feb 2026
+Rob,Davidson,https://www.linkedin.com/in/robdavidson,,Linnworks,"Senior Marketing Manager, Digital and Website",20 Feb 2026
+Evan,Feldman,https://www.linkedin.com/in/feldmanevan,,The Talent Co-op,"Manager, Executive Recruitment & Coaching",20 Feb 2026
+Natasha,Bedi,https://www.linkedin.com/in/natasha-bedi-5228bb175,,Untold,Head of Content,19 Feb 2026
+Ashwini,Dave,https://www.linkedin.com/in/ashwini-dave,,Middleware ,Senior Product Marketer,19 Feb 2026
+Nicholas,Mlakar,https://www.linkedin.com/in/nmlakar,,Compound Content Studio,Content Lead,18 Feb 2026
+Daniel,Pietrucha,https://www.linkedin.com/in/daniel-p-6aba0160,,174 BPM,Founder / Consultant,18 Feb 2026
+Tamara,"Hafner, PhD",https://www.linkedin.com/in/tahafner,,Self-employed,Independent Consultant,18 Feb 2026
+Chris,Meszaros,https://www.linkedin.com/in/chris-meszaros-679a053,,Lazard,Vice President,18 Feb 2026
+Ashpreet,Singh,https://www.linkedin.com/in/helloashpreet,,Self-employed,Growth Consultant,18 Feb 2026
+Ransom,Onyema,https://www.linkedin.com/in/ransomonyema,ransomonyema98@gmail.com,Medentee,Freelance Medical Writer,16 Feb 2026
+Tania,Zhydkova,https://www.linkedin.com/in/tania-zhydkova,,YouScan Social Listening ✨,Senior Content Writer,14 Feb 2026
+Justin,Arnold,https://www.linkedin.com/in/justin-o-arnold,,Lightning Media Partners,Freelance,12 Feb 2026
+Fady Bahaii,Seleem,https://www.linkedin.com/in/fadyseleem,,Native Translation Services LLC,On-Site Interpreter and Translator,10 Feb 2026
+Benjamin,Grinberg,https://www.linkedin.com/in/benjamingrinberg,,corecubed,Senior Search Marketing Manager,10 Feb 2026
+Mark,Burdon,https://www.linkedin.com/in/markburdon1,,Cloudworker Digital,B2B Content Marketing Manager | Writer and Editor,10 Feb 2026
+Alexia,Palau,https://www.linkedin.com/in/ap-marketing,,AP Global Marketing & Automation Consulting,Chief Marketing Officer,09 Feb 2026
+Mona,Yamartino,https://www.linkedin.com/in/mona-yamartino,,Yum! Brands,"Associate Manager, Strategic Partnerships",23 Jan 2026
+Aylin,Mahic,https://www.linkedin.com/in/aylin-mahic-77903032b,,Self-employed,Video Editor,01 Jan 2026
+Tanu,Kumar,https://www.linkedin.com/in/tanu-kumar-9098493a,,The World Bank,Governance Specialist,29 Dec 2025
+Felicia,"French, MEd, LPC",https://www.linkedin.com/in/feliciaflpc,,East Texas Behavioral Healthcare Network ,Regional Utilization Management Authorization Specialist,13 Dec 2025
+Jagatpal,.,https://www.linkedin.com/in/jagatpal,,V. V. Giri National Labour Institute,Field Investigator,08 Dec 2025
+Ana,Safronova,https://www.linkedin.com/in/ana-safronova-539b93160,,WOW-HOW,Business Development Manager,01 Dec 2025
+Rachel,Oeth,https://www.linkedin.com/in/rachel-oeth-841b63295,,ROE Creative,Founder,03 Nov 2025
+Oleksandra,Mokii,https://www.linkedin.com/in/oleksandra-mokii,,Intellectsoft,Design Director,31 Oct 2025
+Mariano,Petignat,https://www.linkedin.com/in/mariano-petignat,,myTrudy,Senior Product Analyst,28 Oct 2025
+Raul,Lopez Peredo,https://www.linkedin.com/in/raullp,,Trudy,Senior Software Engineer,28 Oct 2025
+Hassan,Ali,https://www.linkedin.com/in/hassanaly1,,PlumoAI,Lead Full Stack Engineer & Founding Member,26 Oct 2025
+Hannah,Friedland,https://www.linkedin.com/in/hannah-friedland-723b39a4,,Snowflake,"Marketing Communications Specialist, Brand Writer and Editor",21 Oct 2025
+Courtney B.,"Gardner, MSW",https://www.linkedin.com/in/courtneybgardner,,The BRIDGE Lab Foundation,Program Coordinator,03 Oct 2025
+Kirsten,Brauser,https://www.linkedin.com/in/kirstenbrauser,,"Hunter Douglas, Inc.",Senior Supply Chain Project Manager,30 Sep 2025
+Matthew,Udziela,https://www.linkedin.com/in/matthew-udziela-ab0b8a235,,Non-Profit Organization,Project Manager,29 Sep 2025
+Sam,Setsoafia,https://www.linkedin.com/in/sam-setsoafia-58518b8b,,Eggseed AI,Founder & CEO,22 Sep 2025
+Mansi,Dixit,https://www.linkedin.com/in/mansidixit2309,,Bharat Sanchar Nigam Limited,Project Intern,26 Aug 2025
+Ty,Zebrowski,https://www.linkedin.com/in/ty-zebrowski-79b69964,,Daply | Scaling Digital Publishing,Daply,26 Aug 2025
+Eve,"Ogden, PhD",https://www.linkedin.com/in/eve-e-ogden,,Evernorth,User Experience Research Senior Manager ,13 Aug 2025
+Filipe,Abreu,https://www.linkedin.com/in/filabreu,,myTrudy,Senior Software Engineer,21 Jul 2025
+Ann,McGill Executive Recruiter,https://www.linkedin.com/in/ann-mcgill-executive-recruiter-9679139,,Executive Recruiter,"Director Recruitment Services, Insurance Investments Banking",11 Jul 2025
+Jennifer,"Rufer, MBA",https://www.linkedin.com/in/jennifer-rufer,,Madecraft,Manager of Content Production,08 Jul 2025
+Kadria,Simons,https://www.linkedin.com/in/kadria-simons-b9784a4a,,Ontario Institute for Studies in Education of the University of Toronto,Researcher,05 Jul 2025
+Alec,Berry,https://www.linkedin.com/in/alecjberry,,Workato,"Account Executive, Agentic AI",03 Jul 2025
+Diane,Tsai,https://www.linkedin.com/in/dianetsai,,Koi Studios,Product Designer,18 Jun 2025
+Alejandro,Rojas,https://www.linkedin.com/in/alejandro-rojas-b5352790,,Code Fabric,Senior Software Engineer / Technical Lead,09 Jun 2025
+Savannah,Kunovsky,https://www.linkedin.com/in/savannahkunovsky,,IDEO,"Managing Director, AI & Emerging Technology",06 Jun 2025
+Sunni (Sun),Brown,https://www.linkedin.com/in/sunnibrown,,Center for Deep Self Design,Founder,29 May 2025
+Harleny,"Vasquez,LMSW,SIFI☀️",https://www.linkedin.com/in/harlenyvasquez,,Headspace,Senior Clinical Recruiter,29 May 2025
+Adedayo,Agarau,https://www.linkedin.com/in/adedayoagarau,,Content Systems Lab,Founder & AI Content Strategist,15 May 2025
+Rachel,Cooley,https://www.linkedin.com/in/rachelcooley,,Medtronic,Sr Integrated Marketing Specialist - Pelvic Health,07 May 2025
+Daniil,Sergeev,https://www.linkedin.com/in/daniil-sergeev,,FNYI,Founder and Creative Director,04 May 2025
+Kyle,Beljanski,https://www.linkedin.com/in/kyle-beljanski,,HiveWatch,Senior Technical Product Manager,19 Apr 2025
+Clark,"Henson, SHRM-CP",https://www.linkedin.com/in/clark-henson,,Cotality,"Director, HR Business Partner ",16 Apr 2025
+Anjum,Malik,https://www.linkedin.com/in/anjum-malik-04227736,,Global Impact Initiative,Founder and Executive Director,15 Apr 2025
+Randy,Basler,https://www.linkedin.com/in/randybasler,,Invest St. Louis,Sales Agent,15 Apr 2025
+Jake,Buchanan,https://www.linkedin.com/in/jakebuchanan11,,Rise4,Chief Executive Officer,15 Apr 2025
+Gabriel,Steinlauf,https://www.linkedin.com/in/gabriel-steinlauf-ab2142298,,Boston Consulting Group (BCG),Incoming Summer Associate,26 Mar 2025
+Avishai Sam,Bitton,https://www.linkedin.com/in/avishaib,,DemandBox,CEO and Founder,13 Mar 2025
+Michael,Valinsky,https://www.linkedin.com/in/mvalinsky,,Air France-KLM,UX Writing Lead,25 Feb 2025
+Matt,Miller,https://www.linkedin.com/in/matwilmil,,Lightcast,Senior Account Executive - Talent Strategy,11 Feb 2025
+Jules,Costa,https://www.linkedin.com/in/content-strategist-jules-costa,,Ignite AI Community,Managing Director,03 Feb 2025
+Oluwasola,Omoju,https://www.linkedin.com/in/oluwasola-omoju-01b5454a,,National Institute for Legislative and Democratic Studies (National Assembly),Economist/Research Fellow,01 Feb 2025
+Peter,van der Windt,https://www.linkedin.com/in/petervanderwindt,,New York University Abu Dhabi,Associate Dean of Postdoctoral Programs and Research,01 Feb 2025
+Mike,Luongo,https://www.linkedin.com/in/mikeluongo,,Series Z,Founder,17 Dec 2024
+Krish,Gopal,https://www.linkedin.com/in/krishgopal,krish.bhat@hotmail.com,Freelance,Messaging & Conversion Strategist,17 Dec 2024
+Avi,Steinlauf,https://www.linkedin.com/in/avi-steinlauf-287566,,myTrudy,CEO & Co-Founder,13 Dec 2024
+Semuhi,"Sinanoğlu, PhD",https://www.linkedin.com/in/semuhisinanoglu,,German Institute of Development and Sustainability (IDOS),Researcher,30 Oct 2024
+Omar,García-Ponce,https://www.linkedin.com/in/omar-garcia-ponce,,The George Washington University,Associate Professor of Political Science and Intenational Affairs,30 Oct 2024
+Andrew,Gambino,https://www.linkedin.com/in/gambino,,3commaDigital,Co Founder/Managing Partner,22 Oct 2024
+andreas,jonsson,https://www.linkedin.com/in/ajonxyz,,TheShieldIndex,Cofounder,20 Sep 2024
+Hilary,Wells,https://www.linkedin.com/in/wellshilary,,Eight Arm Strategy,Founder | Fractional Marketing Leader | Advisor,17 Sep 2024
+Skylar,Bowyer,https://www.linkedin.com/in/skylar-bowyer2023,,RoseyFields,Environmental Analyst,13 Sep 2024
+Paul,Zahrai,https://www.linkedin.com/in/paulzahrai,,SSM Health,Sr. Backup/recovery and mid-tier storage administrator,30 Aug 2024
+Karina,Etminani,https://www.linkedin.com/in/ketminani,,AECOM,Attorney,30 Aug 2024
+Danielle,Reiff,https://www.linkedin.com/in/danielle-reiff,,U.S. Agency for International Development,U.S. Diplomat (Democracy / Human Rights / Peacebuilding),19 Jun 2024
+David,Boulanger,https://www.linkedin.com/in/dboulanger,,myTrudy,Head of Product,19 Jun 2024
+Andrea,Nguyen,https://www.linkedin.com/in/andreanguyen10,,Koi Studios,Co-Founder & Design Director,06 Jun 2024
+Estee,Eliasoph,https://www.linkedin.com/in/estee-eliasoph-7a866a2,,Airbnb,Lead Design Program Manager,30 May 2024
+Krista,Biesecker,https://www.linkedin.com/in/krista-biesecker,,Strategic Management & Logistics,Director of Virtual Communications & Administrative Operations,16 May 2024
+Cyrus,Samii,https://www.linkedin.com/in/cyrus-samii-15b93013,,New York University,Professor,08 May 2024
+Harris,Hatzimpaloglou,https://www.linkedin.com/in/harrishatzimpaloglou,,NextNow Ai,Head of Design & Product,01 May 2024
+Elisabeth (Lisa),Prescott,https://www.linkedin.com/in/elisabethprescott,,Eventbrite,SVP Design,29 Apr 2024
+Felix,Nyikwagh,https://www.linkedin.com/in/felix-nyikwagh-2b785660,,Clemson University,Graduate Teacher of Record(GTR),29 Apr 2024
+Lisa,Virtue,https://www.linkedin.com/in/lisavirtue,,Lisa Virtue Coaching,Executive Coach & Consultant,25 Apr 2024
+Mike,Manzella,https://www.linkedin.com/in/mike-manzella-064a7537,,ProServe Solutions,Founder,23 Apr 2024
+Holly,Lentine,https://www.linkedin.com/in/hollylentine,,OneBeacon,Senior Talent Consultant,26 Mar 2024
+Carlton,Schuyler,https://www.linkedin.com/in/cschuyle,,Ritchie Bros.,Senior Software Engineer,26 Mar 2024
+Geisse,Ritter C.,https://www.linkedin.com/in/geisse-cabi,,NXP Semiconductors,Global Logistics Business Analyst,13 Mar 2024
+Anjela,Nowbahar,https://www.linkedin.com/in/anjela-nowbahar-558b0a24,,Self-employed,Division Manager,02 Mar 2024
+Rayan,Abbasi,https://www.linkedin.com/in/rayan-abbasi-51154b28a,,ADR Institute of Alberta,Education Coordinator,02 Mar 2024
+Randy Peyser -,"Book Editor, I Secure Literary Agents",https://www.linkedin.com/in/randypeyserbookeditor,,"Author One Stop, Inc.","Book Agent, I Secure Literary Agents & Publishers",02 Mar 2024
+Joshua,Taylor,https://www.linkedin.com/in/joshuantaylor,,Hedra,Head of Design,02 Feb 2024
+Jonathan,Robins,https://www.linkedin.com/in/robinsjonathan,,Pre/Dicta,Chief Revenue (CRO) & Operating Officer (COO),13 Sep 2023
+James,"Winter, PhD",https://www.linkedin.com/in/james-winter-phd-12312612,,Peregrine,Product Manager,01 Sep 2023
+Elias Oscar,Rico Contreras,https://www.linkedin.com/in/elias-rc,,LHIIS,Product Owner & UX Consultant,21 Aug 2023
+Chrissy,Neafsey,https://www.linkedin.com/in/christinaneafsey,,Friends of Firefighters,Associate Director,09 Aug 2023
+Seth,Thompson,https://www.linkedin.com/in/seth-thompson-b62810256,,Self-employed,Copywriter,04 Aug 2023
+Nuri,Niyazi,https://www.linkedin.com/in/nuri-niyazi-0a900589,,FAO,Knowledge Management Specialist,02 Aug 2023
+,,,,,,20 Jul 2023
+Judy,Smith,https://www.linkedin.com/in/thejudysmith,,Bringing Simplicity,Chief Executive Officer,20 Jul 2023
+Maeve,Skelly,https://www.linkedin.com/in/maeve-skelly,,City and County of San Francisco,"Legislative Aide, San Francisco Board of Supervisors, office of President Rafael Mandelman",19 Jul 2023
+Paul X,McCarthy,https://www.linkedin.com/in/paulxmccarthy,,League of Scholars,"CEO, Co-Founder and Chief AI Officer (CAIO)",12 Jul 2023
+Jeremy,Lambshead,https://www.linkedin.com/in/jeremy-lambshead,,Lambshead Learning and Language Services,Independent Contractor,21 Jun 2023
+Forest,Love,https://www.linkedin.com/in/forest-love-5a3b3643,,SEPHORA,"Senior Manager, Production Design ",09 Jun 2023
+Sahar,Rahimi ,https://www.linkedin.com/in/sahar-rahimi-29a889277,,Baha'i World Centre,Editorial Assistant,03 Jun 2023
+Judi,Brown,https://www.linkedin.com/in/judibrown,,CivicMakers,Co-Founder & Managing Partner,17 May 2023
+Stephen,Gates,https://www.linkedin.com/in/stepdgat,,CRZY strategy and design studio,Founder / Chief Creative Officer ,10 May 2023
+Elmar,Mamedov,https://www.linkedin.com/in/elmarmamedov,,myTrudy,Head of Engineering,10 May 2023
+Nick,Stone,https://www.linkedin.com/in/nick-stone-4057aa1,,Nick Stone Design,principal,07 May 2023
+Clara,Kim,https://www.linkedin.com/in/clarakim,,myTrudy,General Manager,03 May 2023
+Daniel,Gomez Seidel,https://www.linkedin.com/in/danielgomezseidel,,Studio Gomez Seidel,Founder / Principal,28 Apr 2023
+Dr Serggio,García-Guillén,https://www.linkedin.com/in/dr-serggio-garc%C3%ADa-guill%C3%A9n-45786922,zerggiomd@gmail.com,The Desire To Inspire Foundation,Board Member,21 Apr 2023
+Bhargavi,Thakur,https://www.linkedin.com/in/bhargavi-thakur-718b94134,,Central Square Foundation,Qualitative Consultant,07 Apr 2023
+Peter,Harling,https://www.linkedin.com/in/pharling,,Synaps Network,Founder & Director,03 Apr 2023
+Jake,Rudman,https://www.linkedin.com/in/jakethomasrudman,,Inflection Point MSP,Client Engagement Specialist ,03 Apr 2023
+Sebastian,Vila Obarrio,https://www.linkedin.com/in/sebastian-vila-obarrio,svilaobarrio36@gmail.com,Jodify,Product Designer,10 Mar 2023
+Gus,Kangas,https://www.linkedin.com/in/gus-kangas-55537b8,,Optica Labs Inc,Advisory Board Member,04 Mar 2023
+Saskia,Van der Knoll,https://www.linkedin.com/in/saskiavanderknoll,,VDK Creative Studio,Founder & Creative Director,21 Feb 2023
+Anita,Isalska,https://www.linkedin.com/in/isalska,,Self-employed,Independent Content Marketing Consultant,16 Feb 2023
+Lauren,Wilbanks,https://www.linkedin.com/in/lauren-wilbanks-4227489,,Credit Karma,Head of Content Design,07 Feb 2023
+Cristobal,Chao,https://www.linkedin.com/in/crchao,,Torii Studio,Founder,07 Feb 2023
+Nabil,"Fares, DTech",https://www.linkedin.com/in/nabil-fares-dtech-a34925a,,LEAD,Executive Principal,02 Feb 2023
+Nader,"Afzalan, Ph.D.",https://www.linkedin.com/in/nader-afzalan-ph-d-84a968b,,"University of California, Berkeley","Program Director, Sustainable Environmental Design",01 Feb 2023
+Tala,Bahadori,https://www.linkedin.com/in/talaabahadori,,RGE LIGHTING DESIGN,Visual Designer,30 Jan 2023
+Nicholas,Pajerski,https://www.linkedin.com/in/nicholaspajerski,,FRAGMENT,Design,20 Jan 2023
+Arnold,Gekonge,https://www.linkedin.com/in/arnoldgekonge,,Champions for SDGs Youth,Founder,03 Jan 2023
+Amrut,Bagdi,https://www.linkedin.com/in/amrut-bagdi,amrut.bagdi@berkeley.edu,"Qorvo, Inc.",Sr. Yield & Integration Engineer ,03 Jan 2023
+Max,Tsvetkov,https://www.linkedin.com/in/tsvetkovmaxim,,FinOn,Global Head of Experience & Product Design,25 Dec 2022
+Sara,Ironside,https://www.linkedin.com/in/sara-ironside-a699551,,Franklin Templeton Investments,Senior Organizational Development Consultant | Learning Consultant | Executive Coach,16 Nov 2022
+J Michael,Kemmy,https://www.linkedin.com/in/j-michael-kemmy-b0b3b9131,johnmichael123@protonmail.com,J Michael & Associates,Founder/CEO,13 Nov 2022
+Robin,"Shultz, LCSW, ACC, ACHPSW",https://www.linkedin.com/in/robin-shultz,,Tribus Solutions,Principal,13 Nov 2022
+Tiffany,Stanfield,https://www.linkedin.com/in/tiffanyglasscock,,ServiceNow,Senior Research Operations Specialist,20 Oct 2022
+Crystal,Kubitsky,https://www.linkedin.com/in/ckubitsky,,Rally UXR,Sr Research Operations Consultant,20 Oct 2022
+Oren,Friedman,https://www.linkedin.com/in/oren-friedman,,Rally UXR,Co-Founder & CEO,20 Oct 2022
+Casey,Gollan,https://www.linkedin.com/in/casey-gollan,,IBM,"Senior Engineering Manager, Product Excellence Office",05 Oct 2022
+Jenn,Low,https://www.linkedin.com/in/jenn-low-1594285,,Jenn W. Low LLC,Equitable Development and Cultural Placemaking Consultant,28 Sep 2022
+Emmanuel,Saccoccini,https://www.linkedin.com/in/sacco,,Vocana,Director of Engineering,19 Sep 2022
+Claire,Saccoccini,https://www.linkedin.com/in/clairepotel,,RH,Translation Project Associate,16 Sep 2022
+Saskia,Liebenberg,https://www.linkedin.com/in/saskialiebenberg,,Monzo Bank,Senior research ops lead,15 Sep 2022
+Richard,"Blanco-Peck, Ph.D.",https://www.linkedin.com/in/richard-blanco-peck-ph-d-7259b621,guayacan97@yahoo.com,Self-employed,Social and Gubermental Researcher/Quantitative & Qualitative Analysis,08 Sep 2022
+Craig,Perlmutter,https://www.linkedin.com/in/craig-p-72b23152,,Goaco,UCD Operations Lead (Fixed contract),08 Sep 2022
+Alla,Weinberg,https://www.linkedin.com/in/allaweinberg,,Four Percent,Founder,04 Sep 2022
+Esther M.,McIntosh,https://www.linkedin.com/in/esthermcintosh,,Abt Global Australia,Team Leader Governance,25 Aug 2022
+Gbadebo,"Odularu, Ph.D, FREcon.",https://www.linkedin.com/in/gbadebo-odularu-ph-d-frecon-6bba5b2a,editorinchief@ajrob.us,AFRICAN FINANCE AND ECONOMICS ASSOCIATION,Chair of the Board of Directors,03 Aug 2022
+J. Morag,MacKay,https://www.linkedin.com/in/j-morag-mackay-348ab714,,Safe Kids Worldwide,Chief Research and Network Officer,03 Aug 2022
+Robert G.,"Nyaga, PhD",https://www.linkedin.com/in/robert-g-nyaga-phd-64863144,,Busara,"Technical Director, Qualitative Research ",03 Aug 2022
+Paul,King,https://www.linkedin.com/in/paul-king-8895ba16b,,"Institute of Governmental Studies Library, University of California, Berkeley",Circulation Supervisor,23 Jul 2022
+Lihui,"Zhang, PhD",https://www.linkedin.com/in/lihuizhang53,,The Legal Aid Society,Senior Research Associate,21 Jul 2022
+Daniela,Cantor Cuevas,https://www.linkedin.com/in/danielacantorcuevas01,,Qure.ai,Associate Client Partner ,05 Jul 2022
+Maryam,Erfan,https://www.linkedin.com/in/maryam-erfan,,City of Orlando,Executive Assistant,30 Jun 2022
+Ana Sofia,Pirnia,https://www.linkedin.com/in/ana-sofia-pirnia-b6322b25,,Arnold & Porter Kaye Scholer LLP,Associate,09 May 2022
+Aurora,"Betancourt, MBA",https://www.linkedin.com/in/aurora-betancourt-mba-4b38ab30,,San Pablo Economic Development Corporation,Business and Housing Program Manager ,03 May 2022
+Jenifer,Banks,https://www.linkedin.com/in/jennybanks,,Coaching4Creatives,Career Coach ,03 May 2022
+Luke,"Brodie, MBA",https://www.linkedin.com/in/lukebrodie,,Accenture,Learning Lead - Connected Innovation Centres,03 May 2022
+Sandra,"Hwang, MSPH",https://www.linkedin.com/in/sandrahwang,,Independent,Design Research Lead | Content Strategist,25 Apr 2022
+Krzysztof,Wronski,https://www.linkedin.com/in/thewronski,,Nordea,"Design Lead, Large Corporates",22 Apr 2022
+Amy,Wang,https://www.linkedin.com/in/aliasamy,,Openbox,Managing Partner,04 Apr 2022
+Linda,S.,https://www.linkedin.com/in/linda-s-696385235,,Living Map Studio,Founder & Principal Consultant,27 Mar 2022
+Olivia,Geymond,https://www.linkedin.com/in/olivia-geymond,,The Commonwealth,"Adviser, Strategy and Impact",26 Mar 2022
+Lauren,"Ferreira Cardoso, PhD",https://www.linkedin.com/in/laurenfcardoso,,Bright Research Group,Senior Consultant,21 Mar 2022
+Casey,Ste. Claire,https://www.linkedin.com/in/csteclaire,,"University of California, Berkeley",Graduate Researcher,22 Jan 2022
+Tom,Bewick,https://www.linkedin.com/in/tom-bewick-72960bb,,Adventure Scientists,Project Developer,21 Jan 2022
+Robin,Che,https://www.linkedin.com/in/robin-che,,XTRACT AI,Ai Implementation Consultant,18 Jan 2022
+Dr. Tova,Makhani-Belkin,https://www.linkedin.com/in/tova-makhani-belkin-anthropology,,Univeristy of Galway,Postdoctoral Researcher,07 Jan 2022
+Stephanie,Fawkes Fraser,https://www.linkedin.com/in/stephanie-fawkes-fraser-9a233550,,Wells Fargo,Lead Business Execution Consultant - Issue Management,17 Dec 2021
+David,Wolf,https://www.linkedin.com/in/david-wolf-a5597b138,,"University of California, Berkeley",Research Administrator,29 Nov 2021
+Randolph,Dobbs,https://www.linkedin.com/in/randolph-dobbs-78aa7427,,Freelance,Journalist,26 Nov 2021
+Ray,Kwok,https://www.linkedin.com/in/lobbying-firm-united-states-china,,Pontus Associates Lobbying Firm in China and United States,Managing Director,24 Nov 2021
+Russell,Zehtab,https://www.linkedin.com/in/russell-zehtab-b3902228,,SILKMentoring - Contributing to the Advancement of Women,Mentor and Facilitator,24 Nov 2021
+Norman,"Albances, Ph.D.",https://www.linkedin.com/in/normanchris,,Workforce Development Board of Ventura County,Assistant Director,08 Sep 2021
+Julia,Lepikhova,https://www.linkedin.com/in/julia-crft,,CRFT Video | Animated explainer videos,Junior Relationship Manager,26 Jul 2021
+Trachant ,Murhula ,https://www.linkedin.com/in/trachant-murhula-22388a146,,Fondation Tendaji,Coordonateur Regional chargé du Programme,06 Jul 2021
+Prem,Jayaram,https://www.linkedin.com/in/prem-jayaram-3b4760199,,Optumair ,Senior technician Hvac and Refrigeration ,28 Jun 2021
+Rip,"Rowan, M.B.A.",https://www.linkedin.com/in/riprowanaustin,,Equus Workforce Solutions,"Director, National and Strategic Partnerships",18 May 2021
+Sayuti,Baba,https://www.linkedin.com/in/sayuti-baba-6b15a98a,,Bayuti Enterprise,Ceo,04 May 2021
+Shahab,Saeidi 🇨🇦,https://www.linkedin.com/in/shahab-saeidi-%F0%9F%87%A8%F0%9F%87%A6-59718242,,Saeidi’s Central Delivery,Owner,03 May 2021
+ Prof. Inderjeet Singh,Sodhi,https://www.linkedin.com/in/prof-inderjeet-singh-sodhi-71722467,,Jamia Millia Islamia,"Professor (Public Administration), Department of Political Science",28 Apr 2021
+John,Colborn,https://www.linkedin.com/in/johncolborn,,Apprenticeships for America,Executive Director,28 Apr 2021
+Wafa,Reyhani,https://www.linkedin.com/in/wafareyhani,,ReyPublic,Senior Project Designer,09 Apr 2021
+Mandy,Pardehpoosh,https://www.linkedin.com/in/mandymovahhed,,Shopify,Product Marketing,05 Apr 2021
+Rania,Sohail,https://www.linkedin.com/in/rania-sohail,,Boldly Go Philanthropy,Impact Advisor,05 Apr 2021
+Leah,Kosatsky,https://www.linkedin.com/in/lkosatsky,,Leah Kosatsky Consulting | BluOwl Media,"CEO, Business Coach & Online Strategy",02 Apr 2021
+Brenda,Jauregui Zanabria,https://www.linkedin.com/in/brendajz,,NEORIS,Project Design Lead | Management,02 Apr 2021
+Pryscila,Flores Galarza,https://www.linkedin.com/in/pryscila-flores,,Alicorp,Tagging Specialist,24 Feb 2021
+Gonzalo,Reyes,https://www.linkedin.com/in/gonzalo-reyes-consultor,,Prodeo 🟢,Community Lead & Prodeo Talks Organizer - Perú,24 Feb 2021
+Giuliana,Jesús,https://www.linkedin.com/in/giuliana-jesus-ramirez,,Renzo Costa, Gerente de Marketing,23 Feb 2021
+Golriz,Lucina,https://www.linkedin.com/in/golriz-lucina-62559b47,,SoulPancake ,Co-Founder & Head of Creative,23 Feb 2021
+Jean-Michel,Benoit Noriega,https://www.linkedin.com/in/jean-michel-benoit-noriega,,Yape,Senior Business Strategy & Design,23 Feb 2021
+Elizabeth,Albarracin Velásquez,https://www.linkedin.com/in/elizabeth-albarracin-velasquez,,Ministerio de Educación del Perú - Minedu,Service Designer,23 Feb 2021
+Alvaro,Culqui,https://www.linkedin.com/in/alvaroculqui,,Seequent,Account Manager,23 Feb 2021
+Camila,Ferraro,https://www.linkedin.com/in/camila-ferraro-b79277b0,,Globant,Senior Design Strategist,21 Feb 2021
+Vinícius,Rodrigues,https://www.linkedin.com/in/vinicius-rodrigues-policy,,Prefeitura de São Paulo,Public Policy and Government Management Analyst (APPGG),10 Feb 2021
+Minnie,Bredouw,https://www.linkedin.com/in/minniebredouw,,Pinterest,"Principal, Creative Director",06 Feb 2021
+Allison,Grant,https://www.linkedin.com/in/allisonmgrant,,Babs AI,Head of Growth,05 Feb 2021
+Mariajosé (Majo),Fernández-Plenge,https://www.linkedin.com/in/mariajosefernandezplenge,,Parsons School of Design - The New School,Editorial Research Member,04 Feb 2021
+Madison,Kahn,https://www.linkedin.com/in/madison-kahn-b95aa413,,Kettle,Associate Creative Director,04 Feb 2021
+Jessica,Pastor Tomás,https://www.linkedin.com/in/jespasto,,ALSO.,Head of CMF Design | Micro-Mobility,03 Feb 2021
+Laurah,Mwirichia,https://www.linkedin.com/in/laurah-mwirichia,,Squarespace,Senior Product Designer,27 Jan 2021
+Ivanka,Jauregui ,https://www.linkedin.com/in/ivankajauregui,,Element5 Consulting & Training ,Executive and High Performance Coach,26 Jan 2021
+Yan,Grinshtein,https://www.linkedin.com/in/yangrinshtein,,Cepien AI,CEO & Co-Founder,26 Jan 2021
+Mudassir,Azeemi,https://www.linkedin.com/in/hellomuds,,Fynch Consulting,Head of Product and Business Growth,26 Jan 2021
+,,,,,,24 Jan 2021
+Dunia,Donaires-León,https://www.linkedin.com/in/duniadonairesleon,,BWC,People & Talent Development Lead,17 Jan 2021
+,,,,,,10 Jan 2021
+Andrew,Johnson,https://www.linkedin.com/in/andropolis,,Robinhood,Design Director,17 Dec 2020
+Farzeen,Y.P,https://www.linkedin.com/in/farzeen-y-p-467a03120,,"ZHENGYUANJU (HEBEI) HOLDINGS CO., LTD.",Managing Director,23 Nov 2020
+Ahsan,Farooqui,https://www.linkedin.com/in/ahsan-farooqui-91751b36,,University of Sussex,Doctoral Tutor,22 Nov 2020
+Lauren,Friedman Russell,https://www.linkedin.com/in/laurenfriedman,,Center for Effective Global Action,Director of Operations,02 Nov 2020
+Bita,Correa,https://www.linkedin.com/in/bita-correa-b998111b5,,Fundación para la Aplicación y Enseñanza de las Ciencias (FUNDAEC),Executive Director,20 Oct 2020
+Julie,Werbel,https://www.linkedin.com/in/julie-werbel-77b7853,,"Bureau for Conflict Prevention and Stabilization, USAID","Chief, Leadership and Learning Division",15 Oct 2020
+Nabimara,Ronald,https://www.linkedin.com/in/ruyombyaronald,,Pathfinder International,Grants & Compliance Manager,08 Oct 2020
+Corey,White,https://www.linkedin.com/in/corey-white,,Independent consultant,Communications Consultant,02 Oct 2020
+Denise,Burchell,https://www.linkedin.com/in/deniseburchell,,Docusign,Global Systems & Service Design - Employee Engagement,23 Sep 2020
+Leesa,Gallaher,https://www.linkedin.com/in/leesagallaher,,Airbnb,Senior Content Strategist,15 Sep 2020
+Nader,"Tamadon, CFP®, CEPA®, SE-AWMA™, CPWA®",https://www.linkedin.com/in/nadertamadon,,Merrill Lynch Wealth Management,"Resident Director - Wealth Management Advisor, Managing Director",11 Sep 2020
+Jenn,Maer,https://www.linkedin.com/in/jenn-maer-b2a45b2,,Harmonic,Co-Founder,07 Sep 2020
+Naeem,Ghafari,https://www.linkedin.com/in/naeemghafari,,WEST BBDO,Associate Creative Director,07 Sep 2020
+,,,,,,28 Aug 2020
+Nava,Khorram Ahmad,https://www.linkedin.com/in/nava-khorram,,Climate Education Centre,Executive Director,28 Aug 2020
+Nick N.,Navai,https://www.linkedin.com/in/nick-n-navai-04786b43,,CENTURY 21®,Licensed Real Estate Agent,28 Aug 2020
+Adam,Smith,https://www.linkedin.com/in/adamrsmith120,,Fund Launch,Chief Marketing Officer,26 Aug 2020
+Bryan,Weber,https://www.linkedin.com/in/bryan-weber-5abb52139,,Bryan Weber Photography,Wedding Photographer,01 Aug 2020
+Leonard,Williams,https://www.linkedin.com/in/leonard-williams-754114105,,King Distributions Inc.,Owner/CEO,22 Jun 2020
+Sandra,Schmeil,https://www.linkedin.com/in/sandraschmeil,,SanStudio,Creative Director,27 May 2020
+Markus,Taussig,https://www.linkedin.com/in/markus-taussig-522999,,Rutgers Business School,Associate Professor,20 May 2020
+Doris,Chen,https://www.linkedin.com/in/doris-chen-56837266,,"ShenZhen Doven Garments CO., LTD",Sales Manager At Menswear | Supply Chain Management,10 May 2020
+Adam,Côté,https://www.linkedin.com/in/adam-c%C3%B4t%C3%A9-5a03a984,,U.S. Department of Veterans Affairs,Advanced Medical Support Assistant,30 Apr 2020
+Edmund,Malesky,https://www.linkedin.com/in/edmund-malesky-9011266,,VinUniversity,Co-Director of Smart Green Transformation Center,19 Apr 2020
+Jesse,Velazquez,https://www.linkedin.com/in/jesse-velazquez,,Ohio Environmental Council,Climate Justice Manager,26 Mar 2020
+Alessandro,Amelotti,https://www.linkedin.com/in/alessandroamelotti,,Impact Hub SB,Co-Founder,23 Mar 2020
+Rayyan,Aldossary,https://www.linkedin.com/in/rayyanaldossary,,Association of Central Oklahoma Governments,911 GIS specialist I ,20 Mar 2020
+Brynn,Fuller,https://www.linkedin.com/in/brynn-fuller,,aboundsocial.com,Copywriter. Account Manager. Trendsetter. ,20 Mar 2020
+Armin,"Khoshkar MD, MS, MSC",https://www.linkedin.com/in/armin-khoshkar,,Inova Health System,Monitor Tech,06 Mar 2020
+Diane,BUNOD,https://www.linkedin.com/in/diane-bunod-8bb233a8,,Tomorro,Lead Product Manager,04 Mar 2020
+Bidrea,Alnasser,https://www.linkedin.com/in/bidrea-a-12a5b2125,,"University of California, Berkeley",Vice Chair at Berkeley Postdoctoral Entrepreneurship Program,02 Mar 2020
+,,,,,,26 Feb 2020
+Zaynab ,González ,https://www.linkedin.com/in/zaynab-gonz%C3%A1lez-019719b7,,World Wide Technology,Business Continuity Specialist,21 Feb 2020
+Borhan,Zadeh,https://www.linkedin.com/in/borhan-zadeh,,Centorrino Technologies,Development Team Lead,05 Feb 2020
+Riaz,Badiian,https://www.linkedin.com/in/riaz-badiian-09697b44,,Gutachten,Dipl. Ing. im Bauwesen,05 Feb 2020
+,,,,,,03 Feb 2020
+Natasha,Strydom,https://www.linkedin.com/in/natasha-strydom-56b78273,,Amgen,"Sr Principal Scientist, Clinical Pharmacology",02 Feb 2020
+Anushree,Deb,https://www.linkedin.com/in/anushreedeb,,"University of California, Berkeley, Goldman School of Public Policy","Associate Director, Career Services (MDP)",26 Jan 2020
+Alexandria,"Wright, PhD",https://www.linkedin.com/in/alexwrightphd,,Savannah-Chatham County Public School System,Project Manager,18 Jan 2020
+Neda,Haghani,https://www.linkedin.com/in/neda-haghani-ba73092b,,INTERNAL MEDICINE ASSOCIATES OF SAND CANYON,Family Nurse Practitioner,06 Jan 2020
+Quddus Joel,Miller,https://www.linkedin.com/in/joelqmiller,,FoodBelly Wellness,Executive Chef,02 Jan 2020
+Matt,Giani,https://www.linkedin.com/in/matt-giani-15864a10,,The University of Texas at Austin,Research Associate Professor,23 Dec 2019
+Iman,Fadaei,https://www.linkedin.com/in/imanfadaei,,TalentPools,Founder,19 Dec 2019
+Raha,Sabet Sarvestany,https://www.linkedin.com/in/raha-sabet-sarvestany-56b7a159,,Åbo Akademi University,Postdoctoral Researcher,18 Dec 2019
+Camille,Ricketts,https://www.linkedin.com/in/camillericketts,,XYZ Venture Capital,Partner & Head of Marketing,10 Dec 2019
+Saba,Mansouri,https://www.linkedin.com/in/saba-mansouri-80436914a,,Self-employed,REVEAL THEN THYSELF,07 Dec 2019
+Amin,Shams,https://www.linkedin.com/in/amin-shams-71247960,,The Ohio State University Fisher College of Business,Assistant Professor of Finance,03 Dec 2019
+Cori,"Seyhoon, D.C., CCSP",https://www.linkedin.com/in/drcoriseyhoon,,Clearly Aligned,Doctor / Owner,27 Nov 2019
+Max,Méndez Beck,https://www.linkedin.com/in/max-mendez-beck,,"University of California, Berkeley",Research Program Manager,23 Nov 2019
+David,Isaak,https://www.linkedin.com/in/davidisaak,,"City of Bellevue, Washington",Neighborhood Outreach Manager,03 Nov 2019
+Dr. Samantha,Dewalt,https://www.linkedin.com/in/dr-dewalt,,Lehigh University,"Managing Director, Western Regional Office",02 Nov 2019
+Heranush,Hopkins (IBCLC),https://www.linkedin.com/in/heranush-hopkins,,Heranush Lactation Consultant,"Lactation Consultant, IBCLC | Business Owner",28 Oct 2019
+Leva,Pellegrin,https://www.linkedin.com/in/leva-pellegrin,,Léva Pellegrin,Life Coach and Energy Healer,23 Oct 2019
+Ursula,Diez Canseco Brambilla,https://www.linkedin.com/in/ursula-diez-canseco,,Urbanova,Corporate Marketing and Innovation ,11 Oct 2019
+Gemma,Ames,https://www.linkedin.com/in/amesgemma,,"Superintendencia de Banca, Seguros y AFP del Perú",Financial System Supervisor I,11 Oct 2019
+Jorge,Carretero,https://www.linkedin.com/in/carreterolaw,,Profesional independiente,Abogado experto en litigios judiciales y administrativos,11 Oct 2019
+Neda,Yegan,https://www.linkedin.com/in/nedayegan,,Jason Mitchell Real Estate,Associate Broker,11 Oct 2019
+Samantha,Mansilla,https://www.linkedin.com/in/samanthamansilla,,Profesional independiente,Consultor en Gestión Estratégica y Comercial,11 Oct 2019
+Emilio,Barúa,https://www.linkedin.com/in/emiliobarua,,BBVA en Perú,Principal Manager Operations,11 Oct 2019
+Paola,Corvacho,https://www.linkedin.com/in/paolacorvacho,,Cleo,Founder & CEO,11 Oct 2019
+Manuel,Torres M.,https://www.linkedin.com/in/manueltorres13,,ARPL,Lider de Transformación Digital,07 Oct 2019
+Victor Sergio,Zevallos Aguilar,https://www.linkedin.com/in/victorzevallosaguilar,,Entel Perú,Business Data Translator / Medios Propios,07 Oct 2019
+Micaela,Dibos Cilloniz,https://www.linkedin.com/in/micaela-dibos-cilloniz-600317124,,Casa,Mamá 24x7,07 Oct 2019
+Virginia,Hamilton,https://www.linkedin.com/in/virginia-hamilton-283a8,vahamilton@mac.com,State of California Office of Data and Innovation,Human Centered Design Teacher and all things Innovation,04 Oct 2019
+Cristina,Elias,https://www.linkedin.com/in/cristinaeliasp,,Colectivo23,CEO,13 Sep 2019
+Kambiz,Poostchi,https://www.linkedin.com/in/kambiz-poostchi-93b8822,,"WIFI, MCI, Pädagogische Hochschulen, Donau Universität Krems, Bildungshaus Lichtenburg Südtirol",Lehrgangsleitung + Trainer,09 Sep 2019
+Stephen C.,Hailey,https://www.linkedin.com/in/stephen-c-hailey-73a20458,,State of Delaware,Former Special Education Hearing Officer,03 Sep 2019
+Jo,Dobbert,https://www.linkedin.com/in/jo-d-3a4a462b,,JD TUTORIALS,Independent Business Owner,03 Sep 2019
+Shayan,Navaie,https://www.linkedin.com/in/shayan-navaie-bb314166,,"The American Shield, Corp.",Regional Account Manager,02 Sep 2019
+Carlos,Schmidt-Padilla,https://www.linkedin.com/in/cschmidtpadilla,,"University of California, Berkeley",Assistant Professor,18 Aug 2019
+Arman,"Rezaee, PhD",https://www.linkedin.com/in/armanrezaee,,Cisco,"Senior Research Scientist, Office of the CTO",04 Aug 2019
+Heather,Luxion,https://www.linkedin.com/in/heatherluxion,,BTS,Principal | Associate Director of Coaching | Executive Coach ⦿ Global Executive Coaching Center,20 Jul 2019
+Kyle,Holloway,https://www.linkedin.com/in/kyledholloway,,Atlas AI,Advisor,18 Jul 2019
+Adam,Bushey,https://www.linkedin.com/in/adam-bushey-571a95,,U.S. Africa Command (AFRICOM),"Judge Advocate, U.S. Army",02 Jul 2019
+Monette,Van Lith,https://www.linkedin.com/in/monette-van-lith-ba908416a,,Founder Monette Van Lith Coaching,Coach & Trainer,09 Jun 2019
+Ciana,Caddell,https://www.linkedin.com/in/cianacaddell,,"University of California, Berkeley","Senior Business Systems Analyst, Strategic Planning & Management",12 May 2019
+Daniel,Sammut,https://www.linkedin.com/in/dansammut,,For Good Design Lab,Founder & Creative Director,05 May 2019
+Renard,Sexton,https://www.linkedin.com/in/renardsexton,,Emory University,Associate Professor,02 May 2019
+Peter Charles,Lyon,https://www.linkedin.com/in/peter-charles-lyon-b131869,,JCS Solutions LLC,Senior Cyber Partner Integration Planner,22 Apr 2019
+Jane,"Alston, MD MBA FACS",https://www.linkedin.com/in/jane-alston-md-mba-facs-7b4502126,,Intermountain Healthcare,General Surgeon,22 Apr 2019
+shahid,naveed,https://www.linkedin.com/in/shahid-naveed-43120363,,Dar AL-ENJAZ Contracting Co. Makkah Saudia Arabia ,"Road Contractor (Asphalt work, Earth  Work, )",17 Mar 2019
+Ashley,Buck,https://www.linkedin.com/in/ashley-buck-a8621a4,,Caregiver Jobs,Caregiver,17 Mar 2019
+Tina,McNulty,https://www.linkedin.com/in/tinammcnulty,,Schneider Electric,"VP, Strategy, Partnerships & Alliances",15 Mar 2019
+Michael,Gardner,https://www.linkedin.com/in/michael-gardner-ceo-gardner-capital,,Gardner Capital Solar,CEO,03 Mar 2019
+Amir,Farmanesh,https://www.linkedin.com/in/farmanesh,,People Analytics,CEO,19 Feb 2019
+Ingrid Marielos,Marthy,https://www.linkedin.com/in/ingridmarthy,,Ingrid Marielos Marthy Consulting,Owner,12 Feb 2019
+Ryan B,Coover,https://www.linkedin.com/in/studio-ryan-coover,,Studio Ryan Coover,Artist | Changemaker | Strategic Consultant | Creative Intuitive | Architect,07 Feb 2019
+Kertu,Kelem,https://www.linkedin.com/in/kertu-kelem-31227b18,,EE,Service Advisor,09 Jan 2019
+Hafez,Ajam Ekrami,https://www.linkedin.com/in/hafez-ajam-ekrami-409327a8,,Hafez Gostaran Aryaban,CEO,20 Dec 2018
+Jackie,"Homann, PMP",https://www.linkedin.com/in/jackie-homann-pmp-48613b39,,U.S. Department of State,Foreign Affairs Officer - Office of Foreign Assistance Oversight,04 Dec 2018
+,,,,,,01 Dec 2018
+Natalie,Venturi,https://www.linkedin.com/in/natalieventuri,,Natalie Venturi Consulting,Founder | Executive Advisor | Leadership Communication & Strategic Facilitation | Author,12 Nov 2018
+Raymond,Young,https://www.linkedin.com/in/pharmd09ray,,"Omnicare, a CVS Health company",Clinical Pharmacist,13 Oct 2018
+Temina,Madon,https://www.linkedin.com/in/temina,,The Agency Fund,"Co-Founder, Member",05 Oct 2018
+William,Harley,https://www.linkedin.com/in/williambharley,,"""Transformed: How To Make The Decisions That Change Your Life""",Author,04 Oct 2018
+Eric,Harper,https://www.linkedin.com/in/ericharpermusic,,Hollow Reed Entertainment,Chief Content Officer,04 Oct 2018
+Nesar,Safajou,https://www.linkedin.com/in/nesar-safajou-6ab54b16b,,The New Mummy Company Inc,Placement Consultant,04 Sep 2018
+Samin,Eskandariyan,https://www.linkedin.com/in/samineskandariyan,,Utah Department of Health and Human Services,Financial Manager,16 Aug 2018
+Ana,Quiroz,https://www.linkedin.com/in/anaquiroz,,"Manaus, LLC",Project Manager,27 Jul 2018
+Baseem,Missaghi,https://www.linkedin.com/in/bmissaghi,,CycleByte,Founder & Technical Lead — Platform & DevOps,02 Jul 2018
+Shar,Mahon,https://www.linkedin.com/in/shar-mahon-19aa41129,,Auckland Council,"Talent Acquisition Consultant, Specialist & Management",02 Jul 2018
+Vafa,Bayat,https://www.linkedin.com/in/vafa-bayat,,Bitscopic,"Product Head, R&D at Bitscopic",28 Jun 2018
+Prof. Edward S.,Ayensu,https://www.linkedin.com/in/prof-edward-ayensu,,Energy Globe Foundation,President,24 Jun 2018
+Thad,Dunning,https://www.linkedin.com/in/thad-dunning-40a8085a,,"University of California, Berkeley",Robson Professor of Political Science,21 Jun 2018
+Saba,Danawala,https://www.linkedin.com/in/sabadanawala,,WAAC,Counsellor - HIV,30 May 2018
+Conor,Das-Doyle,https://www.linkedin.com/in/condoyle111,,OECD - OCDE,"Economist / Policy Analyst, Manager - Public Governance Directorate",30 Apr 2018
+Adel-Naim,Reyhani,https://www.linkedin.com/in/adel-naim-reyhani-6a2119161,,Ludwig Boltzmann Institut für Grund- und Menschenrechte (LBI-GMR),Principal Investigator,15 Apr 2018
+Evan,Pease,https://www.linkedin.com/in/evan-pease,,Cisco Meraki,"Leader, Data Science",26 Mar 2018
+Claudius,Adebayo,https://www.linkedin.com/in/claudius-adebayo-6344a814,,Baha'i National Center,National Fund Development Associate,21 Mar 2018
+Robin,Flaharty,https://www.linkedin.com/in/robin-flaharty,,Commonwealth,Associate Director,19 Mar 2018
+Lewa,Pertl,https://www.linkedin.com/in/lewapertl,,Souleire,Managing Director | Communications Strategy Consultancy,14 Mar 2018
+Erwin,Stengele,https://www.linkedin.com/in/erwin-stengele-9bb564148,,DWS Group,stv. Betriebsratsvorsitzender,09 Mar 2018
+Dhruv,Agarwala,https://www.linkedin.com/in/dhruvagarwala,,Genpact,Manager,09 Mar 2018
+Brian,Jackson,https://www.linkedin.com/in/brian-jackson-98025351,,Jackson Consulting Inc,Chief Operations Officer,09 Mar 2018
+Nadim,"Ouladi, Ph.D.",https://www.linkedin.com/in/nadim-ouladi,,Universidad Nur,President Board of Trustees,18 Feb 2018
+Eima,Amiri,https://www.linkedin.com/in/eima-amiri-852116143,,Amiri Rug Gallery,General Manager,14 Feb 2018
+Melina,Platas ,https://www.linkedin.com/in/melina-platas,,New York University Abu Dhabi,Associate Professor of Political Science,10 Feb 2018
+Steven,Rosenzweig,https://www.linkedin.com/in/steven-rosenzweig-4aa05b1a,,Boston University,Assistant Professor of Political Science,07 Feb 2018
+Diviya,Jain,https://www.linkedin.com/in/diviya-jain,,IBM,Visual Designer,03 Feb 2018
+Craig,McIntosh,https://www.linkedin.com/in/craig-mcintosh-47036b63,,UCSD,Professor of Economics,29 Jan 2018
+,,,,,,29 Jan 2018
+Guy,Grossman,https://www.linkedin.com/in/guy-grossman-09015211,,University of Pennsylvania,Professor,25 Jan 2018
+Tahereh Brigolin,"Administration,  Management",https://www.linkedin.com/in/tahereh-brigolin-administration-management-62a71175,,Centro Studi Baha'i - Hotel La Panoramica S.r.l.,Hotel Management and Marketing,25 Jan 2018
+Nabil,Kazerouni,https://www.linkedin.com/in/nabilkaz,,Credit Karma,Senior Staff Product Designer,03 Jan 2018
+Isabella,Vasquez,https://www.linkedin.com/in/isabella-vasquez-6a46aa14b,,,,31 Dec 2017
+Joshua,Homnick,https://www.linkedin.com/in/homnick,,JoshuaHomnick.com,Creative Consultant | Director | Producer | Shooter | Editor | Photographer | Video game developer,28 Dec 2017
+Mojdeh,Stoakley,https://www.linkedin.com/in/mojdehlp,,Surviving the Mic,Co Executive Director / Research and Innovation Officer ,04 Dec 2017
+Pedram,Saleh,https://www.linkedin.com/in/pedramsaleh,,Freelance,Data Management Technician,30 Nov 2017
+Martha,"Tansik JD, CMSP, MSCC",https://www.linkedin.com/in/martha-tansik-jd-cmsp-mscc-9b183678,,"Meshke, Paddock & Budzinski, PC",Shareholder,20 Nov 2017
+Celina,LOPES GOMES,https://www.linkedin.com/in/celina-lopes-gomes-0536587a,,"Conseil, accompagnement à l'emploi, formation, mobilité internationale ",Chargée Relations entreprises & Mobilité internationale,20 Nov 2017
+Louis A.,Cid,https://www.linkedin.com/in/louiscid,,Guidehouse,Managing Consultant,19 Nov 2017
+Lida,Rowhani,https://www.linkedin.com/in/lida-rowhani,,Electrogroup Apprenticeships and Training,General Manager,16 Nov 2017
+Angela,"Ewing-Boyd, MSW, LICSW",https://www.linkedin.com/in/angela-ewing-boyd-msw-licsw-71790130,,Potomac Job Corps Ctr,Center Mental Health Consultant,06 Oct 2017
+Chaning,Jang,https://www.linkedin.com/in/chaningjang,,Irrational Labs,Chief Strategy Officer (CSO),06 Oct 2017
+Simon,McNorton,https://www.linkedin.com/in/simonmcnorton,,"Foreign, Commonwealth and Development Office",Deputy Director Research (interim),05 Oct 2017
+Dr. Nooshin K.,Darvish,https://www.linkedin.com/in/dr-nooshin-k-darvish-nd,,Holistique IV Lounge,Chief Medical Officer/Founder,26 Sep 2017
+william,ashaley,https://www.linkedin.com/in/william-ashaley-a7351030,,Graphic Communications Group Limited,Records Manager/ Employee Relation officer,25 Aug 2017
+Paige,O'Connor,https://www.linkedin.com/in/paige-o-connor-49726934,,"Smith Point Capital, LLC",Executive Assistant,25 Aug 2017
+Robert T,Phillips,https://www.linkedin.com/in/roberttphillips,,"FESAC - (Fundacion del Empresariado Sonorense, AC) international public education and community dev.",Senior Advisor and Coordinator of interns and education programs for children in border shelters ,20 Aug 2017
+Katie,Kuruc,https://www.linkedin.com/in/kathrynkuruc,,GALLO,"Senior Manager, Sourcing - Packaging",20 Aug 2017
+Alexander,Cyr,https://www.linkedin.com/in/adcyr,,Stackpole & French Law Offices,Associate,15 Aug 2017
+Geoffrey,Cohen,https://www.linkedin.com/in/geoffrey-cohen-800b4911,,SysDisc Solution,Founder,02 Aug 2017
+Linda,Khadem,https://www.linkedin.com/in/linda-khadem-617b286,,"Infotrac, Inc.",Vice President / Corporate Counsel,29 Jul 2017
+Dr Chris,Day,https://www.linkedin.com/in/dr-chris-day-870b75b,,Clinical Psychology,Clinical psychologist,26 Jul 2017
+Carolyn,Emery,https://www.linkedin.com/in/carolyn-emery-a11a161,,Carolyn Emery,"Writer, Forensic Document Examiner",18 Jul 2017
+Juan Carlos,Samayoa,https://www.linkedin.com/in/juan-carlos-samayoa-15667a110,,Alabama countertops,Owner,10 Jul 2017
+Raleigh,Harrell,https://www.linkedin.com/in/raleighharrell,,Target,Lead Design Operations,05 Jul 2017
+Alee,Hedeyati,https://www.linkedin.com/in/alee-hedeyati-2699b6140,,HiTek Telecom LLC ,Founder and CEO ,27 Jun 2017
+Natán,Bolívar,https://www.linkedin.com/in/natanbolivar,,Departament d'Educació i Formació Professional,Coordinator of Foreign Language Programs,17 Jun 2017
+Oriel,Nolan-Smith,https://www.linkedin.com/in/orielns,,University of California Office of the President,Director of Gift and Endowment Policy,14 Jun 2017
+Faranak,Aghdasi Medrano,https://www.linkedin.com/in/faranakmedrano,,IBM,"Senior Program Manager, Product Marketing",13 Jun 2017
+Julian,Leaver,https://www.linkedin.com/in/julianleaver,,Julian Leaver Events,Founder & Principal,11 Jun 2017
+Susan,Hyde,https://www.linkedin.com/in/susan-hyde-a3b2a3133,,"University of California, Berkeley",Professor,22 May 2017
+,,,,,,28 Apr 2017
+Jake,Behrens,https://www.linkedin.com/in/jake-behrens,,Apple,Content Engineer,14 Apr 2017
+Geoffrey,Tyson,https://www.linkedin.com/in/geoffrey-tyson,,Paradem Consulting,Head Of Operations and Learning ,27 Mar 2017
+Matthew A.,Lisiecki,https://www.linkedin.com/in/malisiecki,,Center for Migration Studies of New York,Sr. Research & Policy Analyst,22 Mar 2017
+,,,,,,21 Mar 2017
+Theresa (Resa),O’Malley(Kipp- O'Toole),https://www.linkedin.com/in/theresa-resa-o%E2%80%99malley-kipp-o-toole-0a301b78,,The Post Oak School,"Admissions Director, Bissonnet Campus",13 Mar 2017
+Leila,Ehsani,https://www.linkedin.com/in/leila-ehsani-66aa9913a,,Network Secretariat for Community School Organizations in Africa,Program Development Lead,11 Mar 2017
+Misaq,Kazimi,https://www.linkedin.com/in/kazimi,,Balance Now,Creative Director,05 Mar 2017
+Kathleen,Holmlund,https://www.linkedin.com/in/kathleenholmlund,,Giving Women,Managing Director,03 Mar 2017
+Paulo,"Ribeiro de Lemos, MBA",https://www.linkedin.com/in/ribeirodelemos,,Pelora Advisors,Investment Advisor Representative,12 Feb 2017
+Oak,Ritchie,https://www.linkedin.com/in/oakritchie,,Alaska's News Source: KTUU/KYES,Media Executive,10 Feb 2017
+Justine,Davis,https://www.linkedin.com/in/justine-davis-799a1032,,University of Michigan,Assistant Professor,06 Feb 2017
+Teresa,Pino,https://www.linkedin.com/in/teresa-pino-885463136,,Independiente / Freelance,Profesora Biodanza,03 Feb 2017
+PAULA, CHIARCOS (she/her),https://www.linkedin.com/in/moonriverediting,,Iguana Books,Editor,21 Jan 2017
+Shahin,Roshan,https://www.linkedin.com/in/shahin-roshan-380336a3,,Campbell Page,Business Manager,20 Jan 2017
+Tim,Tolka,https://www.linkedin.com/in/tim-tolka,,Danovo Energy Solutions,Principal Business Analyst,20 Jan 2017
+Ravi,Rokaya,https://www.linkedin.com/in/ravi-rokaya-02203b130,,College of Physicians & Surgeons Pakistan,Resident Doctor,14 Jan 2017
+,,,,,,12 Jan 2017
+Kurt,Hein,https://www.linkedin.com/in/kurt-hein-61031664,,Retired,Educator,08 Jan 2017
+Amit,Oza,https://www.linkedin.com/in/amitoza1,,"Aerospace Vehicle Design Services, LLC",Aerospace Design Engineer / Project Engineer,08 Jan 2017
+Hunter,Goldman,https://www.linkedin.com/in/hunter-goldman-23a20922,,Roblox,"Business Lead, Global Public Policy",03 Jan 2017
+Allen,Lu,https://www.linkedin.com/in/alnlu,,San Francisco Department of Public Health,Behavioral Health Clinician Fellow,27 Dec 2016
+Vahid Ajepuh,Oloro,https://www.linkedin.com/in/vahid-ajepuh-oloro-11998326,,Kareu Media,President,22 Dec 2016
+Leonard,Williams,https://www.linkedin.com/in/leonardrwilliams,,King Distributions Corporation,Owner/Chairman/President/CEO,22 Dec 2016
+Hannington,Mutebi,https://www.linkedin.com/in/hannington-mutebi,,Helly Hansen,Logistics Execution & Operations Specialist,22 Dec 2016
+Alaa,Almohammedsaleh,https://www.linkedin.com/in/alaa-almoha,,M. R. Al Khathlan Co. for Contracting,Mechanical Engineer,18 Dec 2016
+Omid,Mohebi,https://www.linkedin.com/in/omidmohebi,,Fair Trade Real Estate,Real Estate Agent,18 Dec 2016
+Soazig,Kaam ,https://www.linkedin.com/in/soazigkaam,,Google,"Technical Program Manager, Advanced Energy Labs",07 Dec 2016
+Shaidu,Kiven,https://www.linkedin.com/in/shaidu-kiven-04155a3,,Baha'i National Center,Operations Manager at Bosch Baha'i School,29 Nov 2016
+Nirvana,Kasopersad,https://www.linkedin.com/in/nirvana-kasopersad-0732a4105,, - Freelancer,Editor and writer,29 Nov 2016
+Rolf,Straubhaar,https://www.linkedin.com/in/rolf-straubhaar-52b59b24,,Texas State University,Associate Professor,26 Sep 2016
+Phillip,Nevels,https://www.linkedin.com/in/phillip-nevels-4a61104b,,Our Cause,Co-Founder & Managing Partner ,26 Sep 2016
+Richard,Kumar,https://www.linkedin.com/in/richardrkumar,,Boral Construction Materials,Concrete Technical Specialist ,16 Sep 2016
+Joshua,Owens,https://www.linkedin.com/in/jashcache,,Newb,Co-Founder,09 Sep 2016
+,,,,,,09 Sep 2016
+Kaveh,Aminzadeh,https://www.linkedin.com/in/kaveh-aminzadeh-72499257,,Kraków Cosmopolitan School,Educational Assistant,09 Sep 2016
+Leonard,Cohen,https://www.linkedin.com/in/leonard-cohen-3250583b,,Freelance,"Animator, Director",09 Sep 2016
+Samira,Samimi-Moore,https://www.linkedin.com/in/samira-samimi-moore-90a4011b,,Baha'i World Centre,Guard Manager,03 Sep 2016
+Geoffrey,GAUTIER - COUSTON,https://www.linkedin.com/in/geoffrey-gautier-couston,,SIFFREIN GAUTIER ET FILS VINS,Responsable des opérations,03 Sep 2016
+,,,,,,24 Aug 2016
+Farzin,Shakibanejad,https://www.linkedin.com/in/farzinshakibanejad,,NATIONAL SPIRITUAL ASSEMBLY OF THE BAHAIS OF THE UNITED STATES,Chief Information Officer,06 Aug 2016
+Laird,Varzaly,https://www.linkedin.com/in/laird-varzaly-a734584,,QuantuMed Pty Ltd,Director,29 Jul 2016
+Melissa,Zaman Galbeno,https://www.linkedin.com/in/melissazaman,,Orca Security,Sr. Field Marketing Manager,27 Jun 2016
+Ashiyan Ian,"Rahmani, Ph.D.",https://www.linkedin.com/in/ashrahmani,,San Jose State University,Lecturer,16 Jun 2016
+Bryan,"Ray, Ph.D., BCBA",https://www.linkedin.com/in/bryan-ray-ph-d-bcba-232477120,,Via Employment Opportunities,Owner,16 Jun 2016
+Charles,Anglin,https://www.linkedin.com/in/charlesanglin,,"Bahá’í Temple, Kampala, Uganda ",Director,16 Jun 2016
+Deji,Fajebe,https://www.linkedin.com/in/dejifajebe,,Waystar,"Machine Learning Architect, Generative AI",16 Jun 2016
+Charlotte,"Cowden, Ph.D.",https://www.linkedin.com/in/charlottecowden,,"University of California, Berkeley","Senior Director, Principal Gifts & Strategic Initiatives, UDAR",25 May 2016
+Donghyun Danny,Choi,https://www.linkedin.com/in/dhdannychoi,,Brown University,Stephen Robert Assistant Professor of Political Science,20 May 2016
+Daniel,Noll,https://www.linkedin.com/in/djnoll,,Rainier Climate,"Program Director, Energy",18 May 2016
+Dwight,Bashir,https://www.linkedin.com/in/dwight-bashir-9325a111,,United States Commission on International Religious Freedom,Director of Outreach and Policy,14 May 2016
+Jennings,Brown,https://www.linkedin.com/in/jennings-brown-828201b,,Nocturne Films,Founder,13 May 2016
+Llewellyn,"Woolford, Jr.",https://www.linkedin.com/in/llewellyn-woolford-jr-4ab50b,,U.S. Department of Health and Human Services,Assistant Chief Counsel,13 May 2016
+Justine,Rastello-Gralepois,https://www.linkedin.com/in/justine-rastello-gralepois-43bab3110,,Freelance,Journaliste indépendante,13 May 2016
+Saman,Farid,https://www.linkedin.com/in/samanfarid,,Formic Technologies,Founder & CEO,13 May 2016
+Katherine,Nguyen Branco,https://www.linkedin.com/in/katherine-branco,,Marqeta,Lead Project Manager,12 May 2016
+Carl,Murrell,https://www.linkedin.com/in/carlmurrell,,National Spiritual Assembly of the Baha'is of the United States,Principal Representative to the United Nations,12 May 2016
+Adam,Ballard,https://www.linkedin.com/in/adamballard,,Restaurant365,"Vice President, Demand Generation",12 May 2016
+Faizi,Vejdani,https://www.linkedin.com/in/faizivejdani,,SGI CANADA,Senior Product Analyst,12 May 2016
+Bruce,Shahidi,https://www.linkedin.com/in/bruce-shahidi-57749a9,,Global Real Estate Office ,Sales Associate ,28 Apr 2016
+Santiago,Sanchez Guiu,https://www.linkedin.com/in/santiago-sanchez-guiu-86bb4aa,,Innovations for Poverty Action,Director - Global Operations & Systems,17 Apr 2016
+Patryk,Perkowski,https://www.linkedin.com/in/patryk-perkowski-a9ba161a,,Sy Syms School of Business,Assistant Professor,16 Apr 2016
+Colin,Wilson,https://www.linkedin.com/in/colin-wilson-27b80241,,The Tebow Group,Chief Marketing Officer,04 Apr 2016
+Helena,Wilkins Versalovic,https://www.linkedin.com/in/helena-wilkins-versalovic-b16629,,International Engineering Education,Director,04 Apr 2016
+,,,,,,28 Mar 2016
+Jennifer,Burton Silver,https://www.linkedin.com/in/jennifer-burton-silver-3433311,,IDEO,Global Recruiter,24 Mar 2016
+Ryan,Burke,https://www.linkedin.com/in/ryanaburke9,,Omnissa,Account Executive,17 Mar 2016
+Ramin,Hossaini,https://www.linkedin.com/in/raminhossaini,,Robiati Distribution CC,Co-Owner,11 Mar 2016
+Farid,Bidardel,https://www.linkedin.com/in/farid-bidardel-7a8214b8,,START-Stiftung gGmbH,Managing Director,05 Mar 2016
+,,,,,,02 Mar 2016
+Ramin,Modir,https://www.linkedin.com/in/rmodir,,NuurLogic Inc.,President,01 Mar 2016
+Ryan,Lash,https://www.linkedin.com/in/ryan-lash-21a407b4,,Ryan Lash Photography,Photographer,01 Mar 2016
+MORITZ ,POMMER,https://www.linkedin.com/in/moritzpommer,,Union Investment,Senior UX Consultant,28 Feb 2016
+Saba,Jordan,https://www.linkedin.com/in/saba-jordan-a7789799,,OnBoard,Customer Success Manager,22 Feb 2016
+Brant,Alexander,https://www.linkedin.com/in/brant-alexander-868068115,,Compassionate Care Pharmacy,Chief Executive Officer,19 Feb 2016
+Matt,Grigsby,https://www.linkedin.com/in/matt-grigsby,,Aurora,"Senior Manager, Product Operations Enablement",13 Feb 2016
+Nilesh,Vaghasana,https://www.linkedin.com/in/nilesh-vaghasana-6937b716,,V&V INTERNATIONAL,PARTNER,03 Feb 2016
+Ashkan,Emami,https://www.linkedin.com/in/aemami,,Path Law Group,Founding Partner & Attorney,03 Feb 2016
+James,Agwa,https://www.linkedin.com/in/james-agwa-03a85175,,Vermitech Consultants Limited ,CEO,03 Feb 2016
+Chris,Tara-Browne,https://www.linkedin.com/in/christarabrowne,,Manly Honda,Digital Marketing Director,30 Jan 2016
+Jalal,"Vargha, DO, FACC",https://www.linkedin.com/in/jalal-vargha-do-facc-3b703216,,Sutter East Bay Medical Group,Cardiologist,26 Jan 2016
+Manuel,Muller,https://www.linkedin.com/in/manuel-muller-48707187,,NanoSoft,Director of Manufacturing,26 Jan 2016
+Christyn,Lundquist,https://www.linkedin.com/in/christyn-lundquist,,University of Utah Health,Senior Project Manager,21 Jan 2016
+Nasrin Sesar,Sesar  PMP MS Arch MUP,https://www.linkedin.com/in/nasrin-sesar-sesar-pmp-ms-arch-mup-61aa3913,,Utopia,"PM, Architectural Design / Urban Planning Consultant",20 Jan 2016
+Gabriela M. L.,Ríos,https://www.linkedin.com/in/gabrielarios,,Texas Department of Transportation,Strategic Management Analyst III | Strategic Initiatives and Innovation,20 Jan 2016
+Fadi A.,Haddadin,https://www.linkedin.com/in/policyfads,,Euromoney Country Risk (ECR),Risk Expert,20 Jan 2016
+Shaun,"Santino, SPHR",https://www.linkedin.com/in/shaun-santino-sphr-b28bb6110,,The Home Depot,DC HR Market Manager,23 Dec 2015
+Sisay,Borga,https://www.linkedin.com/in/sisay-borga-88b36831,,Green Acre Baha'i School,Hospitality Coordnator,14 Dec 2015
+Ramin,Pezeshkzad,https://www.linkedin.com/in/ramin-pezeshkzad-17429ba,,Sanya University,Teacher,10 Dec 2015
+Na'ím Anís ,Paymán,https://www.linkedin.com/in/naimanispayman,,Zeevou,Founder & CEO,10 Dec 2015
+Braden,Wayne,https://www.linkedin.com/in/bradenwayne,,Steckler Wayne Cherry & Love PLLC,Shareholder,10 Dec 2015
+,,,,,,10 Dec 2015
+Bernadette,"Stafford-Yaeger, CADC-III",https://www.linkedin.com/in/bernadette-stafford-yaeger-cadc-iii-aab1a922,,"New Bridge Foundation, Inc.",Assistant Director of Admissions,23 Nov 2015
+Erika,"Adžemović, MBA, SPHR,SHRM-SCP",https://www.linkedin.com/in/erikainhr,,Whitman College,Associate Vice President Human Resources,13 Nov 2015
+Aaron,Schorn,https://www.linkedin.com/in/aaron-schorn-4870344,,Unrulr,Head of Growth and Community,03 Nov 2015
+Eduard,Sanchis,https://www.linkedin.com/in/eduardsanchis,,dunnhumby,Senior Product Designer,18 Oct 2015
+Na'im J.,Ru,https://www.linkedin.com/in/naimru,,Cox Communications,Principal (Enterprise Architecture Leader),26 Sep 2015
+Elisabeth,O'Toole Tierney,https://www.linkedin.com/in/elisabethotooletierney,,CVS Health,"Director, Digital Pharmacy Product & Engagement Strategy ",23 Sep 2015
+Rachel,Giani,https://www.linkedin.com/in/rachel-giani-5354a0106,,Continental General,General Counsel & SVP,23 Sep 2015
+Shadi,Toloui-Wallace,https://www.linkedin.com/in/shaditolouiwallace,,Tiny Souls Media,Founder ,15 Sep 2015
+K. ,"Shaw, MBA, RVT, LVT, CVBL",https://www.linkedin.com/in/kshawrvtlvt,,Lone Star College,"Adjunct Faculty, Veterinary Technology",08 Sep 2015
+Kevin,Kelsey,https://www.linkedin.com/in/kevinlkelsey,,Regeneration Group,Impact Advisor,03 Sep 2015
+Arman,Mehrdadian,https://www.linkedin.com/in/arman-mehrdadian-a7078ab6,,Tigerair Australia,First Officer,09 Aug 2015
+Lou,Dalrymple,https://www.linkedin.com/in/lou-dalrymple-3a572b29,,Whoa Ventures,Founding Partner,07 Aug 2015
+Richard,Tricker,https://www.linkedin.com/in/richard-tricker-5ba62331,,"Winget, Spadafora & Schwartzberg, LLP",Trial Attorney,03 Aug 2015
+Areum,Han,https://www.linkedin.com/in/areumhan12,,ECLAC,Associate Economic Affairs Officer,31 Jul 2015
+Shahriar,Asdollah-Zadeh,https://www.linkedin.com/in/shahriar-asdollah-zadeh-250b80a1,,Westpac New Zealand,Human Centred Design Lead - Design governance. Systems & Experience Designer. Playbook creator. ,30 Jul 2015
+Maximillian,Seunik,https://www.linkedin.com/in/maxseunik,,Screwworm Free Future,Executive Director,30 Jul 2015
+Piyush,Singh,https://www.linkedin.com/in/piyushs7,,Godrej Industries Group,Senior Executive,28 Jul 2015
+Philip,Reiner,https://www.linkedin.com/in/philipreiner,,Institute for Security and Technology (IST),Chief Executive Officer,27 Jul 2015
+Anja,Nicke,https://www.linkedin.com/in/anja-nicke-b0041833,,Community,Education Specialist,23 Jul 2015
+Anita,"Lau, CMP",https://www.linkedin.com/in/anitalauhungcmp,,BART,Communications,22 Jul 2015
+Stephanie,Dunn,https://www.linkedin.com/in/stephanie-dunn-ab881677,,UC Berkeley,Executive Assistant,03 Jul 2015
+Munis,Safajou,https://www.linkedin.com/in/msafajou,,Norton Rose Fulbright,Associate Attorney,30 Jun 2015
+Meghan,Bomgaars,https://www.linkedin.com/in/meghan-bomgaars-1ba3909,,University of Oklahoma,"Director, Planning and Research Facilities",24 Jun 2015
+Shirin,Mostaghim Jones,https://www.linkedin.com/in/shirinmostaghim,,Roots ConnectED,"Social Media, Marketing and Communications Developer",19 Jun 2015
+Layla,Kominiak,https://www.linkedin.com/in/layla-kominiak-0a872716,,Virginia Lasik,Medical Director,15 Jun 2015
+John,Pilgrim,https://www.linkedin.com/in/john-pilgrim-88b565b6,,International Criminal Court,Associate English Translator,15 Jun 2015
+Arianne,Kieve,https://www.linkedin.com/in/arianne-kieve-2a98b512,,Harder+Company Community Research,Proposal Manager & Graphic Designer,27 May 2015
+Daniel,Kline,https://www.linkedin.com/in/daniel-kline-9a188924,,United Financial Freedom,Loan Interest Cancellation Specialist,26 May 2015
+Daryoush,SAZGAR,https://www.linkedin.com/in/daryoush-sazgar-1b991877,,,,22 May 2015
+Abby,Long,https://www.linkedin.com/in/abby-long-834677a,,U.S. Department of State,"Program Analyst, Bureau of Budget and Planning",30 Apr 2015
+Dr. K. Dean,Stephens,https://www.linkedin.com/in/dr-k-dean-stephens-6370a69,,The Proxy Robotics Trust,Executive Director,24 Apr 2015
+Benjamin,Picone,https://www.linkedin.com/in/ben-picone,,TotalEnergies,Senior Interconnection Engineer,24 Apr 2015
+Pablo,Robayo Castellanos,https://www.linkedin.com/in/pablorobayo,,Colegio Einstein Quito,Asistente de Tecnología Educativa,24 Apr 2015
+,,,,,,21 Apr 2015
+Kerii H,Tjitendero,https://www.linkedin.com/in/kerii-tjitendero,,Off-Grid Europe,Business Development Manager ,19 Apr 2015
+Matthew,Stenberg,https://www.linkedin.com/in/stenbergmatthew,,"University of California, Berkeley",Institutional Research Analyst 4,19 Apr 2015
+Jalal,Hatami,https://www.linkedin.com/in/jhatami,,Ontada,"Lead, Product Portfolio Management",17 Apr 2015
+Eric,Kane,https://www.linkedin.com/in/ericjkane,,Grafana Labs,Regional Sales Director - West,17 Apr 2015
+Jess,"Carey, PMP",https://www.linkedin.com/in/jess-carey,,Boston Scientific,Cyber Security Program Lead,06 Apr 2015
+Miles,Lane,https://www.linkedin.com/in/mileslane,miles.lane@gmail.com,Volunteer family care,Providing Elder Care to my aging parents,31 Mar 2015
+Abbas,Khatamian,https://www.linkedin.com/in/khatamian,,BeautyWellness.ca ,Managing Director,31 Mar 2015
+Lynn,"Richards,  CLU®, ChFC®, MSFS, AEP®",https://www.linkedin.com/in/lynnrichardsmsfs,,"Fusion Advisors, Inc",Financial Advisor with Cambridge Investment Research at,31 Mar 2015
+Jesahel,Newton-Bernal,https://www.linkedin.com/in/jesahel-newton,,Independent,Filmmaker,27 Mar 2015
+Timothy,Conley,https://www.linkedin.com/in/tconley76,,67 Entertainment,Executive Producer,13 Mar 2015
+Ella,Schwartz,https://www.linkedin.com/in/ella-schwartz-4315b57,,Tiburcio Vasquez Health Center,Chief Impact and Partnerships Officer,08 Mar 2015
+,,,,,,06 Mar 2015
+Taren,Gunter,https://www.linkedin.com/in/tarensuzanne,,"Ebb & Flow Accounting, LLC",Founder,28 Feb 2015
+Melissa,"Sassi, MPAff",https://www.linkedin.com/in/melissasassi01,,Terra Ventures,Managing Partner,28 Feb 2015
+Kory,Parsi,https://www.linkedin.com/in/kory-parsi-168868b1,,"The Permanente Medical Group, Inc.",Staff Physician,11 Feb 2015
+Nadim,Rohani,https://www.linkedin.com/in/nadimrohani,,Google,Enterprise Architect @ Google Cloud Consulting EMEA ,02 Feb 2015
+Michael,Teske,https://www.linkedin.com/in/michael-d-teske,,USAID,"Supervisory Executive Officer, USAID/Nigeria",20 Jan 2015
+Ezra,Hopkins,https://www.linkedin.com/in/ezrahopkins,,Jetty,Product Lead,19 Jan 2015
+Moshe,Gutman,https://www.linkedin.com/in/mogutman,,GeoSafe,CEO,19 Jan 2015
+Jose Luis,Davila Gonzalez,https://www.linkedin.com/in/jose-luis-davila-gonzalez-79819179,,Georgetown University Law Center,Assistant Director,09 Jan 2015
+Syed,Yahya,https://www.linkedin.com/in/syed-yahya-b2916656,,Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH,Technical Advisor Governance ,07 Jan 2015
+,,,,,,09 Dec 2014
+Lamine,Zarrad,https://www.linkedin.com/in/laminezarrad,,StellarFi 🚀,Founder and CEO,24 Nov 2014
+Denni,Cawley,https://www.linkedin.com/in/dennicawley,,Trinity Business School,"PhD Candidate (Organisational Readiness for AI, Management Education)",12 Nov 2014
+Michael,O'Neal,https://www.linkedin.com/in/michael-o-neal-3738797,,CUSI/Parent University,Executive Director,05 Nov 2014
+Bobby,Aazami,https://www.linkedin.com/in/bobbyaazami,,Fiona + Bobby Photography,Co-Owner / Photographer,05 Nov 2014
+Robert,David,https://www.linkedin.com/in/robertdavidhmb,,CSHRP,"Executive Director - Strategic HR, Board Member",30 Oct 2014
+André,Segovia,https://www.linkedin.com/in/andresegovia,,Buyerlink,"Sr Vice President, Strategy – Head of Product Design & A.I.",23 Oct 2014
+Marcus,Holmlund,https://www.linkedin.com/in/marcusholmlund,,The World Bank,Research Manager / Senior Economist,23 Oct 2014
+Amy,Kertzer,https://www.linkedin.com/in/amykertzer,,Amy Kertzer,Creative Producer,23 Oct 2014
+Jill,Morris-Cordes,https://www.linkedin.com/in/jill-morris-cordes-8b4004a7,,Goodwill Industries of Northwest Texas,Chief Financial Officer,21 Oct 2014
+Nasim,Sharafi,https://www.linkedin.com/in/nasimsharafi,,"Bahá’í Gemeinde in Deutschland, Büro für Außenbeziehungen",Referentin für Menschenrechtsfragen und gesellschaftliche Diskurse beim Büro für Außenbeziehungen,11 Oct 2014
+Rebecca A.,Hopkins,https://www.linkedin.com/in/rebeccaahopkins,,USAID,Foreign Service Officer,10 Oct 2014
+Safaa,Bibawy,https://www.linkedin.com/in/safaa-bibawy-94713875,,Financial Services,To be found,30 Sep 2014
+chad,akhavan,https://www.linkedin.com/in/chad-akhavan-13bab01a,,Allied International Corp,Owner,30 Sep 2014
+Ishmael,Amankwah Miller,https://www.linkedin.com/in/ishmael-amankwah-miller-70428071,,I AM HVAC,"Heating Ventilation Air Conditioning Servicing, Commissioning Technician  ",29 Sep 2014
+Ian,Lysaght,https://www.linkedin.com/in/ian-lysaght-20591839,,Emerald Cultural Institute,English Second Language Teacher,28 Sep 2014
+Loni,Gray,https://www.linkedin.com/in/lonigray,,Neighborhood PlaceMakers Network,Founder,24 Sep 2014
+,,,,,,20 Sep 2014
+Jonathan,"Meeks, M.S.",https://www.linkedin.com/in/jonathanmeeksms,,Wellby Financial,"Vice President, Business Development",17 Sep 2014
+Evan,Ochsenfaber (Faber),https://www.linkedin.com/in/efaber,,The National Institutes of Health,"Senior Advisor to the Chief of Staff, All of Us Research Program",17 Sep 2014
+Joseph,Lample,https://www.linkedin.com/in/joseph-lample-88ba7161,,Kimanya Ngeyo Foundation for Science and Education,Programs Lead,08 Sep 2014
+Jazz,Lyles,https://www.linkedin.com/in/jazzlyles,,Zillow,"Senior Software Engineer, Frontend",08 Sep 2014
+Justin,Kelly,https://www.linkedin.com/in/justinryankelly,,JACKSTIN,Co-Founder,20 Aug 2014
+Sheila,Ghobad da Silva,https://www.linkedin.com/in/sheilaghobad,,Little Earth Citizens,Owner,09 Aug 2014
+Chelsea,Wesner,https://www.linkedin.com/in/chelsea-wesner,,Colorado School of Public Health,Assistant Research Professor,06 Aug 2014
+Cory,Northern,https://www.linkedin.com/in/cory-northern-2b356214,,Center for English as a Second Language at the University of Oklahoma,Director,26 Jul 2014
+Naveed,Rastegar,https://www.linkedin.com/in/naveed-rastegar-4a947640,,Zhuhai Innovative Ideas Company LLC,Director,22 Jul 2014
+Nafis,Zebarjadi,https://www.linkedin.com/in/nafis,,Google,Product Manager,20 Jul 2014
+Guadalupe,Tuñón,https://www.linkedin.com/in/guadalupe-tu%C3%B1%C3%B3n-b5410422,,Harvard University,Academy Scholar,19 Jul 2014
+Monica,Forghani,https://www.linkedin.com/in/monica-forghani,,HP,EA / NPI Planning - Office Print Marketing ,14 Jul 2014
+Eric,Walker,https://www.linkedin.com/in/ericmwalker,,Undisclosed,Software Engineer,11 Jul 2014
+Monib,Kouchekzadeh,https://www.linkedin.com/in/monib-kouchekzadeh-a4916a20,,Cargill,Senior CSA (Civil / Structural / Architectural) Engineer,10 Jul 2014
+Bhojraj,Parmar,https://www.linkedin.com/in/bhojrajparmar,,Qubit Cyber,Co-CEO and Co-Founder,10 Jul 2014
+Lessan,Vaezi,https://www.linkedin.com/in/lessan,,Cash App,Staff Software Engineer,10 Jul 2014
+Jessica,Bogard,https://www.linkedin.com/in/jessica-bogard-b411a39a,,California Department of Health Care Services,"Assistant Deputy Director, Fiscal",10 Jul 2014
+Emily,Lazo,https://www.linkedin.com/in/emilylazo,,Fastly,Senior Manager,10 Jul 2014
+Zarrin,Caldwell,https://www.linkedin.com/in/zarrin-caldwell-14a8878,,Rio Salado College Southern,Substitute Teacher/Instructor,08 Jul 2014
+Mitra,Naimi,https://www.linkedin.com/in/mitra-naimi-34447549,,Connaught Network Services Pvt. Ltd. (CNS) - A wholly owned subsidiary of Cathay Pacific Airways.,Personnel Administrator & Recruitment Officer,01 Jul 2014
+Yassaman (Yassi),"Sarvian, AICP, ENV SP, LEED GA",https://www.linkedin.com/in/ysarvian,,Jacobs,Deputy Project Manager,26 Jun 2014
+Reed,Jones,https://www.linkedin.com/in/reedtjones,,Zoox,Staff Service Designer,23 Jun 2014
+Jubin,Nakhai,https://www.linkedin.com/in/jubin-nakhai-56248076,,CanMine Contracting Ltd.,Field Engineer,13 Jun 2014
+Negar,Honarmandan,https://www.linkedin.com/in/negarhonarmandan,,CST Savings Inc,Licensed RESP agent at CST Savings Inc.,27 May 2014
+Nadia,Elads,https://www.linkedin.com/in/nadiaelads,,Australian Lawyers Alliance,Policy Adviser,24 May 2014
+Ivan,London,https://www.linkedin.com/in/ilondon,,Mountain States Legal Foundation,Director - Center for American Prosperity & Energy,08 May 2014
+Maarten,Schoot,https://www.linkedin.com/in/maarten-schoot-65007a77,,Baha'i World Centre,"Department of Statistics, coordinator",07 May 2014
+Yuan Ting Tracy,Hou,https://www.linkedin.com/in/yuan-ting-tracy-h-43045122,,Berkeley Lab,Principal Financial Analyst,03 May 2014
+Omid,Aminian,https://www.linkedin.com/in/omid-a-7549545,,Orbitat,Property Specialist,26 Apr 2014
+Hoor,"Jangda, LMSW (TX), LGSW (DC), PMP",https://www.linkedin.com/in/hoor-jangda-lmsw-tx-lgsw-dc-pmp-04204167,,Mind and Body Solutions,Therapist,24 Apr 2014
+Sahba,Naraghi,https://www.linkedin.com/in/sahba-naraghi-0659ba93,,Google AdWords,Digital Marketing Consultant,18 Apr 2014
+Claire,McEnery,https://www.linkedin.com/in/claire-mcenery-424a0024,,Parents as Teachers National Center,Texas State Leader,16 Apr 2014
+Chris,Carter,https://www.linkedin.com/in/chris-carter-0190a523,,UC Berkeley,PhD Student,15 Apr 2014
+Junaid,"Ghaffar, MBA",https://www.linkedin.com/in/junaidghaffar,,Internal Revenue Service,Supervisor of Program Manager - Information Technology Specialists,15 Apr 2014
+Kristen,Lee,https://www.linkedin.com/in/kristenelizabethlee,,ReFED,Director of Business Initiatives,14 Apr 2014
+Maziar,Niroomand,https://www.linkedin.com/in/maziar-niroomand-88250a93,,Ethnic Interpreters and Translators,Translator and Interpreter,08 Apr 2014
+Colleen,Reidelbach,https://www.linkedin.com/in/colleenreidelbach,,Qubika,Senior Vice President of Client Strategy,05 Apr 2014
+Raja,Sutherland,https://www.linkedin.com/in/raja-sutherland-74333a39,,Hua Qiao School,English Teacher,03 Apr 2014
+Andrew,Kramer,https://www.linkedin.com/in/andrew-j-kramer,,Camp Indigo,Executive Director,03 Apr 2014
+Kate,Evans,https://www.linkedin.com/in/kate-evans-393baaa,,University of South Florida,"Director, Office of Corporate Partnerships at University of South Florida",28 Mar 2014
+Glen,Fullmer,https://www.linkedin.com/in/glen-fullmer,,National Center for Race Amity,Chief Operating Officer,26 Mar 2014
+Brian,Beasley,https://www.linkedin.com/in/beasleys,,Baha'i National Center,PMO Manager @ Baha'i National Center | CSPO®,23 Mar 2014
+Anustubh,Agnihotri,https://www.linkedin.com/in/anustubh-agnihotri-a066126,,University of Chicago,Visiting Researcher,19 Mar 2014
+Ray,Yamartino,https://www.linkedin.com/in/rayyamartino,,Unplexity,Vice President of Product,18 Mar 2014
+Amy Seidel,Marks,https://www.linkedin.com/in/amy-seidel-marks-1b154a13,,Self-employed,Independent Consultant,17 Mar 2014
+Lana,Morris,https://www.linkedin.com/in/lana-morris-6234336,,The University of Texas System,Career Services Coordinator,14 Mar 2014
+Miranda,Hansen,https://www.linkedin.com/in/mirandashansen,,Root Capital,"Senior Analyst, Impact Evaluations",13 Mar 2014
+Ann,Melville,https://www.linkedin.com/in/ann-melville-b2633610,,NATIONAL SPIRITUAL ASSEMBLY OF THE BAHAIS OF THE US,Consultant,12 Mar 2014
+Laura,Friedmann,https://www.linkedin.com/in/laura-friedmann,,Hot Docs Canadian International Documentary Festival,Industry Producer | Forum & Deal Maker,10 Mar 2014
+Kimia,Kline,https://www.linkedin.com/in/kimia-kline-00aa923,,The Wythe Hotel,Art Curator,07 Mar 2014
+Nasim,Mahboubi Fluker,https://www.linkedin.com/in/nasimfluker,,Historic District Development Corporation,VP of Program Development,07 Mar 2014
+Shamim,Samadi,https://www.linkedin.com/in/shamimsamadi,,Innovid,Product,03 Mar 2014
+Dr. Ajang Armin,Farid,https://www.linkedin.com/in/dr-ajang-armin-farid-23a67b64,,INTERPOL,Deputy Chair at INTETPOL DVI Committee (Forensic Odontology Sub-working group),02 Mar 2014
+Michael,Karlberg,https://www.linkedin.com/in/michael-karlberg-44b08965,,Western Washington University,Professor,24 Feb 2014
+Hugh,Locke,https://www.linkedin.com/in/hugh-locke-5aa1a446,,futurra,Co-Founder,23 Feb 2014
+John,Verbick,https://www.linkedin.com/in/john-verbick,,Love's Travel Stops,Senior Program Manager | AI & Emerging Technology,20 Feb 2014
+Ariel,Kennedy S.,https://www.linkedin.com/in/arielkennedysalzer,,Bar Exam Toolbox,California Bar Exam Tutor / Law School Tutor,19 Feb 2014
+Stephen,Beam,https://www.linkedin.com/in/stephenfbeam,,Garage Living,Senior B2B Consultant,13 Feb 2014
+Jamak,Hueck,https://www.linkedin.com/in/jamak-hueck-84510156,,MaPS System S.A.,HR and Admin Manager,13 Feb 2014
+Ben,Walker,https://www.linkedin.com/in/benefacto,,Zamp,Software Engineer,08 Feb 2014
+Amy,Price,https://www.linkedin.com/in/amy-s-price,,IBEW Local 134,Electrical Apprentice,07 Feb 2014
+Farzan,Faramarzi,https://www.linkedin.com/in/farzanfaramarzi,,Indeed,"Sr. Customer Success Manager, Enterprise III",02 Feb 2014
+,,,,,,28 Jan 2014
+Layli,Miller-Muro,https://www.linkedin.com/in/layli-miller-muro,,Papyrus International,Non Executive Board Member,27 Jan 2014
+Barbara L,Norton,https://www.linkedin.com/in/barbara-l-norton-77336418,,"Department of Family and Preventive Medicine, University of Oklahoma Health Sciences Ctr.",Assistant Professor of Research - RETIRED,27 Jan 2014
+Hoda,"Mahmoudi, Ph.D.",https://www.linkedin.com/in/hoda-mahmoudi-ph-d-7286ab71,,University of Maryland,Research Professor,27 Jan 2014
+Jeffrey,Safajou,https://www.linkedin.com/in/jeffrey-safajou-14880348,,Baha'i World Centre,Logistics Officer,26 Jan 2014
+Kevin,Mehrabi,https://www.linkedin.com/in/kmehrabi,,"Wealthchain, Inc.",CEO,24 Jan 2014
+Mayra,Marquez,https://www.linkedin.com/in/marquez,,Deloitte,Human Capital Senior Manager,24 Jan 2014
+Julian,Bach,https://www.linkedin.com/in/julianbach,,Bios Studios,Founder & Principal Consultant,24 Jan 2014
+Sahar D.,Sattarzadeh,https://www.linkedin.com/in/sahardsattarzadeh,,Nelson Mandela University,Assistant Professor & Research Associate,23 Jan 2014
+Negeen,Sobhani,https://www.linkedin.com/in/negeen-sobhani-06836231,,Negeen Sobhani Photography,Photographer/Owner,23 Jan 2014
+Dr. Sawsan Hosny,Mahmoud,https://www.linkedin.com/in/dr-sawsan-hosny-mahmoud-a0364115,,ASCEND GLobal,General Maneger,23 Jan 2014
+Karen,Elmore,https://www.linkedin.com/in/karen-elmore-53649a3,,The University of Oklahoma,Director of Arts and Sciences International Programs,22 Jan 2014
+George,Richter-Addo,https://www.linkedin.com/in/george-richter-addo-0153429,,University of Oklahoma,Professor,22 Jan 2014
+Noumane,"Rahouti, Ph.D",https://www.linkedin.com/in/noumane-rahouti,,Sultan Qaboos University,Faculty,22 Jan 2014
+Mauricio,Loyola,https://www.linkedin.com/in/profmloyola,,Universidad Adolfo Ibáñez,"Director de Investigación, Escuela de Diseño y Arquitectura",22 Jan 2014
+Leila,Seradj,https://www.linkedin.com/in/leila-seradj,,Malala Fund,"Director, Grants",22 Jan 2014
+Abbie,Reedy,https://www.linkedin.com/in/abbiereedy,,Maunakea Visitor Information Station,Warehouse Lead and Social Media Manager,21 Jan 2014
+Arman,Imani,https://www.linkedin.com/in/arman-imani-ab290711,,Cortex Business Solutions,"Manager, Solutions Delivery",21 Jan 2014
+Leili,Towfigh,https://www.linkedin.com/in/leili-towfigh-aab4133,,Rakks Architectural Shelving and Hardware,Chief Executive Officer,21 Jan 2014
+Kellyann,McClain,https://www.linkedin.com/in/kellyann-mcclain-b34b9746,,U.S. Department of Health and Human Services (HHS),"Branch Chief, Health and Family Support Branch",21 Jan 2014
+Benjamin,Leiker,https://www.linkedin.com/in/benjaminleiker,,Uber,"Program Leader, Generative AI Evaluation",21 Jan 2014
+Jack,Gordon,https://www.linkedin.com/in/jackontheroad,,DDC International,"Co-founder, Documentary Filmmaker",20 Jan 2014
+Thomas,Hueck,https://www.linkedin.com/in/thomas-hueck,,Unity Foundation,Volunteer,20 Jan 2014
+Ian,Hamilton,https://www.linkedin.com/in/ian-hamilton-7576b621,,Baha'is of the U.S.,Representative for Sustainable Development,20 Jan 2014
+Elham,Gushtasbi,https://www.linkedin.com/in/elham-gushtasbi-a1595789,,Bentall Kennedy,Property Administrator,20 Jan 2014
+Semira,"Ahdiyyih, CSS",https://www.linkedin.com/in/semiraa,,Citi,Sanctions Compliance SVP,20 Jan 2014
+Irshad,Aryaan,https://www.linkedin.com/in/irshadaryaan,,DVAG,Regionaldirektionsleiter 2,20 Jan 2014
+Domoina,Rambeloarison,https://www.linkedin.com/in/domoina-rambeloarison,,Rippleworks,Venture Success Partner ,20 Jan 2014
+Iman,Ferdowsi,https://www.linkedin.com/in/imanferdowsi,,Alarm.com,Director of Product Management,19 Jan 2014
+Harika,Sezgin Laloğlu,https://www.linkedin.com/in/harika-sezgin-lalo%C4%9Flu-2822536,,FDR İş Güvenliği,Halkla İlişkiler Sorumlusu,16 Jan 2014
+Deanna,McCollum,https://www.linkedin.com/in/deanna-mccollum-59163729,,Memorial Hermann Healthcare System,Retired Social Worker,15 Jan 2014
+JJ,McLaughlin,https://www.linkedin.com/in/jjmcla,,PayPal,Lead Copywriter,15 Jan 2014
+Maryam,Vahedi,https://www.linkedin.com/in/maryam-vahedi-663b1384,,SamenAction asbl,Co-Founder,14 Jan 2014
+Steven,Phelps,https://www.linkedin.com/in/steven-phelps-6615824,,Bitscopic Inc,Director of Data Science,10 Jan 2014
+Robert,Dean,https://www.linkedin.com/in/robert-dean-4937436a,,AROmotion,"CEO, Medical Director",10 Jan 2014
+Eden,Golshani,https://www.linkedin.com/in/edengol,,Stretch,Chief Technology Officer,09 Jan 2014
+Sina,Fanaeian,https://www.linkedin.com/in/sinafanaeian,,Future Secure AI,Senior Technical Business Analyst,08 Jan 2014
+Lucas,Chung,https://www.linkedin.com/in/lkkchung,,Freelance,Design Lead: UX & Emerging Technologies,07 Jan 2014
+Ladan,Doorandish,https://www.linkedin.com/in/ladan-doorandish-89896230,,National Assembly of USA,Media Executive Director,07 Jan 2014
+Samuel,Kelleher,https://www.linkedin.com/in/samuel-kelleher-9aa28286,,"Design Resource Group, PA",Associate,06 Jan 2014
+Rena,Pacheco-Theard,https://www.linkedin.com/in/renapt,,Boutiq,CEO & Co-Founder,06 Jan 2014
+Amir,Vojdani,https://www.linkedin.com/in/amir-vojdani-a6b82528,,Vojdani Lawyers,Director ,06 Jan 2014
+Rebecca,Miller-Dumet,https://www.linkedin.com/in/beckymillerdumet,,Atlanta Area School for the Deaf,Teacher,05 Jan 2014
+Debra,Taylor,https://www.linkedin.com/in/debra-taylor-9752476,,Office of Public Affairs - National Spiritual Assembly,Communications Manager,05 Jan 2014
+Dan,Tesfay,https://www.linkedin.com/in/dantesfay,,Ewing Marion Kauffman Foundation,"Director of Research, Learning, and Evaluation Initiatives",05 Jan 2014
+Andrea,"Heister, MBA, CF APMP",https://www.linkedin.com/in/andreaheister,,Quivera Enterprises,Senior Proposal Manager,05 Jan 2014
+Tom,Mann,https://www.linkedin.com/in/tom-mann-bb83745,,Tom Mann,Freelance Graphic Designer,05 Jan 2014
+Nibret,Adem,https://www.linkedin.com/in/nibret-adem,,Hamerland Tours Ethiopia,Founder & CEO,04 Jan 2014
+Eric,Kianfar,https://www.linkedin.com/in/eric-kianfar-ba462287,,JLK:Engineering,Electrical Engineer,03 Jan 2014
+Beth,Wilson,https://www.linkedin.com/in/beth-wilson-0b9a081b,,University of Oklahoma,Instructor,11 Dec 2013
+Kimya,Hedayat-Zadeh,https://www.linkedin.com/in/kimya-hedayat-zadeh-3b78522b,,Yellowstone National Park,Grants Manager,26 Nov 2013
+Bernadette,Rouhani,https://www.linkedin.com/in/bernadette-rouhani-60263459,,Apria Healthcare,Senior Account Manager,23 Nov 2013
+Nathan,White,https://www.linkedin.com/in/nathan-white-ba19a785,,The Heart Bureau ,Business Owner,14 Nov 2013
+Tyson,Media,https://www.linkedin.com/in/tyson-media-5bbb2284,,Univ. Alabama Huntsville,"Instructor, Media Writing",05 Nov 2013
+Jenny,Achilles,https://www.linkedin.com/in/jenny-achilles-500b176a,,Trellis Foundation,Sr. Program Officer,05 Nov 2013
+Jennifer,Morgan,https://www.linkedin.com/in/jennifer-morgan-5406ba54,,Snap Inc.,Global Agency Partnerships,28 Oct 2013
+Johanna,Parrish,https://www.linkedin.com/in/johanna-parrish-84025884,,Johanna LLC,Contracting,28 Oct 2013
+Sofie M.M.A.,Geschier,https://www.linkedin.com/in/sofie-m-m-a-geschier-38a75b64,,IMS Borgerhout (Sint-Lucas),Secondary school teacher: Dutch as a second language,03 Oct 2013
+Megan,Sweas,https://www.linkedin.com/in/megansweas,,University of Southern California,"Editor and Director of Communications, Center for Religion and Civic Culture",02 Oct 2013
+Renée K.,Gadoua,https://www.linkedin.com/in/reneekgadoua,,National Catholic Reporter,Weekend editor/copy editor,30 Sep 2013
+Chris,Tomlinson,https://www.linkedin.com/in/cltomlinson,,Houston Chronicle,Columnist,30 Sep 2013
+,,,,,,28 Sep 2013
+Jian,Khodadad,https://www.linkedin.com/in/jian-khodadad-865b7a6,,Sirius XM Radio Inc.,"Vice President, Corporate Development & Strategy",27 Sep 2013
+Shiva,Teunisse,https://www.linkedin.com/in/shivateunisse,,Studio Lore,Senior Account Manager & Marketing Lead,27 Sep 2013
+Sean, Bluett,https://www.linkedin.com/in/sean-bluett-63bb5211,,Qantas,Executive Chairman,27 Sep 2013
+Georgeann,Eyler,https://www.linkedin.com/in/georgeann-eyler-286274b,,SkyTeam,Internal Communications,13 Sep 2013
+Dana Alan,Troyer,https://www.linkedin.com/in/dana-alan-troyer-02337463,,US Army,Retired,13 Sep 2013
+Shastri,Purushotma,https://www.linkedin.com/in/shastrip,,Bitscopic,Sr Product Manager,13 Sep 2013
+Dean Carsten,Oostema,https://www.linkedin.com/in/dean-carsten-oostema-0858a010,,Profile Wardrobes,Furnishing Tradesperson,13 Sep 2013
+Tiffany,Tupper,https://www.linkedin.com/in/tiffanytupper,,Ogilvy,Account Director,13 Sep 2013
+Mahdi,Haddad,https://www.linkedin.com/in/mahdihaddad,,Bureau of Economic Geology,Research Assistant Professor,03 Sep 2013
+Jessie,Shanks,https://www.linkedin.com/in/jessieshanks,,General Assembly,"Web Developer, Web Development Immersive",03 Sep 2013
+Alia,Plasencia-Bishop,https://www.linkedin.com/in/alia-plasencia-bishop-1b20775b,,DeepJudge,Customer Success Manager,03 Sep 2013
+Michael,Teske,https://www.linkedin.com/in/michael-teske-6443026,,Commendable Wealth,Owner,03 Sep 2013
+Nica,Pourfallah,https://www.linkedin.com/in/nicapourfallah,,First West Credit Union,Agile Coach,03 Sep 2013
+Saba,Moghbelpour,https://www.linkedin.com/in/saba-moghbelpour-5a82234,,Abedian & Co,Information Technology & Procurement Manager,03 Sep 2013
+Roni,Sivan,https://www.linkedin.com/in/ronisivan,,Boutique Japan,Sales Director,28 Aug 2013
+Brady,Ellison,https://www.linkedin.com/in/bradyellison,,Indeed.com,Software Engineer,28 Aug 2013
+Rida,Elgaddafi,https://www.linkedin.com/in/rida-elgaddafi-a4203669,,Australian College of Kuwait,Assistant Professor,28 Aug 2013
+Lauren,"Anvari, MPH",https://www.linkedin.com/in/lauren-anvari-mph-08062531,,laurenonliving.com,Creator/Consultant/Blogger,16 Aug 2013
+Ulysses,Aquino,https://www.linkedin.com/in/ulysses-aquino-69bb7970,,Baha'i World Centre,Sous Chef,12 Jul 2013
+Shabnam,"Moinipour, PhD, AFHEA, MA, BSc.",https://www.linkedin.com/in/shabnammoinipour,,University of Oxford,Senior Project Research Fellow,12 Jul 2013
+Heather,Figg,https://www.linkedin.com/in/heather-figg-23271a6b,,Via 313 Pizza,Director of Training,12 Jul 2013
+Robert,Afnani,https://www.linkedin.com/in/robertafnani,,"4D Cyber [Risk] Solutions, LLC.",Founder/Owner/CEO,12 Jul 2013
+Daniel,Philp,https://www.linkedin.com/in/danielphilp,,Banana Phone LLC,Chief Marketing Officer,12 Jul 2013
+Allison,Minor,https://www.linkedin.com/in/allison-minor,,Atlantic Council,"Director, Project for Middle East Integration ",12 Jul 2013
+"Mike Firouzi,","MS CE, PE, GC",https://www.linkedin.com/in/mikefirouzi,,"FIROUZI CONSULTING ENGINEERS, INC.",President,11 Jun 2013
+Keyvan,Geula,https://www.linkedin.com/in/keyvangeula,,Center for Global Integrated Education; Inc.,Founder and Executive Director,11 Jun 2013
+Armin,Parhami,https://www.linkedin.com/in/armin-parhami-62451422,,BatchOut,Relationship Manager,11 Jun 2013
+,,,,,,11 Jun 2013
+Nima,"Rafiei, CAMS",https://www.linkedin.com/in/nrafiei,,Interactive Brokers,New Accounts - Senior Analyst - Financial Advisors & Fund Managers,11 Jun 2013
+Magnolia,Komsky,https://www.linkedin.com/in/magnolia-komsky-87261838,,Les Éditions l'Hybride,Chargée de projet,11 Jun 2013
+,,,,,,11 Jun 2013
+Ralph,Mills-Tettey,https://www.linkedin.com/in/ralph-mills-tettey-85057140,,Yinson Production,Senior Operations Engineer,11 Jun 2013
+Fred,Gonzales,https://www.linkedin.com/in/fredgonzales,,City of San Antonio,City Photographer,11 Jun 2013
+Sironaj,"Hindawi, MA",https://www.linkedin.com/in/sironaj-hindawi-ma-6bb8a030,sironaj.h@Exaltai.ai,Exalt AI,Marketing & Business Development Manager,11 Jun 2013
+Monya,Lemery,https://www.linkedin.com/in/monya-lemery-highered,,Southwestern University,Director of Study Abroad and International Student Services,11 Jun 2013
+Diem,Van Groth,https://www.linkedin.com/in/dvg,diemvangroth@gmail.com,GVBACK LLC,Founder and President ,11 Jun 2013
+Rahmin,Bender-Salazar,https://www.linkedin.com/in/rsbender,,University of Galway,Researcher,11 Jun 2013
+Amin,Vargha,https://www.linkedin.com/in/aminvargha,,Baha'i National Center,Planned Giving Coordinator,11 Jun 2013
+Faranak,Najafian,https://www.linkedin.com/in/faranak-n-16856570,,Eyes inspire,Manager,11 Jun 2013
+Oscar Javier,Beltrán,https://www.linkedin.com/in/oscar-javier-beltr%C3%A1n-1644ab1a,,HP Pelzer GmbH,Responsable de laboratorio,11 Jun 2013
+Jean M.,Marseille,https://www.linkedin.com/in/jean-m-marseille-80641873,,,,11 Jun 2013
+Claudia,Rossel,https://www.linkedin.com/in/claudia-rossel-90373927,,Cybersecurity and Infrastructure Security Agency,Detail to CSD Office of the Chief of Staff (OCOS),24 May 2013
+Melanie,Fedri,https://www.linkedin.com/in/melaniefedri,,George Mason University - Honors College,"Assistant Professor, Experiential Learning Coordinator",14 May 2013
+Mark,Towfiq,https://www.linkedin.com/in/mtowfiq,,TFT Holdings,President & CEO,14 May 2013
+Denis,Kawata Nagaoka,https://www.linkedin.com/in/denis-kawata-nagaoka-9833a869,,ATRIA LOGISTICA,Subgerente de Planificación y Control de Gestión,14 May 2013
+Kaitlin,Levenstrong,https://www.linkedin.com/in/kaitlinlevenstrong,,Oakland Goes Outdoors,Executive Director,14 May 2013
+Shiva,Anvary,https://www.linkedin.com/in/shiva-anvary-8b580567,,,,14 May 2013
+,,,,,,14 May 2013
+Philip,Blyth,https://www.linkedin.com/in/philipblyth,,nemoDreaming.com,Senior Software Engineer,14 May 2013
+Amir,Vekil,https://www.linkedin.com/in/amir-vekil-4236426a,,Government of Canada,Business Analyst,14 May 2013
+Lipika,"Ahuja, PMP",https://www.linkedin.com/in/lipika-ahuja-pmp-5959597,,Cerner Corporation,Senior Manager,14 May 2013
+Jared,Rutstein,https://www.linkedin.com/in/jared-rutstein-77477417,,Liontown Resources Limited,Contracts Lead,14 May 2013
+Crissy,Young,https://www.linkedin.com/in/crissy-y-37b10970,,University of Oklahoma,Office Manager and Assistant to the Director,14 May 2013
+Ari,Phillips,https://www.linkedin.com/in/ari-phillips-93a2958,,Environmental Integrity Project,Deputy Communications Director,14 May 2013
+Shingo,Ishikawa,https://www.linkedin.com/in/shingo-ishikawa-a777b344,,National Film & Sound Archive of Australia,Paper Conservator,12 May 2013
+Ruha,Reyhani,https://www.linkedin.com/in/ruha-reyhani,,EOS,Chief Transformation Officer,24 Apr 2013
+Ignat,Glushko,https://www.linkedin.com/in/ignat-glushko-0a893112,,VISN 2: New York/New Jersey VA Health Care Network,Senior Healthcare Data & Business Intelligence Leader ,03 Apr 2013
+Dini,Kamayana,https://www.linkedin.com/in/mskamayana,, United Nations Global Pulse Asia Pacific,Communications Officer,02 Apr 2013
+Jeevanandhan,Duraisamy,https://www.linkedin.com/in/jeevaduraisamy,,Climate Smart Technologies (Startup Recognised by DIPP Govt of India under Startup India)  ,Founder CEO ,02 Apr 2013
+Mauricio,Dumet,https://www.linkedin.com/in/mauricio-dumet,,Salesforce,Lead UI/UX Designer,29 Mar 2013
+Rachel,Wolfe,https://www.linkedin.com/in/rachel-wolfe19,,U.S. Baha'i Office of Public Affairs,Media Officer,29 Mar 2013
+Rose,Jennings,https://www.linkedin.com/in/rose-jennings-b0377067,,University of Rhode Island,"Postdoctoral Fellow, JUST GROW Project",29 Mar 2013
+Scott,Schaffter,https://www.linkedin.com/in/sschafft,,Google,Staff Software Engineer,29 Mar 2013
+Nava Melody,Ghalili-Wuorenma,https://www.linkedin.com/in/nava-melody-ghalili-wuorenma-a158ab29,,Self-employed,Writer/Producer/SAG Actress/Journalist/Youth Activist/Public Speaking Consultant,29 Mar 2013
+Martha,Estafanos,https://www.linkedin.com/in/martha-estafanos-5a008759,,TED Conferences,Producer,29 Mar 2013
+Nick,Aghazadeh,https://www.linkedin.com/in/nick-aghazadeh-546b8828,,"RealPage, Inc.",National Account Executive,02 Mar 2013
+Gonzaga Kelly ,Kyagaba ,https://www.linkedin.com/in/gonzaga-kelly-kyagaba-38b4b660,,CERFODES UGANDA,Senior Associate Consultant - Human Capital Development & Advisory,02 Mar 2013
+Adrian,RADU,https://www.linkedin.com/in/adiradu9,,"""XpertUS WingS AdvisorS"" - International Biz Hub - Inception Mode",Social Enterprise & Visionary Partner,02 Mar 2013
+Haley,Hoffman Chung,https://www.linkedin.com/in/haleymhoffman,,Light Work Studios,Founder & Principal,02 Mar 2013
+Zareen,Khan,https://www.linkedin.com/in/zareenabbaskhan,,"St. Olavs hospital, Trondheim University Hospital",Postdoctoral Researcher (Health Economics),02 Mar 2013
+,,,,,,02 Mar 2013
+Johanna,Austin Azadi,https://www.linkedin.com/in/johannaaustin,,Johanna Austin Consulting,Executive Trainer and Speaker ,02 Mar 2013
+Sahba Dario,Sanai,https://www.linkedin.com/in/sahbasanai,,European Commission,Program Manager,02 Mar 2013
+Isra,L,https://www.linkedin.com/in/isramirez,,Vision6 by Constant Contact,Customer Success and Product Support Specialist,27 Feb 2013
+Jared,Berenter,https://www.linkedin.com/in/jared-berenter-240b9b27,,Environmental Incentives Inc.,"Technical Team Lead (Monitoring, Evaluation and Learning Support Contract, USAID/El Salvador)",13 Feb 2013
+John,"Stanley, CPA",https://www.linkedin.com/in/stanleyjohn,,HP,"Director, WW Controls & Compliance",06 Feb 2013
+Hanna,Murphy-Pack,https://www.linkedin.com/in/hannamurphypack,,Storable,"Senior Product Marketing Manager, New Product Lines",30 Jan 2013
+Manijeh,Afnan-Murray,https://www.linkedin.com/in/manijeh-afnan-murray-32856844,,Bionical Emas,"Portfolio Director, Early Access Programs",30 Jan 2013
+Sarah,DeCuir,https://www.linkedin.com/in/sarah-decuir-24781064,,United Nations,Human Resources Officer,30 Jan 2013
+Robert,Middaugh,https://www.linkedin.com/in/robertmiddaugh,,Self Employed,Communications Consultant,30 Jan 2013
+,,,,,,25 Jan 2013
+Nahid,Naraghi Hariri,https://www.linkedin.com/in/nahid-naraghi-hariri-38668347,,Ralph Lauren,"Account Services Analyst, Latin America and Travel Retail",25 Jan 2013
+Niniane,Tozzi,https://www.linkedin.com/in/niniane-tozzi-12599916,,Mott MacDonald,Environment and Society Market Lead,23 Jan 2013
+Ali,Bakar,https://www.linkedin.com/in/ali-bakar-354baa60,,Ministry of Infrastructure and Transportation,Principal Secretary,22 Jan 2013
+Abraham,Henson,https://www.linkedin.com/in/abraham-henson-a3ba9a5a,,Henson Woodworks Inc.,President,22 Jan 2013
+Peter,Adriance,https://www.linkedin.com/in/peteradriance,,None,Retiree,03 Jan 2013
+Naseem,Kourosh,https://www.linkedin.com/in/naseemhk,,U.S. Department of Justice,Trial Attorney,02 Jan 2013
+Ellen ,Wichman,https://www.linkedin.com/in/ellen-wichman,,Abbott,"Senior Manager, Public Affairs",02 Jan 2013
+Navid,Foroughi,https://www.linkedin.com/in/navid-foroughi-b719a731,,"Imagine, Inc",Owner,02 Jan 2013
+Josh,Levine,https://www.linkedin.com/in/josh-levine-b50a7723,,Thorian AI,Co-Founder and CEO,02 Jan 2013
+Soraya,Khamsi,https://www.linkedin.com/in/soraya-khamsi-b3675013,,The Global Fund,Senior Program Officer,16 Dec 2012
+Shadi,Salehian,https://www.linkedin.com/in/shadi-salehian,,NGO,Managing Director,12 Dec 2012
+Abraham,"Reyes, CISSP, CCSP",https://www.linkedin.com/in/abrahamreyes9,,Hollard Insurance Australia,Lead Cyber Security Engineer ,03 Dec 2012
+Sahba,Fanaian,https://www.linkedin.com/in/sahbaf,,Epic Games,Senior UI/UX HMI Designer,03 Dec 2012
+Todd,Milligan,https://www.linkedin.com/in/todd-milligan-40774060,,Dust Bowl Artistry,Owner/Graphic Designer,03 Dec 2012
+,,,,,,13 Nov 2012
+Kathryn,Khamsi,https://www.linkedin.com/in/kathryn-s-khamsi,,Pikku | Muslin Made Modern,Founder | Creative Director,13 Nov 2012
+Parteesh,Kaul,https://www.linkedin.com/in/parteesh-k-a221bb14,,"OST, Inc.",Capture Solutions Architect,05 Nov 2012
+Sushil,Mate,https://www.linkedin.com/in/sushil-mate-714163a,,World Food Programme,Head Of Innovation,31 Oct 2012
+Lethika,Richter-Addo,https://www.linkedin.com/in/lethika-richter-addo-a5864558,,INTEGRIS Health,LPN,31 Oct 2012
+Adib,"Amini, Ph.D., PE, ENV SP, BCEE",https://www.linkedin.com/in/adibamini,,UW-Madison Interdisciplinary Professional Programs,Program Director,31 Oct 2012
+Rajesh,Sharma ,https://www.linkedin.com/in/sharmarajeshpmp,,Deloitte,Managing Director - Digital Health Growth Leader,31 Oct 2012
+Nabil,Hanke,https://www.linkedin.com/in/nabil-hanke,,Tesla,Test Engineering Supervisor,31 Oct 2012
+George,Costant,https://www.linkedin.com/in/george-costant,,Point of Unity,"Senior Advisor, AI & Organizational Transformation",31 Oct 2012
+,,,,,,31 Oct 2012
+Graeme,Burrows,https://www.linkedin.com/in/graeme-b-459a717,,Meta,"Director of Product Policy, Head of Facebook App ",25 Oct 2012
+Mace,Rosen,https://www.linkedin.com/in/mace-rosen-291a1711,,Swire Properties,Design AD,24 Oct 2012
+Anna,Trela,https://www.linkedin.com/in/anna-trela-iltx,,U.S. Department of the Treasury,Operations Manager,24 Oct 2012
+Navid,Erfan,https://www.linkedin.com/in/navid-erfan,,City of Orlando,Facilities Management Division Manager,11 Oct 2012
+Hazel,Anderson,https://www.linkedin.com/in/hazel-anderson-b735a738,,University of St. Augustine for Health Sciences,Assistant Professor,05 Oct 2012
+Amelia,Pittman,https://www.linkedin.com/in/amelia-pittman,,Open Data Watch,Data Insights and Design Manager,05 Oct 2012
+Mauricio ,Bolaños Arturo,https://www.linkedin.com/in/mauriciobolanosarturo,,Hasbro,"Media Manager - Chile, Peru, Colombia and Argentina",21 Sep 2012
+Sanjukta,Basu,https://www.linkedin.com/in/basusanjukta,,New Era High School,Morals HOD,17 Sep 2012
+Harouna,Abdoul Aziz,https://www.linkedin.com/in/harounaa,,American International School of Niamey,Intern,15 Sep 2012
+Stev,Rah-Tab,https://www.linkedin.com/in/steve-rahmanian-tabe9595,,Self - employed,Artist,13 Sep 2012
+William Tiʻitiʻi,Asiata,https://www.linkedin.com/in/willtiiasiata,,SmartTrade Ltd,Graduate Software Developer,10 Sep 2012
+Kevin,Habibi,https://www.linkedin.com/in/kevin-habibi-69354737,,Premier's Department NSW,Procurement Specialist,10 Sep 2012
+Vivian,Argueta (She/Her),https://www.linkedin.com/in/vivian-argueta,,Cámara de Comercio de Cali,Vice President of Business Transformation,10 Sep 2012
+Amelia,Ishikawa,https://www.linkedin.com/in/amelia-ishikawa-77616551,,Amelia Ishikawa Psychology,Psychologist,04 Sep 2012
+Katie,Whitehouse,https://www.linkedin.com/in/katie-whitehouse-4105052b,,Council of the District of Columbia,Performance Initiative Manager,30 Aug 2012
+Samar,"Rushdy, CA",https://www.linkedin.com/in/samar-rushdy-ca-54830457,,Les Mills International,Head of Financial Accounting - NZ,28 Aug 2012
+Benjamin,Hendershot,https://www.linkedin.com/in/benjamin-hendershot-7501a724,benjamin.hendershot@gmail.com,Kimmeridge,Director of Information Technology,23 Aug 2012
+Layli,Samimi,https://www.linkedin.com/in/laylisamimi,,Nike,Senior Materials Designer,22 Aug 2012
+Pace,Phillips,https://www.linkedin.com/in/pacephillips,,Innovations for Poverty Action,Senior Director of Business and Program Development,19 Aug 2012
+Rachel,Fuerst,https://www.linkedin.com/in/rachfuerst,,GitLab,Senior Solutions Architect,16 Aug 2012
+Stephanie,Ball,https://www.linkedin.com/in/stephanie-ball-97b21233,,Sound Transit,Director of Financial Planning and Analysis,16 Aug 2012
+Katie,Osvold,https://www.linkedin.com/in/katie-osvold-490bb710,,Atlantic Regional Training Institute,Regional Coordinator,16 Aug 2012
+Maame Brodwemaba,Nketsiah,https://www.linkedin.com/in/maame-brodwemaba-nketsiah-4737753,,Innovations for Poverty Action,Senior Policy Manager,16 Aug 2012
+Linda,Bishop,https://www.linkedin.com/in/linda-bishop-59691a22,,Clients' home,Computer tech for seniors,15 Aug 2012
+Jay,Braden,https://www.linkedin.com/in/jay-braden-44bb172,,JB Art and Design,"Designer, Owner, Operator",13 Aug 2012
+Amy,Knop-Narbutis,https://www.linkedin.com/in/aknopn,,The Hector and Gloria Lopez Foundation,Senior Research and Evaluation Officer,10 Aug 2012
+Monica,Maghami,https://www.linkedin.com/in/monica-maghami,,SUSTAIN-NOBILITY ADVISORY,CEO and Founder,09 Aug 2012
+Anna,Koob,https://www.linkedin.com/in/anna-koob,,Candid,Senior Research Lead,08 Aug 2012
+Christina,Iannuzzi,https://www.linkedin.com/in/christina-iannuzzi-bb492b4a,,Sahel and West Africa Club/Club du Sahel et de l'Afrique de l'Ouest,Policy Engagement Officer,31 Jul 2012
+Francis,Aquino,https://www.linkedin.com/in/francis-aquino-b4126351,,Chartwell Retirement Residences,Food and Beverage Manager,31 Jul 2012
+Yasmin,Hedayaty,https://www.linkedin.com/in/yasminatoz,,Griffith University,Public Health Student,30 Jul 2012
+Sahba,Rohani,https://www.linkedin.com/in/sahba-rohani-5697b1,,Roots ConnectED,Executive Director,26 Jul 2012
+Anthony,Vance,https://www.linkedin.com/in/anthony-vance-2365a332,,Baha'i National Center,"Director, Public Affairs",26 Jul 2012
+Aniela,M. Costello L.H.P.,https://www.linkedin.com/in/aniela-m-costello-l-h-p-982669a,,Homeopathic Concepts LLC,Owner,25 Jul 2012
+Na'im,Samimi-Moore,https://www.linkedin.com/in/naimsm,,lvl.agency,Creative Director,25 Jul 2012
+Bryce,Allison,https://www.linkedin.com/in/bryceallison,,American Bible Society,Chief Technology Officer,23 Jul 2012
+Victor,Forghani,https://www.linkedin.com/in/victorforghani,,Kilim.pt,Fundador,18 Jul 2012
+Andre,Avaregan,https://www.linkedin.com/in/andre-avaregan-3b55086,,CommonSpirit Health,Senior Desktop Support Technician,17 Jul 2012
+Edward,Dikgale-Debeers,https://www.linkedin.com/in/edward-dikgale-debeers-3539b054,,https://www.eventsustainability.com/,Engineering Leadership & Technical Product Ownership – Startup Environment,17 Jul 2012
+Harry,Lindner,https://www.linkedin.com/in/harrylindner,,Anthem,Senior Developer,17 Jul 2012
+Matthew,Driscoll,https://www.linkedin.com/in/matthew-driscoll-20111219,,Flipkart,Deputy Chief Ethics & Compliance Officer,11 Jul 2012
+Shradha,Singh,https://www.linkedin.com/in/shradha-singh-8a88644,,L'Opera (French Bakery Pvt. Ltd.),Deputy Managing Director,10 Jul 2012
+Laily,Mesbah Fogel,https://www.linkedin.com/in/laily-mesbah-fogel-6b880726,,Even House,Creative Director,08 Jul 2012
+Brian,Kurzius,https://www.linkedin.com/in/briankurzius,,A+E Global Media,Technical Project Manager at A+E Global Media,08 Jul 2012
+Neda,Molai,https://www.linkedin.com/in/nmolai,,Define Integrative Wellness,Lead Trainer,06 Jul 2012
+Donna,Alexander,https://www.linkedin.com/in/donna-alexander-86840a54,,Sultan Qaboos University,Senior Instructor English as a Second Language,05 Jul 2012
+Christine,Krug,https://www.linkedin.com/in/christine-krug-68289552,,Durham Technical Community College,ESL Instructor,03 Jul 2012
+Devin,"Fitzpatrick, MA, PMP",https://www.linkedin.com/in/devfitzpatrick,,Carenet Health,Director of Enterprise Project Management Office,02 Jul 2012
+Mara Noelle,Fojas,https://www.linkedin.com/in/mara-noelle-fojas-95b27413,,Raising Game Changers,Mom,01 Jul 2012
+Nadim,Yazdani,https://www.linkedin.com/in/nadimyazdani,,Space Inch,Senior Product & Delivery Lead,30 Jun 2012
+Pat,McCann-Smith,https://www.linkedin.com/in/pat-mccann-smith-b4628122,,Canadian Baha'i National Centre,Operations Facilitator / National Properties Administrator,29 Jun 2012
+Yasmine,Hanafi,https://www.linkedin.com/in/yasmine-h-540387,,Group of Gold Line,Communications Manager,28 Jun 2012
+Jonathan,Deyo,https://www.linkedin.com/in/jdeyo1,,NASA - National Aeronautics and Space Administration,Performance Management Lead,27 Jun 2012
+Josef,Varga,https://www.linkedin.com/in/josefvarga,,Fellowship Bible Church,Operations Director,27 Jun 2012
+Rissa,"Sant'Anna, CIA",https://www.linkedin.com/in/rissasantanna,,Aromariss Savonnerie,Founder,27 Jun 2012
+Nava,Kavelin,https://www.linkedin.com/in/nava-kavelin-a8006a47,,Ninth Mode,Chief Executive Officer,27 Jun 2012
+Anise,Pertl,https://www.linkedin.com/in/anisepertl,,GHD,NELP Visualization Delivery Lead,26 Jun 2012
+Musi,Ngubai,https://www.linkedin.com/in/musi-ngubai-65582729,,Software Engineering Consultancy LTD,Director,26 Jun 2012
+Amanda,Boatright,https://www.linkedin.com/in/amandaboatright,,Personify Health,Vice President of Demand Generation,26 Jun 2012
+Fazel,Foroodi,https://www.linkedin.com/in/fazel-foroodi-75116740,,EPMMOP,Director de Areas Naturales,26 Jun 2012
+Lauren,Salazar (she / her),https://www.linkedin.com/in/laurensalazar,,Salesforce,Data Governance Manager,26 Jun 2012
+Lauren,Ames,https://www.linkedin.com/in/laurenames,,Texas Sunset Advisory Commission,Policy Analyst,25 Jun 2012
+Miha,Vindis,https://www.linkedin.com/in/mvindis,,Texas State University,Director & Professor of Practice,25 Jun 2012
+Kit,Bigelow,https://www.linkedin.com/in/kit-bigelow-84637521,,Baha'i National Center,"Retired, Director of External Affairs",25 Jun 2012
+Jennifer,Bussell,https://www.linkedin.com/in/jennifer-bussell-74675,,"University of California, Berkeley",Associate Professor,25 Jun 2012
+Candace,Vance,https://www.linkedin.com/in/candace-vance,,Striving for Community Progress and Education (SCOPE),Program Manager,25 Jun 2012
+Izzah,Akram Malik,https://www.linkedin.com/in/izzah,,The World Bank,Senior Public Sector Specialist,25 Jun 2012
+André,Ross,https://www.linkedin.com/in/andr%C3%A9-ross-308b3417,,J.P. Morgan,"Managing Director, Head, Global Corporate Banking, Sub-Saharan Africa",25 Jun 2012
+Nicole,Moore-Kriel,https://www.linkedin.com/in/nicole-moore-kriel-83216443,,Good Reason Houston,Director of Foundation Relations,25 Jun 2012
+Ross,Richards,https://www.linkedin.com/in/ross-richards-4667b628,,Richards Legal,Director,25 Jun 2012
+Sophia,Checa,https://www.linkedin.com/in/sophiacheca,,Guadalupe Neighborhood Development Corporation,Chief Operations Officer,24 Jun 2012
+Patrick,Davis,https://www.linkedin.com/in/patrick-davis-85258921,,Public Citizen,Communications Officer,24 Jun 2012
+Justin,Byrth,https://www.linkedin.com/in/justinbyrth,,,Business & Technical Consultant (Independent),24 Jun 2012
+Lauren,Dansby,https://www.linkedin.com/in/lauren-dansby-634a2a8,,Norman Public Schools,Digital Art & Photography Teacher,24 Jun 2012
+Michael,Franco,https://www.linkedin.com/in/michael-franco-5a78ab3b,,ILO Group,Senior Fellow,24 Jun 2012
+Omeed,Rameshni,https://www.linkedin.com/in/omeedrameshni,,Microsoft,"General Manager, Business and Product Management, Xbox Game Content & Studios",24 Jun 2012
+Conor,Kenny,https://www.linkedin.com/in/conorkennyatx,,Capital A Housing,Principal,24 Jun 2012
+Daniel,Mathews,https://www.linkedin.com/in/daniel-mathews-4319783,,Oracle,Head of Sales - East,24 Jun 2012
+Nancy,Wong,https://www.linkedin.com/in/nancymwong,,"Nancy Wong Photography, LLC",Photographer/Owner,23 Jun 2012
+Josh,Haney,https://www.linkedin.com/in/josh-haney-13471b1b,,"MoakCasey, LLC",Vice President of Finance,23 Jun 2012
+Iman,Yazdani,https://www.linkedin.com/in/iyazdani,,Self-employed,Independent Consultant,23 Jun 2012
+Kellee,Wicker,https://www.linkedin.com/in/kellee-wicker-09025516,,Meridian International Center,"Vice President, Center for Technology, Innovation, and Space",23 Jun 2012
+Isabel,Longoria,https://www.linkedin.com/in/isabel-longoria-64925749,,Annie's List,Executive Director,22 Jun 2012
+j.Peter,Smith  ,https://www.linkedin.com/in/jpetersmith1,,Learn2Be ,Sr. OCM - Consultant Services,22 Jun 2012
+Liam,O'Toole,https://www.linkedin.com/in/liam-o-toole-738a114b,,Nations Investment Group,Chief Executive Officer,22 Jun 2012
+Marjan,Akavan,https://www.linkedin.com/in/marjan-akavan-8b519647,,WHTcare SA - Human Tecar,Marketing and Communications Project,22 Jun 2012
+Will,Inboden,https://www.linkedin.com/in/will-inboden-8761339,,The University of Texas at Austin,Executive Vice President and Provost,22 Jun 2012
+Nima,Ashraf,https://www.linkedin.com/in/nima-ashraf,,Physical Fund,Founder & Managing Director,22 Jun 2012
+LBJ School,Austin Alumni Association,https://www.linkedin.com/in/lbj-school-austin-alumni-association-9a0a3124,,LBJ School of Public Affairs,LBJ School of Public Affairs Austin Alumni Association,22 Jun 2012
+Thobeka,Poswa,https://www.linkedin.com/in/thobeka-poswa,thobeka@tlpservices.co.za,TLP Services PTY (Ltd),Executive Director,22 Jun 2012
+Todd G.,"Smith, Ph.D.",https://www.linkedin.com/in/toddgrahamsmith,toddgsmith@utexas.edu,EEOC,Statistician,22 Jun 2012
+Barmak,"Kusha, MPH, CIC",https://www.linkedin.com/in/barmakkusha,kushab@aya.yale.edu,AdventHealth,"Manager, Infection Prevention & Control",22 Jun 2012
+Christopher J.,Rodriguez,https://www.linkedin.com/in/christopher-j-rodriguez-29a6baa,,Ability360,President & CEO,22 Jun 2012
+Rebecca,Christians,https://www.linkedin.com/in/rebecca-christians-16068448,,Texas Department of Family and Protective Services,"Research Specialist V, Analytics & Evaluation",22 Jun 2012
+Gigi,Mao,https://www.linkedin.com/in/gigi-mao-31223746,,City of Austin,Financial Services Manager,22 Jun 2012
+Kori,Hattemer,https://www.linkedin.com/in/korihattemer,,St. David's Foundation,Program Officer,22 Jun 2012
+Raul,Torres Aragon,https://www.linkedin.com/in/raul-torres-aragon-35536b31,,Amazon,Data Scientist II (L5),22 Jun 2012
+Adam,Colligan,https://www.linkedin.com/in/adamcolligan,,The Robert Strauss Center for International Security and Law,Graduate Research Assistant,22 Jun 2012
+Aram,Richards,https://www.linkedin.com/in/aram-richards-29470952,,James Cook University,Clinical Educator,22 Jun 2012
+Karen,Chung,https://www.linkedin.com/in/karen-chung-a2b18217,,Public Health – Seattle & King County,Seattle TGA HIV Planning Council Coordinator / PPM III,22 Jun 2012
+Anis,Mungapen,https://www.linkedin.com/in/anismungapen,,Forticap,Operating Advisor,22 Jun 2012
+Meredith,Whipple,https://www.linkedin.com/in/meredithwhipple,,Public Knowledge,Chief of Staff,22 Jun 2012
+Lucia,Tyson,https://www.linkedin.com/in/lucia-tyson-b6566953,,U.S. Baha'i Office of Public Affairs,Administrative Director/Social Media Officer,22 Jun 2012
+Zhanna,Esterhuizen,https://www.linkedin.com/in/zhanna-esterhuizen-982a442,,IQVIA,"Regional HR Director, Africa",22 Jun 2012
+,,,,,,22 Jun 2012
+Balbir,Ghori,https://www.linkedin.com/in/balbir-ghori,,Trent University,Network & Telephony Systems Specialist,22 Jun 2012
+John,Yeary,https://www.linkedin.com/in/johnyeary,,bp,Discovery Specialist,20 Jun 2012
+Parham,Lotfi,https://www.linkedin.com/in/parham-lotfi-75532215,,Mulvey & Banani International Inc.,Senior Associate,18 Jun 2012
+Samira,Ciotti,https://www.linkedin.com/in/samira-ciotti-764a1112,,St Michael's Catholic College SE16,Administrative Assistant,18 Jun 2012
+Ginous,Alford,https://www.linkedin.com/in/gigialford,,Freelance,Independent Consultant,17 Jun 2012
+Douglas,Henck,https://www.linkedin.com/in/douglas-henck-99a28b4,,"Assured Enterprises, Inc.","Member, Senior Management Advisory Board",16 Jun 2012
+Junaid,Yisa,https://www.linkedin.com/in/junaid-yisa-17513724,,Chevron,"Senior Advisor, Strategy & Market Analytics",14 Jun 2012
+Bahie Mary,Rassekh,https://www.linkedin.com/in/bahie-mary-rassekh-096ab36,,The World Bank,Public Health,13 Jun 2012
+Amelia,Tyson,https://www.linkedin.com/in/amelia-tyson-40316415,,"Upstream, Downriver",Field Producer and Director,13 Jun 2012
+Douglas,Moore,https://www.linkedin.com/in/douglaspmoore,,Baha'i World Centre,Aide,13 Jun 2012
+Reed,Malin,https://www.linkedin.com/in/reed-malin-45b1284,,Palantir Technologies,Deployment Strategist,13 Jun 2012
+Rafaan,Anvari,https://www.linkedin.com/in/rafaan,,Meta,Security Engineer,13 Jun 2012
+Kara,Long,https://www.linkedin.com/in/kara-long-a3096438,,Virginia Tech,"Assistant Director, Library Metadata Technologies",13 Jun 2012
+Lynn,Brabender,https://www.linkedin.com/in/lynn-brabender-91353617,,American Association of State Colleges and Universities (AASCU),Senior Director of Student Success and Service Provision ,12 Jun 2012
+Catherine (Kate),Weaver,https://www.linkedin.com/in/catherine-kate-weaver-a1301916,,The University of Texas at Austin,"Co-Director, Innovations for Peace and Development",12 Jun 2012
+Chelsea,"Brass, PhD, MPAff",https://www.linkedin.com/in/chelseabrass,,Florida Institute for Child Welfare,Assistant in Research Faculty,12 Jun 2012
+Austin,Woody,https://www.linkedin.com/in/austin-woody-47049410,,Upland Software,"SVP & GM, Specialized Markets",12 Jun 2012
+Roxana,Hadden,https://www.linkedin.com/in/roxana-hadden-3874398,,RALEIGH OAK CHARTER SCHOOL,Spanish Teacher & Curriculum Development,12 Jun 2012
+Michelle,Harwell,https://www.linkedin.com/in/michelle-harwell-a6a77b3,,The Alamo Psychotherapy and Training,Owner The Alamo Psychotherapy and Training,12 Jun 2012
+Gita,Pourrahimi,https://www.linkedin.com/in/gita-pourrahimi-4813823b,,Austin Energy,IT Enterprise Business System Analyst,12 Jun 2012
+Ann,Symmonds,https://www.linkedin.com/in/ann-symmonds,,Onit,"Manager, Global Support",12 Jun 2012
+Leila,Jiwnani,https://www.linkedin.com/in/leilaaghdassi,,"Revantage, A Blackstone Portfolio Company",VP Hotel Transactions & Operations Strategy,12 Jun 2012
+Vahid,Pourahmary,https://www.linkedin.com/in/vahidp,,Lendable,VP of Engineering,12 Jun 2012
+Matthew,Guevara,https://www.linkedin.com/in/matthew-guevara-0a0b649,,United States Department of Defense,Foreign Affairs Specialist,11 Jun 2012
+Daniel,Guerra,https://www.linkedin.com/in/daniel-guerra-16198b10,,ESPN,"General Editor (Soccer, NBA)",11 Jun 2012
+Payam,Etminani,https://www.linkedin.com/in/payametminani,,Bitscopic,CEO and Co-founder @ Bitscopic Inc,11 Jun 2012
+Rachel,Wald,https://www.linkedin.com/in/rachel-d-wald,,Public Exchange,"Director of Strategy and Operations, USC Dornsife Public Exchange",11 Jun 2012
+,,,,,,11 Jun 2012
+Kathryn,Hendren,https://www.linkedin.com/in/kathryn-hendren-8a83531a,,The University of Texas at Austin,Senior Director of Institutional Research and Analytics,11 Jun 2012
+Victor,Sobhani,https://www.linkedin.com/in/victor-sobhani-b272311,,SBA Communications,Regional Site Manager,11 Jun 2012
+Nagmeh,Hatami,https://www.linkedin.com/in/nagmeh-hatami,,Alkemi Consulting  www.alkemi.au,Stress Management Coach,11 Jun 2012
+Reza,Mostmand,https://www.linkedin.com/in/reza-mostmand-b5b17838,,OLG,Sr. UI Designer,11 Jun 2012
+Joanna,Portillo-Hsu,https://www.linkedin.com/in/joanna-portillo-hsu,,Chicken Ranch Rancheria of Me-Wuk Indians of California Tribal Government,Community & Resources Development Director,11 Jun 2012
+Ben,Leffler,https://www.linkedin.com/in/benleffler,,City of Austin,Chief of Staff,10 Jun 2012
+Hyacinthe,"Symboli, MSCIA, CISSP, CCSK",https://www.linkedin.com/in/hyacinthesymboli,,Google,"Manager, Consulting Services",10 Jun 2012
+Steve,Alvarez,https://www.linkedin.com/in/steve-alvarez-56a8161,stvprez@gmail.com,Presidio Independent School District,College & Career Readiness Coordinator,10 Jun 2012
+Hoda,"Etemad, B.A., B. Ed, MPEd, EdD ",https://www.linkedin.com/in/hodaetemad,,Thames Valley District School Board,Teacher,10 Jun 2012
+William,Samari,https://www.linkedin.com/in/williamsamari,,Forekast,Director of Growth,10 Jun 2012
+Matthew,Cornelius,https://www.linkedin.com/in/matthew-cornelius-286bbb22,,TOWNSEND ENTERPRISES LP,Property Supervisor,10 Jun 2012
+Jonathan,Lebensold,https://www.linkedin.com/in/jlebensold,,Jetty,CEO and Co-Founder,10 Jun 2012
+Tiffany,Tripson,https://www.linkedin.com/in/tiffany-tripson-49873a5,,US Treasury,Senior Operations Analyst,10 Jun 2012
+Christian,Peratsakis,https://www.linkedin.com/in/cmperatsakis,,Pursuit,VP of Customer Experience,10 Jun 2012
+Vladimir,Minakov,https://www.linkedin.com/in/vladimir-minakov-9562a640,,Andre Tchelistcheff Architects,Architect,09 Jun 2012
+Zachary,Child,https://www.linkedin.com/in/zachary-child-6942b115,,Office of Management and Budget,"Program Examiner, International Affairs Division",09 Jun 2012
+Lawrence (Larry),Clark,https://www.linkedin.com/in/larry-clark34,,"Allied Counseling and Wellness, PLLC",Owner,09 Jun 2012
+Anjali,Pala,https://www.linkedin.com/in/anjalipala,,Prestel Publishing,Senior Designer and Production Manager,09 Jun 2012
+Adib,Roy,https://www.linkedin.com/in/adibroy,,Fast Enterprises,Technical Team Manager,09 Jun 2012
+Brittany,Burns,https://www.linkedin.com/in/brittanyjburns,,Bowling Green State University,Assistant Teaching Professor,09 Jun 2012
+Carmen,"Tilton, MGPS",https://www.linkedin.com/in/carmentilton,,Texas Assisted Living Association ,VP of Public Policy,09 Jun 2012
+Eric,Mondschein,https://www.linkedin.com/in/eric-mondschein-06145311,,Something or Other Publishing,Author,09 Jun 2012
+Saba,Firoozi,https://www.linkedin.com/in/sabafiroozi,,Los Angeles County Department of Public Health,Environment Health Specialist III,09 Jun 2012
+Lucas,Saeed,https://www.linkedin.com/in/lucassaeed,,Space Inch,UX Manager,09 Jun 2012
+Anis,Parsa,https://www.linkedin.com/in/anisparsa,,Edify,"Interpreter, Technical Consultant & Training",09 Jun 2012
+Aaron,Gellhaus,https://www.linkedin.com/in/aaron-gellhaus-43224923,,Synthesia,Regional Director of Sales,09 Jun 2012
+Elliott,Vreeland,https://www.linkedin.com/in/elliottvreeland,,AGL,Principal Engineer - OT Systems and Security,07 Jun 2012
+Roxanne,Hai Lash,https://www.linkedin.com/in/roxhai,,TED Conferences,Director of Audio,07 Jun 2012
+Neisan,Massarrat,https://www.linkedin.com/in/neisanmassarrat,,SecondMuse,Head of Consulting,07 Jun 2012
+Sheila,Anvary,https://www.linkedin.com/in/sheilaanvary,,Deloitte,Talent Acquisition,07 Jun 2012
+Kristen,Cambell,https://www.linkedin.com/in/kristencambell,,Christchurch Call Foundation,Chief Partnerships Officer,07 Jun 2012
+Faham,Foroodi,https://www.linkedin.com/in/faham9,,Nuri Films,Creative Director,07 Jun 2012
+John,Amir-Abbassi,https://www.linkedin.com/in/jabbassi,,Google,Senior Staff UX Research Manager - Local & Vertical Launchpad,07 Jun 2012
+PJ,Andrews,https://www.linkedin.com/in/pj-andrews-4531015,,Baha'i National Center,"Director, Office of Public Affairs",07 Jun 2012
+Roya,Dennison,https://www.linkedin.com/in/royadennison,,U.S. Army Redstone Test Center (RTC),Future Vertical Lift Account Manager,07 Jun 2012
+Cameron,Ashkar,https://www.linkedin.com/in/cameron-ashkar-22156320,,,,07 Jun 2012
+William,Mohabbati,https://www.linkedin.com/in/willmohabbati,,BITSCOPIC,Principal Product Manager (HealthTech),07 Jun 2012
+Laura,"London, P.E.",https://www.linkedin.com/in/lauraklondon,,EOG Resources,Environmental Manager,07 Jun 2012
+Amelia,Ghofrany,https://www.linkedin.com/in/ameliaghofrany,,CompassPoint Advisory,Managing Director,07 Jun 2012
+Anthony,Amini,https://www.linkedin.com/in/paamini,,Microsoft,Senior Enterprise Cloud & AI Specialist - Software & Digital Platforms ,07 Jun 2012
+scott,clark,https://www.linkedin.com/in/scott-clark-46265424,,Ralph Lauren,Retail Manager,07 Jun 2012
+Jeff,Nagle,https://www.linkedin.com/in/jeffnagle-it,,University College Cork,Senior System Administrator,07 Jun 2012
+Danesh,Foroughi,https://www.linkedin.com/in/danesh-foroughi-89b79125,,Imagine Inc. - Stonecraft Construction & Truseal Insulation,President,07 Jun 2012
+Jane G.,"Clark, MPA, CPS",https://www.linkedin.com/in/janeclark719,,EisnerAmper,Senior Manager - Grants Management,07 Jun 2012
+Becca,Morigan,https://www.linkedin.com/in/becca-morigan-10bba829,,Texas Commission on Environmental Quality,Acting Deputy Director of the Occupational Licensing & Registration Division,07 Jun 2012
+Tahereh,"Ahmadzadegan, MHA, CMPE",https://www.linkedin.com/in/taherehd,,MTS Edge,Co-Founder,07 Jun 2012
+Naheed,Ghassemi,https://www.linkedin.com/in/naheed-ghassemi-a130856,,Avi Career Training,Director,07 Jun 2012
+Farrah,Farley,https://www.linkedin.com/in/farrahfarley,,Brave New Films,Development and Outreach Associate,07 Jun 2012
+Isaac,Oben,https://www.linkedin.com/in/obeni,,CDW,Cloud Cybersecurity Manager,07 Jun 2012
+Justin,Baker,https://www.linkedin.com/in/justin-baker-97630830,,Hazen and Sawyer,Water Resources Engineer,07 Jun 2012
+Wes,Ven Johnson,https://www.linkedin.com/in/venjohnson,,Ven Global Strategies,Managing Director,07 Jun 2012
+Nicholas,Ward,https://www.linkedin.com/in/nicholas-ward-3b4a0539,,University of Cambridge,Research Support Advisor,07 Jun 2012
+Nabil Keith,"Durand, MBA, MKM",https://www.linkedin.com/in/nabilkeithdurand,,Ultrareal,Senior Knowledge Management Consultant  ,07 Jun 2012
+Shamim “Shawn”,Bina,https://www.linkedin.com/in/sbina,,Prosegur,Armed Security Guard,07 Jun 2012
+Dr Kat,Eghdamian,https://www.linkedin.com/in/keghdamian,,Independent Consultant,"Consultant, Advisor & Educator | Religion, Spirituality, & Justice | Human Rights & Social Change",07 Jun 2012
+Harry,Foli,https://www.linkedin.com/in/harry-foli-88a16124,,Cable and Waves Tekniks Ltd,Technical Director,07 Jun 2012
+Jonas,"Miller, MPAff",https://www.linkedin.com/in/jonasleemiller,,Vanguard Inspection Services; WSP Parsons Brinckerhoff; PaRR Inspections,FEMA Disaster Inspector (Contractor),07 Jun 2012
+Matt,Fry,https://www.linkedin.com/in/mattfredfry,,Unleashed Brands,"Senior Director, Digital Experience & Conversion",07 Jun 2012
+Patrick Abdoulaye,Manke,https://www.linkedin.com/in/patrickmanke,,African Union Development Agency-NEPAD,"Head of Division, Partnerships",07 Jun 2012
+Mandy,Mehdizadeh,https://www.linkedin.com/in/mandymehdizadeh,,Macquarie Group,Senior Manager,07 Jun 2012
+Sarah,McDuff,https://www.linkedin.com/in/sarah-mcduff-23612739,,UNDP,"Consultant, Malawi Ministry of Finance, Economic Planning and Development ",07 Jun 2012
+Michael R.,Leaver,https://www.linkedin.com/in/michaelleaver,,Autism Society of America,Director of Development,07 Jun 2012
+Jennifer,Scarbrough,https://www.linkedin.com/in/jennieinla,,UPS Supply Chain Solutions,"Director of BD, Global Logistics and Distribution",07 Jun 2012
+Eric,Horton,https://www.linkedin.com/in/erichortonmba,,bp,OMS Compliance and Audit Advisor,07 Jun 2012
+Milad,Pournik,https://www.linkedin.com/in/milad-pournik-a2887849,,United Nations Economic and Social Commission for  Western Asia (ESCWA),Associate Social Affairs Officer,07 Jun 2012
+Lauren,Oertel,https://www.linkedin.com/in/lauren-oertel-269a764a,,Freelance,"Writer, Editor, AWA-Certified Facilitator",07 Jun 2012
+Mona,Mossayeb,https://www.linkedin.com/in/monamossayeb,,County of Riverside,Senior Planner,07 Jun 2012
+Ben,Walker,https://www.linkedin.com/in/benpwalker,,NS3 Health,Chief Executive Officer,07 Jun 2012
+Loren,Riemer,https://www.linkedin.com/in/loren-riemer,,Big Bend Conservancy  ,CEO and Executive Director,07 Jun 2012
+Virginia,Rogers,https://www.linkedin.com/in/virginiaboydrogers,,"Nine Star Real Estate Solutions, LLC",Manager/Member,07 Jun 2012
+Mona,Foroughi,https://www.linkedin.com/in/mona-foroughi,,The University of Alabama in Huntsville,"Career and Internship Advisor, College of Business ",07 Jun 2012
+Cauam,"Cardoso, PhD",https://www.linkedin.com/in/cauam-ferreira-cardoso,,The University of Texas at El Paso,"Co-Founder & Executive Director, Institute for Applied AI Innovation (AAII)",07 Jun 2012
+Brian,Small,https://www.linkedin.com/in/briansmall512,,General Dynamics Information Technology,Senior Full Stack Engineer,07 Jun 2012
+Adam,Ludwin,https://www.linkedin.com/in/adamludwin,,Byte Inc,COO,22 Jul 2009
+Vafa,Akhtar-Khavari,https://www.linkedin.com/in/vafa-akhtar-khavari-25944114,,Google,Senior Global Learning Specialist,01 Jul 2009
+Becky,Carman,https://www.linkedin.com/in/beckycarman,,Freelance Writing and Editing,Writer & Editor,19 May 2009
+Bryan,DeLuca,https://www.linkedin.com/in/bdeluca,,FlightPlan Ventures,Partner,19 May 2009
+David,"Proctor, II",https://www.linkedin.com/in/david-proctor-ii-6a04737,,Southern Bleacher Company,Chief Executive Officer,19 May 2009
+Jaime,Torres,https://www.linkedin.com/in/jaimeltorres,jaimltorres@gmail.com,AVI-SPL,Sales Manager,18 May 2009
+Sholeh,"Munion, CMP",https://www.linkedin.com/in/sholeh,,"Sholeh Events, LLC",Owner,18 May 2009
+Patrick,Hertzke,https://www.linkedin.com/in/patrickhertzke,,Sensata Technologies,Chief Growth and Transformation Officer,18 May 2009
+Jonathan,Gandomi,https://www.linkedin.com/in/jonathan-gandomi,,The Solarium Group LLC,Affiliate,18 May 2009
+Scott,Rowe,https://www.linkedin.com/in/scottryanrowe,,OneSource Virtual,Senior Sales Data Analyst ,18 May 2009
+Taylor,DeLuca,https://www.linkedin.com/in/taylordeluca,,"ActioNet, Inc.",Contracts Administrator,18 May 2009
+Derek,Bennington,https://www.linkedin.com/in/derekbennington,,CREATE | INNOVATE | PERFORM,Business Owner,24 Mar 2009

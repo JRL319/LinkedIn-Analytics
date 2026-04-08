@@ -1,0 +1,25 @@
+Challenge Date,IP Address,User Agent,Country,Challenge Type
+Thu Sep 26 23:16:39 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,EMAIL_PIN_CHALLENGE
+Thu Sep 26 23:16:56 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,EMAIL_PIN_CHALLENGE
+Thu Sep 26 23:23:12 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,PIN_CHALLENGE
+Thu Sep 26 23:23:24 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,PIN_CHALLENGE
+Mon Oct 07 17:33:09 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,TWO_STEP_VERIFICATION
+Mon Oct 07 17:33:09 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,TWO_STEP_VERIFICATION
+Mon Oct 07 17:33:20 UTC 2024,107.142.110.131,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",United States,TWO_STEP_VERIFICATION
+Tue Oct 08 19:35:57 UTC 2024,107.142.110.131,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",United States,TWO_STEP_VERIFICATION
+Tue Oct 08 19:35:57 UTC 2024,107.142.110.131,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",United States,TWO_STEP_VERIFICATION
+Tue Oct 08 19:36:01 UTC 2024,107.142.110.131,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",United States,TWO_STEP_VERIFICATION
+Mon Apr 21 12:42:31 UTC 2025,189.6.36.159,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",Brazil,CAPTCHA_CHALLENGE
+Mon Apr 21 12:42:31 UTC 2025,189.6.36.159,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",Brazil,CAPTCHA_CHALLENGE
+Tue Jul 01 04:15:14 UTC 2025,45.202.78.94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",South Africa,CAPTCHA_CHALLENGE
+Tue Jul 01 04:15:14 UTC 2025,45.202.78.94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",South Africa,CAPTCHA_CHALLENGE
+Mon Jul 21 15:26:34 UTC 2025,156.228.82.179,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",South Africa,CAPTCHA_CHALLENGE
+Mon Jul 21 15:26:34 UTC 2025,156.228.82.179,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",South Africa,CAPTCHA_CHALLENGE
+Mon Jul 21 15:26:50 UTC 2025,156.233.94.211,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",United States,CAPTCHA_CHALLENGE
+Mon Jul 21 15:26:50 UTC 2025,156.233.94.211,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",United States,CAPTCHA_CHALLENGE
+Mon Jan 19 20:19:30 UTC 2026,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",Unknown,EMAIL_PIN_CHALLENGE
+Mon Jan 19 20:19:31 UTC 2026,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",Unknown,EMAIL_PIN_CHALLENGE
+Mon Jan 19 20:19:45 UTC 2026,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",Unknown,EMAIL_PIN_CHALLENGE
+Mon Jan 19 20:20:48 UTC 2026,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",Unknown,EMAIL_PIN_CHALLENGE
+Mon Jan 19 20:20:49 UTC 2026,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",Unknown,EMAIL_PIN_CHALLENGE
+Mon Jan 19 20:21:02 UTC 2026,,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",Unknown,EMAIL_PIN_CHALLENGE
