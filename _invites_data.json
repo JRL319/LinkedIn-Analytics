@@ -1,0 +1,1172 @@
+{
+  "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04"
+  ],
+  "stats": {
+    "2025-10": {
+      "out_total": 2,
+      "out_accepted": 2,
+      "out_with_msg": 0,
+      "in_total": 3,
+      "in_accepted": 3
+    },
+    "2025-11": {
+      "out_total": 0,
+      "out_accepted": 0,
+      "out_with_msg": 0,
+      "in_total": 3,
+      "in_accepted": 2
+    },
+    "2025-12": {
+      "out_total": 0,
+      "out_accepted": 0,
+      "out_with_msg": 0,
+      "in_total": 5,
+      "in_accepted": 4
+    },
+    "2026-01": {
+      "out_total": 1,
+      "out_accepted": 1,
+      "out_with_msg": 0,
+      "in_total": 0,
+      "in_accepted": 0
+    },
+    "2026-02": {
+      "out_total": 27,
+      "out_accepted": 23,
+      "out_with_msg": 4,
+      "in_total": 21,
+      "in_accepted": 21
+    },
+    "2026-03": {
+      "out_total": 27,
+      "out_accepted": 18,
+      "out_with_msg": 6,
+      "in_total": 38,
+      "in_accepted": 32
+    },
+    "2026-04": {
+      "out_total": 2,
+      "out_accepted": 1,
+      "out_with_msg": 0,
+      "in_total": 8,
+      "in_accepted": 8
+    }
+  },
+  "totals": {
+    "out_sent": 59,
+    "out_accepted": 45,
+    "out_acc_rate": 76.3,
+    "out_with_msg": 10,
+    "msg_acc_rate": 60.0,
+    "no_msg_acc_rate": 79.6,
+    "in_received": 78,
+    "in_accepted": 70,
+    "in_acc_rate": 89.7,
+    "ratio": 1.32
+  },
+  "invites_detail": [
+    {
+      "direction": "OUTGOING",
+      "name": "Brian Becker",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Persephone Maglaya",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Rob Sassor",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": false,
+      "msg_snippet": "Hi Rob, saw your post and wanted to connect. I run Spellwell Creative, a copywriting and content strategy consultancy. W"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Robyn Shepherd",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Robyn, saw your note about wanting to connect with copywriters. I'm a content strategist and copywriter with 10+ year"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Isabel Spahn",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Deborah Darcis",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Deborah! I've been following your content and appreciate how you talk about hiring for early-stage companies. I do co"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Jennifer Elliott",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Kimon Drakopoulos",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Kimon,   Sending you a connection request because I didn't realize we weren't already connected! Hope all is going we"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Rulonda Fuller",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Howard Seidman",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Alex Mercer",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Dena Nguyen",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Jo Iyalho",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Esther Kim",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": false,
+      "msg_snippet": "Hi Esther, I just applied for the Sr. Content Strategist role on the Schwab UX team. I'm a UX writer and content strateg"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Anna Balkrishna",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Yog Sharma",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Matt Gantt",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": false,
+      "msg_snippet": "Hi Matt, I'd love to connect. I recently applied for the UX Content Writer role through PTR Global and wanted to put a f"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Skye Wallace",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Christopher Miller",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Tizzy Asher",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Erin Crews",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Sarah Lubetsky",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Paige C. Lohoefer",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Lisa Jennings Young",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Joel Solomon",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Nic Vargus",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Kristin Wood-Page",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Alex Altman",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Kat Boogaard",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Matt Graham \ud83d\udc68\u200d\ud83d\udcbb",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Matt! My name is Jaclyn Leaver and I just submitted my application for the Content Writer / Copy Writer role at Rapid"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Tamara Ford",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Ross Wright",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Diane Murphy",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Ayanfe Adewoye",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Molly Stassfort",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Angela Kilduff",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Emily Luo",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Lindsay McGaan",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Charlotte Nesbitt",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Ameerah Jones",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Jody Allard",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Cristin Ford",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Adina Timar",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Connor Beaulieu",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Eoin Clancy",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Jennifer Balanky",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Rob Davidson",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Elias Cobb",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Melea Seward",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Melea! Following along on the Never Search Alone LinkedIn Live Event and wanted to connect. Thanks for sharing your i"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Evan Feldman",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Evan! Following along on the Never Search Alone LinkedIn Live Event and wanted to connect. Thanks for sharing your in"
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Kelli Povich",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": false,
+      "msg_snippet": "Hi Kelli! Just saw your intro on the TOFU slack channel and wanted to connect. Welcome to the group and excited for you "
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Natasha Bedi",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Daniel Pietrucha",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Ashpreet Singh",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Justin Arnold",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Benjamin Grinberg",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Mona Yamartino",
+      "month": "2026-01",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Raul Lopez Peredo",
+      "month": "2025-10",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "OUTGOING",
+      "name": "Mariano Petignat",
+      "month": "2025-10",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Anna Daiko",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Doris Ramseur Davis",
+      "month": "2026-04",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hey Jaclyn, I see that we are both in DFW NSA crew. How's the job-seeking going? perhaps we can schedule a local meet up"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Scott Frothingham",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Loretta Hudelot",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Gabriel Guerra",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Salmaan Ahmed",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Neha Singh",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Lindsay MacMillan",
+      "month": "2026-04",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Dennis Hoffman",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Unza Saffi",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Dan Richard Rubio",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "David Himes",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Michael LaRocca",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Jennifer Chavez, MBA, GRN Moon Valley",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Let's connect!"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Aakash Kumar",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Syeda Tamkeen Zehra Naqvi",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Anna Nikolova",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Lauren Keepers",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Pete Fulford",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Thanks for commenting on my post last week Jaclyn. Look forward to connecting."
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Eva Sundgrenz, PMP, CAL, CSM",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hello,  I'd love to connect with you; what a great Never Search Alone web meeting! Best, Eva"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Adam Belmont",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Jaclyn! Thanks for reacting to a recent post of mine. Would love to connect on this crazy place if you're game so I g"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ryan Jones-Symonds",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Meenakshi Taheem",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Francesco Di Battista",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Shashank Mishra",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Miodrag Magyar",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Mary Knowles Tindall",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Jeffrey Lupo",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Richard A. Fleury",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Fidel Abojei",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ashley Feagins",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Joshua Bailey",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Timur Yerimbetov",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Vishakha Rupawat",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Edward Phelps",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Grace McClure",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Mahnoor Khalid",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Jared Vishno",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": false,
+      "msg_snippet": "Hey Jaclyn - saw you came across Tavus recently and wanted to connect. Teams use our conversational AI for meaningful, t"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Aleksandra Ivanovska",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Brandon Capers",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Geoffrey Armstrong",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Jaclyn  If you or the start-ups you mentor ever need high-quality AI creative assets, take a look at The Promptists. "
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Dena Nguyen",
+      "month": "2026-03",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hey Jaclyn! It was really great meeting you at the Entrepreneur Dinner Club yesterday evening. Wish we got to talk more "
+    },
+    {
+      "direction": "INCOMING",
+      "name": "John Mears",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Muhammad Umer",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ayush Poddar",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Hannah Labadorf \u2705",
+      "month": "2026-03",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Tope A Larayetan",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Matthew Christine",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ansh Jogi",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hey Jaclyn, saw you liked my post about AI and clearer messaging for writers. Glad it resonated."
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Jurgen Leo Foley",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Josh Cons",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "David Broderick",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Oyinkansola Edem",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Chuks Wesley",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Amy Cuevas Schroeder",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Dominick Miserandino",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Vanessa M. \ud83c\udf80",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Silvi Specter \u26a1",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Connecting from Top of the Funnel!"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ashwini Dave",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Nicholas Mlakar",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Chris Meszaros",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Tamara Hafner, PhD",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ransom Onyema",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Tania Zhydkova",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Fady Bahaii Seleem",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Mark Burdon",
+      "month": "2026-02",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Alexia Palau",
+      "month": "2026-02",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Jaclyn, Great to connect from Top of the Funnel. If you ever need anything from me in the future, let me know."
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Neal Hallford",
+      "month": "2025-12",
+      "has_msg": false,
+      "accepted": false,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Aylin Mahic",
+      "month": "2025-12",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Tanu Kumar",
+      "month": "2025-12",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Felicia French, MEd, LPC",
+      "month": "2025-12",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Jagatpal .",
+      "month": "2025-12",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Ana Safronova",
+      "month": "2025-11",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Jaclyn, I\u2019ve been exploring how companies approach content strategy, and your background really stood out. I thought,"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Hal Brody",
+      "month": "2025-11",
+      "has_msg": true,
+      "accepted": false,
+      "msg_snippet": "Hi Jaclyn - As a fellow CEO I am reaching out about a peer advisory group here in the SF Bay Area and you surfaced as a "
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Rachel Oeth",
+      "month": "2025-11",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Oleksandra Mokii",
+      "month": "2025-10",
+      "has_msg": true,
+      "accepted": true,
+      "msg_snippet": "Hi Jaclyn, saw you engaged with Andrea Nguyen\u2019s point on visual design still mattering. Would love to connect!"
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Hassan Ali",
+      "month": "2025-10",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    },
+    {
+      "direction": "INCOMING",
+      "name": "Hannah Friedland",
+      "month": "2025-10",
+      "has_msg": false,
+      "accepted": true,
+      "msg_snippet": ""
+    }
+  ]
+}

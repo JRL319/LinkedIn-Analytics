@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Inbound vs Outbound Connection Requests</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+     background:#0d1117;color:#c9d1d9;padding:28px 20px}
+.page{max-width:1100px;margin:0 auto}
+h1{font-size:20px;font-weight:700;color:#f0f6fc;margin-bottom:4px}
+.sub{font-size:13px;color:#484f58;margin-bottom:28px}
+h2{font-size:12px;font-weight:600;color:#f0f6fc;text-transform:uppercase;
+    letter-spacing:.8px;margin:30px 0 14px;padding-left:10px;
+    border-left:3px solid #58a6ff}
+
+/* stats strip */
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.stat{background:#161b22;border:1px solid #21262d;border-radius:10px;
+       padding:14px 18px;flex:1;min-width:130px;text-align:center}
+.stat .val{font-size:26px;font-weight:700;line-height:1}
+.stat .lbl{font-size:10px;color:#484f58;margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
+.stat .sub-val{font-size:11px;margin-top:4px}
+
+/* insight cards */
+.insights{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-bottom:28px}
+.ic{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:14px 16px}
+.ic h3{font-size:12px;font-weight:600;color:#f0f6fc;margin-bottom:6px}
+.ic p{font-size:12px;color:#8b949e;line-height:1.5}
+.ic.blue{border-left:3px solid #58a6ff}
+.ic.green{border-left:3px solid #2ECC71}
+.ic.orange{border-left:3px solid #F5A623}
+.ic.red{border-left:3px solid #E74C3C}
+
+/* charts */
+.chart-wrap{background:#161b22;border:1px solid #21262d;border-radius:12px;
+             padding:20px;margin-bottom:20px}
+
+/* message comparison */
+.msg-compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.msg-box{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:16px}
+.msg-box h3{font-size:12px;color:#484f58;text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.msg-meter{height:10px;background:#21262d;border-radius:5px;overflow:hidden;margin:6px 0}
+.msg-meter-fill{height:100%;border-radius:5px}
+.msg-rate{font-size:24px;font-weight:700}
+.msg-detail{font-size:11px;color:#484f58;margin-top:4px}
+
+/* tab switcher */
+.tabs{display:flex;gap:8px;margin-bottom:14px}
+.tab{padding:6px 14px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;
+      border:1px solid #21262d;color:#8b949e;transition:all .15s}
+.tab.active{background:#21262d;color:#f0f6fc;border-color:#484f58}
+
+/* tables */
+.tbl-wrap{max-height:400px;overflow-y:auto;border-radius:8px;border:1px solid #21262d}
+table{width:100%;border-collapse:collapse}
+th{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:#484f58;
+    padding:10px 12px;background:#161b22;border-bottom:1px solid #21262d;
+    position:sticky;top:0}
+td{padding:9px 12px;border-bottom:1px solid #161b22;vertical-align:top}
+tr:hover td{background:#161b22}
+.td-name{font-size:12px;color:#c9d1d9;max-width:380px}
+.td-mo{font-size:12px;color:#484f58;white-space:nowrap}
+.td-status{font-size:11px;font-weight:600;white-space:nowrap}
+.status-yes{color:#2ECC71}
+.status-no{color:#484f58}
+.msg-badge{display:inline-block;background:#1A3A5C;color:#58a6ff;
+            font-size:10px;padding:1px 6px;border-radius:8px;margin-left:6px}
+.msg-snippet{font-size:11px;color:#484f58;font-style:italic;
+              margin-top:3px;line-height:1.4;max-width:360px}
+
+.note{font-size:11px;color:#484f58;margin-top:20px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Inbound vs Outbound Connection Requests</h1>
+<p class="sub">Last 6 months (Oct 2025 – Apr 2026) &nbsp;·&nbsp; Invitations.csv &times; Connections.csv</p>
+
+<!-- Stats strip -->
+<div class="stats">
+  <div class="stat">
+    <div class="val" style="color:#58a6ff">59</div>
+    <div class="lbl">Outgoing sent</div>
+    <div class="sub-val" style="color:#2ECC71">45 accepted</div>
+  </div>
+  <div class="stat">
+    <div class="val" style="color:#E94B7B">78</div>
+    <div class="lbl">Incoming received</div>
+    <div class="sub-val" style="color:#2ECC71">70 accepted</div>
+  </div>
+  <div class="stat">
+    <div class="val" style="color:#2ECC71">76.3%</div>
+    <div class="lbl">Outgoing acceptance rate</div>
+    <div class="sub-val" style="color:#484f58">you sending</div>
+  </div>
+  <div class="stat">
+    <div class="val" style="color:#2ECC71">89.7%</div>
+    <div class="lbl">Incoming acceptance rate</div>
+    <div class="sub-val" style="color:#484f58">you accepting</div>
+  </div>
+  <div class="stat">
+    <div class="val" style="color:#F5A623">1.32×</div>
+    <div class="lbl">Inbound / outbound ratio</div>
+    <div class="sub-val" style="color:#484f58">more inbound</div>
+  </div>
+  <div class="stat">
+    <div class="val" style="color:#9B59B6">10</div>
+    <div class="lbl">Personalised messages sent</div>
+    <div class="sub-val" style="color:#484f58">17% of outgoing</div>
+  </div>
+</div>
+
+<!-- Monthly bar + line chart -->
+<h2>Monthly volume — inbound vs outbound</h2>
+<div class="chart-wrap">
+  <canvas id="chartVolume" height="110"></canvas>
+</div>
+
+<h2>Monthly acceptance rate trend</h2>
+<div class="chart-wrap">
+  <canvas id="chartRate" height="110"></canvas>
+</div>
+
+<!-- Message comparison -->
+<h2>Does personalising your message improve acceptance?</h2>
+<div class="msg-compare">
+  <div class="msg-box">
+    <h3>With personalised message (10 sent)</h3>
+    <div class="msg-rate" style="color:#F5A623">60.0%</div>
+    <div class="msg-meter"><div class="msg-meter-fill" style="width:60.0%;background:#F5A623"></div></div>
+    <div class="msg-detail">Cold outreach to recruiters, hiring managers &amp; community members</div>
+  </div>
+  <div class="msg-box">
+    <h3>Without message (49 sent)</h3>
+    <div class="msg-rate" style="color:#2ECC71">79.6%</div>
+    <div class="msg-meter"><div class="msg-meter-fill" style="width:79.6%;background:#2ECC71"></div></div>
+    <div class="msg-detail">Warm contacts, mutual network &amp; event attendees</div>
+  </div>
+</div>
+
+<!-- Insight cards -->
+<h2>Key findings</h2>
+<div class="insights">
+  <div class="ic blue">
+    <h3>You receive more than you send</h3>
+    <p>1.32× more people reached out to you than you reached out to. In Feb–Mar 2026 at peak activity, you received 59 inbound vs sent 54 outbound — nearly equal, suggesting your posting drove reciprocal inbound interest.</p>
+  </div>
+  <div class="ic green">
+    <h3>High inbound acceptance rate: 89.7%</h3>
+    <p>You accepted nearly 9 in 10 incoming requests. Only ~8 were declined or left pending, suggesting you have a broad, open networking posture.</p>
+  </div>
+  <div class="ic orange">
+    <h3>The message paradox</h3>
+    <p>Personalised messages had a <em>lower</em> acceptance rate (60.0% vs 79.6%). This isn't because messages hurt — it's because all 10 personalised messages were cold outreach to strangers (recruiters, hiring managers), a naturally harder audience. Blank requests mostly went to warm contacts.</p>
+  </div>
+  <div class="ic red">
+    <h3>Activity concentrated in Feb–Mar 2026</h3>
+    <p>86% of all invitations in the period happened in just two months — perfectly overlapping with your peak posting months. This strongly suggests job-search intensity, not organic growth, drove the spike.</p>
+  </div>
+</div>
+
+<!-- Detail tables -->
+<h2>All invitations (last 6 months)</h2>
+<div class="tabs">
+  <div class="tab active" onclick="showTab('out',this)">Outgoing (59)</div>
+  <div class="tab" onclick="showTab('in',this)">Incoming (78)</div>
+</div>
+
+<div id="tbl-out" class="tbl-wrap">
+  <table>
+    <thead><tr><th>Name</th><th>Month</th><th>Status (inferred)</th></tr></thead>
+    <tbody><tr class="acc-no">
+      <td class="td-name">Brian Becker</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Persephone Maglaya</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Rob Sassor<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Rob, saw your post and wanted to connect. I run Spellwell Creative, a copywriting and content strategy consultancy. W"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Robyn Shepherd<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Robyn, saw your note about wanting to connect with copywriters. I'm a content strategist and copywriter with 10+ year"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Isabel Spahn</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Deborah Darcis<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Deborah! I've been following your content and appreciate how you talk about hiring for early-stage companies. I do co"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jennifer Elliott</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Kimon Drakopoulos<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Kimon,   Sending you a connection request because I didn't realize we weren't already connected! Hope all is going we"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Rulonda Fuller</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Howard Seidman</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Alex Mercer</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Dena Nguyen</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jo Iyalho</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Esther Kim<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Esther, I just applied for the Sr. Content Strategist role on the Schwab UX team. I'm a UX writer and content strateg"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Anna Balkrishna</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Yog Sharma</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Matt Gantt<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Matt, I'd love to connect. I recently applied for the UX Content Writer role through PTR Global and wanted to put a f"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Skye Wallace</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Christopher Miller</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Tizzy Asher</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Erin Crews</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Sarah Lubetsky</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Paige C. Lohoefer</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Lisa Jennings Young</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Joel Solomon</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Nic Vargus</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Kristin Wood-Page</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Alex Altman</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Kat Boogaard</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Matt Graham 👨‍💻<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Matt! My name is Jaclyn Leaver and I just submitted my application for the Content Writer / Copy Writer role at Rapid"</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Tamara Ford</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ross Wright</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Diane Murphy</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Ayanfe Adewoye</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Molly Stassfort</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Angela Kilduff</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Emily Luo</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Lindsay McGaan</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Charlotte Nesbitt</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ameerah Jones</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jody Allard</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Cristin Ford</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Adina Timar</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Connor Beaulieu</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Eoin Clancy</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Jennifer Balanky</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Rob Davidson</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Elias Cobb</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Melea Seward<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Melea! Following along on the Never Search Alone LinkedIn Live Event and wanted to connect. Thanks for sharing your i"</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Evan Feldman<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Evan! Following along on the Never Search Alone LinkedIn Live Event and wanted to connect. Thanks for sharing your in"</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Kelli Povich<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Kelli! Just saw your intro on the TOFU slack channel and wanted to connect. Welcome to the group and excited for you "</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Natasha Bedi</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Daniel Pietrucha</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ashpreet Singh</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Justin Arnold</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Benjamin Grinberg</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Mona Yamartino</td>
+      <td class="td-mo">Jan 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Raul Lopez Peredo</td>
+      <td class="td-mo">Oct 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Mariano Petignat</td>
+      <td class="td-mo">Oct 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr></tbody>
+  </table>
+</div>
+<div id="tbl-in" class="tbl-wrap" style="display:none">
+  <table>
+    <thead><tr><th>Name</th><th>Month</th><th>Status (inferred)</th></tr></thead>
+    <tbody><tr class="acc-yes">
+      <td class="td-name">Anna Daiko</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Doris Ramseur Davis<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hey Jaclyn, I see that we are both in DFW NSA crew. How's the job-seeking going? perhaps we can schedule a local meet up"</div></td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Scott Frothingham</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Loretta Hudelot</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Gabriel Guerra</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Salmaan Ahmed</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Neha Singh</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Lindsay MacMillan</td>
+      <td class="td-mo">Apr 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Dennis Hoffman</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Unza Saffi</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Dan Richard Rubio</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">David Himes</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Michael LaRocca</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jennifer Chavez, MBA, GRN Moon Valley<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Let's connect!"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Aakash Kumar</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Syeda Tamkeen Zehra Naqvi</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Anna Nikolova</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Lauren Keepers</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Pete Fulford<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Thanks for commenting on my post last week Jaclyn. Look forward to connecting."</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Eva Sundgrenz, PMP, CAL, CSM<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hello,  I'd love to connect with you; what a great Never Search Alone web meeting! Best, Eva"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Adam Belmont<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Jaclyn! Thanks for reacting to a recent post of mine. Would love to connect on this crazy place if you're game so I g"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ryan Jones-Symonds</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Meenakshi Taheem</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Francesco Di Battista</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Shashank Mishra</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Miodrag Magyar</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Mary Knowles Tindall</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jeffrey Lupo</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Richard A. Fleury</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Fidel Abojei</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ashley Feagins</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Joshua Bailey</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Timur Yerimbetov</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Vishakha Rupawat</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Edward Phelps</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Grace McClure</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Mahnoor Khalid</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Jared Vishno<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hey Jaclyn - saw you came across Tavus recently and wanted to connect. Teams use our conversational AI for meaningful, t"</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Aleksandra Ivanovska</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Brandon Capers</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Geoffrey Armstrong<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Jaclyn  If you or the start-ups you mentor ever need high-quality AI creative assets, take a look at The Promptists. "</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Dena Nguyen<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hey Jaclyn! It was really great meeting you at the Entrepreneur Dinner Club yesterday evening. Wish we got to talk more "</div></td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">John Mears</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Muhammad Umer</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ayush Poddar</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Hannah Labadorf ✅</td>
+      <td class="td-mo">Mar 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Tope A Larayetan</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Matthew Christine</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ansh Jogi<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hey Jaclyn, saw you liked my post about AI and clearer messaging for writers. Glad it resonated."</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jurgen Leo Foley</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Josh Cons</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">David Broderick</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Oyinkansola Edem</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Chuks Wesley</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Amy Cuevas Schroeder</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Dominick Miserandino</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Vanessa M. 🎀</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Silvi Specter ⚡<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Connecting from Top of the Funnel!"</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ashwini Dave</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Nicholas Mlakar</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Chris Meszaros</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Tamara Hafner, PhD</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ransom Onyema</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Tania Zhydkova</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Fady Bahaii Seleem</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Mark Burdon</td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Alexia Palau<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Jaclyn, Great to connect from Top of the Funnel. If you ever need anything from me in the future, let me know."</div></td>
+      <td class="td-mo">Feb 26</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Neal Hallford</td>
+      <td class="td-mo">Dec 25</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Aylin Mahic</td>
+      <td class="td-mo">Dec 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Tanu Kumar</td>
+      <td class="td-mo">Dec 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Felicia French, MEd, LPC</td>
+      <td class="td-mo">Dec 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Jagatpal .</td>
+      <td class="td-mo">Dec 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Ana Safronova<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Jaclyn, I’ve been exploring how companies approach content strategy, and your background really stood out. I thought,"</div></td>
+      <td class="td-mo">Nov 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-no">
+      <td class="td-name">Hal Brody<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Jaclyn - As a fellow CEO I am reaching out about a peer advisory group here in the SF Bay Area and you surfaced as a "</div></td>
+      <td class="td-mo">Nov 25</td>
+      <td class="td-status status-no">Pending/Declined</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Rachel Oeth</td>
+      <td class="td-mo">Nov 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Oleksandra Mokii<span class="msg-badge">✉ personalised</span><div class="msg-snippet">"Hi Jaclyn, saw you engaged with Andrea Nguyen’s point on visual design still mattering. Would love to connect!"</div></td>
+      <td class="td-mo">Oct 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Hassan Ali</td>
+      <td class="td-mo">Oct 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr>
+<tr class="acc-yes">
+      <td class="td-name">Hannah Friedland</td>
+      <td class="td-mo">Oct 25</td>
+      <td class="td-status status-yes">Connected</td>
+    </tr></tbody>
+  </table>
+</div>
+
+<p class="note">
+  ⚠ Acceptance status is inferred by cross-referencing with Connections.csv (URL + name matching).
+  Invitations sent in Apr 2026 may still be pending — not truly declined.
+  LinkedIn does not export accept/decline status directly.
+</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+const LABELS   = ["Oct 25", "Nov 25", "Dec 25", "Jan 26", "Feb 26", "Mar 26", "Apr 26"];
+const OUT_SENT = [2, 0, 0, 1, 27, 27, 2];
+const IN_RECV  = [3, 3, 5, 0, 21, 38, 8];
+const OUT_ACC  = [2, 0, 0, 1, 23, 18, 1];
+const IN_ACC   = [3, 2, 4, 0, 21, 32, 8];
+const OUT_RATE = [100.0, null, null, 100.0, 85.2, 66.7, 50.0];
+const IN_RATE  = [100.0, 66.7, 80.0, null, 100.0, 84.2, 100.0];
+
+const GRID='#21262d', TICK='#484f58';
+
+// ── Volume chart ─────────────────────────────────────────────────────────────
+new Chart(document.getElementById('chartVolume'), {
+  type: 'bar',
+  data: {
+    labels: LABELS,
+    datasets: [
+      { label: 'Outgoing sent',     data: OUT_SENT, backgroundColor: '#58a6ff99',
+         borderColor: '#58a6ff', borderWidth: 1.5, stack: 'sent' },
+      { label: 'Incoming received', data: IN_RECV,  backgroundColor: '#E94B7B99',
+         borderColor: '#E94B7B', borderWidth: 1.5, stack: 'recv' },
+      { label: 'Outgoing accepted', data: OUT_ACC, type: 'line',
+         borderColor: '#58a6ff', borderWidth: 2, pointRadius: 5,
+         pointBackgroundColor: '#58a6ff', fill: false, tension: 0.3, yAxisID: 'y' },
+      { label: 'Incoming accepted', data: IN_ACC, type: 'line',
+         borderColor: '#E94B7B', borderWidth: 2, pointRadius: 5,
+         pointBackgroundColor: '#E94B7B', fill: false, tension: 0.3, yAxisID: 'y' },
+    ]
+  },
+  options: {
+    responsive: true, interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { labels: { color: '#8b949e', boxWidth: 10, font: { size: 11 } } },
+      tooltip: { backgroundColor: '#161b22', borderColor: '#30363d', borderWidth: 1,
+                  titleColor: '#f0f6fc', bodyColor: '#8b949e' },
+    },
+    scales: {
+      x: { ticks: { color: TICK }, grid: { color: GRID } },
+      y: { ticks: { color: TICK, precision: 0 }, grid: { color: GRID },
+            title: { display: true, text: 'Count', color: TICK, font: { size: 11 } } },
+    },
+  }
+});
+
+// ── Acceptance rate chart ─────────────────────────────────────────────────────
+new Chart(document.getElementById('chartRate'), {
+  type: 'line',
+  data: {
+    labels: LABELS,
+    datasets: [
+      { label: 'Outgoing acceptance %', data: OUT_RATE,
+         borderColor: '#58a6ff', backgroundColor: '#58a6ff22', borderWidth: 2.5,
+         pointRadius: 6, pointBackgroundColor: '#58a6ff', fill: true,
+         tension: 0.3, spanGaps: true },
+      { label: 'Incoming acceptance %', data: IN_RATE,
+         borderColor: '#E94B7B', backgroundColor: '#E94B7B11', borderWidth: 2.5,
+         pointRadius: 6, pointBackgroundColor: '#E94B7B', fill: true,
+         tension: 0.3, spanGaps: true },
+    ]
+  },
+  options: {
+    responsive: true, interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { labels: { color: '#8b949e', boxWidth: 10, font: { size: 11 } } },
+      tooltip: {
+        callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.raw}%` },
+        backgroundColor: '#161b22', borderColor: '#30363d', borderWidth: 1,
+        titleColor: '#f0f6fc', bodyColor: '#8b949e',
+      },
+    },
+    scales: {
+      x: { ticks: { color: TICK }, grid: { color: GRID } },
+      y: { min: 0, max: 110,
+            ticks: { color: TICK, callback: v => v + '%' },
+            grid: { color: GRID },
+            title: { display: true, text: 'Acceptance rate', color: TICK, font: { size: 11 } } },
+    },
+  }
+});
+
+// ── Tab switcher ──────────────────────────────────────────────────────────────
+function showTab(id, el) {
+  document.getElementById('tbl-out').style.display = id==='out' ? '' : 'none';
+  document.getElementById('tbl-in').style.display  = id==='in'  ? '' : 'none';
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
