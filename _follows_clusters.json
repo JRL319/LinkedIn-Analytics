@@ -1,0 +1,616 @@
+{
+  "clusters": [
+    {
+      "name": "AI & Machine Learning",
+      "count": 15,
+      "color": "#4A90D9",
+      "desc": "AI labs, LLM tools, AI-native products",
+      "pct": 12.6,
+      "companies": [
+        {
+          "name": "Upscale AI",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Synthpop - Healthcare AI",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Lema AI",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Stability AI",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "RapidDev",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Candid Intelligence",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "OpenAI",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Recall.ai",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "AI at Meta",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Anthropic",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "GenAI Works",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Perplexity",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "LangChain",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Boardy",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "myTrudy",
+          "date": "Nov 2023"
+        }
+      ]
+    },
+    {
+      "name": "Career Development",
+      "count": 13,
+      "color": "#E94B7B",
+      "desc": "Job boards, r\u00e9sum\u00e9 tools, career coaches",
+      "pct": 10.9,
+      "companies": [
+        {
+          "name": "Never Search Alone",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Next Play",
+          "date": "Aug 2025"
+        },
+        {
+          "name": "Get Hired by LinkedIn News",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "J.T. O'Donnell - Career Insights",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "The Muse",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "Handshake",
+          "date": "Mar 2025"
+        },
+        {
+          "name": "Her Career Studio",
+          "date": "Oct 2024"
+        },
+        {
+          "name": "Jobscan",
+          "date": "Oct 2024"
+        },
+        {
+          "name": "resume.io",
+          "date": "Oct 2024"
+        },
+        {
+          "name": "Zety",
+          "date": "Sep 2024"
+        },
+        {
+          "name": "Teal",
+          "date": "Sep 2024"
+        },
+        {
+          "name": "Interviewing",
+          "date": "Mar 2023"
+        },
+        {
+          "name": "The Cake",
+          "date": "Dec 2022"
+        }
+      ]
+    },
+    {
+      "name": "Recruiting & HR Tech",
+      "count": 11,
+      "color": "#1ABC9C",
+      "desc": "Staffing agencies, HR platforms, compensation tools",
+      "pct": 9.2,
+      "companies": [
+        {
+          "name": "Creative Circle",
+          "date": "Apr 2026"
+        },
+        {
+          "name": "Hays",
+          "date": "Apr 2026"
+        },
+        {
+          "name": "Dale WorkForce Solutions",
+          "date": "Apr 2026"
+        },
+        {
+          "name": "TeamPeople",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "PTR Global",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Compa",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Hublo",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Veremark",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "SHRM",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "Chief",
+          "date": "Jan 2024"
+        },
+        {
+          "name": "Onward Search",
+          "date": "Mar 2023"
+        }
+      ]
+    },
+    {
+      "name": "Tech SaaS & Productivity",
+      "count": 11,
+      "color": "#7ED321",
+      "desc": "B2B software, analytics, enterprise tools",
+      "pct": 9.2,
+      "companies": [
+        {
+          "name": "Skylight",
+          "date": "Apr 2026"
+        },
+        {
+          "name": "Pylon",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Rimini Street",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Smartsheet",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "When",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Operata",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Amplitude",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Ajenda",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "TELUS Digital",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Quantum Metric",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Freshworks",
+          "date": "Feb 2023"
+        }
+      ]
+    },
+    {
+      "name": "Marketing, PR & Comms",
+      "count": 11,
+      "color": "#9B59B6",
+      "desc": "Marketing agencies, PR, SEO, comms strategy",
+      "pct": 9.2,
+      "companies": [
+        {
+          "name": "Creator Growth Group",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Tractorbeam",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Top of the Funnel",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "CommsConsultants.com",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Pretty Little Marketer",
+          "date": "Jan 2026"
+        },
+        {
+          "name": "LinkedIn for Marketing",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "Product Marketing",
+          "date": "Apr 2024"
+        },
+        {
+          "name": "Synergy Interactive",
+          "date": "May 2023"
+        },
+        {
+          "name": "Qualified Digital",
+          "date": "May 2023"
+        },
+        {
+          "name": "Public Relations",
+          "date": "Mar 2023"
+        },
+        {
+          "name": "Semly Pro - The SEO Company",
+          "date": "Feb 2023"
+        }
+      ]
+    },
+    {
+      "name": "Freelance & Independent Work",
+      "count": 11,
+      "color": "#F5A623",
+      "desc": "Freelance networks, gig platforms, fractional work",
+      "pct": 9.2,
+      "companies": [
+        {
+          "name": "Fractional Product Leadership",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Graphite",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Freelance Opportunities! Newsletter",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "All Things Freelance Writing",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Make Writing Your Job",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Fractional Jobs",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "The Freelance Writing Network",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Harlow",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Content Writing Jobs",
+          "date": "Oct 2022"
+        },
+        {
+          "name": "Jobs For Editors",
+          "date": "Oct 2022"
+        },
+        {
+          "name": "Self-Employed",
+          "date": "Dec 2016"
+        }
+      ]
+    },
+    {
+      "name": "Content & Creative Writing",
+      "count": 8,
+      "color": "#E67E22",
+      "desc": "Writing communities, content studios, editorial",
+      "pct": 6.7,
+      "companies": [
+        {
+          "name": "Equal Parts",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Spellwell",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Orbit",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Witchwell",
+          "date": "Feb 2025"
+        },
+        {
+          "name": "Content Design",
+          "date": "Apr 2024"
+        },
+        {
+          "name": "Writing",
+          "date": "Mar 2023"
+        },
+        {
+          "name": "Copywriting",
+          "date": "Mar 2023"
+        },
+        {
+          "name": "Big Wonder",
+          "date": "Mar 2021"
+        }
+      ]
+    },
+    {
+      "name": "Social Impact & Nonprofit",
+      "count": 6,
+      "color": "#F39C12",
+      "desc": "NGOs, philanthropy, international development",
+      "pct": 5.0,
+      "companies": [
+        {
+          "name": "DAFgiving360",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "IDEO.org",
+          "date": "Jan 2023"
+        },
+        {
+          "name": "Giving Women",
+          "date": "Oct 2020"
+        },
+        {
+          "name": "Situka Alliance Initiative Uganda",
+          "date": "Aug 2020"
+        },
+        {
+          "name": "Evidence in Governance and Politics",
+          "date": "Jan 2018"
+        },
+        {
+          "name": "Baha'i International Community",
+          "date": "Jul 2012"
+        }
+      ]
+    },
+    {
+      "name": "Finance & Fintech",
+      "count": 5,
+      "color": "#1A7B5E",
+      "desc": "Financial services, payments, wealth management",
+      "pct": 4.2,
+      "companies": [
+        {
+          "name": "Rain",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Charles Schwab",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Principal Financial Group",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Incard",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Stripe",
+          "date": "Jan 2026"
+        }
+      ]
+    },
+    {
+      "name": "Education",
+      "count": 5,
+      "color": "#8E44AD",
+      "desc": "Universities, EdTech platforms, policy schools",
+      "pct": 4.2,
+      "companies": [
+        {
+          "name": "CYPHER Learning",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "The LBJ School of Public Affairs",
+          "date": "Sep 2016"
+        },
+        {
+          "name": "University of Oklahoma",
+          "date": "Sep 2016"
+        },
+        {
+          "name": "University of California, Berkeley",
+          "date": "Apr 2016"
+        },
+        {
+          "name": "The University of Texas at Austin",
+          "date": "Feb 2011"
+        }
+      ]
+    },
+    {
+      "name": "Design & UX",
+      "count": 5,
+      "color": "#E74C3C",
+      "desc": "Design tools, UX studios, research platforms",
+      "pct": 4.2,
+      "companies": [
+        {
+          "name": "Figma",
+          "date": "Feb 2026"
+        },
+        {
+          "name": "Koi Studios",
+          "date": "Aug 2024"
+        },
+        {
+          "name": "Design Research",
+          "date": "Mar 2023"
+        },
+        {
+          "name": "IDEO",
+          "date": "Nov 2022"
+        },
+        {
+          "name": "Creativo Design",
+          "date": "Oct 2020"
+        }
+      ]
+    },
+    {
+      "name": "Venture Capital & Startups",
+      "count": 5,
+      "color": "#2ECC71",
+      "desc": "VC funds, accelerators, startup ecosystems",
+      "pct": 4.2,
+      "companies": [
+        {
+          "name": "Series Z",
+          "date": "Jan 2026"
+        },
+        {
+          "name": "Simple Ventures",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Y Combinator",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Andreessen Horowitz",
+          "date": "Jan 2025"
+        },
+        {
+          "name": "Fast Forward",
+          "date": "May 2023"
+        }
+      ]
+    },
+    {
+      "name": "Media & Business News",
+      "count": 5,
+      "color": "#3498DB",
+      "desc": "Publications, business journalism, news",
+      "pct": 4.2,
+      "companies": [
+        {
+          "name": "TechCrunch",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "Fast Company",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "Harvard Business Review",
+          "date": "Jun 2025"
+        },
+        {
+          "name": "LinkedIn News",
+          "date": "Feb 2025"
+        },
+        {
+          "name": "The Economist",
+          "date": "Jan 2023"
+        }
+      ]
+    },
+    {
+      "name": "Health & Wellness",
+      "count": 4,
+      "color": "#00BCD4",
+      "desc": "Healthcare, benefits, wellness platforms",
+      "pct": 3.4,
+      "companies": [
+        {
+          "name": "GoodRx",
+          "date": "Apr 2026"
+        },
+        {
+          "name": "Sundayy",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Carrot",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Fusion Wellness",
+          "date": "Jan 2022"
+        }
+      ]
+    },
+    {
+      "name": "Cybersecurity",
+      "count": 4,
+      "color": "#C0392B",
+      "desc": "Security products, threat intelligence, compliance",
+      "pct": 3.4,
+      "companies": [
+        {
+          "name": "Nucleus Security",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Tradespace",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "Kasada",
+          "date": "Mar 2026"
+        },
+        {
+          "name": "ORION Security",
+          "date": "Mar 2026"
+        }
+      ]
+    }
+  ],
+  "total": 119
+}

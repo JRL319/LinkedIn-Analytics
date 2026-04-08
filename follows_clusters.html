@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Company Follows — Thematic Clusters</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+     background:#0d1117;color:#c9d1d9;padding:28px 20px}
+.page{max-width:1140px;margin:0 auto}
+
+h1{font-size:20px;font-weight:700;color:#f0f6fc;margin-bottom:4px}
+.sub{font-size:13px;color:#484f58;margin-bottom:28px}
+h2{font-size:12px;font-weight:600;color:#f0f6fc;text-transform:uppercase;
+   letter-spacing:.8px;margin:28px 0 14px;padding-left:10px;
+   border-left:3px solid #58a6ff}
+
+/* ── Summary chips ─────────────────────────────────────────── */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;
+      color:#fff;cursor:pointer;transition:opacity .15s;white-space:nowrap}
+.chip:hover{opacity:.8}
+.chip .n{opacity:.7;margin-left:4px}
+
+/* ── Horizontal bar chart ──────────────────────────────────── */
+.bar-list{display:flex;flex-direction:column;gap:6px}
+.bar-row{display:grid;grid-template-columns:200px 1fr 36px;gap:10px;align-items:center;
+         cursor:pointer}
+.bar-row:hover .bar-fill{filter:brightness(1.2)}
+.bar-label{font-size:12px;color:#c9d1d9;text-align:right;
+           white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{height:26px;background:#161b22;border-radius:5px;
+           overflow:hidden;border:1px solid #21262d}
+.bar-fill{height:100%;border-radius:5px;display:flex;align-items:center;
+          padding:0 10px;transition:width .5s ease,filter .15s}
+.bar-fill span{font-size:11px;font-weight:700;color:rgba(255,255,255,.9)}
+.bar-pct{font-size:11px;color:#484f58;text-align:right}
+
+/* ── Treemap ───────────────────────────────────────────────── */
+#treemap{width:100%;height:340px;margin-bottom:6px;border-radius:12px;overflow:hidden;
+         border:1px solid #21262d;cursor:pointer}
+
+/* ── Company cards (expandable) ───────────────────────────── */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:#161b22;border:1px solid #21262d;border-radius:10px;overflow:hidden}
+.card-header{display:flex;align-items:center;gap:10px;padding:13px 14px;
+             cursor:pointer;user-select:none}
+.card-swatch{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.card-name{font-size:13px;font-weight:600;color:#f0f6fc;flex:1}
+.card-badge{background:#21262d;border-radius:10px;padding:2px 8px;
+            font-size:11px;font-weight:700;color:#8b949e}
+.card-desc{font-size:11px;color:#484f58;padding:0 14px 10px 36px}
+.card-chevron{font-size:10px;color:#484f58;transition:transform .2s}
+.card-body{padding:0 14px 12px 14px;display:none}
+.card-body.open{display:block}
+.co-item{display:flex;justify-content:space-between;align-items:center;
+         padding:4px 0;border-bottom:1px solid #21262d}
+.co-item:last-child{border-bottom:none}
+.co-name{font-size:12px;color:#c9d1d9}
+.co-date{font-size:10px;color:#484f58}
+
+/* ── Active filter highlight ───────────────────────────────── */
+.card.dimmed{opacity:.25}
+.bar-row.dimmed{opacity:.25}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Company Follows — Thematic Clusters</h1>
+<p class="sub">119 companies grouped into 15 themes &nbsp;·&nbsp; click any cluster to filter</p>
+
+<h2>Filter by theme</h2>
+<div class="chips" id="chips"></div>
+
+<h2>Cluster sizes</h2>
+<div class="bar-list" id="bars"></div>
+
+<h2>Visual map</h2>
+<canvas id="treemap"></canvas>
+
+<h2>Companies by cluster</h2>
+<div class="cards" id="cards"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+const CLUSTERS = [{"name": "AI & Machine Learning", "count": 15, "color": "#4A90D9", "desc": "AI labs, LLM tools, AI-native products", "pct": 12.6, "companies": [{"name": "Upscale AI", "date": "Mar 2026"}, {"name": "Synthpop - Healthcare AI", "date": "Mar 2026"}, {"name": "Lema AI", "date": "Mar 2026"}, {"name": "Stability AI", "date": "Mar 2026"}, {"name": "RapidDev", "date": "Mar 2026"}, {"name": "Candid Intelligence", "date": "Feb 2026"}, {"name": "OpenAI", "date": "Feb 2026"}, {"name": "Recall.ai", "date": "Jan 2025"}, {"name": "AI at Meta", "date": "Jan 2025"}, {"name": "Anthropic", "date": "Jan 2025"}, {"name": "GenAI Works", "date": "Jan 2025"}, {"name": "Perplexity", "date": "Jan 2025"}, {"name": "LangChain", "date": "Jan 2025"}, {"name": "Boardy", "date": "Jan 2025"}, {"name": "myTrudy", "date": "Nov 2023"}]}, {"name": "Career Development", "count": 13, "color": "#E94B7B", "desc": "Job boards, r\u00e9sum\u00e9 tools, career coaches", "pct": 10.9, "companies": [{"name": "Never Search Alone", "date": "Feb 2026"}, {"name": "Next Play", "date": "Aug 2025"}, {"name": "Get Hired by LinkedIn News", "date": "Jun 2025"}, {"name": "J.T. O'Donnell - Career Insights", "date": "Jun 2025"}, {"name": "The Muse", "date": "Jun 2025"}, {"name": "Handshake", "date": "Mar 2025"}, {"name": "Her Career Studio", "date": "Oct 2024"}, {"name": "Jobscan", "date": "Oct 2024"}, {"name": "resume.io", "date": "Oct 2024"}, {"name": "Zety", "date": "Sep 2024"}, {"name": "Teal", "date": "Sep 2024"}, {"name": "Interviewing", "date": "Mar 2023"}, {"name": "The Cake", "date": "Dec 2022"}]}, {"name": "Recruiting & HR Tech", "count": 11, "color": "#1ABC9C", "desc": "Staffing agencies, HR platforms, compensation tools", "pct": 9.2, "companies": [{"name": "Creative Circle", "date": "Apr 2026"}, {"name": "Hays", "date": "Apr 2026"}, {"name": "Dale WorkForce Solutions", "date": "Apr 2026"}, {"name": "TeamPeople", "date": "Mar 2026"}, {"name": "PTR Global", "date": "Mar 2026"}, {"name": "Compa", "date": "Mar 2026"}, {"name": "Hublo", "date": "Mar 2026"}, {"name": "Veremark", "date": "Mar 2026"}, {"name": "SHRM", "date": "Jun 2025"}, {"name": "Chief", "date": "Jan 2024"}, {"name": "Onward Search", "date": "Mar 2023"}]}, {"name": "Tech SaaS & Productivity", "count": 11, "color": "#7ED321", "desc": "B2B software, analytics, enterprise tools", "pct": 9.2, "companies": [{"name": "Skylight", "date": "Apr 2026"}, {"name": "Pylon", "date": "Mar 2026"}, {"name": "Rimini Street", "date": "Mar 2026"}, {"name": "Smartsheet", "date": "Mar 2026"}, {"name": "When", "date": "Mar 2026"}, {"name": "Operata", "date": "Mar 2026"}, {"name": "Amplitude", "date": "Feb 2026"}, {"name": "Ajenda", "date": "Feb 2026"}, {"name": "TELUS Digital", "date": "Feb 2026"}, {"name": "Quantum Metric", "date": "Feb 2026"}, {"name": "Freshworks", "date": "Feb 2023"}]}, {"name": "Marketing, PR & Comms", "count": 11, "color": "#9B59B6", "desc": "Marketing agencies, PR, SEO, comms strategy", "pct": 9.2, "companies": [{"name": "Creator Growth Group", "date": "Mar 2026"}, {"name": "Tractorbeam", "date": "Mar 2026"}, {"name": "Top of the Funnel", "date": "Feb 2026"}, {"name": "CommsConsultants.com", "date": "Feb 2026"}, {"name": "Pretty Little Marketer", "date": "Jan 2026"}, {"name": "LinkedIn for Marketing", "date": "Jun 2025"}, {"name": "Product Marketing", "date": "Apr 2024"}, {"name": "Synergy Interactive", "date": "May 2023"}, {"name": "Qualified Digital", "date": "May 2023"}, {"name": "Public Relations", "date": "Mar 2023"}, {"name": "Semly Pro - The SEO Company", "date": "Feb 2023"}]}, {"name": "Freelance & Independent Work", "count": 11, "color": "#F5A623", "desc": "Freelance networks, gig platforms, fractional work", "pct": 9.2, "companies": [{"name": "Fractional Product Leadership", "date": "Mar 2026"}, {"name": "Graphite", "date": "Mar 2026"}, {"name": "Freelance Opportunities! Newsletter", "date": "Feb 2026"}, {"name": "All Things Freelance Writing", "date": "Feb 2026"}, {"name": "Make Writing Your Job", "date": "Feb 2026"}, {"name": "Fractional Jobs", "date": "Feb 2026"}, {"name": "The Freelance Writing Network", "date": "Feb 2026"}, {"name": "Harlow", "date": "Feb 2026"}, {"name": "Content Writing Jobs", "date": "Oct 2022"}, {"name": "Jobs For Editors", "date": "Oct 2022"}, {"name": "Self-Employed", "date": "Dec 2016"}]}, {"name": "Content & Creative Writing", "count": 8, "color": "#E67E22", "desc": "Writing communities, content studios, editorial", "pct": 6.7, "companies": [{"name": "Equal Parts", "date": "Mar 2026"}, {"name": "Spellwell", "date": "Feb 2026"}, {"name": "Orbit", "date": "Feb 2026"}, {"name": "Witchwell", "date": "Feb 2025"}, {"name": "Content Design", "date": "Apr 2024"}, {"name": "Writing", "date": "Mar 2023"}, {"name": "Copywriting", "date": "Mar 2023"}, {"name": "Big Wonder", "date": "Mar 2021"}]}, {"name": "Social Impact & Nonprofit", "count": 6, "color": "#F39C12", "desc": "NGOs, philanthropy, international development", "pct": 5.0, "companies": [{"name": "DAFgiving360", "date": "Mar 2026"}, {"name": "IDEO.org", "date": "Jan 2023"}, {"name": "Giving Women", "date": "Oct 2020"}, {"name": "Situka Alliance Initiative Uganda", "date": "Aug 2020"}, {"name": "Evidence in Governance and Politics", "date": "Jan 2018"}, {"name": "Baha'i International Community", "date": "Jul 2012"}]}, {"name": "Finance & Fintech", "count": 5, "color": "#1A7B5E", "desc": "Financial services, payments, wealth management", "pct": 4.2, "companies": [{"name": "Rain", "date": "Mar 2026"}, {"name": "Charles Schwab", "date": "Mar 2026"}, {"name": "Principal Financial Group", "date": "Mar 2026"}, {"name": "Incard", "date": "Mar 2026"}, {"name": "Stripe", "date": "Jan 2026"}]}, {"name": "Education", "count": 5, "color": "#8E44AD", "desc": "Universities, EdTech platforms, policy schools", "pct": 4.2, "companies": [{"name": "CYPHER Learning", "date": "Mar 2026"}, {"name": "The LBJ School of Public Affairs", "date": "Sep 2016"}, {"name": "University of Oklahoma", "date": "Sep 2016"}, {"name": "University of California, Berkeley", "date": "Apr 2016"}, {"name": "The University of Texas at Austin", "date": "Feb 2011"}]}, {"name": "Design & UX", "count": 5, "color": "#E74C3C", "desc": "Design tools, UX studios, research platforms", "pct": 4.2, "companies": [{"name": "Figma", "date": "Feb 2026"}, {"name": "Koi Studios", "date": "Aug 2024"}, {"name": "Design Research", "date": "Mar 2023"}, {"name": "IDEO", "date": "Nov 2022"}, {"name": "Creativo Design", "date": "Oct 2020"}]}, {"name": "Venture Capital & Startups", "count": 5, "color": "#2ECC71", "desc": "VC funds, accelerators, startup ecosystems", "pct": 4.2, "companies": [{"name": "Series Z", "date": "Jan 2026"}, {"name": "Simple Ventures", "date": "Jan 2025"}, {"name": "Y Combinator", "date": "Jan 2025"}, {"name": "Andreessen Horowitz", "date": "Jan 2025"}, {"name": "Fast Forward", "date": "May 2023"}]}, {"name": "Media & Business News", "count": 5, "color": "#3498DB", "desc": "Publications, business journalism, news", "pct": 4.2, "companies": [{"name": "TechCrunch", "date": "Jun 2025"}, {"name": "Fast Company", "date": "Jun 2025"}, {"name": "Harvard Business Review", "date": "Jun 2025"}, {"name": "LinkedIn News", "date": "Feb 2025"}, {"name": "The Economist", "date": "Jan 2023"}]}, {"name": "Health & Wellness", "count": 4, "color": "#00BCD4", "desc": "Healthcare, benefits, wellness platforms", "pct": 3.4, "companies": [{"name": "GoodRx", "date": "Apr 2026"}, {"name": "Sundayy", "date": "Mar 2026"}, {"name": "Carrot", "date": "Mar 2026"}, {"name": "Fusion Wellness", "date": "Jan 2022"}]}, {"name": "Cybersecurity", "count": 4, "color": "#C0392B", "desc": "Security products, threat intelligence, compliance", "pct": 3.4, "companies": [{"name": "Nucleus Security", "date": "Mar 2026"}, {"name": "Tradespace", "date": "Mar 2026"}, {"name": "Kasada", "date": "Mar 2026"}, {"name": "ORION Security", "date": "Mar 2026"}]}];
+const TOTAL = 119;
+
+let activeCluster = null;
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function setActive(name) {
+  activeCluster = (activeCluster === name) ? null : name;
+  render();
+}
+
+// ── Chips ─────────────────────────────────────────────────────────────────────
+function renderChips() {
+  const el = document.getElementById('chips');
+  el.innerHTML = CLUSTERS.map(c => `
+    <span class="chip" style="background:${c.color}${activeCluster&&activeCluster!==c.name?'55':'cc'}"
+          onclick="setActive('${c.name.replace(/'/g,"\'")}')">
+      ${c.name}<span class="n">${c.count}</span>
+    </span>`).join('');
+}
+
+// ── Bars ──────────────────────────────────────────────────────────────────────
+const maxCount = Math.max(...CLUSTERS.map(c => c.count));
+function renderBars() {
+  const el = document.getElementById('bars');
+  el.innerHTML = CLUSTERS.map(c => {
+    const pct = c.count / maxCount * 100;
+    const dim = activeCluster && activeCluster !== c.name ? ' dimmed' : '';
+    return `
+    <div class="bar-row${dim}" onclick="setActive('${c.name.replace(/'/g,"\'")}')">
+      <div class="bar-label">${c.name}</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${pct}%;background:${c.color}bb;border:1px solid ${c.color}">
+          <span>${c.count} &nbsp; ${c.pct}%</span>
+        </div>
+      </div>
+      <div class="bar-pct">${c.count}</div>
+    </div>`;
+  }).join('');
+}
+
+// ── Treemap (Chart.js doughnut approximation → bubble chart) ─────────────────
+let bubbleChart = null;
+function renderBubble() {
+  const canvas = document.getElementById('treemap');
+  const ctx = canvas.getContext('2d');
+  if (bubbleChart) { bubbleChart.destroy(); }
+
+  // Lay out clusters in a rough grid for a bubble-ish look
+  const n = CLUSTERS.length;
+  const cols = Math.ceil(Math.sqrt(n * 1.6));
+  const datasets = CLUSTERS.map((c, i) => {
+    const col = i % cols;
+    const row = Math.floor(i / cols);
+    const r = Math.sqrt(c.count) * 7;
+    const alpha = (!activeCluster || activeCluster === c.name) ? 0.85 : 0.15;
+    return {
+      label: c.name,
+      data: [{ x: col * 130 + 65, y: row * 110 + 55, r }],
+      backgroundColor: c.color + Math.round(alpha * 255).toString(16).padStart(2,'0'),
+      borderColor: c.color,
+      borderWidth: activeCluster === c.name ? 3 : 1,
+    };
+  });
+
+  bubbleChart = new Chart(ctx, {
+    type: 'bubble',
+    data: { datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      onClick: (e, elements) => {
+        if (elements.length) {
+          const idx = elements[0].datasetIndex;
+          setActive(CLUSTERS[idx].name);
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => `${ctx.dataset.label}: ${CLUSTERS[ctx.datasetIndex].count} companies (${CLUSTERS[ctx.datasetIndex].pct}%)`
+          },
+          backgroundColor: '#161b22', borderColor: '#30363d', borderWidth: 1,
+          titleColor: '#f0f6fc', bodyColor: '#8b949e',
+        },
+      },
+      scales: {
+        x: { display: false, min: 0, max: cols * 130 },
+        y: { display: false, min: 0, max: Math.ceil(CLUSTERS.length / cols) * 110 },
+      },
+    },
+  });
+
+  // Draw labels on top of bubbles
+  bubbleChart.options.animation = {
+    onComplete: () => {
+      const chartArea = bubbleChart.chartArea;
+      CLUSTERS.forEach((c, i) => {
+        const meta = bubbleChart.getDatasetMeta(i);
+        const pt   = meta.data[0];
+        if (!pt) return;
+        const alpha = (!activeCluster || activeCluster === c.name) ? 1 : 0.2;
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = '#f0f6fc';
+        ctx.textAlign = 'center';
+        ctx.font = 'bold 11px system-ui';
+        const words = c.name.split(' ');
+        const mid   = Math.ceil(words.length / 2);
+        const line1 = words.slice(0, mid).join(' ');
+        const line2 = words.slice(mid).join(' ');
+        ctx.fillText(line1, pt.x, pt.y - (line2 ? 6 : 0));
+        if (line2) ctx.fillText(line2, pt.x, pt.y + 8);
+        ctx.fillStyle = 'rgba(255,255,255,.6)';
+        ctx.font = '10px system-ui';
+        ctx.fillText(c.count, pt.x, pt.y + (line2 ? 20 : 12));
+        ctx.restore();
+      });
+    }
+  };
+  bubbleChart.update();
+}
+
+// ── Cards ─────────────────────────────────────────────────────────────────────
+function renderCards() {
+  const el = document.getElementById('cards');
+  el.innerHTML = CLUSTERS.map(c => {
+    const dim = activeCluster && activeCluster !== c.name ? ' dimmed' : '';
+    const open = activeCluster === c.name ? ' open' : '';
+    const rows = c.companies.map(co =>
+      `<div class="co-item"><span class="co-name">${co.name}</span><span class="co-date">${co.date}</span></div>`
+    ).join('');
+    return `
+    <div class="card${dim}">
+      <div class="card-header" onclick="setActive('${c.name.replace(/'/g,"\'")}')">
+        <div class="card-swatch" style="background:${c.color}"></div>
+        <div class="card-name">${c.name}</div>
+        <div class="card-badge">${c.count}</div>
+        <div class="card-chevron">${activeCluster===c.name?'▲':'▼'}</div>
+      </div>
+      <div class="card-desc">${c.desc}</div>
+      <div class="card-body${open}">${rows}</div>
+    </div>`;
+  }).join('');
+}
+
+function render() {
+  renderChips();
+  renderBars();
+  renderBubble();
+  renderCards();
+}
+
+render();
+</script>
+</body>
+</html>
