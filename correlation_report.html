@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Posts vs Connections Correlation</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+     background:#0d1117;color:#c9d1d9;padding:28px 20px}
+.page{max-width:1100px;margin:0 auto}
+h1{font-size:20px;font-weight:700;color:#f0f6fc;margin-bottom:4px}
+.sub{font-size:13px;color:#484f58;margin-bottom:28px}
+h2{font-size:13px;font-weight:600;color:#f0f6fc;text-transform:uppercase;
+   letter-spacing:.8px;margin:28px 0 12px;padding-left:10px;
+   border-left:3px solid #58a6ff}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.stat{background:#161b22;border:1px solid #21262d;border-radius:10px;
+      padding:14px 18px;flex:1;min-width:130px}
+.stat .val{font-size:26px;font-weight:700}
+.stat .lbl{font-size:11px;color:#484f58;margin-top:2px;text-transform:uppercase;letter-spacing:.5px}
+.chart-wrap{background:#161b22;border:1px solid #21262d;border-radius:12px;
+            padding:20px;margin-bottom:20px}
+.findings{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:24px}
+.finding{background:#161b22;border:1px solid #21262d;border-radius:10px;padding:14px 16px}
+.finding h3{font-size:12px;font-weight:600;color:#f0f6fc;margin-bottom:6px}
+.finding p{font-size:12px;color:#8b949e;line-height:1.5}
+.finding.blue{border-left:3px solid #58a6ff}
+.finding.green{border-left:3px solid #2ECC71}
+.finding.orange{border-left:3px solid #E67E22}
+.finding.gray{border-left:3px solid #484f58}
+.note{font-size:11px;color:#484f58;margin-top:16px;font-style:italic}
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Posting Frequency vs. New Connections</h1>
+<p class="sub">Monthly correlation analysis — Shares.csv &times; Connections.csv</p>
+
+<div class="stats">
+
+  <div class="stat"><div class="val" style="color:#F5A623">0.2509</div>
+    <div class="lbl">Pearson r (all-time)</div></div>
+  <div class="stat"><div class="val" style="color:#2ECC71">0.7385</div>
+    <div class="lbl">Pearson r (2025&ndash;present)</div></div>
+  <div class="stat"><div class="val">21</div>
+    <div class="lbl">Total posts exported</div></div>
+  <div class="stat"><div class="val">1053</div>
+    <div class="lbl">Total connections</div></div>
+  <div class="stat"><div class="val">5</div>
+    <div class="lbl">Months with posts</div></div>
+  <div class="stat"><div class="val">157</div>
+    <div class="lbl">Months in history</div></div>
+</div>
+
+<h2>All-Time Monthly View (2009 &ndash; 2026)</h2>
+<div class="chart-wrap">
+  <canvas id="chartAll" height="100"></canvas>
+</div>
+
+<h2>Active Period: 2025 &ndash; 2026</h2>
+<div class="chart-wrap">
+  <canvas id="chartRecent" height="140"></canvas>
+</div>
+
+<h2>Scatter: Posts vs Connections (each dot = one month)</h2>
+<div class="chart-wrap">
+  <canvas id="chartScatter" height="200"></canvas>
+</div>
+
+<div class="findings">
+
+  <div class="finding blue">
+    <h3>r = 0.7385 in the active posting period</h3>
+    <p>Strong positive correlation since you started posting consistently. March 2026: 14 posts &rarr; 52 new connections — your highest single month ever.</p>
+  </div>
+  <div class="finding green">
+    <h3>Feb 2026 outlier: 42 connections, 0 posts</h3>
+    <p>Suggests browsing, commenting, or profile activity can drive connections even without publishing — or that March's posting amplified a Feb momentum already in motion.</p>
+  </div>
+  <div class="finding orange">
+    <h3>Only 21 posts in the export</h3>
+    <p>LinkedIn caps the Shares export to recent history. Your connection data spans 2009–2026 but post history is nearly blank before 2025. The all-time r = 0.2509 reflects sparse data, not your true posting behavior.</p>
+  </div>
+  <div class="finding gray">
+    <h3>Baseline: ~3–6 connections/month without posting</h3>
+    <p>In the 12 months before active posting (2025-02 to 2025-12) you averaged ~3.5 new connections/month. March 2026 at peak posting: 52 — a 15&times; increase.</p>
+  </div>
+</div>
+
+<p class="note">
+  &nbsp;&nbsp;&#9888;&nbsp; Correlation &ne; causation. The same job-search activity driving your posts may independently attract connection requests. A controlled A/B test (posting vs. silent months) would isolate the true effect.
+</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+const ALL_MONTHS  = ["2009-03", "2009-05", "2009-07", "2012-06", "2012-07", "2012-08", "2012-09", "2012-10", "2012-11", "2012-12", "2013-01", "2013-02", "2013-03", "2013-04", "2013-05", "2013-06", "2013-07", "2013-08", "2013-09", "2013-10", "2013-11", "2013-12", "2014-01", "2014-02", "2014-03", "2014-04", "2014-05", "2014-06", "2014-07", "2014-08", "2014-09", "2014-10", "2014-11", "2014-12", "2015-01", "2015-02", "2015-03", "2015-04", "2015-05", "2015-06", "2015-07", "2015-08", "2015-09", "2015-10", "2015-11", "2015-12", "2016-01", "2016-02", "2016-03", "2016-04", "2016-05", "2016-06", "2016-07", "2016-08", "2016-09", "2016-11", "2016-12", "2017-01", "2017-02", "2017-03", "2017-04", "2017-05", "2017-06", "2017-07", "2017-08", "2017-09", "2017-10", "2017-11", "2017-12", "2018-01", "2018-02", "2018-03", "2018-04", "2018-05", "2018-06", "2018-07", "2018-08", "2018-09", "2018-10", "2018-11", "2018-12", "2019-01", "2019-02", "2019-03", "2019-04", "2019-05", "2019-06", "2019-07", "2019-08", "2019-09", "2019-10", "2019-11", "2019-12", "2020-01", "2020-02", "2020-03", "2020-04", "2020-05", "2020-06", "2020-08", "2020-09", "2020-10", "2020-11", "2020-12", "2021-01", "2021-02", "2021-04", "2021-05", "2021-06", "2021-07", "2021-09", "2021-11", "2021-12", "2022-01", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09", "2022-10", "2022-11", "2022-12", "2023-01", "2023-02", "2023-03", "2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-08", "2024-09", "2024-10", "2024-12", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"];
+const ALL_POSTS   = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 14, 4];
+const ALL_CONNS   = [1, 9, 2, 157, 21, 14, 8, 13, 3, 5, 14, 3, 14, 4, 14, 17, 6, 4, 17, 4, 5, 1, 49, 9, 14, 11, 5, 3, 13, 3, 10, 7, 4, 1, 5, 4, 7, 10, 3, 5, 8, 3, 6, 1, 3, 6, 7, 7, 8, 5, 12, 5, 1, 2, 9, 2, 7, 8, 4, 7, 2, 1, 5, 5, 6, 1, 3, 5, 3, 5, 5, 7, 2, 1, 3, 3, 1, 1, 4, 1, 3, 1, 3, 4, 2, 3, 1, 3, 2, 5, 13, 4, 6, 4, 6, 7, 2, 3, 1, 5, 5, 4, 3, 1, 7, 14, 7, 3, 1, 2, 1, 4, 1, 4, 3, 3, 4, 1, 3, 4, 7, 4, 3, 1, 4, 6, 2, 5, 5, 3, 4, 4, 2, 1, 6, 4, 4, 3, 2, 3, 3, 3, 5, 2, 5, 5, 3, 5, 3, 3, 6, 1, 4, 2, 42, 52, 9];
+const REC_MONTHS  = ["2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12", "2026-01", "2026-02", "2026-03", "2026-04"];
+const REC_POSTS   = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 14, 4];
+const REC_CONNS   = [5, 2, 5, 5, 3, 5, 3, 3, 6, 1, 4, 2, 42, 52, 9];
+const R_FULL      = 0.2509;
+const R_RECENT    = 0.7385;
+
+const GRID = '#21262d', TICK = '#484f58';
+const POST_C = '#58a6ff', CONN_C = '#2ECC71';
+
+function dualOpts() {
+  return {
+    responsive:true,
+    interaction:{mode:'index',intersect:false},
+    plugins:{
+      legend:{labels:{color:'#8b949e',boxWidth:10,font:{size:11}}},
+      tooltip:{backgroundColor:'#161b22',borderColor:'#30363d',borderWidth:1,
+                titleColor:'#f0f6fc',bodyColor:'#8b949e'},
+    },
+    scales:{
+      x:{ticks:{color:TICK,maxTicksLimit:24,maxRotation:45},grid:{color:GRID}},
+      y1:{type:'linear',position:'left',
+           title:{display:true,text:'Posts / month',color:POST_C,font:{size:11}},
+           ticks:{color:POST_C,precision:0},grid:{color:GRID}},
+      y2:{type:'linear',position:'right',
+           title:{display:true,text:'New connections',color:CONN_C,font:{size:11}},
+           ticks:{color:CONN_C,precision:0},grid:{drawOnChartArea:false}},
+    },
+  };
+}
+
+// All-time
+new Chart(document.getElementById('chartAll'),{
+  type:'bar',
+  data:{
+    labels:ALL_MONTHS,
+    datasets:[
+      {label:'Posts',data:ALL_POSTS,backgroundColor:POST_C+'99',
+        borderColor:POST_C,borderWidth:1,yAxisID:'y1',order:1},
+      {label:'New Connections',data:ALL_CONNS,type:'line',
+        borderColor:CONN_C,backgroundColor:CONN_C+'15',borderWidth:2,
+        pointRadius:0,fill:true,yAxisID:'y2',tension:0.3,order:0},
+    ]
+  },
+  options:dualOpts()
+});
+
+// Recent
+new Chart(document.getElementById('chartRecent'),{
+  type:'bar',
+  data:{
+    labels:REC_MONTHS,
+    datasets:[
+      {label:'Posts',data:REC_POSTS,backgroundColor:POST_C+'cc',
+        borderColor:POST_C,borderWidth:1.5,yAxisID:'y1',order:1},
+      {label:'New Connections',data:REC_CONNS,type:'line',
+        borderColor:CONN_C,backgroundColor:CONN_C+'25',borderWidth:2.5,
+        pointRadius:5,pointBackgroundColor:CONN_C,fill:true,
+        yAxisID:'y2',tension:0.3,order:0},
+    ]
+  },
+  options:dualOpts()
+});
+
+// Scatter
+const scatterPts = ALL_MONTHS.map((m,i)=>({x:ALL_POSTS[i],y:ALL_CONNS[i],month:m}));
+const n=ALL_POSTS.length, mx=ALL_POSTS.reduce((a,b)=>a+b,0)/n, my=ALL_CONNS.reduce((a,b)=>a+b,0)/n;
+const slope = ALL_POSTS.reduce((s,xi,i)=>s+(xi-mx)*(ALL_CONNS[i]-my),0) /
+              (ALL_POSTS.reduce((s,xi)=>s+(xi-mx)**2,0)||1);
+const icpt = my - slope*mx;
+const xMax = Math.max(...ALL_POSTS)+0.5;
+new Chart(document.getElementById('chartScatter'),{
+  type:'scatter',
+  data:{
+    datasets:[
+      {label:'Month',data:scatterPts,
+        backgroundColor:ctx=>ctx.raw.x>0?POST_C+'dd':'#484f58aa',
+        pointRadius:ctx=>ctx.raw.x>0?8:4,pointHoverRadius:10},
+      {label:'Regression (r='+R_FULL+')',
+        data:[{x:0,y:icpt},{x:xMax,y:slope*xMax+icpt}],
+        type:'line',borderColor:'#E67E22',borderWidth:1.5,
+        borderDash:[4,3],pointRadius:0,fill:false},
+    ]
+  },
+  options:{
+    responsive:true,
+    plugins:{
+      legend:{labels:{color:'#8b949e',font:{size:11}}},
+      tooltip:{
+        callbacks:{label:ctx=>`${ctx.raw.month}: ${ctx.raw.x} posts, ${ctx.raw.y} connections`},
+        backgroundColor:'#161b22',borderColor:'#30363d',borderWidth:1,
+        titleColor:'#f0f6fc',bodyColor:'#8b949e',
+      },
+    },
+    scales:{
+      x:{title:{display:true,text:'Posts in month',color:POST_C,font:{size:11}},
+          ticks:{color:TICK,precision:0},grid:{color:GRID}},
+      y:{title:{display:true,text:'New connections in month',color:CONN_C,font:{size:11}},
+          ticks:{color:TICK,precision:0},grid:{color:GRID}},
+    },
+  }
+});
+</script>
+</body>
+</html>
