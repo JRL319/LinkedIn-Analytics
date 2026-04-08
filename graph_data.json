@@ -1,0 +1,636 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "label": "Google",
+      "industry": "Big Tech",
+      "size": 10,
+      "members": [
+        {
+          "name": "Sarah Johnson",
+          "title": "Software Engineer",
+          "company": "Google"
+        },
+        {
+          "name": "Michael Chen",
+          "title": "Senior Product Manager",
+          "company": "Google"
+        },
+        {
+          "name": "Emily Davis",
+          "title": "Data Scientist",
+          "company": "Google"
+        },
+        {
+          "name": "James Wilson",
+          "title": "UX Designer",
+          "company": "Google"
+        },
+        {
+          "name": "Olivia Martinez",
+          "title": "Engineering Manager",
+          "company": "Google"
+        },
+        {
+          "name": "Noah Anderson",
+          "title": "DevOps Engineer",
+          "company": "Google"
+        },
+        {
+          "name": "Ava Thomas",
+          "title": "ML Engineer",
+          "company": "Google"
+        },
+        {
+          "name": "Liam Jackson",
+          "title": "Software Engineer II",
+          "company": "Google"
+        },
+        {
+          "name": "Emma White",
+          "title": "Program Manager",
+          "company": "Google"
+        },
+        {
+          "name": "Isabella Harris",
+          "title": "Research Scientist",
+          "company": "Google"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "label": "Microsoft",
+      "industry": "Big Tech",
+      "size": 10,
+      "members": [
+        {
+          "name": "Sophia Clark",
+          "title": "Software Engineer",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Mason Lewis",
+          "title": "Cloud Architect",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Mia Robinson",
+          "title": "Product Manager",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Lucas Walker",
+          "title": "Data Engineer",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Charlotte Hall",
+          "title": "Security Engineer",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Ethan Young",
+          "title": "Principal Engineer",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Amelia Allen",
+          "title": "Technical Writer",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Oliver King",
+          "title": "Azure Specialist",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Elijah Wright",
+          "title": "Frontend Developer",
+          "company": "Microsoft"
+        },
+        {
+          "name": "Harper Scott",
+          "title": "Business Analyst",
+          "company": "Microsoft"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Amazon",
+      "industry": "Big Tech",
+      "size": 10,
+      "members": [
+        {
+          "name": "Aiden Torres",
+          "title": "Solutions Architect",
+          "company": "Amazon"
+        },
+        {
+          "name": "Evelyn Nguyen",
+          "title": "Software Development Manager",
+          "company": "Amazon"
+        },
+        {
+          "name": "Caden Hill",
+          "title": "Operations Manager",
+          "company": "Amazon"
+        },
+        {
+          "name": "Aria Flores",
+          "title": "Product Manager",
+          "company": "Amazon"
+        },
+        {
+          "name": "Grayson Green",
+          "title": "Backend Engineer",
+          "company": "Amazon"
+        },
+        {
+          "name": "Luna Adams",
+          "title": "Data Analyst",
+          "company": "Amazon"
+        },
+        {
+          "name": "Jayden Nelson",
+          "title": "Cloud Engineer",
+          "company": "Amazon"
+        },
+        {
+          "name": "Zoey Baker",
+          "title": "ML Engineer",
+          "company": "Amazon"
+        },
+        {
+          "name": "Penelope Carter",
+          "title": "UX Researcher",
+          "company": "Amazon"
+        },
+        {
+          "name": "Riley Mitchell",
+          "title": "Site Reliability Engineer",
+          "company": "Amazon"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Meta",
+      "industry": "Big Tech",
+      "size": 10,
+      "members": [
+        {
+          "name": "Nathan Perez",
+          "title": "Software Engineer",
+          "company": "Meta"
+        },
+        {
+          "name": "Hannah Roberts",
+          "title": "Product Manager",
+          "company": "Meta"
+        },
+        {
+          "name": "Caleb Turner",
+          "title": "Research Scientist",
+          "company": "Meta"
+        },
+        {
+          "name": "Lily Phillips",
+          "title": "Data Scientist",
+          "company": "Meta"
+        },
+        {
+          "name": "Isaiah Campbell",
+          "title": "AR/VR Engineer",
+          "company": "Meta"
+        },
+        {
+          "name": "Stella Parker",
+          "title": "Content Strategist",
+          "company": "Meta"
+        },
+        {
+          "name": "Dylan Evans",
+          "title": "Infrastructure Engineer",
+          "company": "Meta"
+        },
+        {
+          "name": "Victoria Edwards",
+          "title": "Policy Manager",
+          "company": "Meta"
+        },
+        {
+          "name": "Nora Collins",
+          "title": "UX Designer",
+          "company": "Meta"
+        },
+        {
+          "name": "Eli Stewart",
+          "title": "Engineering Manager",
+          "company": "Meta"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Apple",
+      "industry": "Big Tech",
+      "size": 10,
+      "members": [
+        {
+          "name": "Jack Sanchez",
+          "title": "iOS Engineer",
+          "company": "Apple"
+        },
+        {
+          "name": "Hazel Morris",
+          "title": "Hardware Engineer",
+          "company": "Apple"
+        },
+        {
+          "name": "Owen Rogers",
+          "title": "Senior Software Engineer",
+          "company": "Apple"
+        },
+        {
+          "name": "Aurora Reed",
+          "title": "Product Designer",
+          "company": "Apple"
+        },
+        {
+          "name": "Wyatt Cook",
+          "title": "Machine Learning Engineer",
+          "company": "Apple"
+        },
+        {
+          "name": "Violet Morgan",
+          "title": "App Developer",
+          "company": "Apple"
+        },
+        {
+          "name": "Lincoln Bell",
+          "title": "Security Researcher",
+          "company": "Apple"
+        },
+        {
+          "name": "Clara Murphy",
+          "title": "Technical Program Manager",
+          "company": "Apple"
+        },
+        {
+          "name": "Ezra Bailey",
+          "title": "Systems Engineer",
+          "company": "Apple"
+        },
+        {
+          "name": "Scarlett Rivera",
+          "title": "UX Researcher",
+          "company": "Apple"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "McKinsey",
+      "industry": "Consulting",
+      "size": 10,
+      "members": [
+        {
+          "name": "Sebastian Cooper",
+          "title": "Management Consultant",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Madison Richardson",
+          "title": "Senior Consultant",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Mateo Cox",
+          "title": "Strategy Analyst",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Penelope Howard",
+          "title": "Associate Principal",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Adrian Ward",
+          "title": "Business Analyst",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Chloe Torres",
+          "title": "Engagement Manager",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Cameron Peterson",
+          "title": "Partner",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Savannah Gray",
+          "title": "Operations Consultant",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Brayden Ramirez",
+          "title": "Digital Consultant",
+          "company": "McKinsey"
+        },
+        {
+          "name": "Aubrey James",
+          "title": "Tech Strategy Consultant",
+          "company": "McKinsey"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Goldman Sachs",
+      "industry": "Finance",
+      "size": 10,
+      "members": [
+        {
+          "name": "Miles Watson",
+          "title": "Investment Banker",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Brooklyn Brooks",
+          "title": "Equity Analyst",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Ryder Kelly",
+          "title": "Quantitative Analyst",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Piper Sanders",
+          "title": "Risk Manager",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Hunter Price",
+          "title": "Portfolio Manager",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Paisley Bennett",
+          "title": "Financial Advisor",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Dominic Wood",
+          "title": "VP Investment Banking",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Sadie Barnes",
+          "title": "Trading Analyst",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Jaxon Ross",
+          "title": "Associate",
+          "company": "Goldman Sachs"
+        },
+        {
+          "name": "Genesis Henderson",
+          "title": "Compliance Officer",
+          "company": "Goldman Sachs"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Salesforce",
+      "industry": "Enterprise SaaS",
+      "size": 10,
+      "members": [
+        {
+          "name": "Bentley Coleman",
+          "title": "Solution Engineer",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Serenity Jenkins",
+          "title": "Admin Consultant",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Zachary Perry",
+          "title": "Developer",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Adaline Powell",
+          "title": "Product Manager",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Josiah Long",
+          "title": "Marketing Analyst",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Naomi Patterson",
+          "title": "Customer Success Manager",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Elias Hughes",
+          "title": "Senior Engineer",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Lilah Flores",
+          "title": "Business Development",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Ashton Washington",
+          "title": "Technical Architect",
+          "company": "Salesforce"
+        },
+        {
+          "name": "Alexa Butler",
+          "title": "Implementation Consultant",
+          "company": "Salesforce"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Netflix",
+      "industry": "Media & Streaming",
+      "size": 10,
+      "members": [
+        {
+          "name": "Micah Simmons",
+          "title": "Software Engineer",
+          "company": "Netflix"
+        },
+        {
+          "name": "Lydia Foster",
+          "title": "Product Manager",
+          "company": "Netflix"
+        },
+        {
+          "name": "Tristan Gonzales",
+          "title": "Data Scientist",
+          "company": "Netflix"
+        },
+        {
+          "name": "Aurora Bryant",
+          "title": "Content Strategist",
+          "company": "Netflix"
+        },
+        {
+          "name": "Ezekiel Alexander",
+          "title": "Backend Engineer",
+          "company": "Netflix"
+        },
+        {
+          "name": "Juliet Russell",
+          "title": "UX Designer",
+          "company": "Netflix"
+        },
+        {
+          "name": "Sawyer Griffin",
+          "title": "ML Engineer",
+          "company": "Netflix"
+        },
+        {
+          "name": "Violet Diaz",
+          "title": "Analytics Engineer",
+          "company": "Netflix"
+        },
+        {
+          "name": "Charles Hayes",
+          "title": "Engineering Manager",
+          "company": "Netflix"
+        },
+        {
+          "name": "Norah Myers",
+          "title": "Streaming Engineer",
+          "company": "Netflix"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Stripe",
+      "industry": "Fintech",
+      "size": 10,
+      "members": [
+        {
+          "name": "Theo Ford",
+          "title": "Payments Engineer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Gracie Hamilton",
+          "title": "Backend Developer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Axel Graham",
+          "title": "Fraud Analyst",
+          "company": "Stripe"
+        },
+        {
+          "name": "Delilah Sullivan",
+          "title": "Product Manager",
+          "company": "Stripe"
+        },
+        {
+          "name": "Levi Wallace",
+          "title": "API Engineer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Ivy Woods",
+          "title": "Risk Engineer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Knox Cole",
+          "title": "Financial Engineer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Everly West",
+          "title": "Infrastructure Engineer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Silas Jordan",
+          "title": "Security Engineer",
+          "company": "Stripe"
+        },
+        {
+          "name": "Briar Owens",
+          "title": "Developer Relations",
+          "company": "Stripe"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "strength": 0.8
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "strength": 0.8
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "strength": 0.8
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "strength": 0.8
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "strength": 0.8
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "strength": 0.8
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "strength": 0.8
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "strength": 0.8
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "strength": 0.8
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "strength": 0.8
+    }
+  ]
+}

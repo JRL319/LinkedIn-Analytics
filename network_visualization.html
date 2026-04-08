@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LinkedIn Connections Network</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          background: #0f1117; color: #e0e0e0; overflow: hidden; }
+
+  #header {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 10;
+    background: rgba(15,17,23,0.92); padding: 14px 24px;
+    border-bottom: 1px solid #2a2d3a;
+    display: flex; align-items: center; gap: 16px;
+  }
+  #header h1 { font-size: 18px; font-weight: 600; color: #fff; letter-spacing: 0.3px; }
+  #header .sub { font-size: 13px; color: #888; margin-left: auto; }
+
+  #legend {
+    position: absolute; top: 70px; left: 16px; z-index: 10;
+    background: rgba(20,22,30,0.92); border: 1px solid #2a2d3a;
+    border-radius: 10px; padding: 12px 16px; min-width: 170px;
+  }
+  #legend h3 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+                color: #666; margin-bottom: 8px; }
+  .legend-item { display: flex; align-items: center; gap: 8px;
+                  font-size: 12px; margin-bottom: 5px; color: #ccc; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+  #tooltip {
+    position: absolute; pointer-events: none; z-index: 20;
+    background: rgba(20,22,30,0.97); border: 1px solid #3a3d4a;
+    border-radius: 10px; padding: 12px 16px; max-width: 260px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5); display: none;
+  }
+  #tooltip h4 { font-size: 14px; color: #fff; margin-bottom: 4px; }
+  #tooltip .ind { font-size: 11px; color: #888; margin-bottom: 8px; }
+  #tooltip .count { font-size: 12px; font-weight: 600; color: #4A90D9; margin-bottom: 8px; }
+  #tooltip .member { font-size: 12px; color: #bbb; line-height: 1.6; }
+  #tooltip .member span { color: #888; }
+
+  #controls {
+    position: absolute; bottom: 20px; right: 20px; z-index: 10;
+    display: flex; gap: 8px;
+  }
+  #controls button {
+    background: rgba(20,22,30,0.92); border: 1px solid #3a3d4a;
+    color: #ccc; border-radius: 6px; padding: 7px 14px; cursor: pointer;
+    font-size: 13px; transition: background 0.2s;
+  }
+  #controls button:hover { background: #2a2d3a; }
+
+  svg { width: 100vw; height: 100vh; display: block; }
+  .link { stroke: #2a2d3a; stroke-opacity: 0.6; }
+  .node circle { cursor: pointer; stroke-width: 2; transition: opacity 0.2s; }
+  .node circle:hover { stroke-width: 3; }
+  .node text { pointer-events: none; font-size: 11px; fill: #ddd;
+                text-anchor: middle; dominant-baseline: central; }
+  .node .rank-badge { pointer-events: none; font-size: 10px; fill: rgba(255,255,255,0.5); }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>LinkedIn Connections Network</h1>
+  <span class="sub">Top 10 clusters · 130 total connections</span>
+</div>
+
+<div id="legend">
+  <h3>Industry</h3>
+  <div class="legend-item"><span class="dot" style="background:#4A90D9"></span>Big Tech</div><div class="legend-item"><span class="dot" style="background:#1ABC9C"></span>Consulting</div><div class="legend-item"><span class="dot" style="background:#9B59B6"></span>Enterprise SaaS</div><div class="legend-item"><span class="dot" style="background:#E67E22"></span>Finance</div><div class="legend-item"><span class="dot" style="background:#7ED321"></span>Fintech</div><div class="legend-item"><span class="dot" style="background:#E94B7B"></span>Media & Streaming</div>
+</div>
+
+<div id="tooltip"></div>
+
+<div id="controls">
+  <button onclick="resetZoom()">Reset Zoom</button>
+  <button onclick="toggleLabels()">Toggle Labels</button>
+</div>
+
+<svg id="graph"></svg>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const RAW = {"nodes": [{"id": 0, "label": "Google", "industry": "Big Tech", "size": 10, "members": [{"name": "Sarah Johnson", "title": "Software Engineer", "company": "Google"}, {"name": "Michael Chen", "title": "Senior Product Manager", "company": "Google"}, {"name": "Emily Davis", "title": "Data Scientist", "company": "Google"}, {"name": "James Wilson", "title": "UX Designer", "company": "Google"}, {"name": "Olivia Martinez", "title": "Engineering Manager", "company": "Google"}, {"name": "Noah Anderson", "title": "DevOps Engineer", "company": "Google"}, {"name": "Ava Thomas", "title": "ML Engineer", "company": "Google"}, {"name": "Liam Jackson", "title": "Software Engineer II", "company": "Google"}, {"name": "Emma White", "title": "Program Manager", "company": "Google"}, {"name": "Isabella Harris", "title": "Research Scientist", "company": "Google"}]}, {"id": 1, "label": "Microsoft", "industry": "Big Tech", "size": 10, "members": [{"name": "Sophia Clark", "title": "Software Engineer", "company": "Microsoft"}, {"name": "Mason Lewis", "title": "Cloud Architect", "company": "Microsoft"}, {"name": "Mia Robinson", "title": "Product Manager", "company": "Microsoft"}, {"name": "Lucas Walker", "title": "Data Engineer", "company": "Microsoft"}, {"name": "Charlotte Hall", "title": "Security Engineer", "company": "Microsoft"}, {"name": "Ethan Young", "title": "Principal Engineer", "company": "Microsoft"}, {"name": "Amelia Allen", "title": "Technical Writer", "company": "Microsoft"}, {"name": "Oliver King", "title": "Azure Specialist", "company": "Microsoft"}, {"name": "Elijah Wright", "title": "Frontend Developer", "company": "Microsoft"}, {"name": "Harper Scott", "title": "Business Analyst", "company": "Microsoft"}]}, {"id": 2, "label": "Amazon", "industry": "Big Tech", "size": 10, "members": [{"name": "Aiden Torres", "title": "Solutions Architect", "company": "Amazon"}, {"name": "Evelyn Nguyen", "title": "Software Development Manager", "company": "Amazon"}, {"name": "Caden Hill", "title": "Operations Manager", "company": "Amazon"}, {"name": "Aria Flores", "title": "Product Manager", "company": "Amazon"}, {"name": "Grayson Green", "title": "Backend Engineer", "company": "Amazon"}, {"name": "Luna Adams", "title": "Data Analyst", "company": "Amazon"}, {"name": "Jayden Nelson", "title": "Cloud Engineer", "company": "Amazon"}, {"name": "Zoey Baker", "title": "ML Engineer", "company": "Amazon"}, {"name": "Penelope Carter", "title": "UX Researcher", "company": "Amazon"}, {"name": "Riley Mitchell", "title": "Site Reliability Engineer", "company": "Amazon"}]}, {"id": 3, "label": "Meta", "industry": "Big Tech", "size": 10, "members": [{"name": "Nathan Perez", "title": "Software Engineer", "company": "Meta"}, {"name": "Hannah Roberts", "title": "Product Manager", "company": "Meta"}, {"name": "Caleb Turner", "title": "Research Scientist", "company": "Meta"}, {"name": "Lily Phillips", "title": "Data Scientist", "company": "Meta"}, {"name": "Isaiah Campbell", "title": "AR/VR Engineer", "company": "Meta"}, {"name": "Stella Parker", "title": "Content Strategist", "company": "Meta"}, {"name": "Dylan Evans", "title": "Infrastructure Engineer", "company": "Meta"}, {"name": "Victoria Edwards", "title": "Policy Manager", "company": "Meta"}, {"name": "Nora Collins", "title": "UX Designer", "company": "Meta"}, {"name": "Eli Stewart", "title": "Engineering Manager", "company": "Meta"}]}, {"id": 4, "label": "Apple", "industry": "Big Tech", "size": 10, "members": [{"name": "Jack Sanchez", "title": "iOS Engineer", "company": "Apple"}, {"name": "Hazel Morris", "title": "Hardware Engineer", "company": "Apple"}, {"name": "Owen Rogers", "title": "Senior Software Engineer", "company": "Apple"}, {"name": "Aurora Reed", "title": "Product Designer", "company": "Apple"}, {"name": "Wyatt Cook", "title": "Machine Learning Engineer", "company": "Apple"}, {"name": "Violet Morgan", "title": "App Developer", "company": "Apple"}, {"name": "Lincoln Bell", "title": "Security Researcher", "company": "Apple"}, {"name": "Clara Murphy", "title": "Technical Program Manager", "company": "Apple"}, {"name": "Ezra Bailey", "title": "Systems Engineer", "company": "Apple"}, {"name": "Scarlett Rivera", "title": "UX Researcher", "company": "Apple"}]}, {"id": 5, "label": "McKinsey", "industry": "Consulting", "size": 10, "members": [{"name": "Sebastian Cooper", "title": "Management Consultant", "company": "McKinsey"}, {"name": "Madison Richardson", "title": "Senior Consultant", "company": "McKinsey"}, {"name": "Mateo Cox", "title": "Strategy Analyst", "company": "McKinsey"}, {"name": "Penelope Howard", "title": "Associate Principal", "company": "McKinsey"}, {"name": "Adrian Ward", "title": "Business Analyst", "company": "McKinsey"}, {"name": "Chloe Torres", "title": "Engagement Manager", "company": "McKinsey"}, {"name": "Cameron Peterson", "title": "Partner", "company": "McKinsey"}, {"name": "Savannah Gray", "title": "Operations Consultant", "company": "McKinsey"}, {"name": "Brayden Ramirez", "title": "Digital Consultant", "company": "McKinsey"}, {"name": "Aubrey James", "title": "Tech Strategy Consultant", "company": "McKinsey"}]}, {"id": 6, "label": "Goldman Sachs", "industry": "Finance", "size": 10, "members": [{"name": "Miles Watson", "title": "Investment Banker", "company": "Goldman Sachs"}, {"name": "Brooklyn Brooks", "title": "Equity Analyst", "company": "Goldman Sachs"}, {"name": "Ryder Kelly", "title": "Quantitative Analyst", "company": "Goldman Sachs"}, {"name": "Piper Sanders", "title": "Risk Manager", "company": "Goldman Sachs"}, {"name": "Hunter Price", "title": "Portfolio Manager", "company": "Goldman Sachs"}, {"name": "Paisley Bennett", "title": "Financial Advisor", "company": "Goldman Sachs"}, {"name": "Dominic Wood", "title": "VP Investment Banking", "company": "Goldman Sachs"}, {"name": "Sadie Barnes", "title": "Trading Analyst", "company": "Goldman Sachs"}, {"name": "Jaxon Ross", "title": "Associate", "company": "Goldman Sachs"}, {"name": "Genesis Henderson", "title": "Compliance Officer", "company": "Goldman Sachs"}]}, {"id": 7, "label": "Salesforce", "industry": "Enterprise SaaS", "size": 10, "members": [{"name": "Bentley Coleman", "title": "Solution Engineer", "company": "Salesforce"}, {"name": "Serenity Jenkins", "title": "Admin Consultant", "company": "Salesforce"}, {"name": "Zachary Perry", "title": "Developer", "company": "Salesforce"}, {"name": "Adaline Powell", "title": "Product Manager", "company": "Salesforce"}, {"name": "Josiah Long", "title": "Marketing Analyst", "company": "Salesforce"}, {"name": "Naomi Patterson", "title": "Customer Success Manager", "company": "Salesforce"}, {"name": "Elias Hughes", "title": "Senior Engineer", "company": "Salesforce"}, {"name": "Lilah Flores", "title": "Business Development", "company": "Salesforce"}, {"name": "Ashton Washington", "title": "Technical Architect", "company": "Salesforce"}, {"name": "Alexa Butler", "title": "Implementation Consultant", "company": "Salesforce"}]}, {"id": 8, "label": "Netflix", "industry": "Media & Streaming", "size": 10, "members": [{"name": "Micah Simmons", "title": "Software Engineer", "company": "Netflix"}, {"name": "Lydia Foster", "title": "Product Manager", "company": "Netflix"}, {"name": "Tristan Gonzales", "title": "Data Scientist", "company": "Netflix"}, {"name": "Aurora Bryant", "title": "Content Strategist", "company": "Netflix"}, {"name": "Ezekiel Alexander", "title": "Backend Engineer", "company": "Netflix"}, {"name": "Juliet Russell", "title": "UX Designer", "company": "Netflix"}, {"name": "Sawyer Griffin", "title": "ML Engineer", "company": "Netflix"}, {"name": "Violet Diaz", "title": "Analytics Engineer", "company": "Netflix"}, {"name": "Charles Hayes", "title": "Engineering Manager", "company": "Netflix"}, {"name": "Norah Myers", "title": "Streaming Engineer", "company": "Netflix"}]}, {"id": 9, "label": "Stripe", "industry": "Fintech", "size": 10, "members": [{"name": "Theo Ford", "title": "Payments Engineer", "company": "Stripe"}, {"name": "Gracie Hamilton", "title": "Backend Developer", "company": "Stripe"}, {"name": "Axel Graham", "title": "Fraud Analyst", "company": "Stripe"}, {"name": "Delilah Sullivan", "title": "Product Manager", "company": "Stripe"}, {"name": "Levi Wallace", "title": "API Engineer", "company": "Stripe"}, {"name": "Ivy Woods", "title": "Risk Engineer", "company": "Stripe"}, {"name": "Knox Cole", "title": "Financial Engineer", "company": "Stripe"}, {"name": "Everly West", "title": "Infrastructure Engineer", "company": "Stripe"}, {"name": "Silas Jordan", "title": "Security Engineer", "company": "Stripe"}, {"name": "Briar Owens", "title": "Developer Relations", "company": "Stripe"}]}], "links": [{"source": 0, "target": 1, "strength": 0.8}, {"source": 0, "target": 2, "strength": 0.8}, {"source": 0, "target": 3, "strength": 0.8}, {"source": 0, "target": 4, "strength": 0.8}, {"source": 1, "target": 2, "strength": 0.8}, {"source": 1, "target": 3, "strength": 0.8}, {"source": 1, "target": 4, "strength": 0.8}, {"source": 2, "target": 3, "strength": 0.8}, {"source": 2, "target": 4, "strength": 0.8}, {"source": 3, "target": 4, "strength": 0.8}]};
+
+const COLOR = {
+  "Big Tech":            "#4A90D9",
+  "Media & Streaming":   "#E94B7B",
+  "Consumer Tech":       "#F5A623",
+  "Fintech":             "#7ED321",
+  "Enterprise SaaS":     "#9B59B6",
+  "Consulting":          "#1ABC9C",
+  "Finance":             "#E67E22",
+  "AI / ML":             "#2ECC71",
+  "Semiconductors":      "#E74C3C",
+  "Healthcare / Pharma": "#3498DB",
+  "Academia":            "#F39C12",
+  "Other":               "#95A5A6",
+};
+
+const nodes = RAW.nodes.map(d => ({ ...d }));
+const links = RAW.links.map(d => ({ ...d }));
+
+const svg = d3.select("#graph");
+const width  = window.innerWidth;
+const height = window.innerHeight;
+
+const g = svg.append("g");
+
+// Zoom
+const zoom = d3.zoom().scaleExtent([0.3, 5]).on("zoom", e => g.attr("transform", e.transform));
+svg.call(zoom);
+
+// Size scale (radius)
+const maxSize = d3.max(nodes, d => d.size);
+const rScale  = d3.scaleSqrt().domain([1, maxSize]).range([22, 62]);
+
+// Sort nodes by size for rank badge
+const sorted = [...nodes].sort((a,b) => b.size - a.size);
+sorted.forEach((d, i) => { d.rank = i + 1; });
+
+// Simulation
+const sim = d3.forceSimulation(nodes)
+  .force("link",   d3.forceLink(links).id(d => d.id).distance(d => 160).strength(d => d.strength))
+  .force("charge", d3.forceManyBody().strength(-400))
+  .force("center", d3.forceCenter(width / 2, height / 2))
+  .force("collide", d3.forceCollide().radius(d => rScale(d.size) + 10));
+
+// Links
+const link = g.append("g").selectAll("line")
+  .data(links).join("line").attr("class","link").attr("stroke-width", 1.5);
+
+// Nodes
+const node = g.append("g").selectAll("g")
+  .data(nodes).join("g").attr("class","node")
+  .call(d3.drag()
+    .on("start", (e,d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+    .on("drag",  (e,d) => { d.fx=e.x; d.fy=e.y; })
+    .on("end",   (e,d) => { if (!e.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }));
+
+node.append("circle")
+  .attr("r", d => rScale(d.size))
+  .attr("fill", d => COLOR[d.industry] || "#95A5A6")
+  .attr("fill-opacity", 0.85)
+  .attr("stroke", d => d3.color(COLOR[d.industry] || "#95A5A6").brighter(0.6));
+
+// Company label
+node.append("text")
+  .attr("dy", d => rScale(d.size) < 30 ? -4 : -6)
+  .text(d => d.label.length > 12 ? d.label.slice(0,11)+"…" : d.label)
+  .style("font-weight","600");
+
+// Count label
+node.append("text")
+  .attr("dy", d => rScale(d.size) < 30 ? 10 : 12)
+  .text(d => d.size + " conns")
+  .style("font-size","10px")
+  .style("fill","rgba(255,255,255,0.6)");
+
+// Rank badge (top-left of circle)
+node.append("text")
+  .attr("class","rank-badge")
+  .attr("dx", d => -rScale(d.size) + 4)
+  .attr("dy", d => -rScale(d.size) + 12)
+  .text(d => "#" + d.rank);
+
+// Tooltip
+const tip = document.getElementById("tooltip");
+
+node.on("mouseover", (event, d) => {
+  const preview = d.members.slice(0,5)
+    .map(m => `<div class="member">• ${m.name} <span>— ${m.title}</span></div>`).join("");
+  const extra   = d.members.length > 5 ? `<div class="member" style="color:#666">… and ${d.members.length-5} more</div>` : "";
+  tip.innerHTML = `
+    <h4>${d.label}</h4>
+    <div class="ind">${d.industry}</div>
+    <div class="count">${d.size} connection${d.size!==1?"s":""}</div>
+    ${preview}${extra}`;
+  tip.style.display = "block";
+})
+.on("mousemove", event => {
+  tip.style.left = (event.pageX + 16) + "px";
+  tip.style.top  = (event.pageY - 10) + "px";
+})
+.on("mouseleave", () => { tip.style.display = "none"; });
+
+// Tick
+sim.on("tick", () => {
+  link
+    .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+  node.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+// Controls
+function resetZoom() {
+  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity.translate(0,0).scale(1));
+}
+
+let labelsVisible = true;
+function toggleLabels() {
+  labelsVisible = !labelsVisible;
+  node.selectAll("text").style("opacity", labelsVisible ? 1 : 0);
+}
+
+window.addEventListener("resize", () => {
+  sim.force("center", d3.forceCenter(window.innerWidth/2, window.innerHeight/2));
+  sim.alpha(0.2).restart();
+});
+</script>
+</body>
+</html>
